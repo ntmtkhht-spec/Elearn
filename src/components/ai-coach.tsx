@@ -11,6 +11,7 @@ import {
   PenTool, ArrowUp, Minimize2
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import ReactMarkdown from 'react-markdown'
 
 const QUICK_ACTIONS = [
   { label: 'Translate this', icon: <Languages className="h-3.5 w-3.5" />, prompt: 'Translate the following to German: ' },
@@ -111,7 +112,7 @@ export default function AICoach() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-6 right-6 z-50"
+            className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-50"
           >
             <Button
               onClick={() => setCoachOpen(true)}
@@ -136,7 +137,7 @@ export default function AICoach() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 100, scale: 0.9 }}
             transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-            className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] sm:max-w-[400px]"
+            className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-50 w-[380px] max-w-[calc(100vw-2rem)] sm:max-w-[400px]"
           >
             <div className="bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden max-h-[70vh]">
               {/* Header */}
@@ -217,12 +218,18 @@ export default function AICoach() {
                             : 'bg-muted rounded-bl-sm'
                         }`}
                       >
-                        {msg.content.split('\n').map((line, i) => (
-                          <span key={i}>
-                            {line}
-                            {i < msg.content.split('\n').length - 1 && <br />}
-                          </span>
-                        ))}
+                        {msg.role === 'assistant' ? (
+                          <div className="prose-chat">
+                            <ReactMarkdown>{msg.content}</ReactMarkdown>
+                          </div>
+                        ) : (
+                          msg.content.split('\n').map((line, i) => (
+                            <span key={i}>
+                              {line}
+                              {i < msg.content.split('\n').length - 1 && <br />}
+                            </span>
+                          ))
+                        )}
                       </div>
                     </motion.div>
                   ))}

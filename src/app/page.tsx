@@ -204,9 +204,29 @@ export default function Home() {
         </header>
 
         {/* Main Content Area */}
-        <main className="flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
           <SectionContent section={activeSection} />
         </main>
+
+        {/* Mobile Bottom Navigation */}
+        <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-card border-t border-border safe-area-bottom">
+          <div className="flex items-center justify-around h-14 px-1">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavigate(item.id)}
+                className={`flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-lg transition-colors min-w-[3.5rem] ${
+                  activeSection === item.id
+                    ? 'text-emerald-600 dark:text-emerald-400'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                <span className="h-5 w-5">{item.icon}</span>
+                <span className="text-[10px] font-medium leading-none">{item.label}</span>
+              </button>
+            ))}
+          </div>
+        </nav>
       </div>
 
       {/* AI Coach (always available) */}

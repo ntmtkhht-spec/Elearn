@@ -80,3 +80,72 @@ Stage Summary:
 - Hero illustration saved to public/hero-illustration.png
 - Zero lint errors
 - All features working end-to-end
+
+---
+Task ID: 6-b
+Agent: main
+Task: Add "Daily Challenge" feature to Dashboard section
+
+Work Log:
+- Added Daily Challenge card between "Daily Goal + Today's Word" and "Quick Actions" sections
+- Implemented 5 challenge types cycling by day-of-year: Sentence Builder, Translation Challenge, Idiom Completer, Free Writing, Synonym Hunter
+- Used deterministic seeded selection (day-of-year hash) so every user sees the same challenge each day
+- Created rich challenge data: 10 words for sentences, 8 German sentences, 10 idioms, 8 topics, 10 synonym words
+- Daily Challenge card uses amber/orange gradient color scheme with Flame icon and "Daily Challenge" title
+- "Start Challenge" button pre-fills AI Coach with the challenge prompt via addCoachMessage + setCoachOpen
+- Added Zap icon for challenge type badge display
+- Added useMemo import for challenge memoization
+- Fixed stray 'n' character in JSX from initial edit
+- Adjusted Quick Actions animation delay from 0.7 to 0.8 to accommodate new section
+- Lint passes with zero errors
+
+Stage Summary:
+- Daily Challenge feature fully implemented with 5 rotating challenge types
+- Date-seeded deterministic challenge selection ensures consistency
+- Amber/orange themed card visually distinct from other dashboard cards
+- Seamlessly integrates with AI Coach via store actions
+
+---
+Task ID: 6-a
+Agent: main
+Task: Improve AI Coach component to render markdown content with react-markdown
+
+Work Log:
+- Added `import ReactMarkdown from 'react-markdown'` to ai-coach.tsx
+- Replaced plain text rendering (split-by-newline with <br/>) for assistant messages with `<ReactMarkdown>` component
+- Kept user messages as plain text (no markdown rendering)
+- Created `.prose-chat` CSS class in globals.css with compact styling for chat bubbles:
+  - Small text (0.875rem) with tight line-height (1.5)
+  - Minimal margins on paragraphs, lists, headings
+  - Styled lists (disc/decimal), bold, italic, inline code, code blocks, blockquotes, links, horizontal rules
+  - Dark mode support for code backgrounds, blockquotes, links, hr borders
+  - Headings scaled down (h1=1rem → h4=0.875rem) to fit chat context
+- Lint passes with zero errors
+- Dev server running cleanly
+
+Stage Summary:
+- Assistant messages now render full markdown (bold, lists, code, blockquotes, headings, links, etc.)
+- User messages remain plain text for simplicity
+- Compact `.prose-chat` styles ensure markdown fits naturally in chat bubbles
+
+---
+Task ID: 6-c
+Agent: Main Orchestrator
+Task: Polish UI — add mobile bottom nav, fix AI Coach positioning
+
+Work Log:
+- Added mobile bottom navigation bar to page.tsx with all 6 nav items
+- Bottom nav is fixed at the bottom of the screen on mobile (md:hidden)
+- Active section highlighted with emerald color
+- Added pb-16 md:pb-0 to main content area to account for bottom nav
+- Fixed AI Coach floating button position to avoid overlap with mobile bottom nav (bottom-20 on mobile, bottom-6 on desktop)
+- Fixed AI Coach panel position similarly for mobile (bottom-20 right-4 on mobile, bottom-6 right-6 on desktop)
+- Added safe-area-bottom class for iOS safe area
+- Lint passes with zero errors
+- Dev server compiles successfully
+
+Stage Summary:
+- Mobile bottom navigation added with 6 items (Dashboard, Vocabulary, Reading, Conversation, Video, Grammar)
+- AI Coach button/panel repositioned to avoid mobile bottom nav overlap
+- Main content area has bottom padding on mobile to prevent content hidden behind nav
+- All changes responsive with md: breakpoint
