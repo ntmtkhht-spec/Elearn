@@ -21,10 +21,21 @@ function getGreeting(): string {
 }
 
 const LEVEL_COLORS: Record<string, string> = {
+  A1: 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400',
+  A2: 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400',
   B1: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
   B2: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
   C1: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400',
   C2: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400',
+}
+
+const LEVEL_NAMES: Record<string, string> = {
+  A1: 'Beginner',
+  A2: 'Elementary',
+  B1: 'Intermediate',
+  B2: 'Upper Intermediate',
+  C1: 'Advanced',
+  C2: 'Proficient',
 }
 
 const STATS_MOCK: LearningStats = {
@@ -170,7 +181,8 @@ function getDailyChallenge(): DailyChallenge {
 }
 
 export default function DashboardSection() {
-  const { setActiveSection, setCoachOpen, addCoachMessage } = useAppStore()
+  const { setActiveSection, setCoachOpen, addCoachMessage, userLevel } = useAppStore()
+  const displayLevel = userLevel || 'B2'
   const dailyChallenge = useMemo(() => getDailyChallenge(), [])
   const [stats, setStats] = useState<LearningStats | null>(null)
   const [todayWord, setTodayWord] = useState<VocabCard | null>(null)
@@ -242,8 +254,8 @@ export default function DashboardSection() {
           </h1>
           <p className="text-muted-foreground mt-1">Keep up the great work on your English journey!</p>
         </div>
-        <Badge className={`${LEVEL_COLORS['B2']} text-sm px-3 py-1 self-start`} variant="secondary">
-          Level: B2 — Upper Intermediate
+        <Badge className={`${LEVEL_COLORS[displayLevel] || LEVEL_COLORS['B2']} text-sm px-3 py-1 self-start`} variant="secondary">
+          Level: {displayLevel} — {LEVEL_NAMES[displayLevel] || 'Upper Intermediate'}
         </Badge>
       </motion.div>
 

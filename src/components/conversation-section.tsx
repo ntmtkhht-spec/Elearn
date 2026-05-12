@@ -10,7 +10,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import {
   MessageCircle, Send, Plus, ArrowLeft, Lightbulb,
-  Sparkles, Star, AlertCircle, RotateCcw
+  Sparkles, Star, AlertCircle, RotateCcw, Mic, MicOff
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -38,7 +38,10 @@ export default function ConversationSection() {
   const [showFeedback, setShowFeedback] = useState(false)
   const [feedback, setFeedback] = useState<string>('')
   const [gettingFeedback, setGettingFeedback] = useState(false)
+  const [isListening, setIsListening] = useState(false)
+  const [speechSupported, setSpeechSupported] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const recognitionRef = useRef<SpeechRecognition | null>(null)
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -47,6 +50,72 @@ export default function ConversationSection() {
   useEffect(() => {
     scrollToBottom()
   }, [conversationMessages])
+
+  // Speech recognition setup
+  useEffect(() => {
+    if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+      setSpeechSupported(true)
+      const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
+      const recognition = new SpeechRecognitionAPI()
+      recognition.continuous = true
+      recognition.interimResults = true
+      recognition.lang = 'en-US'
+
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        let finalTranscript = ''
+        let interimTranscript = ''
+
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript
+          if (event.results[i].isFinal) {
+            finalTranscript += transcript
+          } else {
+            interimTranscript += transcript
+          }
+        }
+
+        if (finalTranscript) {
+          setInputMessage(prev => prev + finalTranscript)
+        } else if (interimTranscript) {
+          setInputMessage(prev => {
+            const base = prev.replace(/\[.*?\]$/, '')
+            return base + '[' + interimTranscript + ']'
+          })
+        }
+      }
+
+      recognition.onerror = () => {
+        setIsListening(false)
+      }
+
+      recognition.onend = () => {
+        setIsListening(false)
+      }
+
+      recognitionRef.current = recognition
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop()
+      }
+    }
+  }, [])
+
+  const toggleListening = () => {
+    if (!recognitionRef.current) return
+
+    if (isListening) {
+      recognitionRef.current.stop()
+      setIsListening(false)
+      // Clean up interim text markers
+      setInputMessage(prev => prev.replace(/\[.*?\]$/, ''))
+    } else {
+      setInputMessage('')
+      recognitionRef.current.start()
+      setIsListening(true)
+    }
+  }
 
   const handleStartConversation = (scenarioId: string) => {
     const scenario = SCENARIOS.find(s => s.id === scenarioId)
@@ -82,12 +151,20 @@ export default function ConversationSection() {
   }
 
   const handleSendMessage = async () => {
-    if (!inputMessage.trim() || sending) return
+    // Clean up any interim text markers before sending
+    const cleanMessage = inputMessage.replace(/\[.*?\]/g, '').trim()
+    if (!cleanMessage || sending) return
+
+    // Stop listening if active
+    if (isListening && recognitionRef.current) {
+      recognitionRef.current.stop()
+      setIsListening(false)
+    }
 
     const userMessage: ChatMessage = {
       id: `user-${Date.now()}`,
       role: 'user',
-      content: inputMessage.trim(),
+      content: cleanMessage,
       timestamp: new Date(),
     }
     addConversationMessage(userMessage)
@@ -100,7 +177,7 @@ export default function ConversationSection() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          message: inputMessage.trim(),
+          message: cleanMessage,
           topic: currentTopic,
           scenario: selectedScenario,
           history: conversationMessages.map(m => ({ role: m.role, content: m.content })),
@@ -418,22 +495,58 @@ Keep up the excellent work! 🌟`
         <Separator />
 
         {/* Input */}
-        <div className="p-3 flex gap-2">
-          <Input
-            placeholder="Type your message in English..."
-            value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
-            onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSendMessage() } }}
-            disabled={sending}
-            className="flex-1"
-          />
-          <Button
-            onClick={handleSendMessage}
-            disabled={!inputMessage.trim() || sending}
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-4"
-          >
-            <Send className="h-4 w-4" />
-          </Button>
+        <div className="p-3">
+          {isListening && (
+            <div className="flex items-center gap-2 mb-2 px-1">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              <span className="text-xs text-red-500 font-medium">Listening... Speak in English</span>
+            </div>
+          )}
+          <div className="flex gap-2">
+            <Input
+              placeholder={isListening ? 'Listening...' : 'Type your message in English...'}
+              value={inputMessage}
+              onChange={(e) => setInputMessage(e.target.value)}
+              onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSendMessage() } }}
+              disabled={sending}
+              className="flex-1"
+            />
+            {speechSupported && (
+              <div className="relative">
+                <Button
+                  onClick={toggleListening}
+                  variant="outline"
+                  size="icon"
+                  className={`h-10 w-10 rounded-full shrink-0 ${
+                    isListening
+                      ? 'bg-red-500 hover:bg-red-600 text-white border-red-500 hover:border-red-600'
+                      : 'hover:bg-emerald-50 hover:border-emerald-300 dark:hover:bg-emerald-950/20 dark:hover:border-emerald-700'
+                  }`}
+                  title={isListening ? 'Stop listening' : 'Speak in English'}
+                >
+                  {isListening ? <MicOff className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
+                </Button>
+                {isListening && (
+                  <span className="absolute -inset-1 rounded-full border-2 border-red-400 animate-pulse" />
+                )}
+              </div>
+            )}
+            <Button
+              onClick={handleSendMessage}
+              disabled={!inputMessage.trim() || sending}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-4"
+            >
+              <Send className="h-4 w-4" />
+            </Button>
+          </div>
+          {speechSupported && !isListening && (
+            <p className="text-[10px] text-muted-foreground mt-1 px-1">
+              Click the mic button to speak your message
+            </p>
+          )}
         </div>
       </Card>
     </div>

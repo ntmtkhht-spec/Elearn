@@ -18,6 +18,8 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 
 const LEVEL_COLORS: Record<string, string> = {
+  A1: 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400',
+  A2: 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400',
   B1: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
   B2: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
   C1: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400',
@@ -36,12 +38,14 @@ const DECK_ICONS: Record<string, string> = {
 }
 
 const SAMPLE_DECKS: VocabDeck[] = [
-  { id: '1', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
-  { id: '2', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
-  { id: '3', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
-  { id: '4', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
-  { id: '5', name: 'Daily Life', description: 'Everyday vocabulary for common situations', level: 'B1', category: 'Daily', icon: '🏠', _count: { cards: 20 } },
-  { id: '6', name: 'Technology', description: 'Tech and digital vocabulary', level: 'B2', category: 'Technology', icon: '💻', _count: { cards: 16 } },
+  { id: '1', name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱', _count: { cards: 20 } },
+  { id: '2', name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋', _count: { cards: 16 } },
+  { id: '3', name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞', _count: { cards: 18 } },
+  { id: '4', name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒', _count: { cards: 22 } },
+  { id: '5', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
+  { id: '6', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
+  { id: '7', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
+  { id: '8', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
 ]
 
 const SAMPLE_CARDS: VocabCard[] = [
@@ -263,7 +267,7 @@ export default function VocabSection() {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Level</label>
                   <div className="flex gap-2">
-                    {['B1', 'B2', 'C1', 'C2'].map(level => (
+                    {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map(level => (
                       <Button
                         key={level}
                         variant={newDeckLevel === level ? 'default' : 'outline'}

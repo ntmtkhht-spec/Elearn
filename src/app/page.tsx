@@ -20,6 +20,16 @@ const ConversationSection = dynamic(() => import('@/components/conversation-sect
 const VideoSection = dynamic(() => import('@/components/video-section'), { ssr: false })
 const GrammarSection = dynamic(() => import('@/components/grammar-section'), { ssr: false })
 const AICoach = dynamic(() => import('@/components/ai-coach'), { ssr: false })
+const PlacementTest = dynamic(() => import('@/components/placement-test'), { ssr: false })
+
+const LEVEL_NAMES: Record<string, string> = {
+  A1: 'Beginner',
+  A2: 'Elementary',
+  B1: 'Intermediate',
+  B2: 'Upper Intermediate',
+  C1: 'Advanced',
+  C2: 'Proficient',
+}
 
 interface NavItem {
   id: AppSection
@@ -35,6 +45,22 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'video', label: 'Video', icon: <Video className="h-5 w-5" /> },
   { id: 'grammar', label: 'Grammar', icon: <PenTool className="h-5 w-5" /> },
 ]
+
+function LevelBadge({ userLevel }: { userLevel: string | null }) {
+  const displayLevel = userLevel || 'B2'
+  const levelName = LEVEL_NAMES[displayLevel] || 'Upper Intermediate'
+  return (
+    <div className="flex items-center gap-2">
+      <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+        <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">{displayLevel}</span>
+      </div>
+      <div>
+        <p className="text-xs font-medium">Your Level</p>
+        <p className="text-[10px] text-muted-foreground">{levelName}</p>
+      </div>
+    </div>
+  )
+}
 
 function SidebarNav({
   activeSection,
@@ -104,10 +130,15 @@ function SectionContent({ section }: { section: AppSection }) {
 }
 
 export default function Home() {
-  const { activeSection, setActiveSection } = useAppStore()
+  const { activeSection, setActiveSection, userLevel, hasCompletedPlacement } = useAppStore()
 
   const handleNavigate = (section: AppSection) => {
     setActiveSection(section)
+  }
+
+  // Show placement test if not completed
+  if (!hasCompletedPlacement) {
+    return <PlacementTest />
   }
 
   return (
@@ -139,15 +170,7 @@ export default function Home() {
 
         {/* Bottom section */}
         <div className="p-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
-              <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">B2</span>
-            </div>
-            <div>
-              <p className="text-xs font-medium">Your Level</p>
-              <p className="text-[10px] text-muted-foreground">Upper Intermediate</p>
-            </div>
-          </div>
+          <LevelBadge userLevel={userLevel} />
           <ThemeToggle />
         </div>
       </aside>
@@ -179,15 +202,7 @@ export default function Home() {
               </div>
               <Separator />
               <div className="p-4 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
-                    <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">B2</span>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium">Your Level</p>
-                    <p className="text-[10px] text-muted-foreground">Upper Intermediate</p>
-                  </div>
-                </div>
+                <LevelBadge userLevel={userLevel} />
                 <ThemeToggle />
               </div>
             </SheetContent>

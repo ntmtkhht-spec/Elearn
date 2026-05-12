@@ -11,6 +11,24 @@ function generateFallbackExercises(category: string, _level: string) {
     hint: string
     options?: string[]
   }>> = {
+    'basic-sentences': [
+      { type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'I _____ a student.', answer: 'am', explanation: '"I" goes with "am" in the verb "to be".', hint: 'What form of "to be" goes with "I"?', options: ['am', 'is', 'are', 'be'] },
+      { type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'She _____ coffee every morning.', answer: 'drinks', explanation: 'Third person singular adds -s to the verb.', hint: 'Remember the -s for he/she/it.' },
+      { type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'I has a big family.', answer: 'I have a big family.', explanation: '"I" uses "have", not "has".', hint: 'Which form of "have" goes with "I"?' },
+      { type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'They _____ to school by bus.', answer: 'go', explanation: '"They" is plural, so we use the base form.', hint: 'Plural subjects use the base form of the verb.' },
+    ],
+    'to-be': [
+      { type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'She _____ a teacher.', answer: 'is', explanation: 'We use "is" with he/she/it.', hint: 'Which form goes with "she"?', options: ['am', 'is', 'are', 'be'] },
+      { type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'We _____ from Germany.', answer: 'are', explanation: 'We use "are" with we/you/they.', hint: 'Which form goes with "we"?', options: ['am', 'is', 'are', 'be'] },
+      { type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'They is happy.', answer: 'They are happy.', explanation: '"They" requires "are", not "is".', hint: 'Check subject-verb agreement.' },
+      { type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'I _____ hungry.', answer: 'am', explanation: '"I" always goes with "am".', hint: '"I" always pairs with one specific form.', options: ['am', 'is', 'are', 'be'] },
+    ],
+    'present-simple': [
+      { type: 'fill-blank', instruction: 'Fill in the correct form of the verb.', sentence: 'She _____ (work) in a hospital.', answer: 'works', explanation: 'Third person singular (she) adds -s to the base verb.', hint: 'Don\'t forget the -s for he/she/it!' },
+      { type: 'fill-blank', instruction: 'Fill in the correct form.', sentence: 'I _____ (not/like) spicy food.', answer: "don't like", explanation: 'For negative present simple with I/you/we/they, use "don\'t" + base verb.', hint: 'How do you make a negative sentence with "I"?' },
+      { type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'He don\'t play football.', answer: "He doesn't play football.", explanation: 'Third person singular negative uses "doesn\'t".', hint: 'He/she/it use "doesn\'t", not "don\'t".' },
+      { type: 'fill-blank', instruction: 'Complete the question.', sentence: '_____ you speak English?', answer: 'Do', explanation: 'Questions with I/you/we/they start with "Do".', hint: 'What auxiliary verb starts a yes/no question?' },
+    ],
     'tenses': [
       { type: 'fill-blank', instruction: 'Fill in the blank with the correct tense.', sentence: 'She _____ (work) here since 2018.', answer: 'has been working', explanation: 'Present Perfect Continuous for actions starting in the past and continuing.', hint: 'Think about ongoing past-to-present actions.' },
       { type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'I am knowing the answer.', answer: 'I know the answer.', explanation: '"Know" is a stative verb and is not used in the continuous form.', hint: 'Some verbs cannot be used with -ing.' },

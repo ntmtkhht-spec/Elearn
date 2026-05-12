@@ -9,12 +9,14 @@ export async function POST() {
     if (decks.length === 0) {
       await db.vocabDeck.createMany({
         data: [
+          { name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱' },
+          { name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋' },
+          { name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞' },
+          { name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒' },
           { name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼' },
           { name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️' },
           { name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠' },
           { name: 'Academic English', description: 'Formal vocabulary for academic writing', level: 'C1', category: 'Academic', icon: '🎓' },
-          { name: 'Daily Life', description: 'Everyday vocabulary for common situations', level: 'B1', category: 'Daily', icon: '🏠' },
-          { name: 'Technology', description: 'Tech and digital vocabulary', level: 'B2', category: 'Technology', icon: '💻' },
         ],
       })
 

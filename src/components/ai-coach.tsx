@@ -8,7 +8,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import {
   Sparkles, Send, X, Languages, BookOpen,
-  PenTool, ArrowUp, Minimize2
+  PenTool, ArrowUp, Minimize2, Mic, MicOff
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import ReactMarkdown from 'react-markdown'
@@ -23,7 +23,10 @@ export default function AICoach() {
   const { coachOpen, setCoachOpen, coachMessages, addCoachMessage, clearCoachMessages } = useAppStore()
   const [inputMessage, setInputMessage] = useState('')
   const [sending, setSending] = useState(false)
+  const [isListening, setIsListening] = useState(false)
+  const [speechSupported, setSpeechSupported] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const recognitionRef = useRef<SpeechRecognition | null>(null)
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -33,9 +36,83 @@ export default function AICoach() {
     scrollToBottom()
   }, [coachMessages])
 
+  // Speech recognition setup
+  useEffect(() => {
+    if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+      setSpeechSupported(true)
+      const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
+      const recognition = new SpeechRecognitionAPI()
+      recognition.continuous = true
+      recognition.interimResults = true
+      recognition.lang = 'en-US'
+
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        let finalTranscript = ''
+        let interimTranscript = ''
+
+        for (let i = event.resultIndex; i < event.results.length; i++) {
+          const transcript = event.results[i][0].transcript
+          if (event.results[i].isFinal) {
+            finalTranscript += transcript
+          } else {
+            interimTranscript += transcript
+          }
+        }
+
+        if (finalTranscript) {
+          setInputMessage(prev => prev + finalTranscript)
+        } else if (interimTranscript) {
+          setInputMessage(prev => {
+            const base = prev.replace(/\[.*?\]$/, '')
+            return base + '[' + interimTranscript + ']'
+          })
+        }
+      }
+
+      recognition.onerror = () => {
+        setIsListening(false)
+      }
+
+      recognition.onend = () => {
+        setIsListening(false)
+      }
+
+      recognitionRef.current = recognition
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop()
+      }
+    }
+  }, [])
+
+  const toggleListening = () => {
+    if (!recognitionRef.current) return
+
+    if (isListening) {
+      recognitionRef.current.stop()
+      setIsListening(false)
+      // Clean up interim text markers
+      setInputMessage(prev => prev.replace(/\[.*?\]$/, ''))
+    } else {
+      setInputMessage('')
+      recognitionRef.current.start()
+      setIsListening(true)
+    }
+  }
+
   const handleSendMessage = async (message?: string) => {
-    const content = message || inputMessage.trim()
+    // Clean up any interim text markers before sending
+    const rawContent = message || inputMessage
+    const content = rawContent.replace(/\[.*?\]/g, '').trim()
     if (!content || sending) return
+
+    // Stop listening if active
+    if (isListening && recognitionRef.current) {
+      recognitionRef.current.stop()
+      setIsListening(false)
+    }
 
     const userMessage: ChatMessage = {
       id: `coach-user-${Date.now()}`,
@@ -253,23 +330,59 @@ export default function AICoach() {
               <Separator />
 
               {/* Input */}
-              <div className="p-3 flex gap-2">
-                <Input
-                  placeholder="Ask about English..."
-                  value={inputMessage}
-                  onChange={(e) => setInputMessage(e.target.value)}
-                  onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSendMessage() } }}
-                  disabled={sending}
-                  className="flex-1 h-9 text-sm"
-                />
-                <Button
-                  onClick={() => handleSendMessage()}
-                  disabled={!inputMessage.trim() || sending}
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white h-9 w-9 px-0"
-                  size="icon"
-                >
-                  <ArrowUp className="h-4 w-4" />
-                </Button>
+              <div className="p-3">
+                {isListening && (
+                  <div className="flex items-center gap-2 mb-2 px-1">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+                    </span>
+                    <span className="text-xs text-red-500 font-medium">Listening... Speak in English</span>
+                  </div>
+                )}
+                <div className="flex gap-2">
+                  <Input
+                    placeholder={isListening ? 'Listening...' : 'Ask about English...'}
+                    value={inputMessage}
+                    onChange={(e) => setInputMessage(e.target.value)}
+                    onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSendMessage() } }}
+                    disabled={sending}
+                    className="flex-1 h-9 text-sm"
+                  />
+                  {speechSupported && (
+                    <div className="relative">
+                      <Button
+                        onClick={toggleListening}
+                        variant="outline"
+                        size="icon"
+                        className={`h-9 w-9 rounded-full shrink-0 px-0 ${
+                          isListening
+                            ? 'bg-red-500 hover:bg-red-600 text-white border-red-500 hover:border-red-600'
+                            : 'hover:bg-emerald-50 hover:border-emerald-300 dark:hover:bg-emerald-950/20 dark:hover:border-emerald-700'
+                        }`}
+                        title={isListening ? 'Stop listening' : 'Speak in English'}
+                      >
+                        {isListening ? <MicOff className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
+                      </Button>
+                      {isListening && (
+                        <span className="absolute -inset-1 rounded-full border-2 border-red-400 animate-pulse" />
+                      )}
+                    </div>
+                  )}
+                  <Button
+                    onClick={() => handleSendMessage()}
+                    disabled={!inputMessage.trim() || sending}
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white h-9 w-9 px-0"
+                    size="icon"
+                  >
+                    <ArrowUp className="h-4 w-4" />
+                  </Button>
+                </div>
+                {speechSupported && !isListening && (
+                  <p className="text-[10px] text-muted-foreground mt-1 px-1">
+                    Click the mic button to speak your message
+                  </p>
+                )}
               </div>
             </div>
           </motion.div>

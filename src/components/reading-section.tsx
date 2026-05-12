@@ -18,6 +18,8 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 
 const LEVEL_COLORS: Record<string, string> = {
+  A1: 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400',
+  A2: 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400',
   B1: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
   B2: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
   C1: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400',
@@ -253,7 +255,7 @@ export default function ReadingSection() {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Level</label>
                   <div className="flex gap-2">
-                    {['B1', 'B2', 'C1', 'C2'].map(level => (
+                    {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map(level => (
                       <Button
                         key={level}
                         variant={newLevel === level ? 'default' : 'outline'}

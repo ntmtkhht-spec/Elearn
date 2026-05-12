@@ -14,10 +14,13 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 
 const CATEGORIES = [
+  { id: 'basic-sentences', name: 'Basic Sentences', icon: '📝', description: 'Simple subject-verb-object' },
+  { id: 'to-be', name: 'Verb "to be"', icon: '✨', description: 'Am, is, are — the basics' },
+  { id: 'present-simple', name: 'Present Simple', icon: '📅', description: 'Daily routines and habits' },
   { id: 'tenses', name: 'Tenses', icon: '⏰', description: 'Present, Past, Future tenses' },
   { id: 'conditionals', name: 'Conditionals', icon: '🔀', description: 'If-clauses and conditional sentences' },
   { id: 'prepositions', name: 'Prepositions', icon: '📍', description: 'In, on, at, by, with, etc.' },
-  { id: 'articles', name: 'Articles', icon: '📝', description: 'A, an, the — when to use them' },
+  { id: 'articles', name: 'Articles', icon: '📰', description: 'A, an, the — when to use them' },
   { id: 'relative-clauses', name: 'Relative Clauses', icon: '🔗', description: 'Who, which, that, whose' },
   { id: 'passive-voice', name: 'Passive Voice', icon: '🔄', description: 'Active vs. passive constructions' },
   { id: 'reported-speech', name: 'Reported Speech', icon: '💬', description: 'Indirect speech and backshifting' },
@@ -36,6 +39,24 @@ interface GrammarExercise {
 }
 
 const SAMPLE_EXERCISES: Record<string, GrammarExercise[]> = {
+  'basic-sentences': [
+    { id: 'bs1', type: 'fill-blank', instruction: 'Complete the sentence with the correct word.', sentence: 'I _____ a student.', answer: 'am', explanation: '"I" goes with "am". This is the basic subject-verb pattern.', hint: 'What form of "to be" goes with "I"?', options: ['am', 'is', 'are', 'be'] },
+    { id: 'bs2', type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'She _____ coffee every morning.', answer: 'drinks', explanation: 'With "she" (third person singular), we add -s to the verb in Present Simple.', hint: 'Third person singular needs an -s ending.' },
+    { id: 'bs3', type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'I has a big family.', answer: 'I have a big family.', explanation: '"I" uses "have", not "has". "Has" is for third person (he/she/it).', hint: 'Which form of "have" goes with "I"?' },
+    { id: 'bs4', type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'They _____ to school by bus.', answer: 'go', explanation: '"They" is plural, so we use the base form "go" without -s.', hint: 'Plural subjects use the base form of the verb.' },
+  ],
+  'to-be': [
+    { id: 'tb1', type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'She _____ a teacher.', answer: 'is', explanation: 'We use "is" with he/she/it (third person singular).', hint: 'Which form of "to be" goes with "she"?', options: ['am', 'is', 'are', 'be'] },
+    { id: 'tb2', type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'We _____ from Germany.', answer: 'are', explanation: 'We use "are" with we/you/they.', hint: 'Which form goes with "we"?', options: ['am', 'is', 'are', 'be'] },
+    { id: 'tb3', type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'They is happy.', answer: 'They are happy.', explanation: '"They" requires "are", not "is".', hint: 'Check subject-verb agreement.' },
+    { id: 'tb4', type: 'fill-blank', instruction: 'Fill in the correct form of "to be".', sentence: 'I _____ hungry.', answer: 'am', explanation: '"I" always goes with "am".', hint: '"I" always pairs with one specific form.', options: ['am', 'is', 'are', 'be'] },
+  ],
+  'present-simple': [
+    { id: 'ps1', type: 'fill-blank', instruction: 'Fill in the correct form of the verb.', sentence: 'She _____ (work) in a hospital.', answer: 'works', explanation: 'Third person singular (she) adds -s to the base verb in Present Simple.', hint: 'Don\'t forget the -s for he/she/it!' },
+    { id: 'ps2', type: 'fill-blank', instruction: 'Fill in the correct form.', sentence: 'I _____ (not/like) spicy food.', answer: "don't like", explanation: 'For negative present simple with I/you/we/they, use "don\'t" + base verb.', hint: 'How do you make a negative sentence with "I"?' },
+    { id: 'ps3', type: 'correction', instruction: 'Find and correct the mistake.', sentence: 'He don\'t play football.', answer: "He doesn't play football.", explanation: 'Third person singular negative uses "doesn\'t" + base verb, not "don\'t".', hint: 'He/she/it use "doesn\'t", not "don\'t".' },
+    { id: 'ps4', type: 'fill-blank', instruction: 'Complete the question.', sentence: '_____ you speak English?', answer: 'Do', explanation: 'Questions with I/you/we/they start with "Do" + base verb.', hint: 'What auxiliary verb starts a yes/no question?' },
+  ],
   'tenses': [
     { id: 't1', type: 'fill-blank', instruction: 'Fill in the blank with the correct form of the verb in parentheses.', sentence: 'She _____ (work) at this company since 2018.', answer: 'has been working', explanation: 'We use the Present Perfect Continuous (has been + -ing) for actions that started in the past and continue to the present. "Since 2018" indicates an ongoing action.', hint: 'Think about which tense expresses an action that started in the past and continues now.' },
     { id: 't2', type: 'fill-blank', instruction: 'Fill in the blank with the correct form of the verb.', sentence: 'By the time we arrived, the movie _____ already _____ (start).', answer: 'had already started', explanation: 'The Past Perfect (had + past participle) is used for an action completed before another past action. "Arrived" is in simple past, so the earlier action needs past perfect.', hint: 'Which tense shows that something happened before another past event?' },

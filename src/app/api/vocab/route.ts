@@ -2,12 +2,14 @@ import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
 
 const SAMPLE_DECKS = [
-  { id: '1', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
-  { id: '2', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
-  { id: '3', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
-  { id: '4', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
-  { id: '5', name: 'Daily Life', description: 'Everyday vocabulary for common situations', level: 'B1', category: 'Daily', icon: '🏠', _count: { cards: 20 } },
-  { id: '6', name: 'Technology', description: 'Tech and digital vocabulary', level: 'B2', category: 'Technology', icon: '💻', _count: { cards: 16 } },
+  { id: '1', name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱', _count: { cards: 20 } },
+  { id: '2', name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋', _count: { cards: 16 } },
+  { id: '3', name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞', _count: { cards: 18 } },
+  { id: '4', name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒', _count: { cards: 22 } },
+  { id: '5', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
+  { id: '6', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
+  { id: '7', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
+  { id: '8', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
 ]
 
 export async function GET() {

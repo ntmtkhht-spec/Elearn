@@ -86,6 +86,9 @@ model VideoAssignment {
   description     String?
   level           String   @default("B1")
   prompts         String?  // JSON array of guiding prompts/questions
+  type            String   @default("video") // video or short
+  topic           String?  // Business, Culture, Humor, etc.
+  duration        String?  // short, medium, long
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
   summaries       VideoSummary[]

@@ -70,6 +70,9 @@ export interface VideoAssignment {
   description: string | null
   level: string
   prompts: string[]
+  type?: 'video' | 'short'
+  topic?: string
+  duration?: 'short' | 'medium' | 'long'
 }
 
 export interface VideoSummary {
@@ -144,6 +147,12 @@ interface AppState {
   learningStats: LearningStats | null
   setLearningStats: (stats: LearningStats | null) => void
 
+  // User level & placement
+  userLevel: string | null
+  setUserLevel: (level: string) => void
+  hasCompletedPlacement: boolean
+  setHasCompletedPlacement: (v: boolean) => void
+
   // Loading states
   isLoading: boolean
   setIsLoading: (loading: boolean) => void
@@ -197,6 +206,12 @@ export const useAppStore = create<AppState>((set) => ({
   // Stats
   learningStats: null,
   setLearningStats: (stats) => set({ learningStats: stats }),
+
+  // User level & placement
+  userLevel: null,
+  setUserLevel: (level) => set({ userLevel: level }),
+  hasCompletedPlacement: false,
+  setHasCompletedPlacement: (v) => set({ hasCompletedPlacement: v }),
 
   // Loading
   isLoading: false,
