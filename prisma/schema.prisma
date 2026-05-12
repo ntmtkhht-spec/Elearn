@@ -1,0 +1,136 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model VocabDeck {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  level       String   @default("B1") // A1, A2, B1, B2, C1, C2
+  category    String?  // Business, Travel, Academic, Daily, Idioms, etc.
+  icon        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  cards       VocabCard[]
+}
+
+model VocabCard {
+  id              String   @id @default(cuid())
+  deckId          String
+  word            String
+  translation     String   // German translation
+  pronunciation   String?  // IPA or phonetic
+  partOfSpeech    String?  // noun, verb, adjective, etc.
+  exampleSentence String?
+  exampleTranslation String? // German translation of example
+  difficulty      Int      @default(1) // 1-5
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  deck            VocabDeck   @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  progress        VocabProgress[]
+}
+
+model VocabProgress {
+  id              String   @id @default(cuid())
+  cardId          String
+  correctness     Int      @default(0)  // times answered correctly
+  attempts        Int      @default(0)  // total attempts
+  lastReviewedAt  DateTime?
+  nextReviewAt    DateTime @default(now())
+  interval        Int      @default(1)  // days until next review (spaced repetition)
+  easeFactor      Float    @default(2.5) // SM-2 algorithm ease factor
+  status          String   @default("new") // new, learning, review, mastered
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  card            VocabCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+}
+
+model ReadingExercise {
+  id              String   @id @default(cuid())
+  title           String
+  content         String   // The English text
+  level           String   @default("B1")
+  category        String?  // News, Story, Academic, Business, etc.
+  questions       String   // JSON array of questions with options and correct answers
+  vocabularyHints String?  // JSON array of vocabulary hints
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  progress        ReadingProgress[]
+}
+
+model ReadingProgress {
+  id              String   @id @default(cuid())
+  exerciseId      String
+  answers         String?  // JSON of user's answers
+  score           Int?     // percentage correct
+  completedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  exercise        ReadingExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+}
+
+model VideoAssignment {
+  id              String   @id @default(cuid())
+  title           String
+  youtubeUrl      String
+  youtubeId       String   // extracted video ID
+  description     String?
+  level           String   @default("B1")
+  prompts         String?  // JSON array of guiding prompts/questions
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  summaries       VideoSummary[]
+}
+
+model VideoSummary {
+  id              String   @id @default(cuid())
+  assignmentId    String
+  summary         String   // User's summary in English
+  aiFeedback      String?  // AI feedback on the summary
+  aiScore         Int?     // AI-assessed quality score 1-10
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  assignment      VideoAssignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+}
+
+model ConversationSession {
+  id              String   @id @default(cuid())
+  topic           String
+  scenario        String?  // e.g., "Job interview", "Restaurant ordering", "Small talk"
+  level           String   @default("B1")
+  systemPrompt    String?  // Custom system prompt for the AI
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  messages        ChatMessage[]
+}
+
+model ChatMessage {
+  id              String   @id @default(cuid())
+  sessionId       String?
+  role            String   // user, assistant, system
+  content         String
+  context         String   // conversation, coach, vocab, reading, video
+  createdAt       DateTime @default(now())
+  session         ConversationSession? @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+model LearningStats {
+  id              String   @id @default(cuid())
+  date            String   @unique // YYYY-MM-DD
+  vocabStudied    Int      @default(0)
+  readingDone     Int      @default(0)
+  videosWatched   Int      @default(0)
+  conversationMins Int     @default(0)
+  streak          Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
