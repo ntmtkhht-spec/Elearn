@@ -27,11 +27,14 @@ export async function GET(request: Request) {
       },
       take: 20,
     })
+    // If deckId specified, return cards (even empty) — don't fall back to sample
+    if (deckId) return NextResponse.json(cards)
     if (cards.length > 0) return NextResponse.json(cards)
   } catch {
     // DB not ready
   }
 
+  // Only use sample cards when no deckId provided and DB unavailable
   return NextResponse.json(SAMPLE_CARDS.default)
 }
 
