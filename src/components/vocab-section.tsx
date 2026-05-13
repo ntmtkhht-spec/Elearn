@@ -49,11 +49,11 @@ const SAMPLE_DECKS: VocabDeck[] = [
 ]
 
 const SAMPLE_CARDS: VocabCard[] = [
-  { id: 'c1', deckId: '1', word: 'Leverage', translation: 'Hebelwirkung / nutzen', pronunciation: '/ˈlevərɪdʒ/', partOfSpeech: 'verb', exampleSentence: 'We should leverage our existing network to grow the business.', exampleTranslation: 'Wir sollten unser bestehendes Netzwerk nutzen, um das Geschäft zu vergrößern.', difficulty: 2, notes: null },
-  { id: 'c2', deckId: '1', word: 'Stakeholder', translation: 'Interessent / Beteiligter', pronunciation: '/ˈsteɪkhoʊldər/', partOfSpeech: 'noun', exampleSentence: 'All stakeholders need to be informed about the changes.', exampleTranslation: 'Alle Beteiligten müssen über die Änderungen informiert werden.', difficulty: 2, notes: null },
-  { id: 'c3', deckId: '1', word: 'Synergy', translation: 'Synergie', pronunciation: '/ˈsɪnərdʒi/', partOfSpeech: 'noun', exampleSentence: 'The merger will create synergy between the two companies.', exampleTranslation: 'Die Fusion wird Synergie zwischen den beiden Unternehmen schaffen.', difficulty: 3, notes: null },
-  { id: 'c4', deckId: '1', word: 'Scalable', translation: 'Skalierbar', pronunciation: '/ˈskeɪləbl/', partOfSpeech: 'adjective', exampleSentence: 'Our solution is scalable to meet growing demand.', exampleTranslation: 'Unsere Lösung ist skalierbar, um der wachsenden Nachfrage gerecht zu werden.', difficulty: 2, notes: null },
-  { id: 'c5', deckId: '1', word: 'Benchmark', translation: 'Maßstab / Benchmark', pronunciation: '/ˈbentʃmɑːrk/', partOfSpeech: 'noun', exampleSentence: 'This report sets a new benchmark for the industry.', exampleTranslation: 'Dieser Bericht setzt einen neuen Maßstab für die Branche.', difficulty: 3, notes: null },
+  { id: 'c1', deckId: 'default', word: 'Hello', translation: 'Hallo', pronunciation: '/həˈloʊ/', partOfSpeech: 'interjection', exampleSentence: 'Hello, how are you today?', exampleTranslation: 'Hallo, wie geht es dir heute?', difficulty: 1, notes: null },
+  { id: 'c2', deckId: 'default', word: 'Thank you', translation: 'Danke', pronunciation: '/θæŋk juː/', partOfSpeech: 'phrase', exampleSentence: 'Thank you for your help.', exampleTranslation: 'Danke für deine Hilfe.', difficulty: 1, notes: null },
+  { id: 'c3', deckId: 'default', word: 'Please', translation: 'Bitte', pronunciation: '/pliːz/', partOfSpeech: 'adverb', exampleSentence: 'Please sit down.', exampleTranslation: 'Bitte setzen Sie sich.', difficulty: 1, notes: null },
+  { id: 'c4', deckId: 'default', word: 'Goodbye', translation: 'Auf Wiedersehen', pronunciation: '/ɡʊdˈbaɪ/', partOfSpeech: 'interjection', exampleSentence: 'Goodbye, see you tomorrow!', exampleTranslation: 'Auf Wiedersehen, bis morgen!', difficulty: 1, notes: null },
+  { id: 'c5', deckId: 'default', word: 'Yes', translation: 'Ja', pronunciation: '/jes/', partOfSpeech: 'adverb', exampleSentence: 'Yes, I would like some water.', exampleTranslation: 'Ja, ich hätte gerne etwas Wasser.', difficulty: 1, notes: null },
 ]
 
 type ViewMode = 'decks' | 'practice' | 'quiz'
@@ -232,7 +232,21 @@ export default function VocabSection() {
     setQuizCorrect(option === currentCard.translation)
   }
 
-  const handleNextQuiz = () => {
+  const handleNextQuiz = async () => {
+    const currentCard = practiceCards[currentCardIndex]
+    if (currentCard) {
+      const rating = quizCorrect ? 'good' : 'again'
+      try {
+        await fetch('/api/vocab/practice', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ cardId: currentCard.id, rating }),
+        })
+      } catch {
+        // Continue even if API fails
+      }
+    }
+
     if (currentCardIndex < practiceCards.length - 1) {
       setCurrentCardIndex(currentCardIndex + 1)
       loadQuizQuestion()

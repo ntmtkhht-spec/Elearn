@@ -26,7 +26,7 @@ export interface VocabCard {
   exampleTranslation: string | null
   difficulty: number
   notes: string | null
-  progress?: VocabProgress
+  progress?: VocabProgress[]
 }
 
 export interface VocabProgress {

@@ -42,7 +42,7 @@ export async function GET() {
         cards: {
           select: {
             progress: {
-              where: userId ? { userId, status: { not: 'new' } } : { status: { not: 'new' } },
+              where: userId ? { userId, status: { in: ['review', 'mastered'] } } : { status: { in: ['review', 'mastered'] } },
             },
           },
         },
