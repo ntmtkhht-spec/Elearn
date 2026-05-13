@@ -2,19 +2,11 @@ import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
 import { getUserId } from '@/lib/auth'
 
-const FALLBACK_FEEDBACK = {
-  overallScore: 7,
-  grammarCorrections: [
-    'Check your use of articles (a/an/the) in longer sentences.',
-    'Make sure your verb tenses are consistent throughout the summary.',
-    'Consider using more complex sentence structures to show variety.',
-  ],
-  vocabularySuggestions: [
-    'Instead of "very important", try "crucial" or "paramount".',
-    'Consider using "compelling" instead of "very interesting".',
-    'The phrase "shed light on" is a great alternative to "explained".',
-  ],
-  contentAccuracy: 'Your summary captures the main themes well. Consider adding more specific details and examples from the video to strengthen your summary and demonstrate deeper comprehension.',
+interface FeedbackResult {
+  overallScore: number
+  grammarCorrections: string[]
+  vocabularySuggestions: string[]
+  contentAccuracy: string
 }
 
 export async function POST(request: Request) {
@@ -35,7 +27,7 @@ export async function POST(request: Request) {
       if (assignment) videoTitle = assignment.title
     } catch { /* DB not ready */ }
 
-    const saveToDb = async (feedback: typeof FALLBACK_FEEDBACK) => {
+    const saveToDb = async (feedback: FeedbackResult) => {
       try {
         const { db } = await import('@/lib/db')
         await db.videoSummary.create({
@@ -78,7 +70,7 @@ Respond ONLY with valid JSON in this exact format:
       const response = await chatCompletion(systemPrompt, `Please evaluate this video summary:\n\n${summary}`)
 
       if (response) {
-        const parsed = parseJSONResponse<typeof FALLBACK_FEEDBACK>(response)
+        const parsed = parseJSONResponse<FeedbackResult>(response)
         if (parsed && parsed.overallScore) {
           await saveToDb(parsed)
           return NextResponse.json(parsed)
@@ -86,8 +78,7 @@ Respond ONLY with valid JSON in this exact format:
       }
     } catch { /* LLM not available */ }
 
-    await saveToDb(FALLBACK_FEEDBACK)
-    return NextResponse.json(FALLBACK_FEEDBACK)
+    return NextResponse.json({ error: 'AI feedback unavailable' }, { status: 503 })
   } catch {
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }

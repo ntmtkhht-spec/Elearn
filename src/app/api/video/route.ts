@@ -1,156 +1,20 @@
 import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
 
-const SAMPLE_VIDEOS = [
-  {
-    id: 'v1',
-    title: 'The Power of Vulnerability — Brené Brown',
-    youtubeUrl: 'https://www.youtube.com/watch?v=iCvmsMzlF7o',
-    youtubeId: 'iCvmsMzlF7o',
-    description: 'A powerful TED Talk about the importance of vulnerability in human connection.',
-    level: 'B2',
-    prompts: JSON.stringify([
-      'What is the main argument Brown makes about vulnerability?',
-      'How does Brown distinguish between shame and vulnerability?',
-      'What examples does she use to illustrate her points?',
-      'How does this talk relate to your own experiences?',
-    ]),
-    type: 'video',
-    topic: 'Psychology',
-    duration: 'long',
-  },
-  {
-    id: 'v2',
-    title: 'Inside the Mind of a Master Procrastinator',
-    youtubeUrl: 'https://www.youtube.com/watch?v=arj7oStGLkU',
-    youtubeId: 'arj7oStGLkU',
-    description: 'Tim Urban explains why procrastinators procrastinate, with hilarious visuals.',
-    level: 'B1',
-    prompts: JSON.stringify([
-      'What is the "Instant Gratification Monkey"?',
-      'How does the "Panic Monster" help procrastinators?',
-      'What are the two types of procrastination described?',
-      'Can you relate to the speaker\'s experience?',
-    ]),
-    type: 'video',
-    topic: 'Humor',
-    duration: 'medium',
-  },
-  {
-    id: 'v3',
-    title: 'How to Speak So That People Want to Listen',
-    youtubeUrl: 'https://www.youtube.com/watch?v=eIho2S0ZahI',
-    youtubeId: 'eIho2S0ZahI',
-    description: 'Julian Treasure shares vocal habits and tools to speak powerfully.',
-    level: 'C1',
-    prompts: JSON.stringify([
-      'What are the "seven deadly sins" of speaking?',
-      'What are the four foundations of powerful speaking (HAIL)?',
-      'What vocal exercises does Treasure recommend?',
-      'How can you apply these techniques in your daily life?',
-    ]),
-    type: 'video',
-    topic: 'Communication',
-    duration: 'medium',
-  },
-]
-
-const SAMPLE_SHORTS = [
-  {
-    id: 's1',
-    title: 'When someone says "I literally died" 😂',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz1',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Meme about literal vs figurative language',
-    level: 'A2',
-    prompts: JSON.stringify(['What does "literally" actually mean?', 'Why is this funny?']),
-    type: 'short',
-    topic: 'Humor',
-    duration: 'short',
-  },
-  {
-    id: 's2',
-    title: 'British vs American English in 60 seconds',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz2',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Quick comparison of British and American words',
-    level: 'B1',
-    prompts: JSON.stringify(['Name 3 differences mentioned', 'Which version do you prefer?']),
-    type: 'short',
-    topic: 'Culture',
-    duration: 'short',
-  },
-  {
-    id: 's3',
-    title: 'Pronunciation: Words Germans always say wrong',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz3',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Common pronunciation mistakes by German speakers',
-    level: 'B1',
-    prompts: JSON.stringify(['Which words do you mispronounce?', 'Practice the correct pronunciation']),
-    type: 'short',
-    topic: 'Pronunciation',
-    duration: 'short',
-  },
-  {
-    id: 's4',
-    title: 'Slang words that make you sound native 🗣️',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz4',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Essential slang for everyday conversation',
-    level: 'B2',
-    prompts: JSON.stringify(['Use 2 of these words in a sentence', 'Which slang word is your favorite?']),
-    type: 'short',
-    topic: 'Slang',
-    duration: 'short',
-  },
-  {
-    id: 's5',
-    title: 'How to order coffee like a native ☕',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz5',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Real-life English for coffee shops',
-    level: 'A2',
-    prompts: JSON.stringify(['What would you order?', 'Practice ordering out loud']),
-    type: 'short',
-    topic: 'Daily Life',
-    duration: 'short',
-  },
-  {
-    id: 's6',
-    title: 'Idiom: "Break a leg" — what it really means 🎭',
-    youtubeUrl: 'https://www.youtube.com/shorts/xyz6',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: 'Fun explanation of common English idioms',
-    level: 'B1',
-    prompts: JSON.stringify(['When would you use this idiom?', 'Can you think of a German equivalent?']),
-    type: 'short',
-    topic: 'Idioms',
-    duration: 'short',
-  },
-]
-
 export async function GET() {
   try {
     const { db } = await import('@/lib/db')
     const videos = await db.videoAssignment.findMany({ orderBy: { createdAt: 'desc' } })
-    if (videos.length > 0) {
-      const parsed = videos.map(v => ({
-        ...v,
-        prompts: v.prompts ? JSON.parse(v.prompts) : [],
-      }))
-      return NextResponse.json(parsed)
-    }
+    const parsed = videos.map(v => ({
+      ...v,
+      prompts: v.prompts ? JSON.parse(v.prompts) : [],
+    }))
+    return NextResponse.json(parsed)
   } catch {
     // DB not ready
   }
 
-  const allSample = [...SAMPLE_VIDEOS, ...SAMPLE_SHORTS]
-  const parsed = allSample.map(v => ({
-    ...v,
-    prompts: JSON.parse(v.prompts),
-  }))
-  return NextResponse.json(parsed)
+  return NextResponse.json([])
 }
 
 export async function POST(request: Request) {

@@ -35,64 +35,6 @@ const CATEGORY_ICONS: Record<string, string> = {
   'Culture': '🎭',
 }
 
-const SAMPLE_EXERCISES: ReadingExercise[] = [
-  {
-    id: 'r1',
-    title: 'The Future of Remote Work',
-    content: `The landscape of work has undergone a dramatic transformation in recent years. What was once considered a rare perk—working from home—has become the norm for millions of professionals worldwide. The COVID-19 pandemic served as an unprecedented catalyst, forcing organizations to adopt remote work practices virtually overnight.
-
-However, this shift has not been without its challenges. Many companies have struggled to maintain their corporate culture in a distributed environment. The spontaneous water-cooler conversations that once sparked innovation have been replaced by scheduled video calls, often leading to "Zoom fatigue." Moreover, the blurring of boundaries between work and personal life has raised concerns about employee burnout.
-
-On the positive side, remote work has opened up opportunities for both employers and employees. Companies can now tap into a global talent pool without the constraints of geography, while workers enjoy greater flexibility and the elimination of commuting time. Studies have shown that, when properly managed, remote workers can be just as productive—if not more so—than their office-based counterparts.
-
-The hybrid model, which combines remote and in-office work, appears to be the compromise that most organizations are embracing. This approach allows employees to benefit from the flexibility of working from home while still maintaining the collaborative advantages of face-to-face interaction. Nevertheless, finding the right balance remains an ongoing experiment for many companies.
-
-Looking ahead, the future of work will likely be shaped by advances in technology, particularly in virtual reality and artificial intelligence, which could further bridge the gap between remote and in-person collaboration.`,
-    level: 'B2',
-    category: 'Business',
-    questions: [
-      { id: 'q1', question: 'According to the text, what was the main catalyst for the adoption of remote work?', options: ['Technological advances', 'The COVID-19 pandemic', 'Employee demands', 'Cost reduction'], correctIndex: 1, explanation: 'The text explicitly states: "The COVID-19 pandemic served as an unprecedented catalyst, forcing organizations to adopt remote work practices virtually overnight."' },
-      { id: 'q2', question: 'What does "Zoom fatigue" refer to in this context?', options: ['Physical exhaustion from exercise', 'Tiredness from excessive video calls', 'Boredom from slow internet', 'Frustration with technology'], correctIndex: 1, explanation: '"Zoom fatigue" refers to the exhaustion caused by too many scheduled video calls replacing natural conversations.' },
-      { id: 'q3', question: 'What advantage does remote work offer to employers?', options: ['Lower salaries', 'Access to a global talent pool', 'Fewer holidays', 'Reduced training needs'], correctIndex: 1, explanation: 'The text mentions: "Companies can now tap into a global talent pool without the constraints of geography."' },
-      { id: 'q4', question: 'What is the hybrid model according to the text?', options: ['Working only from home', 'A mix of remote and in-office work', 'Working in multiple offices', 'Part-time employment'], correctIndex: 1, explanation: 'The text defines it as "combines remote and in-office work."' },
-    ],
-    vocabularyHints: [
-      { word: 'catalyst', meaning: 'Katalysator - etwas, das eine Veränderung beschleunigt' },
-      { word: 'unprecedented', meaning: 'Beispiellos - nie zuvor dagewesen' },
-      { word: 'distributed', meaning: 'Verteilt - über verschiedene Orte hinweg' },
-      { word: 'burnout', meaning: 'Burnout - völlige Erschöpfung durch Überlastung' },
-      { word: 'constraints', meaning: 'Einschränkungen - Begrenzungen oder Hindernisse' },
-      { word: 'counterparts', meaning: 'Entsprechungen - Personen in ähnlicher Position' },
-      { word: 'embracing', meaning: 'Annehmen - etwas akzeptieren und nutzen' },
-    ],
-  },
-  {
-    id: 'r2',
-    title: 'Climate Change and Urban Planning',
-    content: `Cities around the world are facing an existential challenge: how to adapt to the realities of climate change while continuing to grow and thrive. Rising sea levels, extreme weather events, and increasing temperatures are forcing urban planners to rethink the very foundations of city design.
-
-In response, many municipalities are adopting "sponge city" concepts, which prioritize natural water absorption through green spaces, permeable surfaces, and wetland restoration. These initiatives not only help manage flooding but also improve air quality and provide residents with recreational areas.
-
-Transportation infrastructure is another critical area of focus. Cities like Copenhagen and Amsterdam have long been pioneers in cycling infrastructure, and their models are being studied and replicated worldwide. Electric vehicle adoption, improved public transit systems, and pedestrian-friendly zones are becoming standard features of modern urban planning.
-
-The concept of "15-minute cities"—where residents can access all essential services within a 15-minute walk or bike ride—has gained significant traction. This approach reduces car dependency, lowers emissions, and fosters a stronger sense of community.
-
-However, implementing these changes requires substantial investment and political will. Developing nations, in particular, face the dual challenge of rapid urbanization and climate adaptation, often with limited financial resources. International cooperation and knowledge sharing will be essential to ensure that all cities, regardless of their economic standing, can become more resilient in the face of climate change.`,
-    level: 'C1',
-    category: 'Science',
-    questions: [
-      { id: 'q5', question: 'What is a "sponge city" concept?', options: ['A city built on water', 'A city that prioritizes natural water absorption', 'A city that cleans oceans', 'A floating city concept'], correctIndex: 1, explanation: 'The text explains sponge cities "prioritize natural water absorption through green spaces, permeable surfaces, and wetland restoration."' },
-      { id: 'q6', question: 'What does the "15-minute city" concept aim to achieve?', options: ['Faster internet speeds', 'Access to all essential services within 15 minutes', '15-minute commuting time', 'Shorter work hours'], correctIndex: 1, explanation: 'The text defines it as "where residents can access all essential services within a 15-minute walk or bike ride."' },
-    ],
-    vocabularyHints: [
-      { word: 'existential', meaning: 'Existenziell - die Existenz betreffend' },
-      { word: 'permeable', meaning: 'Durchlässig - Flüssigkeiten durchlassend' },
-      { word: 'traction', meaning: 'Schwung/Zustimmung - wachsende Akzeptanz' },
-      { word: 'resilient', meaning: 'Widerstandsfähig - fähig, sich zu erholen' },
-    ],
-  },
-]
-
 type ReadViewMode = 'list' | 'reading' | 'questions' | 'results'
 
 export default function ReadingSection() {
@@ -118,16 +60,12 @@ export default function ReadingSection() {
         const res = await fetch('/api/reading')
         if (res.ok) {
           const data = await res.json()
-          if (data.length > 0) {
-            setReadingExercises(data)
-          } else {
-            setReadingExercises(SAMPLE_EXERCISES)
-          }
+          setReadingExercises(data)
         } else {
-          setReadingExercises(SAMPLE_EXERCISES)
+          setReadingExercises([])
         }
       } catch {
-        setReadingExercises(SAMPLE_EXERCISES)
+        setReadingExercises([])
       }
       setLoading(false)
     }
@@ -297,7 +235,7 @@ export default function ReadingSection() {
           <Card className="p-12 text-center">
             <FileText className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h3 className="text-lg font-medium mb-2">No reading exercises yet</h3>
-            <p className="text-muted-foreground mb-4">Generate your first AI exercise to get started.</p>
+            <p className="text-muted-foreground mb-4">Generate one above to start practicing your reading comprehension!</p>
             <Button onClick={() => setDialogOpen(true)} className="bg-emerald-600 hover:bg-emerald-700 text-white">
               <Plus className="h-4 w-4 mr-2" /> Create Exercise
             </Button>

@@ -37,25 +37,6 @@ const DECK_ICONS: Record<string, string> = {
   'Art & Culture': '🎨',
 }
 
-const SAMPLE_DECKS: VocabDeck[] = [
-  { id: '1', name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱', _count: { cards: 20 } },
-  { id: '2', name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋', _count: { cards: 16 } },
-  { id: '3', name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞', _count: { cards: 18 } },
-  { id: '4', name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒', _count: { cards: 22 } },
-  { id: '5', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
-  { id: '6', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
-  { id: '7', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
-  { id: '8', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
-]
-
-const SAMPLE_CARDS: VocabCard[] = [
-  { id: 'c1', deckId: '1', word: 'Leverage', translation: 'Hebelwirkung / nutzen', pronunciation: '/ˈlevərɪdʒ/', partOfSpeech: 'verb', exampleSentence: 'We should leverage our existing network to grow the business.', exampleTranslation: 'Wir sollten unser bestehendes Netzwerk nutzen, um das Geschäft zu vergrößern.', difficulty: 2, notes: null },
-  { id: 'c2', deckId: '1', word: 'Stakeholder', translation: 'Interessent / Beteiligter', pronunciation: '/ˈsteɪkhoʊldər/', partOfSpeech: 'noun', exampleSentence: 'All stakeholders need to be informed about the changes.', exampleTranslation: 'Alle Beteiligten müssen über die Änderungen informiert werden.', difficulty: 2, notes: null },
-  { id: 'c3', deckId: '1', word: 'Synergy', translation: 'Synergie', pronunciation: '/ˈsɪnərdʒi/', partOfSpeech: 'noun', exampleSentence: 'The merger will create synergy between the two companies.', exampleTranslation: 'Die Fusion wird Synergie zwischen den beiden Unternehmen schaffen.', difficulty: 3, notes: null },
-  { id: 'c4', deckId: '1', word: 'Scalable', translation: 'Skalierbar', pronunciation: '/ˈskeɪləbl/', partOfSpeech: 'adjective', exampleSentence: 'Our solution is scalable to meet growing demand.', exampleTranslation: 'Unsere Lösung ist skalierbar, um der wachsenden Nachfrage gerecht zu werden.', difficulty: 2, notes: null },
-  { id: 'c5', deckId: '1', word: 'Benchmark', translation: 'Maßstab / Benchmark', pronunciation: '/ˈbentʃmɑːrk/', partOfSpeech: 'noun', exampleSentence: 'This report sets a new benchmark for the industry.', exampleTranslation: 'Dieser Bericht setzt einen neuen Maßstab für die Branche.', difficulty: 3, notes: null },
-]
-
 type ViewMode = 'decks' | 'practice' | 'quiz'
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -99,16 +80,12 @@ export default function VocabSection() {
         const res = await fetch('/api/vocab')
         if (res.ok) {
           const data = await res.json()
-          if (data.length > 0) {
-            setVocabDecks(data)
-          } else {
-            setVocabDecks(SAMPLE_DECKS)
-          }
+          setVocabDecks(data)
         } else {
-          setVocabDecks(SAMPLE_DECKS)
+          setVocabDecks([])
         }
       } catch {
-        setVocabDecks(SAMPLE_DECKS)
+        setVocabDecks([])
       }
       setLoading(false)
     }
@@ -121,16 +98,12 @@ export default function VocabSection() {
       const res = await fetch(`/api/vocab/practice?deckId=${deck.id}`)
       if (res.ok) {
         const data = await res.json()
-        if (data.length > 0) {
-          setPracticeCards(data)
-        } else {
-          setPracticeCards(SAMPLE_CARDS)
-        }
+        setPracticeCards(data)
       } else {
-        setPracticeCards(SAMPLE_CARDS)
+        setPracticeCards([])
       }
     } catch {
-      setPracticeCards(SAMPLE_CARDS)
+      setPracticeCards([])
     }
     setCurrentCardIndex(0)
     setShowAnswer(false)
@@ -329,7 +302,7 @@ export default function VocabSection() {
           <Card className="p-12 text-center">
             <BookOpen className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h3 className="text-lg font-medium mb-2">No vocabulary decks yet</h3>
-            <p className="text-muted-foreground mb-4">Generate your first AI deck or seed the database to get started.</p>
+            <p className="text-muted-foreground mb-4">Create your first deck above to start learning vocabulary!</p>
             <Button onClick={() => setDialogOpen(true)} className="bg-emerald-600 hover:bg-emerald-700 text-white">
               <Plus className="h-4 w-4 mr-2" />
               Create Your First Deck

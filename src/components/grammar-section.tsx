@@ -38,7 +38,7 @@ interface GrammarExercise {
   options?: string[]
 }
 
-const SAMPLE_EXERCISES: Record<string, GrammarExercise[]> = {
+const GRAMMAR_EXERCISES: Record<string, GrammarExercise[]> = {
   'basic-sentences': [
     { id: 'bs1', type: 'fill-blank', instruction: 'Complete the sentence with the correct word.', sentence: 'I _____ a student.', answer: 'am', explanation: '"I" goes with "am". This is the basic subject-verb pattern.', hint: 'What form of "to be" goes with "I"?', options: ['am', 'is', 'are', 'be'] },
     { id: 'bs2', type: 'fill-blank', instruction: 'Complete the sentence.', sentence: 'She _____ coffee every morning.', answer: 'drinks', explanation: 'With "she" (third person singular), we add -s to the verb in Present Simple.', hint: 'Third person singular needs an -s ending.' },
@@ -133,13 +133,13 @@ export default function GrammarSection() {
         if (data.exercises && data.exercises.length > 0) {
           setExercises(data.exercises)
         } else {
-          setExercises(SAMPLE_EXERCISES[categoryId] || SAMPLE_EXERCISES['tenses'])
+          setExercises(GRAMMAR_EXERCISES[categoryId] || GRAMMAR_EXERCISES['tenses'])
         }
       } else {
-        setExercises(SAMPLE_EXERCISES[categoryId] || SAMPLE_EXERCISES['tenses'])
+        setExercises(GRAMMAR_EXERCISES[categoryId] || GRAMMAR_EXERCISES['tenses'])
       }
     } catch {
-      setExercises(SAMPLE_EXERCISES[categoryId] || SAMPLE_EXERCISES['tenses'])
+      setExercises(GRAMMAR_EXERCISES[categoryId] || GRAMMAR_EXERCISES['tenses'])
     }
 
     setCurrentExerciseIndex(0)
