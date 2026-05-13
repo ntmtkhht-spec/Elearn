@@ -12,7 +12,7 @@ import { Badge } from '@/components/ui/badge'
 import {
   LayoutDashboard, BookOpen, FileText, MessageCircle,
   Video, PenTool, Menu, Moon, Sun, Sparkles,
-  ChevronDown, Trophy, Lock, CheckCircle2, Target
+  ChevronDown, Trophy, Lock, CheckCircle2, Target, LogOut
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -130,6 +130,26 @@ function ThemeToggle() {
   )
 }
 
+
+function LogOutButton() {
+  const handleLogout = async () => {
+    const { createClient } = await import('@/lib/supabase/client')
+    const supabase = createClient()
+    await supabase.auth.signOut()
+    window.location.href = '/login'
+  }
+  return (
+    <Button
+      variant='ghost'
+      size='icon'
+      className='h-9 w-9 rounded-lg text-muted-foreground hover:text-foreground'
+      onClick={handleLogout}
+      title='Sign out'
+    >
+      <LogOut className='h-4 w-4' />
+    </Button>
+  )
+}
 function LevelChangeDialog({
   open,
   onOpenChange,
@@ -384,7 +404,10 @@ export default function Home() {
         {/* Bottom section */}
         <div className="p-4 flex items-center justify-between">
           <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
-          <ThemeToggle />
+          <div className='flex items-center gap-1'>
+            <ThemeToggle />
+            <LogOutButton />
+          </div>
         </div>
       </aside>
 
