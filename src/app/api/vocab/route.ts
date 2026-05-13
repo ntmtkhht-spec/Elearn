@@ -37,10 +37,25 @@ export async function GET() {
 
     const decks = await db.vocabDeck.findMany({
       where: userId ? { userId } : undefined,
-      include: { _count: { select: { cards: true } } },
+      include: {
+        _count: { select: { cards: true } },
+        cards: {
+          select: {
+            progress: {
+              where: userId ? { userId, status: { not: 'new' } } : { status: { not: 'new' } },
+            },
+          },
+        },
+      },
       orderBy: { createdAt: 'desc' },
     })
-    return NextResponse.json(decks)
+
+    const decksWithProgress = decks.map(({ cards, ...deck }) => ({
+      ...deck,
+      masteredCards: cards.filter(c => c.progress.length > 0).length,
+    }))
+
+    return NextResponse.json(decksWithProgress)
   } catch {
     return NextResponse.json([])
   }

@@ -384,7 +384,7 @@ export default function VocabSection() {
                       </span>
                       <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-emerald-500 transition-colors" />
                     </div>
-                    <Progress value={Math.floor(Math.random() * 60) + 10} className="mt-3 h-1.5" />
+                    <Progress value={deck._count?.cards ? Math.round(((deck.masteredCards ?? 0) / deck._count.cards) * 100) : 0} className="mt-3 h-1.5" />
                   </CardContent>
                 </Card>
               </motion.div>

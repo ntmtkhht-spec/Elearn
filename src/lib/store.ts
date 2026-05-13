@@ -12,6 +12,7 @@ export interface VocabDeck {
   icon: string | null
   cards?: VocabCard[]
   _count?: { cards: number }
+  masteredCards?: number
 }
 
 export interface VocabCard {
