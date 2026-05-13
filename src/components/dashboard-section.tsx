@@ -38,37 +38,6 @@ const LEVEL_NAMES: Record<string, string> = {
   C2: 'Proficient',
 }
 
-const STATS_MOCK: LearningStats = {
-  id: '1',
-  date: new Date().toISOString().split('T')[0],
-  vocabStudied: 24,
-  readingDone: 3,
-  videosWatched: 1,
-  conversationMins: 15,
-  streak: 7,
-}
-
-const WORDS_SAMPLE: VocabCard[] = [
-  { id: '1', deckId: '1', word: 'Ubiquitous', translation: 'Allgegenwärtig', pronunciation: '/juːˈbɪkwɪtəs/', partOfSpeech: 'adjective', exampleSentence: 'Smartphones have become ubiquitous in modern society.', exampleTranslation: null, difficulty: 3, notes: null },
-  { id: '2', deckId: '1', word: 'Pragmatic', translation: 'Pragmatisch', pronunciation: '/præɡˈmætɪk/', partOfSpeech: 'adjective', exampleSentence: 'We need a pragmatic approach to solve this problem.', exampleTranslation: null, difficulty: 3, notes: null },
-  { id: '3', deckId: '1', word: 'Ephemeral', translation: 'Flüchtig', pronunciation: '/ɪˈfemərəl/', partOfSpeech: 'adjective', exampleSentence: 'Fame in the digital age can be ephemeral.', exampleTranslation: null, difficulty: 4, notes: null },
-  { id: '4', deckId: '1', word: 'Resilient', translation: 'Widerstandsfähig', pronunciation: '/rɪˈzɪliənt/', partOfSpeech: 'adjective', exampleSentence: 'Children are often more resilient than adults give them credit for.', exampleTranslation: null, difficulty: 3, notes: null },
-]
-
-const RECENT_ACTIVITY = [
-  { type: 'vocab', text: 'Practiced 15 words in Business English', time: '2 hours ago' },
-  { type: 'reading', text: 'Completed "The Future of Remote Work"', time: '5 hours ago' },
-  { type: 'conversation', text: '15 min conversation about Job Interviews', time: 'Yesterday' },
-  { type: 'video', text: 'Watched TED Talk on Climate Solutions', time: 'Yesterday' },
-]
-
-const ACTIVITY_ICONS: Record<string, React.ReactNode> = {
-  vocab: <BookOpen className="h-4 w-4" />,
-  reading: <Target className="h-4 w-4" />,
-  conversation: <Sparkles className="h-4 w-4" />,
-  video: <Video className="h-4 w-4" />,
-}
-
 // Daily Challenge definitions
 interface DailyChallenge {
   type: string
@@ -196,15 +165,22 @@ export default function DashboardSection() {
           const data = await res.json()
           setStats(data)
         } else {
-          setStats(STATS_MOCK)
+          setStats(null)
         }
       } catch {
-        setStats(STATS_MOCK)
+        setStats(null)
       }
 
-      // Pick a random word of the day
-      const randomIndex = Math.floor(Math.random() * WORDS_SAMPLE.length)
-      setTodayWord(WORDS_SAMPLE[randomIndex])
+      // Pick a word of the day from real vocab data
+      try {
+        const vocabRes = await fetch('/api/vocab/practice')
+        if (vocabRes.ok) {
+          const cards = await vocabRes.json()
+          if (cards.length > 0) {
+            setTodayWord(cards[Math.floor(Math.random() * cards.length)])
+          }
+        }
+      } catch {}
       setLoading(false)
     }
     loadData()
@@ -384,17 +360,9 @@ export default function DashboardSection() {
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
-                {RECENT_ACTIVITY.map((activity, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 p-1.5 rounded-lg bg-muted text-muted-foreground">
-                      {ACTIVITY_ICONS[activity.type]}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm leading-snug">{activity.text}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{activity.time}</p>
-                    </div>
-                  </div>
-                ))}
+                <p className="text-sm text-muted-foreground text-center py-4">
+                  No activity yet. Start learning to see your progress here!
+                </p>
               </div>
             </CardContent>
           </Card>
