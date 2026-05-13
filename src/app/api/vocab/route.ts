@@ -1,34 +1,54 @@
 import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
+import { getUserId } from '@/lib/auth'
 
-const SAMPLE_DECKS = [
-  { id: '1', name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱', _count: { cards: 20 } },
-  { id: '2', name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋', _count: { cards: 16 } },
-  { id: '3', name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞', _count: { cards: 18 } },
-  { id: '4', name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒', _count: { cards: 22 } },
-  { id: '5', name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼', _count: { cards: 24 } },
-  { id: '6', name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️', _count: { cards: 18 } },
-  { id: '7', name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠', _count: { cards: 30 } },
-  { id: '8', name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓', _count: { cards: 22 } },
+const STARTER_DECKS = [
+  { name: 'First Words', description: 'Essential beginner words for everyday communication', level: 'A1', category: 'Basics', icon: '🌱' },
+  { name: 'Greetings & Introductions', description: 'Learn to greet, introduce yourself, and say goodbye', level: 'A1', category: 'Daily', icon: '👋' },
+  { name: 'Daily Routines', description: 'Words and phrases for talking about your day', level: 'A2', category: 'Daily', icon: '🌞' },
+  { name: 'Shopping & Food', description: 'Vocabulary for restaurants, shops, and groceries', level: 'A2', category: 'Food', icon: '🛒' },
+  { name: 'Business English', description: 'Essential vocabulary for professional environments', level: 'B2', category: 'Business', icon: '💼' },
+  { name: 'Travel & Tourism', description: 'Words and phrases for traveling abroad', level: 'B1', category: 'Travel', icon: '✈️' },
+  { name: 'Idioms & Phrasals', description: 'Common idiomatic expressions and phrasal verbs', level: 'C1', category: 'Idioms', icon: '🧠' },
+  { name: 'Academic English', description: 'Formal vocabulary for academic writing and presentations', level: 'C1', category: 'Academic', icon: '🎓' },
 ]
 
+async function seedStarterDecks(userId: string) {
+  const { db } = await import('@/lib/db')
+  const existing = await db.vocabDeck.count({ where: { userId } })
+  if (existing > 0) return
+
+  for (const deck of STARTER_DECKS) {
+    await db.vocabDeck.create({
+      data: { ...deck, userId },
+    })
+  }
+}
+
 export async function GET() {
+  const userId = await getUserId()
+
   try {
     const { db } = await import('@/lib/db')
+
+    if (userId) {
+      await seedStarterDecks(userId)
+    }
+
     const decks = await db.vocabDeck.findMany({
+      where: userId ? { userId } : undefined,
       include: { _count: { select: { cards: true } } },
       orderBy: { createdAt: 'desc' },
     })
-    if (decks.length > 0) {
-      return NextResponse.json(decks)
-    }
+    return NextResponse.json(decks)
   } catch {
-    // DB not ready, return sample data
+    return NextResponse.json([])
   }
-  return NextResponse.json(SAMPLE_DECKS)
 }
 
 export async function POST(request: Request) {
+  const userId = await getUserId()
+
   try {
     const body = await request.json()
     const { topic, level, count } = body
@@ -40,7 +60,6 @@ export async function POST(request: Request) {
     const cardCount = count || 10
     const deckLevel = level || 'B2'
 
-    // Try to generate with AI
     let generatedCards: Array<{
       word: string
       germanTranslation: string
@@ -80,15 +99,15 @@ Return ONLY a valid JSON array. No other text.`
         }
       }
     } catch {
-      // AI not available, create basic cards
+      // AI not available
     }
 
-    // Create deck in database
     try {
       const { db } = await import('@/lib/db')
       const deck = await db.vocabDeck.create({
         data: {
           name: topic,
+          userId: userId ?? undefined,
           description: `AI-generated deck about ${topic}`,
           level: deckLevel,
           category: 'Custom',
@@ -118,7 +137,6 @@ Return ONLY a valid JSON array. No other text.`
       // DB not ready
     }
 
-    // Fallback response
     const newDeck = {
       id: `deck-${Date.now()}`,
       name: topic,
