@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useAppStore, type AppSection } from '@/lib/store'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -267,11 +267,38 @@ function SectionContent({ section }: { section: AppSection }) {
 }
 
 export default function Home() {
-  const { activeSection, setActiveSection, userLevel, setUserLevel, hasCompletedPlacement } = useAppStore()
+  const { activeSection, setActiveSection, userLevel, setUserLevel, hasCompletedPlacement, setHasCompletedPlacement } = useAppStore()
 
   const [levelDialogOpen, setLevelDialogOpen] = useState(false)
   const [levelUpTestTarget, setLevelUpTestTarget] = useState<string | null>(null)
   const [showLevelUpTest, setShowLevelUpTest] = useState(false)
+  const profileLoaded = useRef(false)
+
+  // Load profile from DB on mount
+  useEffect(() => {
+    if (profileLoaded.current) return
+    profileLoaded.current = true
+    fetch('/api/user/profile')
+      .then(r => r.json())
+      .then(data => {
+        if (data.userLevel) setUserLevel(data.userLevel)
+        if (data.hasCompletedPlacement !== undefined) setHasCompletedPlacement(data.hasCompletedPlacement)
+      })
+      .catch(() => {})
+  }, [setUserLevel, setHasCompletedPlacement])
+
+  // Save level to DB when it changes
+  const prevLevel = useRef(userLevel)
+  useEffect(() => {
+    if (!profileLoaded.current || userLevel === prevLevel.current) return
+    prevLevel.current = userLevel
+    if (!userLevel) return
+    fetch('/api/user/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userLevel }),
+    }).catch(() => {})
+  }, [userLevel])
 
   const handleNavigate = (section: AppSection) => {
     setActiveSection(section)

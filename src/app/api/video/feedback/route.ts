@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
+import { getUserId } from '@/lib/auth'
 
 const FALLBACK_FEEDBACK = {
   overallScore: 7,
@@ -17,6 +18,8 @@ const FALLBACK_FEEDBACK = {
 }
 
 export async function POST(request: Request) {
+  const userId = await getUserId()
+
   try {
     const body = await request.json()
     const { assignmentId, summary } = body
@@ -25,19 +28,38 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Assignment ID and summary are required' }, { status: 400 })
     }
 
-    // Try to get video details for context
     let videoTitle = 'the video'
     try {
       const { db } = await import('@/lib/db')
       const assignment = await db.videoAssignment.findUnique({ where: { id: assignmentId } })
       if (assignment) videoTitle = assignment.title
-    } catch {
-      // DB not ready
+    } catch { /* DB not ready */ }
+
+    const saveToDb = async (feedback: typeof FALLBACK_FEEDBACK) => {
+      try {
+        const { db } = await import('@/lib/db')
+        await db.videoSummary.create({
+          data: {
+            assignmentId,
+            userId: userId ?? undefined,
+            summary,
+            aiFeedback: JSON.stringify(feedback),
+            aiScore: feedback.overallScore,
+          },
+        })
+        if (userId) {
+          const today = new Date().toISOString().split('T')[0]
+          await db.learningStats.upsert({
+            where: { userId_date: { userId, date: today } },
+            create: { userId, date: today, videosWatched: 1 },
+            update: { videosWatched: { increment: 1 } },
+          })
+        }
+      } catch { /* DB not ready */ }
     }
 
-    // Try LLM feedback
     try {
-      const systemPrompt = `You are an English teacher evaluating a student's video summary. 
+      const systemPrompt = `You are an English teacher evaluating a student's video summary.
 The student watched a video titled "${videoTitle}" and wrote a summary in English.
 Evaluate the summary and provide:
 1. An overall score from 1-10
@@ -54,52 +76,17 @@ Respond ONLY with valid JSON in this exact format:
 }`
 
       const response = await chatCompletion(systemPrompt, `Please evaluate this video summary:\n\n${summary}`)
-      
+
       if (response) {
-        const parsed = parseJSONResponse<{
-          overallScore: number
-          grammarCorrections: string[]
-          vocabularySuggestions: string[]
-          contentAccuracy: string
-        }>(response)
-        
+        const parsed = parseJSONResponse<typeof FALLBACK_FEEDBACK>(response)
         if (parsed && parsed.overallScore) {
-          // Save to DB
-          try {
-            const { db } = await import('@/lib/db')
-            await db.videoSummary.create({
-              data: {
-                assignmentId,
-                summary,
-                aiFeedback: JSON.stringify(parsed),
-                aiScore: parsed.overallScore,
-              },
-            })
-          } catch {
-            // DB not ready
-          }
+          await saveToDb(parsed)
           return NextResponse.json(parsed)
         }
       }
-    } catch {
-      // LLM not available
-    }
+    } catch { /* LLM not available */ }
 
-    // Fallback feedback
-    try {
-      const { db } = await import('@/lib/db')
-      await db.videoSummary.create({
-        data: {
-          assignmentId,
-          summary,
-          aiFeedback: JSON.stringify(FALLBACK_FEEDBACK),
-          aiScore: FALLBACK_FEEDBACK.overallScore,
-        },
-      })
-    } catch {
-      // DB not ready
-    }
-
+    await saveToDb(FALLBACK_FEEDBACK)
     return NextResponse.json(FALLBACK_FEEDBACK)
   } catch {
     return NextResponse.json({ error: 'Invalid request' }, { status: 400 })

@@ -202,10 +202,14 @@ export default function PlacementTest() {
   }
 
   const handleStartLearning = () => {
-    if (result) {
-      setUserLevel(result.level)
-    }
+    const level = result?.level
+    if (level) setUserLevel(level)
     setHasCompletedPlacement(true)
+    fetch('/api/user/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ hasCompletedPlacement: true, ...(level ? { userLevel: level } : {}) }),
+    }).catch(() => {})
   }
 
   // WELCOME PHASE

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { getUserId } from '@/lib/auth'
 
 const SAMPLE_CARDS = [
   { id: 'c1', deckId: '1', word: 'Leverage', translation: 'Hebelwirkung / nutzen', pronunciation: '/ˈlevərɪdʒ/', partOfSpeech: 'verb', exampleSentence: 'We should leverage our existing network to grow the business.', exampleTranslation: 'Wir sollten unser bestehendes Netzwerk nutzen, um das Geschäft zu vergrößern.', difficulty: 2, notes: null },
@@ -11,17 +12,20 @@ const SAMPLE_CARDS = [
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const deckId = searchParams.get('deckId')
+  const userId = await getUserId()
 
   try {
     const { db } = await import('@/lib/db')
     const cards = await db.vocabCard.findMany({
       where: deckId ? { deckId } : undefined,
-      include: { progress: true },
+      include: {
+        progress: userId
+          ? { where: { userId } }
+          : true,
+      },
       take: 20,
     })
-    if (cards.length > 0) {
-      return NextResponse.json(cards)
-    }
+    if (cards.length > 0) return NextResponse.json(cards)
   } catch {
     // DB not ready
   }
@@ -30,11 +34,12 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const userId = await getUserId()
+
   try {
     const body = await request.json()
     const { cardId, rating } = body
 
-    // Calculate next review based on SM-2 algorithm
     const ratingMap: Record<string, number> = { again: 0, hard: 2, good: 4, easy: 5 }
     const quality = ratingMap[rating] || 3
 
@@ -54,8 +59,10 @@ export async function POST(request: Request) {
 
     try {
       const { db } = await import('@/lib/db')
-      // Try to update progress
-      const existing = await db.vocabProgress.findFirst({ where: { cardId } })
+      const existing = await db.vocabProgress.findFirst({
+        where: { cardId, ...(userId ? { userId } : {}) },
+      })
+
       if (existing) {
         await db.vocabProgress.update({
           where: { id: existing.id },
@@ -73,6 +80,7 @@ export async function POST(request: Request) {
         await db.vocabProgress.create({
           data: {
             cardId,
+            userId: userId ?? undefined,
             correctness: quality >= 3 ? 1 : 0,
             attempts: 1,
             lastReviewedAt: new Date(),
@@ -81,6 +89,16 @@ export async function POST(request: Request) {
             easeFactor,
             status: quality >= 3 ? 'review' : 'learning',
           },
+        })
+      }
+
+      // Update today's stats
+      if (userId) {
+        const today = new Date().toISOString().split('T')[0]
+        await db.learningStats.upsert({
+          where: { userId_date: { userId, date: today } },
+          create: { userId, date: today, vocabStudied: 1 },
+          update: { vocabStudied: { increment: 1 } },
         })
       }
     } catch {
