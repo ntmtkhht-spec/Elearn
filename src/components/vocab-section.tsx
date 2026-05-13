@@ -432,6 +432,16 @@ export default function VocabSection() {
   const totalCards = practiceCards.length
   const progressPercent = totalCards > 0 ? ((currentCardIndex + 1) / totalCards) * 100 : 0
 
+  if (loading) {
+    return (
+      <div className="space-y-6 p-4 md:p-6 max-w-2xl mx-auto">
+        <Skeleton className="h-10 w-40" />
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-[320px] rounded-xl" />
+      </div>
+    )
+  }
+
   if (!currentCard) {
     return (
       <div className="flex items-center justify-center p-12">
