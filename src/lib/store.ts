@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
 
 export type AppSection = 'dashboard' | 'vocabulary' | 'reading' | 'conversation' | 'video' | 'grammar'
 
@@ -158,7 +159,9 @@ interface AppState {
   setIsLoading: (loading: boolean) => void
 }
 
-export const useAppStore = create<AppState>((set) => ({
+export const useAppStore = create<AppState>()(
+  persist(
+    (set) => ({
   // Navigation
   activeSection: 'dashboard',
   setActiveSection: (section) => set({ activeSection: section }),
@@ -216,4 +219,13 @@ export const useAppStore = create<AppState>((set) => ({
   // Loading
   isLoading: false,
   setIsLoading: (loading) => set({ isLoading: loading }),
-}))
+    }),
+    {
+      name: 'fluentpath-store',
+      partialize: (state) => ({
+        userLevel: state.userLevel,
+        hasCompletedPlacement: state.hasCompletedPlacement,
+      }),
+    }
+  )
+)
