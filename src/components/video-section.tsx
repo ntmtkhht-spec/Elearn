@@ -50,11 +50,155 @@ const TOPIC_COLORS: Record<string, string> = {
 const ALL_TOPICS = ['Business', 'Culture', 'Humor', 'Pronunciation', 'Slang', 'Daily Life', 'Idioms', 'Science', 'Technology', 'Psychology', 'Communication']
 const ALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
+const SAMPLE_VIDEOS: VideoAssignment[] = [
+  {
+    id: 'v1',
+    title: 'The Power of Vulnerability — Brené Brown',
+    youtubeUrl: 'https://www.youtube.com/watch?v=iCvmsMzlF7o',
+    youtubeId: 'iCvmsMzlF7o',
+    description: 'A powerful TED Talk about the importance of vulnerability in human connection.',
+    level: 'B2',
+    prompts: [
+      'What is the main argument Brown makes about vulnerability?',
+      'How does Brown distinguish between shame and vulnerability?',
+      'What examples does she use to illustrate her points?',
+      'How does this talk relate to your own experiences?',
+    ],
+    type: 'video',
+    topic: 'Psychology',
+    duration: 'long',
+  },
+  {
+    id: 'v2',
+    title: 'Inside the Mind of a Master Procrastinator',
+    youtubeUrl: 'https://www.youtube.com/watch?v=arj7oStGLkU',
+    youtubeId: 'arj7oStGLkU',
+    description: 'Tim Urban explains why procrastinators procrastinate, with hilarious visuals.',
+    level: 'B1',
+    prompts: [
+      'What is the "Instant Gratification Monkey"?',
+      'How does the "Panic Monster" help procrastinators?',
+      'What are the two types of procrastination described?',
+      'Can you relate to the speaker\'s experience?',
+    ],
+    type: 'video',
+    topic: 'Humor',
+    duration: 'medium',
+  },
+  {
+    id: 'v3',
+    title: 'How to Speak So That People Want to Listen',
+    youtubeUrl: 'https://www.youtube.com/watch?v=eIho2S0ZahI',
+    youtubeId: 'eIho2S0ZahI',
+    description: 'Julian Treasure shares vocal habits and tools to speak powerfully.',
+    level: 'C1',
+    prompts: [
+      'What are the "seven deadly sins" of speaking?',
+      'What are the four foundations of powerful speaking (HAIL)?',
+      'What vocal exercises does Treasure recommend?',
+      'How can you apply these techniques in your daily life?',
+    ],
+    type: 'video',
+    topic: 'Communication',
+    duration: 'medium',
+  },
+]
+
+const SAMPLE_SHORTS: VideoAssignment[] = [
+  {
+    id: 's1',
+    title: 'When someone says "I literally died" 😂',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz1',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Meme about literal vs figurative language',
+    level: 'A2',
+    prompts: ['What does "literally" actually mean?', 'Why is this funny?'],
+    type: 'short',
+    topic: 'Humor',
+    duration: 'short',
+  },
+  {
+    id: 's2',
+    title: 'British vs American English in 60 seconds',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz2',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Quick comparison of British and American words',
+    level: 'B1',
+    prompts: ['Name 3 differences mentioned', 'Which version do you prefer?'],
+    type: 'short',
+    topic: 'Culture',
+    duration: 'short',
+  },
+  {
+    id: 's3',
+    title: 'Pronunciation: Words Germans always say wrong',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz3',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Common pronunciation mistakes by German speakers',
+    level: 'B1',
+    prompts: ['Which words do you mispronounce?', 'Practice the correct pronunciation'],
+    type: 'short',
+    topic: 'Pronunciation',
+    duration: 'short',
+  },
+  {
+    id: 's4',
+    title: 'Slang words that make you sound native 🗣️',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz4',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Essential slang for everyday conversation',
+    level: 'B2',
+    prompts: ['Use 2 of these words in a sentence', 'Which slang word is your favorite?'],
+    type: 'short',
+    topic: 'Slang',
+    duration: 'short',
+  },
+  {
+    id: 's5',
+    title: 'How to order coffee like a native ☕',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz5',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Real-life English for coffee shops',
+    level: 'A2',
+    prompts: ['What would you order?', 'Practice ordering out loud'],
+    type: 'short',
+    topic: 'Daily Life',
+    duration: 'short',
+  },
+  {
+    id: 's6',
+    title: 'Idiom: "Break a leg" — what it really means 🎭',
+    youtubeUrl: 'https://www.youtube.com/shorts/xyz6',
+    youtubeId: 'dQw4w9WgXcQ',
+    description: 'Fun explanation of common English idioms',
+    level: 'B1',
+    prompts: ['When would you use this idiom?', 'Can you think of a German equivalent?'],
+    type: 'short',
+    topic: 'Idioms',
+    duration: 'short',
+  },
+]
+
 interface AIFeedback {
   overallScore: number
   grammarCorrections: string[]
   vocabularySuggestions: string[]
   contentAccuracy: string
+}
+
+const SAMPLE_FEEDBACK: AIFeedback = {
+  overallScore: 7,
+  grammarCorrections: [
+    'Instead of "She explain", use "She explains" (third person singular).',
+    'Consider using past perfect: "had already discussed" instead of "already discussed".',
+    'Remember: "effect" is a noun, "affect" is a verb in most cases.',
+  ],
+  vocabularySuggestions: [
+    'Instead of "very important", try "crucial" or "paramount".',
+    'Consider using "compelling" instead of "very interesting".',
+    'The phrase "shed light on" is a great alternative to "explained".',
+  ],
+  contentAccuracy: 'Your summary captures the main themes well. You identified the core argument and provided relevant supporting points. Consider adding more specific details from the talk to strengthen your summary.',
 }
 
 type VideoViewMode = 'list' | 'player'
@@ -84,23 +228,29 @@ export default function VideoSection() {
   const [filterLevel, setFilterLevel] = useState('all')
   const [filterDuration, setFilterDuration] = useState<FilterDuration>('all')
 
+  const allSampleData = useMemo(() => [...SAMPLE_VIDEOS, ...SAMPLE_SHORTS], [])
+
   useEffect(() => {
     async function loadVideos() {
       try {
         const res = await fetch('/api/video')
         if (res.ok) {
           const data = await res.json()
-          setVideoAssignments(data)
+          if (data.length > 0) {
+            setVideoAssignments(data)
+          } else {
+            setVideoAssignments(allSampleData)
+          }
         } else {
-          setVideoAssignments([])
+          setVideoAssignments(allSampleData)
         }
       } catch {
-        setVideoAssignments([])
+        setVideoAssignments(allSampleData)
       }
       setLoading(false)
     }
     loadVideos()
-  }, [setVideoAssignments])
+  }, [setVideoAssignments, allSampleData])
 
   const filteredVideos = useMemo(() => {
     return videoAssignments.filter((video) => {
@@ -181,13 +331,13 @@ export default function VideoSection() {
         if (data.overallScore) {
           setAiFeedback(data)
         } else {
-          setAiFeedback(null)
+          setAiFeedback(SAMPLE_FEEDBACK)
         }
       } else {
-        setAiFeedback(null)
+        setAiFeedback(SAMPLE_FEEDBACK)
       }
     } catch {
-      setAiFeedback(null)
+      setAiFeedback(SAMPLE_FEEDBACK)
     }
     setGettingFeedback(false)
   }
