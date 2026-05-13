@@ -293,6 +293,7 @@ export default function Home() {
   const [levelUpTestTarget, setLevelUpTestTarget] = useState<string | null>(null)
   const [showLevelUpTest, setShowLevelUpTest] = useState(false)
   const profileLoaded = useRef(false)
+  const [profileLoading, setProfileLoading] = useState(true)
 
   // Load profile from DB on mount
   useEffect(() => {
@@ -305,6 +306,7 @@ export default function Home() {
         if (data.hasCompletedPlacement !== undefined) setHasCompletedPlacement(data.hasCompletedPlacement)
       })
       .catch(() => {})
+      .finally(() => setProfileLoading(false))
   }, [setUserLevel, setHasCompletedPlacement])
 
   // Save level to DB when it changes
@@ -345,6 +347,15 @@ export default function Home() {
   const handleLevelUpCancel = () => {
     setLevelUpTestTarget(null)
     setShowLevelUpTest(false)
+  }
+
+  // Show spinner while loading profile
+  if (profileLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="h-8 w-8 rounded-full border-2 border-emerald-600 border-t-transparent animate-spin" />
+      </div>
+    )
   }
 
   // Show placement test if not completed

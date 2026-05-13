@@ -201,6 +201,16 @@ export default function PlacementTest() {
     }
   }
 
+  const handleSkip = () => {
+    setUserLevel('A1')
+    setHasCompletedPlacement(true)
+    fetch('/api/user/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ hasCompletedPlacement: true, userLevel: 'A1' }),
+    }).catch(() => {})
+  }
+
   const handleStartLearning = () => {
     const level = result?.level
     if (level) setUserLevel(level)
@@ -266,9 +276,14 @@ export default function PlacementTest() {
                   Start Placement Test
                   <ChevronRight className="h-5 w-5 ml-1" />
                 </Button>
-                <p className="text-xs text-muted-foreground">
-                  Takes about 5–10 minutes • No time limit
-                </p>
+                <Button
+                  onClick={handleSkip}
+                  variant="ghost"
+                  size="sm"
+                  className="w-full text-muted-foreground hover:text-foreground"
+                >
+                  Skip — start as A1 Beginner
+                </Button>
               </div>
             </CardContent>
           </Card>
