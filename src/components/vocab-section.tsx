@@ -58,6 +58,8 @@ const SAMPLE_CARDS: VocabCard[] = [
 
 type ViewMode = 'decks' | 'practice' | 'quiz'
 
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
 export default function VocabSection() {
   const {
     vocabDecks, setVocabDecks,
@@ -65,6 +67,7 @@ export default function VocabSection() {
     practiceCards, setPracticeCards,
     currentCardIndex, setCurrentCardIndex,
     showAnswer, setShowAnswer,
+    userLevel,
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ViewMode>('decks')
@@ -78,6 +81,17 @@ export default function VocabSection() {
   const [quizOptions, setQuizOptions] = useState<string[]>([])
   const [quizCorrect, setQuizCorrect] = useState<boolean | null>(null)
   const [cardsCompleted, setCardsCompleted] = useState(0)
+  const [showAllLevels, setShowAllLevels] = useState(false)
+
+  const displayLevel = userLevel || 'B2'
+  const levelIndex = LEVEL_ORDER.indexOf(displayLevel)
+  // Show decks at user's level and one level below (for review)
+  const visibleLevels = showAllLevels
+    ? LEVEL_ORDER
+    : LEVEL_ORDER.slice(Math.max(0, levelIndex - 1), levelIndex + 1)
+
+  const filteredDecks = vocabDecks.filter(deck => visibleLevels.includes(deck.level))
+  const otherDecks = vocabDecks.filter(deck => !visibleLevels.includes(deck.level))
 
   useEffect(() => {
     async function loadDecks() {
@@ -322,8 +336,25 @@ export default function VocabSection() {
             </Button>
           </Card>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {vocabDecks.map((deck, i) => (
+          <div className="space-y-6">
+            {/* Level filter info */}
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-muted-foreground">
+                Showing decks for <Badge className={LEVEL_COLORS[displayLevel] || LEVEL_COLORS['B2']} variant="secondary">{displayLevel}</Badge> level
+                {levelIndex > 0 && <span className="ml-1">& below</span>}
+              </p>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-xs text-muted-foreground"
+                onClick={() => setShowAllLevels(!showAllLevels)}
+              >
+                {showAllLevels ? 'Show my level only' : `Show all levels (${vocabDecks.length} decks)`}
+              </Button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredDecks.map((deck, i) => (
               <motion.div
                 key={deck.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -358,6 +389,24 @@ export default function VocabSection() {
                 </Card>
               </motion.div>
             ))}
+            </div>
+
+            {/* Other level decks (collapsed) */}
+            {!showAllLevels && otherDecks.length > 0 && (
+              <Card className="border-dashed">
+                <CardContent className="p-4">
+                  <Button
+                    variant="ghost"
+                    className="w-full text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowAllLevels(true)}
+                  >
+                    <BookOpen className="h-4 w-4 mr-2" />
+                    {otherDecks.length} more deck{otherDecks.length !== 1 ? 's' : ''} at other levels
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </Button>
+                </CardContent>
+              </Card>
+            )}
           </div>
         )}
       </div>

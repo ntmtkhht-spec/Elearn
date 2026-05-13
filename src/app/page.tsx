@@ -1,12 +1,18 @@
 'use client'
 
+import { useState } from 'react'
 import { useAppStore, type AppSection } from '@/lib/store'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
 import {
+  Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription
+} from '@/components/ui/dialog'
+import { Badge } from '@/components/ui/badge'
+import {
   LayoutDashboard, BookOpen, FileText, MessageCircle,
-  Video, PenTool, Menu, Moon, Sun, Sparkles
+  Video, PenTool, Menu, Moon, Sun, Sparkles,
+  ChevronDown, Trophy, Lock, CheckCircle2, Target
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -21,6 +27,9 @@ const VideoSection = dynamic(() => import('@/components/video-section'), { ssr: 
 const GrammarSection = dynamic(() => import('@/components/grammar-section'), { ssr: false })
 const AICoach = dynamic(() => import('@/components/ai-coach'), { ssr: false })
 const PlacementTest = dynamic(() => import('@/components/placement-test'), { ssr: false })
+const LevelUpTest = dynamic(() => import('@/components/level-up-test'), { ssr: false })
+
+const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
 const LEVEL_NAMES: Record<string, string> = {
   A1: 'Beginner',
@@ -29,6 +38,15 @@ const LEVEL_NAMES: Record<string, string> = {
   B2: 'Upper Intermediate',
   C1: 'Advanced',
   C2: 'Proficient',
+}
+
+const LEVEL_COLORS: Record<string, string> = {
+  A1: 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400',
+  A2: 'bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400',
+  B1: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
+  B2: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
+  C1: 'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400',
+  C2: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400',
 }
 
 interface NavItem {
@@ -46,19 +64,24 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'grammar', label: 'Grammar', icon: <PenTool className="h-5 w-5" /> },
 ]
 
-function LevelBadge({ userLevel }: { userLevel: string | null }) {
+function LevelBadge({ userLevel, onClick }: { userLevel: string | null; onClick: () => void }) {
   const displayLevel = userLevel || 'B2'
   const levelName = LEVEL_NAMES[displayLevel] || 'Upper Intermediate'
   return (
-    <div className="flex items-center gap-2">
+    <button
+      onClick={onClick}
+      className="flex items-center gap-2 hover:opacity-80 transition-opacity group"
+    >
       <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
         <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">{displayLevel}</span>
       </div>
-      <div>
-        <p className="text-xs font-medium">Your Level</p>
+      <div className="text-left">
+        <p className="text-xs font-medium group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+          Your Level
+        </p>
         <p className="text-[10px] text-muted-foreground">{levelName}</p>
       </div>
-    </div>
+    </button>
   )
 }
 
@@ -107,6 +130,120 @@ function ThemeToggle() {
   )
 }
 
+function LevelChangeDialog({
+  open,
+  onOpenChange,
+  userLevel,
+  setUserLevel,
+  onStartLevelUpTest,
+}: {
+  open: boolean
+  onOpenChange: (open: boolean) => void
+  userLevel: string | null
+  setUserLevel: (level: string) => void
+  onStartLevelUpTest: (targetLevel: string) => void
+}) {
+  const currentLevel = userLevel || 'B2'
+  const currentIndex = LEVEL_ORDER.indexOf(currentLevel)
+  const canGoDown = currentIndex > 0
+  const canGoUp = currentIndex < LEVEL_ORDER.length - 1
+
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="max-w-md">
+        <DialogHeader>
+          <DialogTitle className="flex items-center gap-2">
+            <Target className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+            Change Your Level
+          </DialogTitle>
+          <DialogDescription>
+            Your current level is <strong>{currentLevel} — {LEVEL_NAMES[currentLevel]}</strong>.
+            Going down is instant. Going up requires passing a test.
+          </DialogDescription>
+        </DialogHeader>
+
+        <div className="space-y-4 py-4">
+          {/* Current level indicator */}
+          <div className="flex items-center justify-center gap-2 py-3">
+            {LEVEL_ORDER.map((level, i) => (
+              <div
+                key={level}
+                className={`flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg transition-all ${
+                  level === currentLevel
+                    ? `${LEVEL_COLORS[level]} ring-2 ring-offset-2 ring-emerald-400 dark:ring-offset-gray-900`
+                    : i < currentIndex
+                      ? 'bg-muted/50 text-muted-foreground'
+                      : 'bg-muted/30 text-muted-foreground/50'
+                }`}
+              >
+                <span className="text-xs font-bold">{level}</span>
+                {level === currentLevel && (
+                  <CheckCircle2 className="h-3 w-3" />
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Go down */}
+          {canGoDown && (
+            <div className="space-y-2">
+              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                Go down (instant)
+              </p>
+              {LEVEL_ORDER.slice(0, currentIndex).reverse().map((level) => (
+                <Button
+                  key={level}
+                  variant="outline"
+                  className="w-full justify-start gap-3 h-auto py-3"
+                  onClick={() => {
+                    setUserLevel(level)
+                    onOpenChange(false)
+                  }}
+                >
+                  <Badge className={LEVEL_COLORS[level]} variant="secondary">{level}</Badge>
+                  <span className="text-sm">{LEVEL_NAMES[level]}</span>
+                  <ChevronDown className="h-4 w-4 ml-auto text-muted-foreground" />
+                </Button>
+              ))}
+            </div>
+          )}
+
+          {/* Go up */}
+          {canGoUp && (
+            <div className="space-y-2">
+              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1">
+                <Lock className="h-3 w-3" />
+                Go up (requires test)
+              </p>
+              {LEVEL_ORDER.slice(currentIndex + 1).map((level) => (
+                <Button
+                  key={level}
+                  variant="outline"
+                  className="w-full justify-start gap-3 h-auto py-3"
+                  onClick={() => {
+                    onOpenChange(false)
+                    onStartLevelUpTest(level)
+                  }}
+                >
+                  <Badge className={LEVEL_COLORS[level]} variant="secondary">{level}</Badge>
+                  <span className="text-sm">{LEVEL_NAMES[level]}</span>
+                  <Trophy className="h-4 w-4 ml-auto text-amber-500" />
+                </Button>
+              ))}
+            </div>
+          )}
+
+          {!canGoDown && !canGoUp && (
+            <p className="text-sm text-muted-foreground text-center py-4">
+              You&apos;re already at the highest level!
+            </p>
+          )}
+        </div>
+      </DialogContent>
+    </Dialog>
+  )
+}
+
 function SectionContent({ section }: { section: AppSection }) {
   return (
     <AnimatePresence mode="wait">
@@ -130,10 +267,37 @@ function SectionContent({ section }: { section: AppSection }) {
 }
 
 export default function Home() {
-  const { activeSection, setActiveSection, userLevel, hasCompletedPlacement } = useAppStore()
+  const { activeSection, setActiveSection, userLevel, setUserLevel, hasCompletedPlacement } = useAppStore()
+
+  const [levelDialogOpen, setLevelDialogOpen] = useState(false)
+  const [levelUpTestTarget, setLevelUpTestTarget] = useState<string | null>(null)
+  const [showLevelUpTest, setShowLevelUpTest] = useState(false)
 
   const handleNavigate = (section: AppSection) => {
     setActiveSection(section)
+  }
+
+  const handleStartLevelUpTest = (targetLevel: string) => {
+    setLevelUpTestTarget(targetLevel)
+    setShowLevelUpTest(true)
+  }
+
+  const handleLevelUpPass = () => {
+    if (levelUpTestTarget) {
+      setUserLevel(levelUpTestTarget)
+    }
+    setLevelUpTestTarget(null)
+    setShowLevelUpTest(false)
+  }
+
+  const handleLevelUpFail = () => {
+    setLevelUpTestTarget(null)
+    setShowLevelUpTest(false)
+  }
+
+  const handleLevelUpCancel = () => {
+    setLevelUpTestTarget(null)
+    setShowLevelUpTest(false)
   }
 
   // Show placement test if not completed
@@ -141,8 +305,30 @@ export default function Home() {
     return <PlacementTest />
   }
 
+  // Show level-up test if active
+  if (showLevelUpTest && levelUpTestTarget) {
+    return (
+      <LevelUpTest
+        targetLevel={levelUpTestTarget}
+        currentLevel={userLevel || 'B2'}
+        onPass={handleLevelUpPass}
+        onFail={handleLevelUpFail}
+        onCancel={handleLevelUpCancel}
+      />
+    )
+  }
+
   return (
     <div className="flex h-screen overflow-hidden bg-background">
+      {/* Level Change Dialog */}
+      <LevelChangeDialog
+        open={levelDialogOpen}
+        onOpenChange={setLevelDialogOpen}
+        userLevel={userLevel}
+        setUserLevel={setUserLevel}
+        onStartLevelUpTest={handleStartLevelUpTest}
+      />
+
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex md:w-64 lg:w-72 flex-col border-r border-border bg-card">
         {/* Logo */}
@@ -170,7 +356,7 @@ export default function Home() {
 
         {/* Bottom section */}
         <div className="p-4 flex items-center justify-between">
-          <LevelBadge userLevel={userLevel} />
+          <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
           <ThemeToggle />
         </div>
       </aside>
@@ -202,7 +388,7 @@ export default function Home() {
               </div>
               <Separator />
               <div className="p-4 flex items-center justify-between">
-                <LevelBadge userLevel={userLevel} />
+                <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
                 <ThemeToggle />
               </div>
             </SheetContent>
@@ -215,7 +401,16 @@ export default function Home() {
             <span className="font-bold text-sm">FluentPath</span>
           </div>
 
-          <ThemeToggle />
+          <Button
+            variant="ghost"
+            size="sm"
+            className="gap-1 text-xs"
+            onClick={() => setLevelDialogOpen(true)}
+          >
+            <Badge className={LEVEL_COLORS[userLevel || 'B2']} variant="secondary">
+              {userLevel || 'B2'}
+            </Badge>
+          </Button>
         </header>
 
         {/* Main Content Area */}
