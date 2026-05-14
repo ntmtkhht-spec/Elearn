@@ -306,11 +306,23 @@ export default function Home() {
   const [showLevelUpTest, setShowLevelUpTest] = useState(false)
   const profileLoaded = useRef(false)
   const [profileLoading, setProfileLoading] = useState(true)
+  const [userAvatar, setUserAvatar] = useState<string | null>(null)
+  const [userName, setUserName] = useState<string | null>(null)
 
   // Load profile from DB on mount
   useEffect(() => {
     if (profileLoaded.current) return
     profileLoaded.current = true
+
+    // Load Supabase user metadata (avatar, name)
+    import('@/lib/supabase/client').then(({ createClient }) => {
+      const supabase = createClient()
+      supabase.auth.getUser().then(({ data: { user } }) => {
+        if (user?.user_metadata?.avatar_url) setUserAvatar(user.user_metadata.avatar_url)
+        if (user?.user_metadata?.full_name) setUserName(user.user_metadata.full_name)
+      })
+    })
+
     fetch('/api/user/profile')
       .then(r => r.json())
       .then(data => {
@@ -429,6 +441,15 @@ export default function Home() {
         <div className="p-4 flex items-center justify-between">
           <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
           <div className='flex items-center gap-1'>
+            {userAvatar && (
+              <img
+                src={userAvatar}
+                alt={userName ?? 'User'}
+                title={userName ?? undefined}
+                className="h-7 w-7 rounded-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            )}
             <ThemeToggle />
             <LogOutButton />
           </div>
@@ -463,7 +484,18 @@ export default function Home() {
               <Separator />
               <div className="p-4 flex items-center justify-between">
                 <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
-                <ThemeToggle />
+                <div className="flex items-center gap-1">
+                  {userAvatar && (
+                    <img
+                      src={userAvatar}
+                      alt={userName ?? 'User'}
+                      title={userName ?? undefined}
+                      className="h-7 w-7 rounded-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
+                  <ThemeToggle />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
