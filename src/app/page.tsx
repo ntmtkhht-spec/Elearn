@@ -116,12 +116,23 @@ function SidebarNav({
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme()
+
+  const handleToggle = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
+    fetch('/api/user/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ theme: next }),
+    }).catch(() => {})
+  }
+
   return (
     <Button
       variant="ghost"
       size="icon"
       className="h-9 w-9 rounded-lg"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={handleToggle}
     >
       <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -288,6 +299,7 @@ function SectionContent({ section }: { section: AppSection }) {
 
 export default function Home() {
   const { activeSection, setActiveSection, userLevel, setUserLevel, hasCompletedPlacement, setHasCompletedPlacement } = useAppStore()
+  const { setTheme } = useTheme()
 
   const [levelDialogOpen, setLevelDialogOpen] = useState(false)
   const [levelUpTestTarget, setLevelUpTestTarget] = useState<string | null>(null)
@@ -304,10 +316,11 @@ export default function Home() {
       .then(data => {
         if (data.userLevel) setUserLevel(data.userLevel)
         if (data.hasCompletedPlacement !== undefined) setHasCompletedPlacement(data.hasCompletedPlacement)
+        if (data.theme) setTheme(data.theme)
       })
       .catch(() => {})
       .finally(() => setProfileLoading(false))
-  }, [setUserLevel, setHasCompletedPlacement])
+  }, [setUserLevel, setHasCompletedPlacement, setTheme])
 
   // Save level to DB when it changes
   const prevLevel = useRef(userLevel)
