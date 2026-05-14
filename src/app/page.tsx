@@ -12,7 +12,7 @@ import { Badge } from '@/components/ui/badge'
 import {
   LayoutDashboard, BookOpen, FileText, MessageCircle,
   Video, PenTool, Menu, Moon, Sun, Sparkles,
-  ChevronDown, Trophy, Lock, CheckCircle2, Target, LogOut
+  ChevronDown, Trophy, Lock, CheckCircle2, Target, LogOut, Pencil, Check, X
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -64,24 +64,68 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'grammar', label: 'Grammar', icon: <PenTool className="h-5 w-5" /> },
 ]
 
-function LevelBadge({ userLevel, onClick }: { userLevel: string | null; onClick: () => void }) {
-  const displayLevel = userLevel || 'B2'
-  const levelName = LEVEL_NAMES[displayLevel] || 'Upper Intermediate'
+function UserBadge({
+  userLevel, avatar, displayName, onLevelClick, onNameSave,
+}: {
+  userLevel: string | null
+  avatar: string | null
+  displayName: string | null
+  onLevelClick: () => void
+  onNameSave: (name: string) => void
+}) {
+  const level = userLevel || 'B1'
+  const levelName = LEVEL_NAMES[level] || level
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState(displayName || '')
+
+  const commit = () => {
+    const trimmed = draft.trim()
+    if (trimmed) onNameSave(trimmed)
+    setEditing(false)
+  }
+
+  const cancel = () => {
+    setDraft(displayName || '')
+    setEditing(false)
+  }
+
   return (
-    <button
-      onClick={onClick}
-      className="flex items-center gap-2 hover:opacity-80 transition-opacity group"
-    >
-      <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
-        <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">{displayLevel}</span>
+    <div className="flex items-center gap-2 min-w-0">
+      <button onClick={onLevelClick} className="shrink-0 hover:opacity-80 transition-opacity">
+        {avatar ? (
+          <img src={avatar} alt="" className="h-8 w-8 rounded-full object-cover" referrerPolicy="no-referrer" />
+        ) : (
+          <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center">
+            <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">{level}</span>
+          </div>
+        )}
+      </button>
+      <div className="text-left min-w-0">
+        {editing ? (
+          <div className="flex items-center gap-1">
+            <input
+              autoFocus
+              value={draft}
+              onChange={e => setDraft(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') commit(); if (e.key === 'Escape') cancel() }}
+              className="text-xs font-medium bg-transparent border-b border-emerald-500 outline-none w-24"
+            />
+            <button onClick={commit} className="text-emerald-500 hover:text-emerald-600"><Check className="h-3 w-3" /></button>
+            <button onClick={cancel} className="text-muted-foreground hover:text-foreground"><X className="h-3 w-3" /></button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-1 group/name">
+            <p className="text-xs font-medium truncate max-w-[80px]">{displayName || 'Set name'}</p>
+            <button onClick={() => { setDraft(displayName || ''); setEditing(true) }} className="opacity-0 group-hover/name:opacity-100 transition-opacity">
+              <Pencil className="h-2.5 w-2.5 text-muted-foreground" />
+            </button>
+          </div>
+        )}
+        <button onClick={onLevelClick} className="text-[10px] text-muted-foreground hover:text-emerald-500 transition-colors text-left">
+          {level} · {levelName}
+        </button>
       </div>
-      <div className="text-left">
-        <p className="text-xs font-medium group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-          Your Level
-        </p>
-        <p className="text-[10px] text-muted-foreground">{levelName}</p>
-      </div>
-    </button>
+    </div>
   )
 }
 
@@ -146,7 +190,8 @@ function LogOutButton() {
   const handleLogout = async () => {
     const { createClient } = await import('@/lib/supabase/client')
     const supabase = createClient()
-    await supabase.auth.signOut()
+    await supabase.auth.signOut({ scope: 'global' })
+    localStorage.removeItem('fluentpath-store')
     window.location.href = '/login'
   }
   return (
@@ -308,6 +353,7 @@ export default function Home() {
   const [profileLoading, setProfileLoading] = useState(true)
   const [userAvatar, setUserAvatar] = useState<string | null>(null)
   const [userName, setUserName] = useState<string | null>(null)
+  const [displayName, setDisplayName] = useState<string | null>(null)
 
   // Load profile from DB on mount
   useEffect(() => {
@@ -329,6 +375,7 @@ export default function Home() {
         if (data.userLevel) setUserLevel(data.userLevel)
         if (data.hasCompletedPlacement !== undefined) setHasCompletedPlacement(data.hasCompletedPlacement)
         if (data.theme) setTheme(data.theme)
+        if (data.displayName) setDisplayName(data.displayName)
       })
       .catch(() => {})
       .finally(() => setProfileLoading(false))
@@ -372,6 +419,15 @@ export default function Home() {
   const handleLevelUpCancel = () => {
     setLevelUpTestTarget(null)
     setShowLevelUpTest(false)
+  }
+
+  const handleNameSave = (name: string) => {
+    setDisplayName(name)
+    fetch('/api/user/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ displayName: name }),
+    }).catch(() => {})
   }
 
   // Show spinner while loading profile
@@ -438,18 +494,15 @@ export default function Home() {
         <Separator />
 
         {/* Bottom section */}
-        <div className="p-4 flex items-center justify-between">
-          <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
-          <div className='flex items-center gap-1'>
-            {userAvatar && (
-              <img
-                src={userAvatar}
-                alt={userName ?? 'User'}
-                title={userName ?? undefined}
-                className="h-7 w-7 rounded-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            )}
+        <div className="p-4 flex items-center justify-between gap-2">
+          <UserBadge
+            userLevel={userLevel}
+            avatar={userAvatar}
+            displayName={displayName ?? userName}
+            onLevelClick={() => setLevelDialogOpen(true)}
+            onNameSave={handleNameSave}
+          />
+          <div className='flex items-center gap-1 shrink-0'>
             <ThemeToggle />
             <LogOutButton />
           </div>
@@ -482,20 +535,15 @@ export default function Home() {
                 <SidebarNav activeSection={activeSection} onNavigate={handleNavigate} />
               </div>
               <Separator />
-              <div className="p-4 flex items-center justify-between">
-                <LevelBadge userLevel={userLevel} onClick={() => setLevelDialogOpen(true)} />
-                <div className="flex items-center gap-1">
-                  {userAvatar && (
-                    <img
-                      src={userAvatar}
-                      alt={userName ?? 'User'}
-                      title={userName ?? undefined}
-                      className="h-7 w-7 rounded-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
-                  )}
-                  <ThemeToggle />
-                </div>
+              <div className="p-4 flex items-center justify-between gap-2">
+                <UserBadge
+                  userLevel={userLevel}
+                  avatar={userAvatar}
+                  displayName={displayName ?? userName}
+                  onLevelClick={() => setLevelDialogOpen(true)}
+                  onNameSave={handleNameSave}
+                />
+                <ThemeToggle />
               </div>
             </SheetContent>
           </Sheet>
@@ -507,16 +555,17 @@ export default function Home() {
             <span className="font-bold text-sm">FluentPath</span>
           </div>
 
-          <Button
-            variant="ghost"
-            size="sm"
-            className="gap-1 text-xs"
+          <button
+            className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
             onClick={() => setLevelDialogOpen(true)}
           >
-            <Badge className={LEVEL_COLORS[userLevel || 'B2']} variant="secondary">
-              {userLevel || 'B2'}
+            {userAvatar ? (
+              <img src={userAvatar} alt="" className="h-7 w-7 rounded-full object-cover" referrerPolicy="no-referrer" />
+            ) : null}
+            <Badge className={LEVEL_COLORS[userLevel || 'B1']} variant="secondary">
+              {userLevel || 'B1'}
             </Badge>
-          </Button>
+          </button>
         </header>
 
         {/* Main Content Area */}

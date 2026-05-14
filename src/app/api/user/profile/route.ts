@@ -26,7 +26,7 @@ export async function PUT(request: Request) {
 
   try {
     const body = await request.json()
-    const { userLevel, hasCompletedPlacement, theme } = body
+    const { userLevel, hasCompletedPlacement, theme, displayName } = body
 
     const { db } = await import('@/lib/db')
     const profile = await db.userProfile.upsert({
@@ -36,6 +36,7 @@ export async function PUT(request: Request) {
         ...(userLevel !== undefined && { userLevel }),
         ...(hasCompletedPlacement !== undefined && { hasCompletedPlacement }),
         ...(theme !== undefined && { theme }),
+        ...(displayName !== undefined && { displayName }),
       },
     })
     return NextResponse.json(profile)
