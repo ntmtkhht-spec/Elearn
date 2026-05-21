@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-export type AppSection = 'dashboard' | 'vocabulary' | 'reading' | 'conversation' | 'video' | 'grammar'
+export type AppSection = 'dashboard' | 'vocabulary' | 'reading' | 'conversation' | 'grammar'
 
 export interface VocabDeck {
   id: string

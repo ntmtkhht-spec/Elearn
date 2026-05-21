@@ -11,7 +11,7 @@ import {
 import { Badge } from '@/components/ui/badge'
 import {
   LayoutDashboard, BookOpen, FileText, MessageCircle,
-  Video, PenTool, Menu, Moon, Sun, Sparkles,
+  PenTool, Menu, Moon, Sun, Sparkles,
   ChevronDown, Trophy, Lock, CheckCircle2, Target, LogOut, Pencil, Check, X
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
@@ -23,7 +23,7 @@ const DashboardSection = dynamic(() => import('@/components/dashboard-section'),
 const VocabSection = dynamic(() => import('@/components/vocab-section'), { ssr: false })
 const ReadingSection = dynamic(() => import('@/components/reading-section'), { ssr: false })
 const ConversationSection = dynamic(() => import('@/components/conversation-section'), { ssr: false })
-const VideoSection = dynamic(() => import('@/components/video-section'), { ssr: false })
+
 const GrammarSection = dynamic(() => import('@/components/grammar-section'), { ssr: false })
 const AICoach = dynamic(() => import('@/components/ai-coach'), { ssr: false })
 const PlacementTest = dynamic(() => import('@/components/placement-test'), { ssr: false })
@@ -60,7 +60,7 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'vocabulary', label: 'Vocabulary', icon: <BookOpen className="h-5 w-5" /> },
   { id: 'reading', label: 'Reading', icon: <FileText className="h-5 w-5" /> },
   { id: 'conversation', label: 'Conversation', icon: <MessageCircle className="h-5 w-5" /> },
-  { id: 'video', label: 'Video', icon: <Video className="h-5 w-5" /> },
+
   { id: 'grammar', label: 'Grammar', icon: <PenTool className="h-5 w-5" /> },
 ]
 
@@ -335,7 +335,7 @@ function SectionContent({ section }: { section: AppSection }) {
         {section === 'vocabulary' && <VocabSection />}
         {section === 'reading' && <ReadingSection />}
         {section === 'conversation' && <ConversationSection />}
-        {section === 'video' && <VideoSection />}
+
         {section === 'grammar' && <GrammarSection />}
       </motion.div>
     </AnimatePresence>
