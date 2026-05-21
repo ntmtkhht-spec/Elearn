@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Skeleton } from '@/components/ui/skeleton'
 import {
-  BookOpen, Flame, Dumbbell, Video, TrendingUp,
+  BookOpen, Flame, Dumbbell, TrendingUp,
   ArrowRight, Volume2, Sparkles, Target, Clock, Zap
 } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -241,7 +241,7 @@ export default function DashboardSection() {
           { label: 'Words Learned', value: stats?.vocabStudied ?? 0, icon: <BookOpen className="h-5 w-5" />, color: 'text-emerald-600 dark:text-emerald-400', bg: 'bg-emerald-50 dark:bg-emerald-950/30' },
           { label: 'Day Streak', value: stats?.streak ?? 0, icon: <Flame className="h-5 w-5" />, color: 'text-amber-600 dark:text-amber-400', bg: 'bg-amber-50 dark:bg-amber-950/30' },
           { label: 'Exercises Done', value: stats?.readingDone ?? 0, icon: <Dumbbell className="h-5 w-5" />, color: 'text-rose-600 dark:text-rose-400', bg: 'bg-rose-50 dark:bg-rose-950/30' },
-          { label: 'Videos Watched', value: stats?.videosWatched ?? 0, icon: <Video className="h-5 w-5" />, color: 'text-sky-600 dark:text-sky-400', bg: 'bg-sky-50 dark:bg-sky-950/30' },
+
         ].map((stat, i) => (
           <motion.div
             key={stat.label}
@@ -440,7 +440,7 @@ export default function DashboardSection() {
                 { label: 'Vocabulary Practice', section: 'vocabulary' as const, icon: <BookOpen className="h-5 w-5" /> },
                 { label: 'Reading Exercise', section: 'reading' as const, icon: <Target className="h-5 w-5" /> },
                 { label: 'Conversation', section: 'conversation' as const, icon: <Sparkles className="h-5 w-5" /> },
-                { label: 'Video Lesson', section: 'video' as const, icon: <Video className="h-5 w-5" /> },
+
                 { label: 'Grammar Drill', section: 'grammar' as const, icon: <Dumbbell className="h-5 w-5" /> },
               ].map((action) => (
                 <Button
