@@ -622,24 +622,24 @@ export default function VocabSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.1 }}
-          className="grid grid-cols-4 gap-2"
+          className="grid grid-cols-2 gap-4"
         >
-          {[
-            { label: 'Again', color: 'bg-red-100 hover:bg-red-200 text-red-700 dark:bg-red-900/30 dark:hover:bg-red-900/50 dark:text-red-400', icon: <RotateCcw className="h-4 w-4" /> },
-            { label: 'Hard', color: 'bg-amber-100 hover:bg-amber-200 text-amber-700 dark:bg-amber-900/30 dark:hover:bg-amber-900/50 dark:text-amber-400', icon: <Brain className="h-4 w-4" /> },
-            { label: 'Good', color: 'bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400', icon: <Star className="h-4 w-4" /> },
-            { label: 'Easy', color: 'bg-sky-100 hover:bg-sky-200 text-sky-700 dark:bg-sky-900/30 dark:hover:bg-sky-900/50 dark:text-sky-400', icon: <Sparkles className="h-4 w-4" /> },
-          ].map((rating) => (
-            <Button
-              key={rating.label}
-              variant="outline"
-              className={`h-auto py-3 flex flex-col items-center gap-1 ${rating.color}`}
-              onClick={() => handleRateCard(rating.label.toLowerCase())}
-            >
-              {rating.icon}
-              <span className="text-xs font-medium">{rating.label}</span>
-            </Button>
-          ))}
+          <Button
+            variant="outline"
+            className="h-auto py-4 flex flex-col items-center gap-2 bg-red-100 hover:bg-red-200 text-red-700 dark:bg-red-900/30 dark:hover:bg-red-900/50 dark:text-red-400"
+            onClick={() => handleRateCard('again')}
+          >
+            <RotateCcw className="h-6 w-6" />
+            <span className="font-semibold">Wusste ich nicht</span>
+          </Button>
+          <Button
+            variant="outline"
+            className="h-auto py-4 flex flex-col items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400"
+            onClick={() => handleRateCard('good')}
+          >
+            <Star className="h-6 w-6" />
+            <span className="font-semibold">Wusste ich</span>
+          </Button>
         </motion.div>
       )}
     </div>

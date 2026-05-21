@@ -172,7 +172,7 @@ export async function GET() {
         cards: {
           select: {
             progress: {
-              where: userId ? { userId } : {},
+              where: userId ? { userId, status: { in: ['review', 'mastered'] } } : { status: { in: ['review', 'mastered'] } },
             },
           },
         },
