@@ -1,0 +1,197 @@
+import { PredefinedDeck } from './vocab-a1-a2'
+
+export const EXTRA_DECKS_B1_B2: PredefinedDeck[] = [
+  // B1
+  {
+    name: 'Health & Illness',
+    description: 'Talking about health, fitness, and medical issues',
+    level: 'B1',
+    category: 'Health',
+    icon: '🏥',
+    cards: [
+      { word: 'Medicine', translation: 'Medizin / Medikament', pronunciation: '/ˈmɛdɪsɪn/', partOfSpeech: 'noun', exampleSentence: 'You should take your medicine after meals.', exampleTranslation: 'Du solltest dein Medikament nach dem Essen einnehmen.', difficulty: 2, notes: null },
+      { word: 'Symptom', translation: 'Symptom', pronunciation: '/ˈsɪmptəm/', partOfSpeech: 'noun', exampleSentence: 'A fever is a common symptom of the flu.', exampleTranslation: 'Fieber ist ein häufiges Symptom der Grippe.', difficulty: 3, notes: null },
+      { word: 'Appointment', translation: 'Termin', pronunciation: '/əˈpɔɪntmənt/', partOfSpeech: 'noun', exampleSentence: 'I have an appointment with the dentist.', exampleTranslation: 'Ich habe einen Termin beim Zahnarzt.', difficulty: 2, notes: null },
+      { word: 'Pain', translation: 'Schmerz', pronunciation: '/peɪn/', partOfSpeech: 'noun', exampleSentence: 'Are you in pain?', exampleTranslation: 'Hast du Schmerzen?', difficulty: 2, notes: null },
+      { word: 'Prescription', translation: 'Rezept (vom Arzt)', pronunciation: '/prɪˈskrɪpʃən/', partOfSpeech: 'noun', exampleSentence: 'The doctor wrote me a prescription.', exampleTranslation: 'Der Arzt hat mir ein Rezept ausgestellt.', difficulty: 3, notes: null },
+      { word: 'Recover', translation: 'Sich erholen', pronunciation: '/rɪˈkʌvər/', partOfSpeech: 'verb', exampleSentence: 'It will take a few days to recover from the surgery.', exampleTranslation: 'Es wird ein paar Tage dauern, sich von der Operation zu erholen.', difficulty: 3, notes: null },
+      { word: 'Disease', translation: 'Krankheit', pronunciation: '/dɪˈziːz/', partOfSpeech: 'noun', exampleSentence: 'Heart disease is a major problem.', exampleTranslation: 'Herzkrankheit ist ein großes Problem.', difficulty: 3, notes: null },
+      { word: 'Treatment', translation: 'Behandlung', pronunciation: '/ˈtriːtmənt/', partOfSpeech: 'noun', exampleSentence: 'The treatment involves physical therapy.', exampleTranslation: 'Die Behandlung umfasst Physiotherapie.', difficulty: 3, notes: null },
+      { word: 'Allergy', translation: 'Allergie', pronunciation: '/ˈælərdʒi/', partOfSpeech: 'noun', exampleSentence: 'She has a peanut allergy.', exampleTranslation: 'Sie hat eine Erdnussallergie.', difficulty: 2, notes: null },
+      { word: 'Pharmacy', translation: 'Apotheke', pronunciation: '/ˈfɑːrməsi/', partOfSpeech: 'noun', exampleSentence: 'You can buy this at the local pharmacy.', exampleTranslation: 'Du kannst das in der örtlichen Apotheke kaufen.', difficulty: 2, notes: null },
+    ]
+  },
+  {
+    name: 'Education & School',
+    description: 'Words related to learning and studying',
+    level: 'B1',
+    category: 'Academic',
+    icon: '🎒',
+    cards: [
+      { word: 'Subject', translation: 'Schulfach / Thema', pronunciation: '/ˈsʌbdʒɪkt/', partOfSpeech: 'noun', exampleSentence: 'Math is my favorite subject.', exampleTranslation: 'Mathe ist mein Lieblingsfach.', difficulty: 2, notes: null },
+      { word: 'Assignment', translation: 'Aufgabe / Hausarbeit', pronunciation: '/əˈsaɪnmənt/', partOfSpeech: 'noun', exampleSentence: 'The assignment is due on Friday.', exampleTranslation: 'Die Aufgabe muss am Freitag abgegeben werden.', difficulty: 3, notes: null },
+      { word: 'Graduation', translation: 'Schulabschluss', pronunciation: '/ˌɡrædʒuˈeɪʃən/', partOfSpeech: 'noun', exampleSentence: 'We attended her high school graduation.', exampleTranslation: 'Wir waren bei ihrem Schulabschluss.', difficulty: 3, notes: null },
+      { word: 'Semester', translation: 'Semester', pronunciation: '/sɪˈmɛstər/', partOfSpeech: 'noun', exampleSentence: 'This semester is very challenging.', exampleTranslation: 'Dieses Semester ist sehr herausfordernd.', difficulty: 2, notes: null },
+      { word: 'Lecture', translation: 'Vorlesung', pronunciation: '/ˈlɛktʃər/', partOfSpeech: 'noun', exampleSentence: 'The professor gave a lecture on history.', exampleTranslation: 'Der Professor hielt eine Vorlesung über Geschichte.', difficulty: 3, notes: null },
+      { word: 'Examine', translation: 'Prüfen / Untersuchen', pronunciation: '/ɪɡˈzæmɪn/', partOfSpeech: 'verb', exampleSentence: 'The students will be examined tomorrow.', exampleTranslation: 'Die Studenten werden morgen geprüft.', difficulty: 3, notes: null },
+      { word: 'Knowledge', translation: 'Wissen', pronunciation: '/ˈnɒlɪdʒ/', partOfSpeech: 'noun', exampleSentence: 'Reading increases your knowledge.', exampleTranslation: 'Lesen vergrößert dein Wissen.', difficulty: 3, notes: null },
+      { word: 'Improve', translation: 'Verbessern', pronunciation: '/ɪmˈpruːv/', partOfSpeech: 'verb', exampleSentence: 'I want to improve my English skills.', exampleTranslation: 'Ich möchte meine Englischkenntnisse verbessern.', difficulty: 2, notes: null },
+      { word: 'Research', translation: 'Forschung / recherchieren', pronunciation: '/rɪˈsɜːrtʃ/', partOfSpeech: 'noun/verb', exampleSentence: 'She is doing research for her thesis.', exampleTranslation: 'Sie recherchiert für ihre Abschlussarbeit.', difficulty: 3, notes: null },
+      { word: 'Scholarship', translation: 'Stipendium', pronunciation: '/ˈskɒlərʃɪp/', partOfSpeech: 'noun', exampleSentence: 'He won a scholarship to study abroad.', exampleTranslation: 'Er hat ein Stipendium für ein Auslandsstudium gewonnen.', difficulty: 3, notes: null },
+    ]
+  },
+  {
+    name: 'Technology & Gadgets',
+    description: 'Digital life and modern devices',
+    level: 'B1',
+    category: 'Technology',
+    icon: '📱',
+    cards: [
+      { word: 'Device', translation: 'Gerät', pronunciation: '/dɪˈvaɪs/', partOfSpeech: 'noun', exampleSentence: 'You can connect multiple devices to the Wi-Fi.', exampleTranslation: 'Du kannst mehrere Geräte mit dem WLAN verbinden.', difficulty: 3, notes: null },
+      { word: 'Download', translation: 'Herunterladen', pronunciation: '/ˈdaʊnloʊd/', partOfSpeech: 'verb', exampleSentence: 'You need to download the app first.', exampleTranslation: 'Du musst zuerst die App herunterladen.', difficulty: 2, notes: null },
+      { word: 'Screen', translation: 'Bildschirm', pronunciation: '/skriːn/', partOfSpeech: 'noun', exampleSentence: 'My phone screen is broken.', exampleTranslation: 'Mein Handy-Bildschirm ist kaputt.', difficulty: 2, notes: null },
+      { word: 'Battery', translation: 'Batterie / Akku', pronunciation: '/ˈbætəri/', partOfSpeech: 'noun', exampleSentence: 'The battery is running low.', exampleTranslation: 'Der Akku wird schwach.', difficulty: 2, notes: null },
+      { word: 'Software', translation: 'Software', pronunciation: '/ˈsɒftwɛər/', partOfSpeech: 'noun', exampleSentence: 'Please update your software.', exampleTranslation: 'Bitte aktualisieren Sie Ihre Software.', difficulty: 2, notes: null },
+      { word: 'Keyboard', translation: 'Tastatur', pronunciation: '/ˈkiːbɔːrd/', partOfSpeech: 'noun', exampleSentence: 'I bought a new wireless keyboard.', exampleTranslation: 'Ich habe eine neue kabellose Tastatur gekauft.', difficulty: 2, notes: null },
+      { word: 'Password', translation: 'Passwort', pronunciation: '/ˈpæswɜːrd/', partOfSpeech: 'noun', exampleSentence: 'Do not forget your password.', exampleTranslation: 'Vergiss dein Passwort nicht.', difficulty: 2, notes: null },
+      { word: 'Browse', translation: 'Durchsuchen / Surfen', pronunciation: '/braʊz/', partOfSpeech: 'verb', exampleSentence: 'I was browsing the internet.', exampleTranslation: 'Ich habe im Internet gesurft.', difficulty: 3, notes: null },
+      { word: 'Network', translation: 'Netzwerk', pronunciation: '/ˈnɛtwɜːrk/', partOfSpeech: 'noun', exampleSentence: 'The school network is down.', exampleTranslation: 'Das Schulnetzwerk ist ausgefallen.', difficulty: 2, notes: null },
+      { word: 'Upload', translation: 'Hochladen', pronunciation: '/ˈʌploʊd/', partOfSpeech: 'verb', exampleSentence: 'You need to upload the file here.', exampleTranslation: 'Du musst die Datei hier hochladen.', difficulty: 2, notes: null },
+    ]
+  },
+  {
+    name: 'Environment & Nature',
+    description: 'Words about our planet and climate',
+    level: 'B1',
+    category: 'Nature',
+    icon: '🌍',
+    cards: [
+      { word: 'Environment', translation: 'Umwelt', pronunciation: '/ɪnˈvaɪrənmənt/', partOfSpeech: 'noun', exampleSentence: 'We must protect the environment.', exampleTranslation: 'Wir müssen die Umwelt schützen.', difficulty: 3, notes: null },
+      { word: 'Pollution', translation: 'Verschmutzung', pronunciation: '/pəˈluːʃən/', partOfSpeech: 'noun', exampleSentence: 'Air pollution is a big issue in cities.', exampleTranslation: 'Luftverschmutzung ist ein großes Problem in Städten.', difficulty: 3, notes: null },
+      { word: 'Recycle', translation: 'Recyceln / Wiederverwerten', pronunciation: '/riːˈsaɪkəl/', partOfSpeech: 'verb', exampleSentence: 'Please recycle your plastic bottles.', exampleTranslation: 'Bitte recyceln Sie Ihre Plastikflaschen.', difficulty: 3, notes: null },
+      { word: 'Climate', translation: 'Klima', pronunciation: '/ˈklaɪmət/', partOfSpeech: 'noun', exampleSentence: 'The climate is getting warmer.', exampleTranslation: 'Das Klima wird wärmer.', difficulty: 2, notes: null },
+      { word: 'Energy', translation: 'Energie', pronunciation: '/ˈɛnərdʒi/', partOfSpeech: 'noun', exampleSentence: 'We should use renewable energy sources.', exampleTranslation: 'Wir sollten erneuerbare Energiequellen nutzen.', difficulty: 2, notes: null },
+      { word: 'Wildlife', translation: 'Tierwelt / Natur', pronunciation: '/ˈwaɪldlaɪf/', partOfSpeech: 'noun', exampleSentence: 'The park is famous for its wildlife.', exampleTranslation: 'Der Park ist bekannt für seine Tierwelt.', difficulty: 3, notes: null },
+      { word: 'Protect', translation: 'Schützen', pronunciation: '/prəˈtɛkt/', partOfSpeech: 'verb', exampleSentence: 'It is important to protect endangered species.', exampleTranslation: 'Es ist wichtig, bedrohte Tierarten zu schützen.', difficulty: 2, notes: null },
+      { word: 'Global Warming', translation: 'Globale Erwärmung', pronunciation: '/ˈɡloʊbəl ˈwɔːrmɪŋ/', partOfSpeech: 'noun', exampleSentence: 'Global warming causes sea levels to rise.', exampleTranslation: 'Die globale Erwärmung lässt den Meeresspiegel steigen.', difficulty: 3, notes: null },
+      { word: 'Forest', translation: 'Wald', pronunciation: '/ˈfɒrɪst/', partOfSpeech: 'noun', exampleSentence: 'We went for a walk in the forest.', exampleTranslation: 'Wir sind im Wald spazieren gegangen.', difficulty: 2, notes: null },
+      { word: 'Earthquake', translation: 'Erdbeben', pronunciation: '/ˈɜːrθkweɪk/', partOfSpeech: 'noun', exampleSentence: 'The earthquake destroyed many buildings.', exampleTranslation: 'Das Erdbeben zerstörte viele Gebäude.', difficulty: 3, notes: null },
+    ]
+  },
+  {
+    name: 'Entertainment & Media',
+    description: 'Movies, TV, news and culture',
+    level: 'B1',
+    category: 'Culture',
+    icon: '🎬',
+    cards: [
+      { word: 'Audience', translation: 'Publikum', pronunciation: '/ˈɔːdiəns/', partOfSpeech: 'noun', exampleSentence: 'The audience clapped loudly.', exampleTranslation: 'Das Publikum klatschte laut.', difficulty: 3, notes: null },
+      { word: 'Broadcast', translation: 'Ausstrahlung / Senden', pronunciation: '/ˈbrɔːdkæst/', partOfSpeech: 'noun/verb', exampleSentence: 'The game will be broadcast live.', exampleTranslation: 'Das Spiel wird live übertragen.', difficulty: 3, notes: null },
+      { word: 'Review', translation: 'Rezension / Bewertung', pronunciation: '/rɪˈvjuː/', partOfSpeech: 'noun', exampleSentence: 'The movie received good reviews.', exampleTranslation: 'Der Film erhielt gute Kritiken.', difficulty: 3, notes: null },
+      { word: 'Channel', translation: 'Kanal / Sender', pronunciation: '/ˈtʃænəl/', partOfSpeech: 'noun', exampleSentence: 'Can you change the channel?', exampleTranslation: 'Kannst du den Sender wechseln?', difficulty: 2, notes: null },
+      { word: 'Episode', translation: 'Folge / Episode', pronunciation: '/ˈɛpɪsoʊd/', partOfSpeech: 'noun', exampleSentence: 'I missed the last episode of the series.', exampleTranslation: 'Ich habe die letzte Folge der Serie verpasst.', difficulty: 2, notes: null },
+      { word: 'Celebrity', translation: 'Prominente/r', pronunciation: '/səˈlɛbrɪti/', partOfSpeech: 'noun', exampleSentence: 'Many celebrities attended the event.', exampleTranslation: 'Viele Prominente nahmen an der Veranstaltung teil.', difficulty: 3, notes: null },
+      { word: 'Article', translation: 'Artikel', pronunciation: '/ˈɑːrtɪkəl/', partOfSpeech: 'noun', exampleSentence: 'I read an interesting article today.', exampleTranslation: 'Ich habe heute einen interessanten Artikel gelesen.', difficulty: 2, notes: null },
+      { word: 'Performance', translation: 'Aufführung / Leistung', pronunciation: '/pərˈfɔːrməns/', partOfSpeech: 'noun', exampleSentence: 'Her performance in the play was amazing.', exampleTranslation: 'Ihre Leistung in dem Stück war fantastisch.', difficulty: 3, notes: null },
+      { word: 'Interview', translation: 'Interview', pronunciation: '/ˈɪntərvjuː/', partOfSpeech: 'noun', exampleSentence: 'The actor gave a rare interview.', exampleTranslation: 'Der Schauspieler gab ein seltenes Interview.', difficulty: 2, notes: null },
+      { word: 'Subtitles', translation: 'Untertitel', pronunciation: '/ˈsʌbˌtaɪtəlz/', partOfSpeech: 'noun', exampleSentence: 'I prefer watching movies with subtitles.', exampleTranslation: 'Ich schaue Filme lieber mit Untertiteln.', difficulty: 3, notes: null },
+    ]
+  },
+
+  // B2
+  {
+    name: 'Work & Career',
+    description: 'Advanced business and career vocabulary',
+    level: 'B2',
+    category: 'Business',
+    icon: '🏢',
+    cards: [
+      { word: 'Promotion', translation: 'Beförderung', pronunciation: '/prəˈmoʊʃən/', partOfSpeech: 'noun', exampleSentence: 'She received a promotion last month.', exampleTranslation: 'Sie hat letzten Monat eine Beförderung erhalten.', difficulty: 3, notes: null },
+      { word: 'Colleague', translation: 'Kollege / Kollegin', pronunciation: '/ˈkɒliːɡ/', partOfSpeech: 'noun', exampleSentence: 'I get along well with my colleagues.', exampleTranslation: 'Ich verstehe mich gut mit meinen Kollegen.', difficulty: 3, notes: null },
+      { word: 'Negotiate', translation: 'Verhandeln', pronunciation: '/nɪˈɡoʊʃieɪt/', partOfSpeech: 'verb', exampleSentence: 'We need to negotiate a better deal.', exampleTranslation: 'Wir müssen ein besseres Geschäft aushandeln.', difficulty: 4, notes: null },
+      { word: 'Resign', translation: 'Kündigen / Zurücktreten', pronunciation: '/rɪˈzaɪn/', partOfSpeech: 'verb', exampleSentence: 'He decided to resign from his position.', exampleTranslation: 'Er entschied sich, von seiner Position zurückzutreten.', difficulty: 4, notes: null },
+      { word: 'Salary', translation: 'Gehalt', pronunciation: '/ˈsæləri/', partOfSpeech: 'noun', exampleSentence: 'They offered him a higher salary.', exampleTranslation: 'Sie boten ihm ein höheres Gehalt an.', difficulty: 3, notes: null },
+      { word: 'Deadline', translation: 'Frist', pronunciation: '/ˈdɛdlaɪn/', partOfSpeech: 'noun', exampleSentence: 'We must meet the Friday deadline.', exampleTranslation: 'Wir müssen die Frist am Freitag einhalten.', difficulty: 3, notes: null },
+      { word: 'Application', translation: 'Bewerbung / Antrag', pronunciation: '/ˌæplɪˈkeɪʃən/', partOfSpeech: 'noun', exampleSentence: 'Please submit your application online.', exampleTranslation: 'Bitte reichen Sie Ihre Bewerbung online ein.', difficulty: 3, notes: null },
+      { word: 'Experience', translation: 'Erfahrung', pronunciation: '/ɪkˈspɪəriəns/', partOfSpeech: 'noun', exampleSentence: 'Do you have any relevant experience?', exampleTranslation: 'Haben Sie relevante Erfahrung?', difficulty: 3, notes: null },
+      { word: 'Management', translation: 'Leitung / Management', pronunciation: '/ˈmænɪdʒmənt/', partOfSpeech: 'noun', exampleSentence: 'The management decided to close the branch.', exampleTranslation: 'Das Management beschloss, die Filiale zu schließen.', difficulty: 3, notes: null },
+      { word: 'Candidate', translation: 'Kandidat/in', pronunciation: '/ˈkændɪdət/', partOfSpeech: 'noun', exampleSentence: 'She is the perfect candidate for the job.', exampleTranslation: 'Sie ist die perfekte Kandidatin für den Job.', difficulty: 3, notes: null },
+    ]
+  },
+  {
+    name: 'Politics & Society',
+    description: 'Words to discuss government and social issues',
+    level: 'B2',
+    category: 'Culture',
+    icon: '🏛️',
+    cards: [
+      { word: 'Election', translation: 'Wahl', pronunciation: '/ɪˈlɛkʃən/', partOfSpeech: 'noun', exampleSentence: 'The presidential election is next year.', exampleTranslation: 'Die Präsidentschaftswahl ist nächstes Jahr.', difficulty: 3, notes: null },
+      { word: 'Government', translation: 'Regierung', pronunciation: '/ˈɡʌvərnmənt/', partOfSpeech: 'noun', exampleSentence: 'The government passed a new law.', exampleTranslation: 'Die Regierung hat ein neues Gesetz verabschiedet.', difficulty: 3, notes: null },
+      { word: 'Citizen', translation: 'Bürger/in', pronunciation: '/ˈsɪtɪzən/', partOfSpeech: 'noun', exampleSentence: 'Every citizen has the right to vote.', exampleTranslation: 'Jeder Bürger hat das Recht zu wählen.', difficulty: 3, notes: null },
+      { word: 'Democracy', translation: 'Demokratie', pronunciation: '/dɪˈmɒkrəsi/', partOfSpeech: 'noun', exampleSentence: 'Freedom of speech is vital in a democracy.', exampleTranslation: 'Meinungsfreiheit ist in einer Demokratie unerlässlich.', difficulty: 3, notes: null },
+      { word: 'Campaign', translation: 'Kampagne', pronunciation: '/kæmˈpeɪn/', partOfSpeech: 'noun', exampleSentence: 'The political campaign was very aggressive.', exampleTranslation: 'Die politische Kampagne war sehr aggressiv.', difficulty: 3, notes: null },
+      { word: 'Policy', translation: 'Richtlinie / Politik', pronunciation: '/ˈpɒləsi/', partOfSpeech: 'noun', exampleSentence: 'The company has a strict no-smoking policy.', exampleTranslation: 'Das Unternehmen hat eine strenge Nichtraucherrichtlinie.', difficulty: 4, notes: null },
+      { word: 'Majority', translation: 'Mehrheit', pronunciation: '/məˈdʒɒrɪti/', partOfSpeech: 'noun', exampleSentence: 'The majority of people agreed with the decision.', exampleTranslation: 'Die Mehrheit der Leute stimmte der Entscheidung zu.', difficulty: 3, notes: null },
+      { word: 'Debate', translation: 'Debatte', pronunciation: '/dɪˈbeɪt/', partOfSpeech: 'noun/verb', exampleSentence: 'There was a heated debate in parliament.', exampleTranslation: 'Es gab eine hitzige Debatte im Parlament.', difficulty: 3, notes: null },
+      { word: 'Rights', translation: 'Rechte', pronunciation: '/raɪts/', partOfSpeech: 'noun', exampleSentence: 'They are fighting for equal rights.', exampleTranslation: 'Sie kämpfen für gleiche Rechte.', difficulty: 2, notes: null },
+      { word: 'Poverty', translation: 'Armut', pronunciation: '/ˈpɒvərti/', partOfSpeech: 'noun', exampleSentence: 'The charity aims to reduce global poverty.', exampleTranslation: 'Die Wohltätigkeitsorganisation zielt darauf ab, die globale Armut zu verringern.', difficulty: 4, notes: null },
+    ]
+  },
+  {
+    name: 'Art & Literature',
+    description: 'Talking about creative works',
+    level: 'B2',
+    category: 'Culture',
+    icon: '🎭',
+    cards: [
+      { word: 'Exhibition', translation: 'Ausstellung', pronunciation: '/ˌɛksɪˈbɪʃən/', partOfSpeech: 'noun', exampleSentence: 'We visited the new art exhibition.', exampleTranslation: 'Wir besuchten die neue Kunstausstellung.', difficulty: 3, notes: null },
+      { word: 'Masterpiece', translation: 'Meisterwerk', pronunciation: '/ˈmæstərpiːs/', partOfSpeech: 'noun', exampleSentence: 'This painting is considered his masterpiece.', exampleTranslation: 'Dieses Gemälde gilt als sein Meisterwerk.', difficulty: 4, notes: null },
+      { word: 'Novel', translation: 'Roman', pronunciation: '/ˈnɒvəl/', partOfSpeech: 'noun', exampleSentence: 'She published her first novel last year.', exampleTranslation: 'Sie hat letztes Jahr ihren ersten Roman veröffentlicht.', difficulty: 3, notes: null },
+      { word: 'Author', translation: 'Autor/in', pronunciation: '/ˈɔːθər/', partOfSpeech: 'noun', exampleSentence: 'Who is your favorite author?', exampleTranslation: 'Wer ist dein Lieblingsautor?', difficulty: 3, notes: null },
+      { word: 'Chapter', translation: 'Kapitel', pronunciation: '/ˈtʃæptər/', partOfSpeech: 'noun', exampleSentence: 'I read three chapters before bed.', exampleTranslation: 'Ich habe vor dem Schlafengehen drei Kapitel gelesen.', difficulty: 2, notes: null },
+      { word: 'Poetry', translation: 'Poesie / Dichtkunst', pronunciation: '/ˈpoʊɪtri/', partOfSpeech: 'noun', exampleSentence: 'He enjoys reading classical poetry.', exampleTranslation: 'Er liest gerne klassische Poesie.', difficulty: 3, notes: null },
+      { word: 'Gallery', translation: 'Galerie', pronunciation: '/ˈɡæləri/', partOfSpeech: 'noun', exampleSentence: 'The gallery showcases modern art.', exampleTranslation: 'Die Galerie stellt moderne Kunst aus.', difficulty: 3, notes: null },
+      { word: 'Sculpture', translation: 'Skulptur', pronunciation: '/ˈskʌlptʃər/', partOfSpeech: 'noun', exampleSentence: 'The museum has a beautiful marble sculpture.', exampleTranslation: 'Das Museum hat eine wunderschöne Marmorskulptur.', difficulty: 4, notes: null },
+      { word: 'Fictional', translation: 'Fiktiv', pronunciation: '/ˈfɪkʃənəl/', partOfSpeech: 'adjective', exampleSentence: 'The story takes place in a fictional city.', exampleTranslation: 'Die Geschichte spielt in einer fiktiven Stadt.', difficulty: 4, notes: null },
+      { word: 'Publish', translation: 'Veröffentlichen', pronunciation: '/ˈpʌblɪʃ/', partOfSpeech: 'verb', exampleSentence: 'The book will be published next month.', exampleTranslation: 'Das Buch wird nächsten Monat veröffentlicht.', difficulty: 3, notes: null },
+    ]
+  },
+  {
+    name: 'Science & Discoveries',
+    description: 'Scientific terms and progress',
+    level: 'B2',
+    category: 'Science',
+    icon: '🔬',
+    cards: [
+      { word: 'Experiment', translation: 'Experiment', pronunciation: '/ɪkˈspɛrɪmənt/', partOfSpeech: 'noun', exampleSentence: 'The scientists conducted an experiment.', exampleTranslation: 'Die Wissenschaftler führten ein Experiment durch.', difficulty: 3, notes: null },
+      { word: 'Discovery', translation: 'Entdeckung', pronunciation: '/dɪˈskʌvəri/', partOfSpeech: 'noun', exampleSentence: 'The discovery of penicillin changed medicine.', exampleTranslation: 'Die Entdeckung des Penicillins veränderte die Medizin.', difficulty: 3, notes: null },
+      { word: 'Analyze', translation: 'Analysieren', pronunciation: '/ˈænəlaɪz/', partOfSpeech: 'verb', exampleSentence: 'We need to analyze the data carefully.', exampleTranslation: 'Wir müssen die Daten sorgfältig analysieren.', difficulty: 4, notes: null },
+      { word: 'Hypothesis', translation: 'Hypothese', pronunciation: '/haɪˈpɒθɪsɪs/', partOfSpeech: 'noun', exampleSentence: 'The results proved his hypothesis wrong.', exampleTranslation: 'Die Ergebnisse bewiesen, dass seine Hypothese falsch war.', difficulty: 4, notes: null },
+      { word: 'Theory', translation: 'Theorie', pronunciation: '/ˈθɪəri/', partOfSpeech: 'noun', exampleSentence: 'Einstein formulated the theory of relativity.', exampleTranslation: 'Einstein formulierte die Relativitätstheorie.', difficulty: 3, notes: null },
+      { word: 'Laboratory', translation: 'Labor', pronunciation: '/ləˈbɒrətəri/', partOfSpeech: 'noun', exampleSentence: 'Access to the laboratory is restricted.', exampleTranslation: 'Der Zugang zum Labor ist beschränkt.', difficulty: 3, notes: null },
+      { word: 'Evidence', translation: 'Beweis / Beleg', pronunciation: '/ˈɛvɪdəns/', partOfSpeech: 'noun', exampleSentence: 'There is no scientific evidence for this.', exampleTranslation: 'Es gibt keinen wissenschaftlichen Beweis dafür.', difficulty: 4, notes: null },
+      { word: 'Observation', translation: 'Beobachtung', pronunciation: '/ˌɒbzərˈveɪʃən/', partOfSpeech: 'noun', exampleSentence: 'These observations confirm our previous findings.', exampleTranslation: 'Diese Beobachtungen bestätigen unsere vorherigen Ergebnisse.', difficulty: 4, notes: null },
+      { word: 'Invent', translation: 'Erfinden', pronunciation: '/ɪnˈvɛnt/', partOfSpeech: 'verb', exampleSentence: 'Who invented the telephone?', exampleTranslation: 'Wer hat das Telefon erfunden?', difficulty: 3, notes: null },
+      { word: 'Conclusion', translation: 'Schlussfolgerung', pronunciation: '/kənˈkluːʒən/', partOfSpeech: 'noun', exampleSentence: 'What conclusion did you reach?', exampleTranslation: 'Zu welcher Schlussfolgerung bist du gekommen?', difficulty: 3, notes: null },
+    ]
+  },
+  {
+    name: 'Economy & Finance',
+    description: 'Money, banking and economic systems',
+    level: 'B2',
+    category: 'Business',
+    icon: '📈',
+    cards: [
+      { word: 'Investment', translation: 'Investition', pronunciation: '/ɪnˈvɛstmənt/', partOfSpeech: 'noun', exampleSentence: 'Buying a house is a good long-term investment.', exampleTranslation: 'Ein Haus zu kaufen ist eine gute langfristige Investition.', difficulty: 4, notes: null },
+      { word: 'Currency', translation: 'Währung', pronunciation: '/ˈkɜːrənsi/', partOfSpeech: 'noun', exampleSentence: 'The euro is the currency used in many European countries.', exampleTranslation: 'Der Euro ist die Währung, die in vielen europäischen Ländern verwendet wird.', difficulty: 3, notes: null },
+      { word: 'Inflation', translation: 'Inflation', pronunciation: '/ɪnˈfleɪʃən/', partOfSpeech: 'noun', exampleSentence: 'High inflation reduces purchasing power.', exampleTranslation: 'Hohe Inflation verringert die Kaufkraft.', difficulty: 4, notes: null },
+      { word: 'Profit', translation: 'Gewinn', pronunciation: '/ˈprɒfɪt/', partOfSpeech: 'noun', exampleSentence: 'The company made a huge profit this year.', exampleTranslation: 'Das Unternehmen hat dieses Jahr einen riesigen Gewinn gemacht.', difficulty: 3, notes: null },
+      { word: 'Debt', translation: 'Schulden', pronunciation: '/dɛt/', partOfSpeech: 'noun', exampleSentence: 'He is trying to pay off his debt.', exampleTranslation: 'Er versucht, seine Schulden abzubezahlen.', difficulty: 3, notes: null },
+      { word: 'Budget', translation: 'Budget', pronunciation: '/ˈbʌdʒɪt/', partOfSpeech: 'noun', exampleSentence: 'We have to stick to the budget.', exampleTranslation: 'Wir müssen uns an das Budget halten.', difficulty: 3, notes: null },
+      { word: 'Taxes', translation: 'Steuern', pronunciation: '/tæksɪz/', partOfSpeech: 'noun', exampleSentence: 'Citizens must pay their taxes on time.', exampleTranslation: 'Bürger müssen ihre Steuern pünktlich zahlen.', difficulty: 3, notes: null },
+      { word: 'Revenue', translation: 'Einnahmen / Umsatz', pronunciation: '/ˈrɛvənjuː/', partOfSpeech: 'noun', exampleSentence: 'Advertising revenue has dropped recently.', exampleTranslation: 'Die Werbeeinnahmen sind kürzlich gesunken.', difficulty: 4, notes: null },
+      { word: 'Stock Market', translation: 'Aktienmarkt', pronunciation: '/stɒk ˈmɑːrkɪt/', partOfSpeech: 'noun', exampleSentence: 'She invests heavily in the stock market.', exampleTranslation: 'Sie investiert stark in den Aktienmarkt.', difficulty: 3, notes: null },
+      { word: 'Loan', translation: 'Kredit / Darlehen', pronunciation: '/loʊn/', partOfSpeech: 'noun', exampleSentence: 'He took out a loan to start his business.', exampleTranslation: 'Er nahm einen Kredit auf, um sein Geschäft zu gründen.', difficulty: 3, notes: null },
+    ]
+  }
+]
