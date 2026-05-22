@@ -138,6 +138,10 @@ export default function VocabSection() {
 
   useEffect(() => {
     async function loadDecks() {
+      if (vocabDecks.length > 0) {
+        setLoading(false)
+        return
+      }
       try {
         const res = await fetch('/api/vocab')
         if (res.ok) {
@@ -156,7 +160,7 @@ export default function VocabSection() {
       setLoading(false)
     }
     loadDecks()
-  }, [setVocabDecks])
+  }, [setVocabDecks, vocabDecks.length])
 
   const loadPracticeCards = useCallback(async (deck: VocabDeck) => {
     setLoading(true)

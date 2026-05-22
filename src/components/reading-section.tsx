@@ -114,6 +114,10 @@ export default function ReadingSection() {
 
   useEffect(() => {
     async function loadExercises() {
+      if (readingExercises.length > 0) {
+        setLoading(false)
+        return
+      }
       try {
         const res = await fetch('/api/reading')
         if (res.ok) {
@@ -132,7 +136,7 @@ export default function ReadingSection() {
       setLoading(false)
     }
     loadExercises()
-  }, [setReadingExercises])
+  }, [setReadingExercises, readingExercises.length])
 
   const handleExerciseClick = (exercise: ReadingExercise) => {
     setCurrentExercise(exercise)
