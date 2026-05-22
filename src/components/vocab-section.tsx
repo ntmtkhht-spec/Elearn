@@ -60,6 +60,49 @@ type ViewMode = 'decks' | 'practice' | 'quiz'
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
+const getIntervalLabels = (card: VocabCard | undefined) => {
+  if (!card) return { again: '', hard: '', good: '', easy: '' }
+  
+  let status = 'new'
+  let interval = 0
+  let stepIndex = 0
+  let easeFactor = 2.5
+
+  if (card.progress && card.progress.length > 0) {
+    status = card.progress[0].status
+    interval = card.progress[0].interval
+    stepIndex = status === 'learning' ? card.progress[0].correctness : 0
+    easeFactor = card.progress[0].easeFactor
+  }
+
+  const formatTime = (minutes: number) => {
+    return `<${minutes}m`
+  }
+
+  const formatDays = (days: number) => {
+    if (days < 30) return `${days}d`
+    const months = Math.round(days / 30)
+    if (months < 12) return `${months}mo`
+    return `${Math.round(months / 12)}y`
+  }
+
+  let again, hard, good, easy
+
+  if (status === 'new' || status === 'learning' || status === 'relearning') {
+    again = '<1m'
+    hard = formatTime(stepIndex === 0 ? 5 : 10)
+    good = stepIndex === 0 ? formatTime(10) : formatDays(1)
+    easy = formatDays(4)
+  } else {
+    again = '<1m'
+    hard = formatDays(Math.max(1, Math.round(interval * 1.2)))
+    good = formatDays(Math.max(1, Math.round(interval * easeFactor)))
+    easy = formatDays(Math.max(1, Math.round(interval * easeFactor * 1.3)))
+  }
+
+  return { again, hard, good, easy }
+}
+
 export default function VocabSection() {
   const {
     vocabDecks, setVocabDecks,
@@ -622,24 +665,25 @@ export default function VocabSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.1 }}
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-4 gap-2"
         >
-          <Button
-            variant="outline"
-            className="h-auto py-4 flex flex-col items-center gap-2 bg-red-100 hover:bg-red-200 text-red-700 dark:bg-red-900/30 dark:hover:bg-red-900/50 dark:text-red-400"
-            onClick={() => handleRateCard('again')}
-          >
-            <RotateCcw className="h-6 w-6" />
-            <span className="font-semibold">Wusste ich nicht</span>
-          </Button>
-          <Button
-            variant="outline"
-            className="h-auto py-4 flex flex-col items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400"
-            onClick={() => handleRateCard('good')}
-          >
-            <Star className="h-6 w-6" />
-            <span className="font-semibold">Wusste ich</span>
-          </Button>
+          {[
+            { label: 'Again', time: getIntervalLabels(currentCard).again, color: 'bg-red-100 hover:bg-red-200 text-red-700 dark:bg-red-900/30 dark:hover:bg-red-900/50 dark:text-red-400', icon: <RotateCcw className="h-4 w-4" /> },
+            { label: 'Hard', time: getIntervalLabels(currentCard).hard, color: 'bg-amber-100 hover:bg-amber-200 text-amber-700 dark:bg-amber-900/30 dark:hover:bg-amber-900/50 dark:text-amber-400', icon: <Brain className="h-4 w-4" /> },
+            { label: 'Good', time: getIntervalLabels(currentCard).good, color: 'bg-emerald-100 hover:bg-emerald-200 text-emerald-700 dark:bg-emerald-900/30 dark:hover:bg-emerald-900/50 dark:text-emerald-400', icon: <Star className="h-4 w-4" /> },
+            { label: 'Easy', time: getIntervalLabels(currentCard).easy, color: 'bg-sky-100 hover:bg-sky-200 text-sky-700 dark:bg-sky-900/30 dark:hover:bg-sky-900/50 dark:text-sky-400', icon: <Sparkles className="h-4 w-4" /> },
+          ].map((rating) => (
+            <Button
+              key={rating.label}
+              variant="outline"
+              className={`h-auto py-3 flex flex-col items-center gap-0 ${rating.color}`}
+              onClick={() => handleRateCard(rating.label.toLowerCase())}
+            >
+              <span className="text-[11px] opacity-70 font-semibold mb-1">{rating.time}</span>
+              {rating.icon}
+              <span className="text-xs font-bold mt-1">{rating.label}</span>
+            </Button>
+          ))}
         </motion.div>
       )}
     </div>

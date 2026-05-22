@@ -172,7 +172,7 @@ export async function GET() {
         cards: {
           select: {
             progress: {
-              where: userId ? { userId, status: { in: ['review', 'mastered'] } } : { status: { in: ['review', 'mastered'] } },
+              where: userId ? { userId } : undefined,
             },
           },
         },
@@ -180,10 +180,36 @@ export async function GET() {
       orderBy: { createdAt: 'desc' },
     })
 
-    const decksWithProgress = decks.map(({ cards, ...deck }) => ({
-      ...deck,
-      masteredCards: cards.filter(c => c.progress.length > 0).length,
-    }))
+    const decksWithProgress = decks.map(({ cards, ...deck }) => {
+      let newCards = 0
+      let learningCards = 0
+      let reviewCards = 0
+      
+      const now = new Date()
+
+      for (const card of cards) {
+        if (!card.progress || card.progress.length === 0) {
+          newCards++
+        } else {
+          const p = card.progress[0]
+          if (p.status === 'learning' || p.status === 'relearning') {
+            learningCards++
+          } else if (p.status === 'review' && new Date(p.nextReviewAt) <= now) {
+            reviewCards++
+          } else if (p.status === 'new') {
+            newCards++
+          }
+        }
+      }
+
+      return {
+        ...deck,
+        newCards,
+        learningCards,
+        reviewCards,
+        masteredCards: cards.filter(c => c.progress.length > 0 && c.progress[0].status === 'mastered').length,
+      }
+    })
 
     return NextResponse.json(decksWithProgress)
   } catch {

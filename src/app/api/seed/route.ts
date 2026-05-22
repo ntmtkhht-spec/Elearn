@@ -70,7 +70,7 @@ export async function POST() {
 
     // Seed learning stats
     const today = new Date().toISOString().split('T')[0]
-    const existingStats = await db.learningStats.findUnique({ where: { date: today } })
+    const existingStats = await db.learningStats.findFirst({ where: { date: today } })
     if (!existingStats) {
       await db.learningStats.create({
         data: {

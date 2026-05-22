@@ -13,6 +13,9 @@ export interface VocabDeck {
   cards?: VocabCard[]
   _count?: { cards: number }
   masteredCards?: number
+  newCards?: number
+  learningCards?: number
+  reviewCards?: number
 }
 
 export interface VocabCard {

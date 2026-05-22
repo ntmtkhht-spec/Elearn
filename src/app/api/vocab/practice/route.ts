@@ -25,11 +25,41 @@ export async function GET(request: Request) {
           ? { where: { userId } }
           : true,
       },
-      take: 20,
     })
-    // If deckId specified, return cards (even empty) — don't fall back to sample
-    if (deckId) return NextResponse.json(cards)
-    if (cards.length > 0) return NextResponse.json(cards)
+    
+    if (deckId) {
+      const now = new Date()
+      let dueCards: typeof cards = []
+      let newCards: typeof cards = []
+
+      for (const card of cards) {
+        const prog = card.progress[0]
+        if (!prog) {
+          newCards.push(card)
+        } else {
+          // If the card is due, or it's a learning card that is due
+          if (new Date(prog.nextReviewAt) <= now) {
+            dueCards.push(card)
+          }
+        }
+      }
+
+      // Sort due cards so learning (shorter intervals) come first
+      dueCards.sort((a, b) => {
+        const tA = new Date(a.progress[0].nextReviewAt).getTime()
+        const tB = new Date(b.progress[0].nextReviewAt).getTime()
+        return tA - tB
+      })
+
+      // Limit to 20 due cards per session, and fill up with new cards up to 20
+      let sessionCards = [...dueCards].slice(0, 20)
+      if (sessionCards.length < 20) {
+        sessionCards = [...sessionCards, ...newCards.slice(0, 20 - sessionCards.length)]
+      }
+      return NextResponse.json(sessionCards)
+    }
+    
+    if (cards.length > 0) return NextResponse.json(cards.slice(0, 20))
   } catch {
     // DB not ready
   }
@@ -54,39 +84,65 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'rating must be one of: again, hard, good, easy' }, { status: 400 })
     }
 
-    const ratingMap: Record<string, number> = { again: 0, hard: 2, good: 4, easy: 5 }
-    const quality = ratingMap[rating]
-
     const { db } = await import('@/lib/db')
 
     const existing = await db.vocabProgress.findFirst({
       where: { cardId, ...(userId ? { userId } : {}) },
     })
 
-    let interval = existing?.interval ?? 1
+    let status = existing?.status ?? 'new'
+    let interval = existing?.interval ?? 0 // in days for review
     let easeFactor = existing?.easeFactor ?? 2.5
+    let stepIndex = existing?.correctness ?? 0 // tracking learning step (0=1m, 1=10m)
+    let attempts = (existing?.attempts ?? 0) + 1
 
-    if (quality >= 3) {
-      interval = Math.max(1, Math.round(interval * easeFactor))
-      easeFactor = Math.max(1.3, easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)))
-    } else {
-      interval = 1
-      easeFactor = Math.max(1.3, easeFactor - 0.2)
-    }
+    let nextReview = new Date()
 
-    const nextReview = new Date()
-    nextReview.setDate(nextReview.getDate() + interval)
-
-    const newAttempts = (existing?.attempts ?? 0) + 1
-    const newCorrectness = (existing?.correctness ?? 0) + (quality >= 3 ? 1 : 0)
-
-    // Determine status: mastered after 5+ correct with high ease, otherwise review/learning
-    let status = 'learning'
-    if (quality >= 3) {
-      if (newCorrectness >= 5 && easeFactor >= 2.0 && interval >= 7) {
-        status = 'mastered'
-      } else {
+    if (status === 'new' || status === 'learning' || status === 'relearning') {
+      status = 'learning'
+      if (rating === 'again') {
+        stepIndex = 0
+        nextReview.setMinutes(nextReview.getMinutes() + 1)
+      } else if (rating === 'hard') {
+        // stay on current step, but add small delay (5m or 10m)
+        nextReview.setMinutes(nextReview.getMinutes() + (stepIndex === 0 ? 5 : 10))
+      } else if (rating === 'good') {
+        if (stepIndex === 0) {
+          stepIndex = 1
+          nextReview.setMinutes(nextReview.getMinutes() + 10)
+        } else {
+          status = 'review'
+          interval = 1
+          nextReview.setDate(nextReview.getDate() + interval)
+        }
+      } else if (rating === 'easy') {
         status = 'review'
+        interval = 4
+        nextReview.setDate(nextReview.getDate() + interval)
+      }
+    } else if (status === 'review' || status === 'mastered') {
+      if (rating === 'again') {
+        status = 'learning' // lapse
+        stepIndex = 0
+        easeFactor = Math.max(1.3, easeFactor - 0.2)
+        interval = 1 // reset
+        nextReview.setMinutes(nextReview.getMinutes() + 1)
+      } else if (rating === 'hard') {
+        easeFactor = Math.max(1.3, easeFactor - 0.15)
+        interval = Math.max(1, Math.round(interval * 1.2))
+        nextReview.setDate(nextReview.getDate() + interval)
+      } else if (rating === 'good') {
+        interval = Math.max(1, Math.round(interval * easeFactor))
+        nextReview.setDate(nextReview.getDate() + interval)
+      } else if (rating === 'easy') {
+        easeFactor += 0.15
+        interval = Math.max(1, Math.round(interval * easeFactor * 1.3))
+        nextReview.setDate(nextReview.getDate() + interval)
+      }
+      
+      // if interval > 21, mark as mastered
+      if (status !== 'learning' && interval >= 21) {
+        status = 'mastered'
       }
     }
 
@@ -94,8 +150,8 @@ export async function POST(request: Request) {
       await db.vocabProgress.update({
         where: { id: existing.id },
         data: {
-          attempts: newAttempts,
-          correctness: newCorrectness,
+          attempts,
+          correctness: status === 'learning' ? stepIndex : (['good', 'easy'].includes(rating) ? (existing.correctness) + 1 : 0),
           lastReviewedAt: new Date(),
           nextReviewAt: nextReview,
           interval,
@@ -108,7 +164,7 @@ export async function POST(request: Request) {
         data: {
           cardId,
           userId: userId ?? undefined,
-          correctness: quality >= 3 ? 1 : 0,
+          correctness: status === 'learning' ? stepIndex : 1,
           attempts: 1,
           lastReviewedAt: new Date(),
           nextReviewAt: nextReview,
