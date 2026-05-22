@@ -166,7 +166,12 @@ export async function GET() {
     }
 
     const decks = await db.vocabDeck.findMany({
-      where: userId ? { userId } : undefined,
+      where: userId ? {
+        OR: [
+          { userId },
+          { userId: null }
+        ]
+      } : { userId: null },
       include: {
         _count: { select: { cards: true } },
         cards: {
