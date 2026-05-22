@@ -39,8 +39,9 @@ export default function AICoach() {
   // Speech recognition setup
   useEffect(() => {
     if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSpeechSupported(true)
-      const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition
+      const SpeechRecognitionAPI = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
       const recognition = new SpeechRecognitionAPI()
       recognition.continuous = true
       recognition.interimResults = true
