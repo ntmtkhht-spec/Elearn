@@ -114,7 +114,7 @@ export default function VocabSection() {
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ViewMode>('decks')
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(vocabDecks.length === 0)
   const [generating, setGenerating] = useState(false)
   const [newDeckTopic, setNewDeckTopic] = useState('')
   const [newDeckLevel, setNewDeckLevel] = useState('B2')

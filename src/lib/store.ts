@@ -148,6 +148,12 @@ interface AppState {
   currentVideo: VideoAssignment | null
   setCurrentVideo: (video: VideoAssignment | null) => void
 
+  // Dashboard
+  dashboardStats: LearningStats | null
+  setDashboardStats: (stats: LearningStats | null) => void
+  dashboardTodayWord: VocabCard | null
+  setDashboardTodayWord: (word: VocabCard | null) => void
+
   // Stats
   learningStats: LearningStats | null
   setLearningStats: (stats: LearningStats | null) => void
@@ -209,6 +215,12 @@ export const useAppStore = create<AppState>()(
   setVideoAssignments: (assignments) => set({ videoAssignments: assignments }),
   currentVideo: null,
   setCurrentVideo: (video) => set({ currentVideo: video }),
+
+  // Dashboard
+  dashboardStats: null,
+  setDashboardStats: (stats) => set({ dashboardStats: stats }),
+  dashboardTodayWord: null,
+  setDashboardTodayWord: (word) => set({ dashboardTodayWord: word }),
 
   // Stats
   learningStats: null,

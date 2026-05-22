@@ -102,7 +102,7 @@ export default function ReadingSection() {
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ReadViewMode>('list')
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(readingExercises.length === 0)
   const [generating, setGenerating] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
   const [newTopic, setNewTopic] = useState('')

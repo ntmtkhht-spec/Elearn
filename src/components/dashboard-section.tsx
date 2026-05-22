@@ -150,12 +150,16 @@ function getDailyChallenge(): DailyChallenge {
 }
 
 export default function DashboardSection() {
-  const { setActiveSection, setCoachOpen, addCoachMessage, userLevel } = useAppStore()
+  const { 
+    setActiveSection, setCoachOpen, addCoachMessage, userLevel,
+    dashboardStats, setDashboardStats, dashboardTodayWord, setDashboardTodayWord 
+  } = useAppStore()
   const displayLevel = userLevel || 'B2'
   const dailyChallenge = useMemo(() => getDailyChallenge(), [])
-  const [stats, setStats] = useState<LearningStats | null>(null)
-  const [todayWord, setTodayWord] = useState<VocabCard | null>(null)
-  const [loading, setLoading] = useState(true)
+  
+  const stats = dashboardStats
+  const todayWord = dashboardTodayWord
+  const [loading, setLoading] = useState(dashboardStats === null)
 
   useEffect(() => {
     async function loadData() {
@@ -163,28 +167,28 @@ export default function DashboardSection() {
         const res = await fetch('/api/stats')
         if (res.ok) {
           const data = await res.json()
-          setStats(data)
-        } else {
-          setStats(null)
+          setDashboardStats(data)
         }
       } catch {
-        setStats(null)
+        // Keep old
       }
 
-      // Pick a word of the day from real vocab data
       try {
         const vocabRes = await fetch('/api/vocab/practice')
         if (vocabRes.ok) {
           const cards = await vocabRes.json()
           if (cards.length > 0) {
-            setTodayWord(cards[Math.floor(Math.random() * cards.length)])
+            // Only update if we don't have one, or just update it
+            if (!dashboardTodayWord) {
+              setDashboardTodayWord(cards[Math.floor(Math.random() * cards.length)])
+            }
           }
         }
       } catch {}
       setLoading(false)
     }
     loadData()
-  }, [])
+  }, [dashboardTodayWord, setDashboardStats, setDashboardTodayWord])
 
   const dailyGoal = 50
   const dailyProgress = stats ? Math.min(((stats.vocabStudied || 0) / dailyGoal) * 100, 100) : 0
