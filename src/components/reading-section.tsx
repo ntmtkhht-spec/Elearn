@@ -7,9 +7,6 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Input } from '@/components/ui/input'
-import {
-  Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogTrigger
-} from '@/components/ui/dialog'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import {
   FileText, Plus, ArrowLeft, ChevronRight, Sparkles, RotateCcw,
@@ -108,10 +105,6 @@ export default function ReadingSection() {
 
   const filteredExercises = readingExercises.filter(ex => visibleLevels.includes(ex.level))
   const [loading, setLoading] = useState(readingExercises.length === 0)
-  const [generating, setGenerating] = useState(false)
-  const [dialogOpen, setDialogOpen] = useState(false)
-  const [newTopic, setNewTopic] = useState('')
-  const [newLevel, setNewLevel] = useState('B2')
   const [answers, setAnswers] = useState<Record<string, number>>({})
   const [score, setScore] = useState(0)
   const [showExplanations, setShowExplanations] = useState<Record<string, boolean>>({})
@@ -151,26 +144,7 @@ export default function ReadingSection() {
     setShowExplanations({})
   }
 
-  const handleGenerateExercise = async () => {
-    if (!newTopic.trim()) return
-    setGenerating(true)
-    try {
-      const res = await fetch('/api/reading', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: newTopic, level: newLevel }),
-      })
-      if (res.ok) {
-        const newExercise = await res.json()
-        setReadingExercises([...readingExercises, newExercise])
-        setDialogOpen(false)
-        setNewTopic('')
-      }
-    } catch {
-      // Silently fail
-    }
-    setGenerating(false)
-  }
+
 
   const handleSelectAnswer = (questionId: string, optionIndex: number) => {
     setAnswers(prev => ({ ...prev, [questionId]: optionIndex }))
@@ -237,63 +211,6 @@ export default function ReadingSection() {
             </h2>
             <p className="text-muted-foreground mt-1">Improve your reading skills with real-world texts</p>
           </div>
-
-          <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-            <DialogTrigger asChild>
-              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
-                <Plus className="h-4 w-4 mr-2" />
-                Generate AI Exercise
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>Generate Reading Exercise</DialogTitle>
-                <DialogDescription>
-                  Choose a topic and level, and AI will create a reading comprehension exercise.
-                </DialogDescription>
-              </DialogHeader>
-              <div className="space-y-4 py-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Topic</label>
-                  <Input
-                    placeholder="e.g., Artificial Intelligence, Travel, Environment..."
-                    value={newTopic}
-                    onChange={(e) => setNewTopic(e.target.value)}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Level</label>
-                  <div className="flex gap-2">
-                    {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map(level => (
-                      <Button
-                        key={level}
-                        variant={newLevel === level ? 'default' : 'outline'}
-                        size="sm"
-                        className={newLevel === level ? 'bg-emerald-600 hover:bg-emerald-700 text-white' : ''}
-                        onClick={() => setNewLevel(level)}
-                      >
-                        {level}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <DialogFooter>
-                <Button variant="outline" onClick={() => setDialogOpen(false)}>Cancel</Button>
-                <Button
-                  onClick={handleGenerateExercise}
-                  disabled={generating || !newTopic.trim()}
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white"
-                >
-                  {generating ? (
-                    <><RotateCcw className="h-4 w-4 mr-2 animate-spin" />Generating...</>
-                  ) : (
-                    <><Sparkles className="h-4 w-4 mr-2" />Generate</>
-                  )}
-                </Button>
-              </DialogFooter>
-            </DialogContent>
-          </Dialog>
         </div>
 
         {loading ? (
@@ -306,10 +223,7 @@ export default function ReadingSection() {
           <Card className="p-12 text-center">
             <FileText className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h3 className="text-lg font-medium mb-2">No reading exercises yet</h3>
-            <p className="text-muted-foreground mb-4">Generate your first AI exercise to get started.</p>
-            <Button onClick={() => setDialogOpen(true)} className="bg-emerald-600 hover:bg-emerald-700 text-white">
-              <Plus className="h-4 w-4 mr-2" /> Create Exercise
-            </Button>
+            <p className="text-muted-foreground mb-4">Please sync the content via the admin panel.</p>
           </Card>
         ) : (
           <div className="space-y-6">

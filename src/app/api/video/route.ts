@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { chatCompletion, parseJSONResponse } from '@/lib/ai'
+
 
 const SAMPLE_VIDEOS = [
   {
@@ -165,28 +165,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid YouTube URL' }, { status: 400 })
     }
 
-    // Generate AI prompts based on title
-    let prompts = [
+    const prompts = [
       'What are the main ideas presented?',
       'What examples or evidence does the speaker provide?',
       'What is your opinion on the topic?',
       'Can you summarize the key takeaways?',
     ]
-
-    try {
-      const systemPrompt = `You are an English learning exercise creator. Generate 4 guiding questions for a student who will watch a YouTube video titled "${title}". The questions should help them focus while watching and practice their English comprehension. Return ONLY a JSON array of 4 strings, no other text.`
-
-      const response = await chatCompletion(systemPrompt, `Generate guiding questions for the video: "${title}"`)
-
-      if (response) {
-        const parsed = parseJSONResponse<string[]>(response)
-        if (parsed && Array.isArray(parsed) && parsed.length > 0) {
-          prompts = parsed
-        }
-      }
-    } catch {
-      // AI not available, use default prompts
-    }
 
     const newVideo = {
       id: `${type === 'short' ? 's' : 'v'}-${Date.now()}`,

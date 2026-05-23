@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { chatCompletion, parseJSONResponse } from '@/lib/ai'
+
 
 function generateFallbackExercises(category: string, _level: string) {
   const exerciseTemplates: Record<string, Array<{
@@ -67,45 +67,6 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Category is required' }, { status: 400 })
     }
 
-    // Try LLM for grammar exercise generation
-    try {
-      const systemPrompt = `You are an English grammar exercise generator for ${level || 'B2'} level learners who speak German.
-Generate 5 grammar exercises about "${category}".
-Return a JSON array of exercises, each with:
-- id: unique string (like "${category}-1")
-- type: "fill-blank" or "correction"
-- instruction: string (the instruction for the exercise)
-- sentence: string (use _____ for blanks in fill-blank type)
-- answer: string (the correct answer)
-- explanation: string (why this answer is correct, in English)
-- hint: string (a helpful hint for the learner)
-- options: array of strings (optional, for multiple choice)
-
-Return ONLY valid JSON. No other text.`
-
-      const response = await chatCompletion(systemPrompt, `Generate ${category} exercises for ${level || 'B2'} level.`)
-
-      if (response) {
-        const exercises = parseJSONResponse<Array<{
-          id: string
-          type: 'fill-blank' | 'correction'
-          instruction: string
-          sentence: string
-          answer: string
-          explanation: string
-          hint?: string
-          options?: string[]
-        }>>(response)
-
-        if (exercises && Array.isArray(exercises) && exercises.length > 0) {
-          return NextResponse.json({ exercises })
-        }
-      }
-    } catch {
-      // LLM not available
-    }
-
-    // Fallback exercises
     const exercises = generateFallbackExercises(category, level || 'B2')
     return NextResponse.json({ exercises })
   } catch {

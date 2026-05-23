@@ -9,9 +9,6 @@ import { Progress } from '@/components/ui/progress'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Input } from '@/components/ui/input'
 import {
-  Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogTrigger
-} from '@/components/ui/dialog'
-import {
   BookOpen, Plus, ArrowLeft, Volume2, RotateCcw,
   Brain, Star, ChevronRight, Sparkles, Grid3X3, HelpCircle
 } from 'lucide-react'
@@ -115,10 +112,6 @@ export default function VocabSection() {
 
   const [viewMode, setViewMode] = useState<ViewMode>('decks')
   const [loading, setLoading] = useState(vocabDecks.length === 0)
-  const [generating, setGenerating] = useState(false)
-  const [newDeckTopic, setNewDeckTopic] = useState('')
-  const [newDeckLevel, setNewDeckLevel] = useState('B2')
-  const [dialogOpen, setDialogOpen] = useState(false)
   const [flipped, setFlipped] = useState(false)
   const [quizAnswer, setQuizAnswer] = useState<number | null>(null)
   const [quizOptions, setQuizOptions] = useState<string[]>([])
@@ -192,26 +185,7 @@ export default function VocabSection() {
     loadPracticeCards(deck)
   }
 
-  const handleGenerateDeck = async () => {
-    if (!newDeckTopic.trim()) return
-    setGenerating(true)
-    try {
-      const res = await fetch('/api/vocab', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ topic: newDeckTopic, level: newDeckLevel }),
-      })
-      if (res.ok) {
-        const newDeck = await res.json()
-        setVocabDecks([...vocabDecks, newDeck])
-        setDialogOpen(false)
-        setNewDeckTopic('')
-      }
-    } catch {
-      // Silently fail - could show toast
-    }
-    setGenerating(false)
-  }
+
 
   const speakWord = (text: string) => {
     if (typeof window === 'undefined') return
@@ -315,69 +289,6 @@ export default function VocabSection() {
             </h2>
             <p className="text-muted-foreground mt-1">Master English vocabulary with spaced repetition</p>
           </div>
-
-          <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-            <DialogTrigger asChild>
-              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
-                <Plus className="h-4 w-4 mr-2" />
-                Generate AI Deck
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <DialogHeader>
-                <DialogTitle>Generate AI Vocabulary Deck</DialogTitle>
-                <DialogDescription>
-                  Tell us a topic and level, and AI will create a custom deck for you.
-                </DialogDescription>
-              </DialogHeader>
-              <div className="space-y-4 py-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Topic</label>
-                  <Input
-                    placeholder="e.g., Medical English, Finance, Art..."
-                    value={newDeckTopic}
-                    onChange={(e) => setNewDeckTopic(e.target.value)}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Level</label>
-                  <div className="flex gap-2">
-                    {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map(level => (
-                      <Button
-                        key={level}
-                        variant={newDeckLevel === level ? 'default' : 'outline'}
-                        size="sm"
-                        className={newDeckLevel === level ? 'bg-emerald-600 hover:bg-emerald-700 text-white' : ''}
-                        onClick={() => setNewDeckLevel(level)}
-                      >
-                        {level}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <DialogFooter>
-                <Button variant="outline" onClick={() => setDialogOpen(false)}>Cancel</Button>
-                <Button
-                  onClick={handleGenerateDeck}
-                  disabled={generating || !newDeckTopic.trim()}
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white"
-                >
-                  {generating ? (
-                    <>
-                      <RotateCcw className="h-4 w-4 mr-2 animate-spin" />
-                      Generating...
-                    </>
-                  ) : (
-                    <>
-                      <Sparkles className="h-4 w-4 mr-2" />
-                      Generate
-                    </>
-                  )}
-                </Button>
-              </DialogFooter>
-            </DialogContent>
-          </Dialog>
         </div>
 
         {loading ? (
@@ -390,11 +301,7 @@ export default function VocabSection() {
           <Card className="p-12 text-center">
             <BookOpen className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
             <h3 className="text-lg font-medium mb-2">No vocabulary decks yet</h3>
-            <p className="text-muted-foreground mb-4">Generate your first AI deck or seed the database to get started.</p>
-            <Button onClick={() => setDialogOpen(true)} className="bg-emerald-600 hover:bg-emerald-700 text-white">
-              <Plus className="h-4 w-4 mr-2" />
-              Create Your First Deck
-            </Button>
+            <p className="text-muted-foreground mb-4">Please sync the content via the admin panel.</p>
           </Card>
         ) : (
           <div className="space-y-6">
