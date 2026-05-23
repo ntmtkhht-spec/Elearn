@@ -6,7 +6,7 @@ import { readingC1C2 } from '@/lib/data/reading-c1-c2'
 
 export const dynamic = 'force-dynamic'
 
-export async function POST() {
+export async function GET() {
   try {
     const allReadings = [...readingA1A2, ...readingB1B2, ...readingC1C2]
 
