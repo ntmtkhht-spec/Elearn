@@ -154,6 +154,10 @@ interface AppState {
   dashboardTodayWord: VocabCard | null
   setDashboardTodayWord: (word: VocabCard | null) => void
 
+  // Mode
+  vocabPracticeMode: 'standard' | 'hard_only'
+  setVocabPracticeMode: (mode: 'standard' | 'hard_only') => void
+
   // Stats
   learningStats: LearningStats | null
   setLearningStats: (stats: LearningStats | null) => void
@@ -175,6 +179,9 @@ export const useAppStore = create<AppState>()(
   // Navigation
   activeSection: 'dashboard',
   setActiveSection: (section) => set({ activeSection: section }),
+      
+  vocabPracticeMode: 'standard',
+  setVocabPracticeMode: (mode) => set({ vocabPracticeMode: mode }),
 
   // AI Coach
   coachOpen: false,

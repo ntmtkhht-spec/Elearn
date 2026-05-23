@@ -108,6 +108,7 @@ export default function VocabSection() {
     currentCardIndex, setCurrentCardIndex,
     showAnswer, setShowAnswer,
     userLevel,
+    vocabPracticeMode, setVocabPracticeMode
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ViewMode>('decks')
@@ -148,10 +149,27 @@ export default function VocabSection() {
     loadDecks()
   }, [setVocabDecks, vocabDecks.length])
 
+  useEffect(() => {
+    if (vocabPracticeMode === 'hard_only' && !currentDeck) {
+      const mockDeck: VocabDeck = {
+        id: 'hard_only',
+        name: 'Difficult Words',
+        description: 'Review vocabulary that needs practice',
+        level: displayLevel,
+        category: null,
+        icon: null
+      }
+      setCurrentDeck(mockDeck)
+      loadPracticeCards(mockDeck)
+      setVocabPracticeMode('standard') // Reset so going back shows all decks
+    }
+  }, [vocabPracticeMode, currentDeck, setCurrentDeck, loadPracticeCards, displayLevel, setVocabPracticeMode])
+
   const loadPracticeCards = useCallback(async (deck: VocabDeck) => {
     setLoading(true)
     try {
-      const res = await fetch(`/api/vocab/practice?deckId=${deck.id}`)
+      const modeQuery = deck.id === 'hard_only' ? '?mode=hard' : `?deckId=${deck.id}`
+      const res = await fetch(`/api/vocab/practice${modeQuery}`)
       if (res.ok) {
         const data = await res.json()
         if (data.length > 0) {

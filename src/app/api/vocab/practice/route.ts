@@ -14,18 +14,46 @@ const SAMPLE_CARDS: Record<string, Array<{ id: string; deckId: string; word: str
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const deckId = searchParams.get('deckId')
+  const mode = searchParams.get('mode')
   const userId = await getUserId()
 
   try {
     const { db } = await import('@/lib/db')
+    
+    let whereClause: any = deckId ? { deckId } : undefined
+    
+    if (mode === 'hard' && userId) {
+      whereClause = {
+        progress: {
+          some: {
+            userId,
+            OR: [
+              { status: 'learning' },
+              { easeFactor: { lt: 2.5 } }
+            ]
+          }
+        }
+      }
+    }
+
     const cards = await db.vocabCard.findMany({
-      where: deckId ? { deckId } : undefined,
+      where: whereClause,
       include: {
         progress: userId
           ? { where: { userId } }
           : true,
       },
     })
+    
+    if (mode === 'hard') {
+      // Sort hard cards by nextReviewAt
+      const hardCards = cards.sort((a, b) => {
+        const tA = new Date(a.progress[0]?.nextReviewAt || 0).getTime()
+        const tB = new Date(b.progress[0]?.nextReviewAt || 0).getTime()
+        return tA - tB
+      })
+      return NextResponse.json(hardCards.slice(0, 20))
+    }
     
     if (deckId) {
       const now = new Date()

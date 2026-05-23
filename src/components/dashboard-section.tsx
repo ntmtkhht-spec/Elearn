@@ -49,7 +49,8 @@ const MOCK_ACTIVITY = [
 export default function DashboardSection() {
   const { 
     setActiveSection, userLevel,
-    dashboardStats, setDashboardStats, dashboardTodayWord, setDashboardTodayWord 
+    dashboardStats, setDashboardStats, dashboardTodayWord, setDashboardTodayWord,
+    setVocabPracticeMode
   } = useAppStore()
   const displayLevel = userLevel || 'B2'
   
@@ -265,9 +266,20 @@ export default function DashboardSection() {
                   </div>
                 </div>
                 
-                <Button variant="secondary" className="w-full sm:w-auto shrink-0" onClick={() => setActiveSection('vocabulary')}>
-                  Practice now
-                </Button>
+                <div className="flex items-center gap-2 w-full sm:w-auto">
+                  <Button variant="outline" className="w-full sm:w-auto shrink-0 border-amber-200 text-amber-700 hover:bg-amber-50 hover:text-amber-800 dark:border-amber-900/50 dark:text-amber-500 dark:hover:bg-amber-900/40" onClick={() => {
+                    setVocabPracticeMode('hard_only')
+                    setActiveSection('vocabulary')
+                  }}>
+                    Review difficult words
+                  </Button>
+                  <Button variant="secondary" className="w-full sm:w-auto shrink-0" onClick={() => {
+                    setVocabPracticeMode('standard')
+                    setActiveSection('vocabulary')
+                  }}>
+                    Practice now
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
