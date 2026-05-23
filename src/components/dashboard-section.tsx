@@ -190,7 +190,7 @@ export default function DashboardSection() {
     loadData()
   }, [dashboardTodayWord, setDashboardStats, setDashboardTodayWord])
 
-  const dailyGoal = 50
+  const dailyGoal = 10
   const dailyProgress = stats ? Math.min(((stats.vocabStudied || 0) / dailyGoal) * 100, 100) : 0
 
   const speakWord = (text: string) => {
