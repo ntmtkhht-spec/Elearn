@@ -99,9 +99,21 @@ export default function ReadingSection() {
   const {
     readingExercises, setReadingExercises,
     currentExercise, setCurrentExercise,
+    userLevel,
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ReadViewMode>('list')
+  const [showAllLevels, setShowAllLevels] = useState(false)
+
+  const displayLevel = userLevel || 'B2'
+  const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+  const levelIndex = LEVEL_ORDER.indexOf(displayLevel)
+  const visibleLevels = showAllLevels
+    ? LEVEL_ORDER
+    : LEVEL_ORDER.slice(Math.max(0, levelIndex - 1), levelIndex + 1)
+
+  const filteredExercises = readingExercises.filter(ex => visibleLevels.includes(ex.level))
+  const otherExercises = readingExercises.filter(ex => !visibleLevels.includes(ex.level))
   const [loading, setLoading] = useState(readingExercises.length === 0)
   const [generating, setGenerating] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
@@ -307,54 +319,89 @@ export default function ReadingSection() {
             </Button>
           </Card>
         ) : (
-          <div className="space-y-3">
-            {readingExercises.map((exercise, i) => (
-              <motion.div
-                key={exercise.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
+          <div className="space-y-6">
+            {/* Level filter info */}
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-muted-foreground">
+                Showing exercises for <Badge className={LEVEL_COLORS[displayLevel] || LEVEL_COLORS['B2']} variant="secondary">{displayLevel}</Badge> level
+                {levelIndex > 0 && <span className="ml-1">& below</span>}
+              </p>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-xs text-muted-foreground"
+                onClick={() => setShowAllLevels(!showAllLevels)}
               >
-                <Card
-                  className="cursor-pointer hover:shadow-md hover:border-emerald-300 dark:hover:border-emerald-700 transition-all group"
-                  onClick={() => handleExerciseClick(exercise)}
+                {showAllLevels ? 'Show my level only' : `Show all levels (${readingExercises.length} exercises)`}
+              </Button>
+            </div>
+
+            <div className="space-y-3">
+              {filteredExercises.map((exercise, i) => (
+                <motion.div
+                  key={exercise.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
                 >
-                  <CardContent className="p-5 flex items-center gap-4">
-                    <div className="text-3xl flex-shrink-0">
-                      {CATEGORY_ICONS[exercise.category || ''] || '📄'}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        <h3 className="font-semibold group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                          {exercise.title}
-                        </h3>
-                        <Badge className={LEVEL_COLORS[exercise.level] || LEVEL_COLORS['B1']} variant="secondary">
-                          {exercise.level}
-                        </Badge>
+                  <Card
+                    className="cursor-pointer hover:shadow-md hover:border-emerald-300 dark:hover:border-emerald-700 transition-all group"
+                    onClick={() => handleExerciseClick(exercise)}
+                  >
+                    <CardContent className="p-5 flex items-center gap-4">
+                      <div className="text-3xl flex-shrink-0">
+                        {CATEGORY_ICONS[exercise.category || ''] || '📄'}
                       </div>
-                      <p className="text-sm text-muted-foreground line-clamp-1">
-                        {exercise.content.substring(0, 100)}...
-                      </p>
-                      <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
-                        <span>{exercise.questions.length} questions</span>
-                        <span>•</span>
-                        <span>{exercise.category}</span>
-                        {exercise.vocabularyHints && (
-                          <>
-                            <span>•</span>
-                            <span className="flex items-center gap-1">
-                              <BookMarked className="h-3 w-3" />
-                              {exercise.vocabularyHints.length} vocab hints
-                            </span>
-                          </>
-                        )}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            {exercise.title}
+                          </h3>
+                          <Badge className={LEVEL_COLORS[exercise.level] || LEVEL_COLORS['B1']} variant="secondary">
+                            {exercise.level}
+                          </Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground line-clamp-1">
+                          {exercise.content.substring(0, 100)}...
+                        </p>
+                        <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+                          <span>{exercise.questions.length} questions</span>
+                          <span>•</span>
+                          <span>{exercise.category}</span>
+                          {exercise.vocabularyHints && (
+                            <>
+                              <span>•</span>
+                              <span className="flex items-center gap-1">
+                                <BookMarked className="h-3 w-3" />
+                                {exercise.vocabularyHints.length} vocab hints
+                              </span>
+                            </>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                    <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-emerald-500 transition-colors flex-shrink-0" />
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+                      <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-emerald-500 transition-colors flex-shrink-0" />
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Other level exercises (collapsed) */}
+            {!showAllLevels && otherExercises.length > 0 && (
+              <Card className="border-dashed">
+                <CardContent className="p-4">
+                  <Button
+                    variant="ghost"
+                    className="w-full text-sm text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowAllLevels(true)}
+                  >
+                    <FileText className="h-4 w-4 mr-2" />
+                    {otherExercises.length} more exercise{otherExercises.length !== 1 ? 's' : ''} at other levels
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </Button>
+                </CardContent>
+              </Card>
+            )}
           </div>
         )}
       </div>
