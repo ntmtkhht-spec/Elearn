@@ -1,0 +1,75 @@
+{
+  "title": "Working from Home: Pros and Cons",
+  "content": "Since the pandemic, working from home has become common for many employees. This arrangement offers several distinct advantages. The most obvious benefit is the lack of a daily commute, which saves both time and money. It also allows for a more flexible schedule, helping people to balance their professional and personal lives better. However, there are significant disadvantages as well. Many remote workers report feeling isolated and lonely, missing the casual interactions with colleagues at the office. Furthermore, the boundary between work and home life can easily blur. Without a physical separation, some employees find it difficult to switch off at the end of the day, leading to burnout. A hybrid model, combining both remote and office work, is becoming the preferred solution for many companies.",
+  "level": "B1",
+  "category": "Business",
+  "questions": [
+    {
+      "id": "q_read_b1_working_from_home_pros_and_cons_0",
+      "question": "What is described as the most obvious benefit of remote work?",
+      "options": [
+        "Free coffee",
+        "No daily commute",
+        "Working in pajamas",
+        "Higher salary"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The most obvious benefit is the lack of a daily commute...\""
+    },
+    {
+      "id": "q_read_b1_working_from_home_pros_and_cons_1",
+      "question": "What is a negative psychological effect experienced by some remote workers?",
+      "options": [
+        "Happiness",
+        "Anger",
+        "Feeling isolated and lonely",
+        "Fear of technology"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Many remote workers report feeling isolated and lonely...\""
+    },
+    {
+      "id": "q_read_b1_working_from_home_pros_and_cons_2",
+      "question": "What happens when the boundary between work and home life blurs?",
+      "options": [
+        "People sleep too much",
+        "Employees find it difficult to switch off, leading to burnout",
+        "People forget how to do their jobs",
+        "Computers break down"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Without a physical separation, some employees find it difficult to switch off... leading to burnout.\""
+    },
+    {
+      "id": "q_read_b1_working_from_home_pros_and_cons_3",
+      "question": "What is a \"hybrid model\"?",
+      "options": [
+        "Working only at night",
+        "A combination of remote and office work",
+        "Working for two different companies",
+        "Using new technology at work"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"A hybrid model, combining both remote and office work...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "commute",
+      "meaning": "Pendeln (Arbeitsweg)"
+    },
+    {
+      "word": "isolated",
+      "meaning": "isoliert / einsam"
+    },
+    {
+      "word": "boundary",
+      "meaning": "Grenze"
+    },
+    {
+      "word": "burnout",
+      "meaning": "Erschöpfungssyndrom"
+    }
+  ],
+  "id": "read_b1_working_from_home_pros_and_cons"
+}

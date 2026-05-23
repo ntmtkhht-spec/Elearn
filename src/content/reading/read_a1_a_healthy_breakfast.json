@@ -1,0 +1,75 @@
+{
+  "title": "A Healthy Breakfast",
+  "content": "Breakfast is the most important meal of the day. A healthy breakfast gives you energy. I always eat a healthy breakfast. I have a bowl of oatmeal with milk. I add fresh fruits like berries and a banana. I also drink a glass of orange juice. Sometimes, I eat a boiled egg. I don't eat a lot of sugar in the morning. This breakfast helps me to stay focused and active until lunch.",
+  "level": "A1",
+  "category": "Health",
+  "questions": [
+    {
+      "id": "q_read_a1_a_healthy_breakfast_0",
+      "question": "Why is breakfast important?",
+      "options": [
+        "It makes you sleep",
+        "It gives you energy",
+        "It is cheap",
+        "It is fast"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"A healthy breakfast gives you energy.\""
+    },
+    {
+      "id": "q_read_a1_a_healthy_breakfast_1",
+      "question": "What does the person add to their oatmeal?",
+      "options": [
+        "Chocolate",
+        "Sugar",
+        "Fresh fruits",
+        "Honey"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I add fresh fruits like berries and a banana.\""
+    },
+    {
+      "id": "q_read_a1_a_healthy_breakfast_2",
+      "question": "What do they drink?",
+      "options": [
+        "Coffee",
+        "Tea",
+        "Water",
+        "Orange juice"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"I also drink a glass of orange juice.\""
+    },
+    {
+      "id": "q_read_a1_a_healthy_breakfast_3",
+      "question": "What does the person avoid in the morning?",
+      "options": [
+        "Eggs",
+        "Milk",
+        "A lot of sugar",
+        "Fruits"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I don't eat a lot of sugar in the morning.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "oatmeal",
+      "meaning": "Haferbrei"
+    },
+    {
+      "word": "berries",
+      "meaning": "Beeren"
+    },
+    {
+      "word": "focused",
+      "meaning": "konzentriert"
+    },
+    {
+      "word": "avoid",
+      "meaning": "vermeiden"
+    }
+  ],
+  "id": "read_a1_a_healthy_breakfast"
+}

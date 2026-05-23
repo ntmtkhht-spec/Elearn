@@ -1,0 +1,75 @@
+{
+  "title": "Sustainable Tourism",
+  "content": "Tourism is a massive industry that brings money and jobs to many countries. However, mass tourism can also cause significant damage to the environment and local communities. This is why \"sustainable tourism\" is gaining popularity. Sustainable tourism means traveling in a way that minimizes negative impacts. For example, instead of staying in large international hotel chains, sustainable tourists might choose local guesthouses. They respect the local culture, try to reduce plastic waste, and avoid activities that harm wildlife. Cities like Venice and Barcelona are struggling with the number of tourists and are introducing rules to protect their heritage. By being a responsible traveler, you can help preserve beautiful destinations for future generations.",
+  "level": "B1",
+  "category": "Environment",
+  "questions": [
+    {
+      "id": "q_read_b1_sustainable_tourism_0",
+      "question": "What is a negative consequence of mass tourism mentioned in the text?",
+      "options": [
+        "It creates too many jobs",
+        "It causes damage to the environment and local communities",
+        "It makes traveling too expensive",
+        "It improves public transport"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"mass tourism can also cause significant damage to the environment and local communities.\""
+    },
+    {
+      "id": "q_read_b1_sustainable_tourism_1",
+      "question": "What is an example of sustainable tourism?",
+      "options": [
+        "Staying in a large international hotel",
+        "Traveling with a lot of plastic bottles",
+        "Staying in local guesthouses",
+        "Ignoring local culture"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"instead of staying in large international hotel chains, sustainable tourists might choose local guesthouses.\""
+    },
+    {
+      "id": "q_read_b1_sustainable_tourism_2",
+      "question": "Why are cities like Venice and Barcelona introducing new rules?",
+      "options": [
+        "To attract more tourists",
+        "To build more hotels",
+        "Because they are struggling with the number of tourists",
+        "To make money from wildlife"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Cities like Venice and Barcelona are struggling with the number of tourists and are introducing rules...\""
+    },
+    {
+      "id": "q_read_b1_sustainable_tourism_3",
+      "question": "What is the main goal of being a responsible traveler?",
+      "options": [
+        "To save money on flights",
+        "To preserve beautiful destinations for future generations",
+        "To meet famous people",
+        "To get a tan quickly"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"By being a responsible traveler, you can help preserve beautiful destinations for future generations.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "sustainable",
+      "meaning": "nachhaltig"
+    },
+    {
+      "word": "impacts",
+      "meaning": "Auswirkungen"
+    },
+    {
+      "word": "heritage",
+      "meaning": "Kulturerbe"
+    },
+    {
+      "word": "preserve",
+      "meaning": "bewahren / erhalten"
+    }
+  ],
+  "id": "read_b1_sustainable_tourism"
+}

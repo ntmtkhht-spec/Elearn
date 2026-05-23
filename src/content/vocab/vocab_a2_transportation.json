@@ -1,0 +1,130 @@
+{
+  "name": "Transportation",
+  "description": "Different ways of getting around",
+  "level": "A2",
+  "category": "Travel",
+  "icon": "🚌",
+  "cards": [
+    {
+      "word": "Car",
+      "translation": "Auto",
+      "pronunciation": "/kɑːr/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We drove there by car.",
+      "exampleTranslation": "Wir sind mit dem Auto dorthin gefahren.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_0",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Bus",
+      "translation": "Bus",
+      "pronunciation": "/bʌs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I take the bus to school.",
+      "exampleTranslation": "Ich fahre mit dem Bus zur Schule.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_1",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Train",
+      "translation": "Zug",
+      "pronunciation": "/treɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The train arrives at 5 PM.",
+      "exampleTranslation": "Der Zug kommt um 17 Uhr an.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_2",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Bicycle",
+      "translation": "Fahrrad",
+      "pronunciation": "/ˈbaɪsɪkəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He rides his bicycle everywhere.",
+      "exampleTranslation": "Er fährt überall mit seinem Fahrrad hin.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_3",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Airplane",
+      "translation": "Flugzeug",
+      "pronunciation": "/ˈɛərpleɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The airplane takes off soon.",
+      "exampleTranslation": "Das Flugzeug hebt bald ab.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_4",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Ticket",
+      "translation": "Fahrkarte / Ticket",
+      "pronunciation": "/ˈtɪkɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Please show your ticket.",
+      "exampleTranslation": "Bitte zeigen Sie Ihre Fahrkarte.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_5",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Station",
+      "translation": "Bahnhof / Station",
+      "pronunciation": "/ˈsteɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Meet me at the station.",
+      "exampleTranslation": "Triff mich am Bahnhof.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_6",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Airport",
+      "translation": "Flughafen",
+      "pronunciation": "/ˈɛərpɔːrt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We must be at the airport early.",
+      "exampleTranslation": "Wir müssen früh am Flughafen sein.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_7",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Driver",
+      "translation": "Fahrer",
+      "pronunciation": "/ˈdraɪvər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The bus driver was very friendly.",
+      "exampleTranslation": "Der Busfahrer war sehr freundlich.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_8",
+      "deckId": "vocab_a2_transportation"
+    },
+    {
+      "word": "Journey",
+      "translation": "Reise / Fahrt",
+      "pronunciation": "/ˈdʒɜːrni/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Have a safe journey!",
+      "exampleTranslation": "Gute Reise!",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_a2_transportation_9",
+      "deckId": "vocab_a2_transportation"
+    }
+  ],
+  "id": "vocab_a2_transportation"
+}

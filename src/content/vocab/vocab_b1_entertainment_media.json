@@ -1,0 +1,130 @@
+{
+  "name": "Entertainment & Media",
+  "description": "Movies, TV, news and culture",
+  "level": "B1",
+  "category": "Culture",
+  "icon": "🎬",
+  "cards": [
+    {
+      "word": "Audience",
+      "translation": "Publikum",
+      "pronunciation": "/ˈɔːdiəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The audience clapped loudly.",
+      "exampleTranslation": "Das Publikum klatschte laut.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_0",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Broadcast",
+      "translation": "Ausstrahlung / Senden",
+      "pronunciation": "/ˈbrɔːdkæst/",
+      "partOfSpeech": "noun/verb",
+      "exampleSentence": "The game will be broadcast live.",
+      "exampleTranslation": "Das Spiel wird live übertragen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_1",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Review",
+      "translation": "Rezension / Bewertung",
+      "pronunciation": "/rɪˈvjuː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The movie received good reviews.",
+      "exampleTranslation": "Der Film erhielt gute Kritiken.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_2",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Channel",
+      "translation": "Kanal / Sender",
+      "pronunciation": "/ˈtʃænəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Can you change the channel?",
+      "exampleTranslation": "Kannst du den Sender wechseln?",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_3",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Episode",
+      "translation": "Folge / Episode",
+      "pronunciation": "/ˈɛpɪsoʊd/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I missed the last episode of the series.",
+      "exampleTranslation": "Ich habe die letzte Folge der Serie verpasst.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_4",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Celebrity",
+      "translation": "Prominente/r",
+      "pronunciation": "/səˈlɛbrɪti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Many celebrities attended the event.",
+      "exampleTranslation": "Viele Prominente nahmen an der Veranstaltung teil.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_5",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Article",
+      "translation": "Artikel",
+      "pronunciation": "/ˈɑːrtɪkəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I read an interesting article today.",
+      "exampleTranslation": "Ich habe heute einen interessanten Artikel gelesen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_6",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Performance",
+      "translation": "Aufführung / Leistung",
+      "pronunciation": "/pərˈfɔːrməns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Her performance in the play was amazing.",
+      "exampleTranslation": "Ihre Leistung in dem Stück war fantastisch.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_7",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Interview",
+      "translation": "Interview",
+      "pronunciation": "/ˈɪntərvjuː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The actor gave a rare interview.",
+      "exampleTranslation": "Der Schauspieler gab ein seltenes Interview.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_8",
+      "deckId": "vocab_b1_entertainment_media"
+    },
+    {
+      "word": "Subtitles",
+      "translation": "Untertitel",
+      "pronunciation": "/ˈsʌbˌtaɪtəlz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I prefer watching movies with subtitles.",
+      "exampleTranslation": "Ich schaue Filme lieber mit Untertiteln.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_entertainment_media_9",
+      "deckId": "vocab_b1_entertainment_media"
+    }
+  ],
+  "id": "vocab_b1_entertainment_media"
+}

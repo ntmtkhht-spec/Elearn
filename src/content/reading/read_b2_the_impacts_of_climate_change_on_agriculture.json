@@ -1,0 +1,75 @@
+{
+  "title": "The Impacts of Climate Change on Agriculture",
+  "content": "Climate change is arguably the most pressing existential threat of the 21st century, and its impact on global agriculture is particularly alarming. As average temperatures rise and weather patterns become increasingly erratic, the traditional models of farming are being severely disrupted.\n\nOne of the most direct consequences is the increased frequency of extreme weather events. Prolonged droughts can devastate crop yields, while sudden, intense floods can wash away fertile topsoil. Furthermore, shifting temperature zones are altering the geographic range of agricultural pests and diseases, exposing crops to new threats for which they have no natural resistance.\n\nWhile some regions in higher latitudes might temporarily benefit from longer growing seasons, the overall global effect is overwhelmingly negative. Staple crops like wheat, rice, and maize are highly sensitive to thermal stress. A failure in these harvests could trigger global food shortages and severe price spikes, disproportionately affecting vulnerable populations in developing nations. To mitigate these risks, scientists are urgently developing drought-resistant crop varieties and advocating for more resilient, sustainable agricultural practices.",
+  "level": "B2",
+  "category": "Environment",
+  "questions": [
+    {
+      "id": "q_read_b2_the_impacts_of_climate_change_on_agriculture_0",
+      "question": "How are shifting temperature zones affecting crops?",
+      "options": [
+        "They make the crops grow faster",
+        "They expose crops to new pests and diseases",
+        "They make the crops taste better",
+        "They reduce the need for water"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"shifting temperature zones are altering the geographic range of agricultural pests and diseases, exposing crops to new threats...\""
+    },
+    {
+      "id": "q_read_b2_the_impacts_of_climate_change_on_agriculture_1",
+      "question": "What can happen as a result of prolonged droughts and intense floods?",
+      "options": [
+        "Crop yields are devastated and topsoil is washed away",
+        "Farming becomes much cheaper",
+        "Crops develop natural resistance automatically",
+        "Farmers move to cities"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text says: \"Prolonged droughts can devastate crop yields, while sudden, intense floods can wash away fertile topsoil.\""
+    },
+    {
+      "id": "q_read_b2_the_impacts_of_climate_change_on_agriculture_2",
+      "question": "Who will be most affected by global food shortages and price spikes?",
+      "options": [
+        "Scientists",
+        "People living in higher latitudes",
+        "Vulnerable populations in developing nations",
+        "Supermarket owners"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"disproportionately affecting vulnerable populations in developing nations.\""
+    },
+    {
+      "id": "q_read_b2_the_impacts_of_climate_change_on_agriculture_3",
+      "question": "What is one solution scientists are working on?",
+      "options": [
+        "Building giant greenhouses",
+        "Developing drought-resistant crop varieties",
+        "Moving all farms to higher latitudes",
+        "Replacing crops with synthetic food"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"scientists are urgently developing drought-resistant crop varieties...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "erratic",
+      "meaning": "unberechenbar / sprunghaft"
+    },
+    {
+      "word": "yields",
+      "meaning": "Erträge (Ernte)"
+    },
+    {
+      "word": "topsoil",
+      "meaning": "Mutterboden"
+    },
+    {
+      "word": "mitigate",
+      "meaning": "mildern / abschwächen"
+    }
+  ],
+  "id": "read_b2_the_impacts_of_climate_change_on_agriculture"
+}

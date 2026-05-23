@@ -1,0 +1,130 @@
+{
+  "name": "House & Furniture",
+  "description": "Rooms and objects in a home",
+  "level": "A2",
+  "category": "Daily",
+  "icon": "🏠",
+  "cards": [
+    {
+      "word": "Bedroom",
+      "translation": "Schlafzimmer",
+      "pronunciation": "/ˈbɛdruːm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My bedroom is upstairs.",
+      "exampleTranslation": "Mein Schlafzimmer ist oben.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_0",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Kitchen",
+      "translation": "Küche",
+      "pronunciation": "/ˈkɪtʃɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She is cooking in the kitchen.",
+      "exampleTranslation": "Sie kocht in der Küche.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_1",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Bathroom",
+      "translation": "Badezimmer",
+      "pronunciation": "/ˈbæθruːm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The bathroom is on the right.",
+      "exampleTranslation": "Das Badezimmer ist rechts.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_2",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Living Room",
+      "translation": "Wohnzimmer",
+      "pronunciation": "/ˈlɪvɪŋ ruːm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We watch TV in the living room.",
+      "exampleTranslation": "Wir schauen im Wohnzimmer fern.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_3",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Bed",
+      "translation": "Bett",
+      "pronunciation": "/bɛd/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "This bed is very comfortable.",
+      "exampleTranslation": "Dieses Bett ist sehr bequem.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_4",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Table",
+      "translation": "Tisch",
+      "pronunciation": "/ˈteɪbəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Put the plates on the table.",
+      "exampleTranslation": "Stell die Teller auf den Tisch.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_5",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Chair",
+      "translation": "Stuhl",
+      "pronunciation": "/tʃɛər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Please take a chair.",
+      "exampleTranslation": "Bitte nimm dir einen Stuhl.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_6",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Sofa",
+      "translation": "Sofa",
+      "pronunciation": "/ˈsoʊfə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He is sleeping on the sofa.",
+      "exampleTranslation": "Er schläft auf dem Sofa.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_7",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Window",
+      "translation": "Fenster",
+      "pronunciation": "/ˈwɪndoʊ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Open the window, please.",
+      "exampleTranslation": "Öffne bitte das Fenster.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_8",
+      "deckId": "vocab_a2_house_furniture"
+    },
+    {
+      "word": "Door",
+      "translation": "Tür",
+      "pronunciation": "/dɔːr/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Close the door behind you.",
+      "exampleTranslation": "Schließ die Tür hinter dir.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_house_furniture_9",
+      "deckId": "vocab_a2_house_furniture"
+    }
+  ],
+  "id": "vocab_a2_house_furniture"
+}

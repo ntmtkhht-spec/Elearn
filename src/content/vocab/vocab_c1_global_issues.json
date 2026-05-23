@@ -1,0 +1,130 @@
+{
+  "name": "Global Issues",
+  "description": "International relations, challenges and society",
+  "level": "C1",
+  "category": "Culture",
+  "icon": "🌐",
+  "cards": [
+    {
+      "word": "Globalization",
+      "translation": "Globalisierung",
+      "pronunciation": "/ˌɡloʊbəlaɪˈzeɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Globalization has connected markets worldwide.",
+      "exampleTranslation": "Die Globalisierung hat die Märkte weltweit vernetzt.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_0",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Sustainability",
+      "translation": "Nachhaltigkeit",
+      "pronunciation": "/səˌsteɪnəˈbɪləti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Sustainability is crucial for our planet's future.",
+      "exampleTranslation": "Nachhaltigkeit ist entscheidend für die Zukunft unseres Planeten.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_1",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Inequality",
+      "translation": "Ungleichheit",
+      "pronunciation": "/ˌɪnɪˈkwɒləti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Wealth inequality is rising in many nations.",
+      "exampleTranslation": "Die Vermögensungleichheit steigt in vielen Nationen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_2",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Diplomacy",
+      "translation": "Diplomatie",
+      "pronunciation": "/dɪˈploʊməsi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "International conflicts are best resolved through diplomacy.",
+      "exampleTranslation": "Internationale Konflikte lassen sich am besten durch Diplomatie lösen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_3",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Sanctions",
+      "translation": "Sanktionen",
+      "pronunciation": "/ˈsæŋkʃənz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The UN imposed strict economic sanctions.",
+      "exampleTranslation": "Die UN verhängte strenge Wirtschaftssanktionen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_4",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Refugee",
+      "translation": "Flüchtling",
+      "pronunciation": "/ˌrɛfjuˈdʒiː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Millions of refugees fled the war-torn country.",
+      "exampleTranslation": "Millionen von Flüchtlingen flohen aus dem kriegszerrütteten Land.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_5",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Humanitarian",
+      "translation": "Humanitär",
+      "pronunciation": "/hjuːˌmænɪˈtɛəriən/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "They provided humanitarian aid after the earthquake.",
+      "exampleTranslation": "Sie leisteten nach dem Erdbeben humanitäre Hilfe.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_6",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Treaty",
+      "translation": "Vertrag / Abkommen",
+      "pronunciation": "/ˈtriːti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The nations signed a peace treaty.",
+      "exampleTranslation": "Die Nationen unterzeichneten einen Friedensvertrag.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_7",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Infrastructure",
+      "translation": "Infrastruktur",
+      "pronunciation": "/ˈɪnfrəˌstrʌktʃər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The country needs to rebuild its crumbling infrastructure.",
+      "exampleTranslation": "Das Land muss seine verfallende Infrastruktur wieder aufbauen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_8",
+      "deckId": "vocab_c1_global_issues"
+    },
+    {
+      "word": "Demographics",
+      "translation": "Demografie",
+      "pronunciation": "/ˌdɛməˈɡræfɪks/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Changing demographics will affect the economy.",
+      "exampleTranslation": "Eine sich verändernde Demografie wird die Wirtschaft beeinflussen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_global_issues_9",
+      "deckId": "vocab_c1_global_issues"
+    }
+  ],
+  "id": "vocab_c1_global_issues"
+}

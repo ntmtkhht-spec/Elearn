@@ -1,0 +1,75 @@
+{
+  "title": "The Ethics of Fast Food Marketing to Children",
+  "content": "The marketing of high-calorie, low-nutrient fast food to children has become a topic of intense ethical scrutiny. Public health experts argue that aggressive advertising campaigns are a significant driver of the global childhood obesity epidemic. Fast food corporations invest billions of dollars annually in targeted marketing, utilizing cartoon mascots, colorful packaging, and the inclusion of free toys with \"kids' meals\" to build brand loyalty from a very young age.\n\nChildren are particularly vulnerable to these tactics because, psychologically, they lack the cognitive maturity to understand the persuasive intent behind commercials. They often cannot distinguish between television programming and advertisements. Consequently, several European countries have implemented strict regulations or outright bans on advertising unhealthy foods during children's television shows.\n\nHowever, the fast food industry and its defenders argue that the responsibility for a child's diet lies ultimately with the parents, not the government. They claim that advertising bans infringe upon free speech and corporate rights. Despite these arguments, the push for stricter regulations continues as healthcare systems struggle to cope with the rising costs of diet-related diseases.",
+  "level": "B2",
+  "category": "Society",
+  "questions": [
+    {
+      "id": "q_read_b2_the_ethics_of_fast_food_marketing_to_children_0",
+      "question": "What do public health experts believe is a result of fast food advertising?",
+      "options": [
+        "Children becoming better at watching TV",
+        "The global childhood obesity epidemic",
+        "Parents saving money on food",
+        "Better toys for children"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Public health experts argue that aggressive advertising campaigns are a significant driver of the global childhood obesity epidemic.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_fast_food_marketing_to_children_1",
+      "question": "Why are children considered particularly vulnerable to advertising?",
+      "options": [
+        "They have more money to spend",
+        "They watch too much TV",
+        "They lack the cognitive maturity to understand persuasive intent",
+        "They love colorful mascots"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"they lack the cognitive maturity to understand the persuasive intent behind commercials.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_fast_food_marketing_to_children_2",
+      "question": "What action have some European countries taken?",
+      "options": [
+        "They banned all fast food restaurants",
+        "They banned or regulated advertising of unhealthy foods during children's shows",
+        "They forced companies to give away healthier toys",
+        "They put a tax on televisions"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"several European countries have implemented strict regulations or outright bans on advertising unhealthy foods during children's television shows.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_fast_food_marketing_to_children_3",
+      "question": "What is the main counter-argument from the fast food industry?",
+      "options": [
+        "Their food is actually healthy",
+        "Parents are responsible for their children's diets, not the government",
+        "Advertising doesn't actually work",
+        "Toys are educational"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the responsibility for a child's diet lies ultimately with the parents, not the government.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "scrutiny",
+      "meaning": "genaue Untersuchung / Überprüfung"
+    },
+    {
+      "word": "mascots",
+      "meaning": "Maskottchen"
+    },
+    {
+      "word": "persuasive intent",
+      "meaning": "Überzeugungsabsicht"
+    },
+    {
+      "word": "infringe upon",
+      "meaning": "verletzen / eingreifen in"
+    }
+  ],
+  "id": "read_b2_the_ethics_of_fast_food_marketing_to_children"
+}

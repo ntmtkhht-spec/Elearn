@@ -1,0 +1,79 @@
+{
+  "title": "The Socioeconomic Implications of Demographic Transition",
+  "content": "Global demography is undergoing a tectonic shift, transitioning from the rapid population explosion of the 20th century to a precarious paradigm of demographic stagnation and, in several advanced economies, outright contraction. This phenomenon, primarily driven by plummeting fertility rates and concurrent increases in longevity, engenders profound structural challenges that defy conventional macroeconomic orthodoxies predicated on perpetual expansion.\n\nWhile the Malthusian specter of overpopulation leading to mass starvation has largely been averted through agricultural innovation, the emerging demographic winter poses insidious threats of a different nature. A shrinking, aging populace inherently dictates a contraction of the labor force, precipitating systemic labor shortages and a deceleration of aggregate demand. Furthermore, the fiscal architecture of modern welfare states—particularly pay-as-you-go pension schemas and publicly funded gerontological healthcare—relies on an expanding base of young contributors. As the dependency ratio skews heavily toward retirees, the tax burden upon the dwindling cohort of active workers threatens to become punitive, potentially stifling capital formation and entrepreneurial dynamism.\n\nMitigation strategies are politically fraught. While aggressive automation and artificial intelligence can partially decouple productivity from raw labor inputs, managing the fiscal imbalances requires politically perilous reforms: raising statutory retirement ages, overhauling immigration policies to attract human capital, or fundamentally restructuring the social contract.",
+  "level": "C2",
+  "category": "Economics",
+  "questions": [
+    {
+      "id": "q_read_c2_the_socioeconomic_implications_of_demographic_transition_0",
+      "question": "What tectonic shift is happening in global demography?",
+      "options": [
+        "A transition from population explosion to demographic stagnation and contraction",
+        "A sudden increase in birth rates globally",
+        "A rapid decrease in life expectancy",
+        "A return to Malthusian overpopulation"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text says: \"transitioning from the rapid population explosion of the 20th century to a precarious paradigm of demographic stagnation and... outright contraction.\""
+    },
+    {
+      "id": "q_read_c2_the_socioeconomic_implications_of_demographic_transition_1",
+      "question": "Why does demographic contraction challenge conventional macroeconomic orthodoxies?",
+      "options": [
+        "Because orthodoxies assume people will buy fewer goods",
+        "Because orthodoxies are predicated on perpetual expansion",
+        "Because economics is not a real science",
+        "Because it causes inflation"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"engenders profound structural challenges that defy conventional macroeconomic orthodoxies predicated on perpetual expansion.\""
+    },
+    {
+      "id": "q_read_c2_the_socioeconomic_implications_of_demographic_transition_2",
+      "question": "Why is the fiscal architecture of modern welfare states threatened?",
+      "options": [
+        "Because older people don't pay any taxes",
+        "Because the healthcare system is too advanced",
+        "Because pay-as-you-go systems rely on an expanding base of young contributors, which is shrinking",
+        "Because politicians are stealing the money"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the fiscal architecture of modern welfare states... relies on an expanding base of young contributors. As the dependency ratio skews... the tax burden... threatens to become punitive\""
+    },
+    {
+      "id": "q_read_c2_the_socioeconomic_implications_of_demographic_transition_3",
+      "question": "What is mentioned as a way to partially decouple productivity from raw labor inputs?",
+      "options": [
+        "Increasing the minimum wage",
+        "Aggressive automation and artificial intelligence",
+        "Banning immigration",
+        "Encouraging people to have more children"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"While aggressive automation and artificial intelligence can partially decouple productivity from raw labor inputs...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "precarious",
+      "meaning": "prekär / unsicher"
+    },
+    {
+      "word": "orthodoxies",
+      "meaning": "allgemein anerkannte Lehrmeinungen"
+    },
+    {
+      "word": "gerontological",
+      "meaning": "gerontologisch (die Altersheilkunde betreffend)"
+    },
+    {
+      "word": "punitive",
+      "meaning": "strafend / unerträglich hoch"
+    },
+    {
+      "word": "fraught",
+      "meaning": "belastet / heikel"
+    }
+  ],
+  "id": "read_c2_the_socioeconomic_implications_of_demographic_transition"
+}

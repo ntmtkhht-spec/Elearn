@@ -1,0 +1,79 @@
+{
+  "title": "Deconstructing Hegemonic Narratives in Historiography",
+  "content": "Historiography—the study of how history is written—has undergone a radical paradigm shift in recent decades. For centuries, the recorded annals of human civilization were overwhelmingly Eurocentric, patriarchal, and inextricably intertwined with the justifications of colonial and imperial enterprises. History was, colloquially speaking, written by the victors; it constituted a hegemonic narrative that naturalized the subjugation of marginalized groups by presenting the triumph of Western civilization as an inevitable teleological progression.\n\nContemporary critical historians are engaged in the meticulous deconstruction of these dominant paradigms. Through the methodologies of subaltern studies and postcolonial theory, scholars strive to excavate the silenced voices of indigenous populations, women, the enslaved, and the colonized. This process is not merely additive—it is fundamentally disruptive. By illuminating the violence, exploitation, and systemic erasure embedded within the \"civilizing mission,\" critical historiography challenges the epistemological foundations of national mythologies.\n\nUnsurprisingly, this revisionist endeavor frequently ignites fierce cultural and political backlash. Reactionary forces condemn it as historical revisionism or an unpatriotic assault on shared heritage. However, the objective of critical historiography is not to replace one dogmatic narrative with another, but rather to construct a more polyphonic, nuanced, and ultimately truthful understanding of the human past, acknowledging that history is a contested terrain where power and memory perpetually collide.",
+  "level": "C2",
+  "category": "History",
+  "questions": [
+    {
+      "id": "q_read_c2_deconstructing_hegemonic_narratives_in_historiography_0",
+      "question": "How is traditional historiography characterized in the text?",
+      "options": [
+        "As completely objective and unbiased",
+        "As Eurocentric, patriarchal, and intertwined with colonial justifications",
+        "As focusing mainly on indigenous populations",
+        "As being written mostly by women"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"recorded annals of human civilization were overwhelmingly Eurocentric, patriarchal, and inextricably intertwined with the justifications of colonial and imperial enterprises.\""
+    },
+    {
+      "id": "q_read_c2_deconstructing_hegemonic_narratives_in_historiography_1",
+      "question": "What did the hegemonic narrative present as an \"inevitable teleological progression\"?",
+      "options": [
+        "The fall of the Roman Empire",
+        "The invention of writing",
+        "The triumph of Western civilization",
+        "The end of the world"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"presenting the triumph of Western civilization as an inevitable teleological progression.\""
+    },
+    {
+      "id": "q_read_c2_deconstructing_hegemonic_narratives_in_historiography_2",
+      "question": "What is the goal of methodologies like subaltern studies and postcolonial theory?",
+      "options": [
+        "To memorize dates more efficiently",
+        "To excavate the silenced voices of marginalized groups",
+        "To prove that colonialism was beneficial",
+        "To ban history from schools"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"scholars strive to excavate the silenced voices of indigenous populations, women, the enslaved, and the colonized.\""
+    },
+    {
+      "id": "q_read_c2_deconstructing_hegemonic_narratives_in_historiography_3",
+      "question": "How do reactionary forces respond to critical historiography?",
+      "options": [
+        "They welcome it",
+        "They ignore it completely",
+        "They condemn it as an unpatriotic assault on shared heritage",
+        "They fund the research"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Reactionary forces condemn it as historical revisionism or an unpatriotic assault on shared heritage.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "hegemonic",
+      "meaning": "hegemonial (vorherrschend / übermächtig)"
+    },
+    {
+      "word": "subjugation",
+      "meaning": "Unterwerfung"
+    },
+    {
+      "word": "teleological",
+      "meaning": "teleologisch (auf ein Endziel gerichtet)"
+    },
+    {
+      "word": "subaltern",
+      "meaning": "subaltern (untergeordnet / marginalisiert)"
+    },
+    {
+      "word": "polyphonic",
+      "meaning": "polyphon (vielstimmig)"
+    }
+  ],
+  "id": "read_c2_deconstructing_hegemonic_narratives_in_historiography"
+}

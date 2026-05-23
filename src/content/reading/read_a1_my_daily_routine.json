@@ -1,0 +1,71 @@
+{
+  "title": "My Daily Routine",
+  "content": "My name is Tom. I get up at 7 o'clock every morning. I eat breakfast at 7:30. I usually have bread, butter, and coffee. Then I go to work by bus. I work in an office from 9 to 5. At 1 o'clock, I have lunch with my colleagues. After work, I go to the supermarket and buy food. In the evening, I cook dinner and watch TV. I go to bed at 10:30.",
+  "level": "A1",
+  "category": "Daily Life",
+  "questions": [
+    {
+      "id": "q_read_a1_my_daily_routine_0",
+      "question": "What time does Tom get up?",
+      "options": [
+        "7:00",
+        "7:30",
+        "9:00",
+        "10:30"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text says: \"I get up at 7 o'clock every morning.\""
+    },
+    {
+      "id": "q_read_a1_my_daily_routine_1",
+      "question": "How does he go to work?",
+      "options": [
+        "By car",
+        "By bus",
+        "By train",
+        "On foot"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I go to work by bus.\""
+    },
+    {
+      "id": "q_read_a1_my_daily_routine_2",
+      "question": "What does he do after work?",
+      "options": [
+        "He watches TV",
+        "He goes to the supermarket",
+        "He cooks dinner",
+        "He goes to bed"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"After work, I go to the supermarket and buy food.\""
+    },
+    {
+      "id": "q_read_a1_my_daily_routine_3",
+      "question": "Where does Tom work?",
+      "options": [
+        "In a supermarket",
+        "In a restaurant",
+        "In an office",
+        "At home"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I work in an office.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "usually",
+      "meaning": "normalerweise"
+    },
+    {
+      "word": "colleagues",
+      "meaning": "Kollegen"
+    },
+    {
+      "word": "supermarket",
+      "meaning": "Supermarkt"
+    }
+  ],
+  "id": "read_a1_my_daily_routine"
+}

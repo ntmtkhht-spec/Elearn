@@ -1,0 +1,71 @@
+{
+  "title": "Shopping for Food",
+  "content": "Today is Saturday. Sarah goes to the supermarket. She needs food for the weekend. She buys apples, bananas, and oranges. She also buys milk, eggs, and bread. She wants to make a cake, so she buys sugar and flour. At the checkout, she pays with her credit card. The food costs 45 dollars. She puts the food in two big bags and walks home.",
+  "level": "A1",
+  "category": "Shopping",
+  "questions": [
+    {
+      "id": "q_read_a1_shopping_for_food_0",
+      "question": "What day is it?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Today is Saturday.\""
+    },
+    {
+      "id": "q_read_a1_shopping_for_food_1",
+      "question": "Why does she buy sugar and flour?",
+      "options": [
+        "To make bread",
+        "To make a cake",
+        "To make breakfast",
+        "To make a pizza"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"She wants to make a cake, so she buys sugar and flour.\""
+    },
+    {
+      "id": "q_read_a1_shopping_for_food_2",
+      "question": "How does she pay?",
+      "options": [
+        "With cash",
+        "With a credit card",
+        "With her phone",
+        "She doesn't pay"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"At the checkout, she pays with her credit card.\""
+    },
+    {
+      "id": "q_read_a1_shopping_for_food_3",
+      "question": "How much does the food cost?",
+      "options": [
+        "35 dollars",
+        "40 dollars",
+        "45 dollars",
+        "50 dollars"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"The food costs 45 dollars.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "flour",
+      "meaning": "Mehl"
+    },
+    {
+      "word": "checkout",
+      "meaning": "Kasse"
+    },
+    {
+      "word": "pays",
+      "meaning": "bezahlt"
+    }
+  ],
+  "id": "read_a1_shopping_for_food"
+}

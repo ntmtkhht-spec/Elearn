@@ -1,0 +1,75 @@
+{
+  "title": "The Illusion of Multitasking",
+  "content": "In today’s hyper-connected workplace, the ability to multitask is often worn as a badge of honor. Job advertisements frequently list \"excellent multitasking abilities\" as a key requirement. However, cognitive psychologists have repeatedly demonstrated that true human multitasking is a myth. \n\nWhen we believe we are doing two complex tasks simultaneously—such as writing an email while listening to a conference call—we are actually engaging in \"task-switching.\" Our brain rapidly shifts its focus back and forth between the two activities. This continuous switching incurs a \"cognitive penalty.\" It drains mental energy, significantly increases the likelihood of making errors, and ultimately takes longer than if the tasks were completed sequentially.\n\nResearch indicates that chronic multitaskers actually struggle more with organizing their thoughts and filtering out irrelevant information. To combat the inefficiencies of task-switching, productivity experts advocate for \"deep work\" or single-tasking. By eliminating distractions and dedicating uninterrupted blocks of time to a single objective, individuals can produce higher quality work and experience less mental fatigue.",
+  "level": "B2",
+  "category": "Psychology",
+  "questions": [
+    {
+      "id": "q_read_b2_the_illusion_of_multitasking_0",
+      "question": "What do cognitive psychologists say about human multitasking?",
+      "options": [
+        "It is a vital skill",
+        "It is highly efficient",
+        "It is actually a myth",
+        "Only women can do it"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"cognitive psychologists have repeatedly demonstrated that true human multitasking is a myth.\""
+    },
+    {
+      "id": "q_read_b2_the_illusion_of_multitasking_1",
+      "question": "What is actually happening in the brain when we try to multitask?",
+      "options": [
+        "The brain is resting",
+        "The brain splits in half",
+        "The brain is rapidly switching focus between tasks",
+        "The brain processes both tasks at the exact same time"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"we are actually engaging in 'task-switching.' Our brain rapidly shifts its focus back and forth...\""
+    },
+    {
+      "id": "q_read_b2_the_illusion_of_multitasking_2",
+      "question": "What is the \"cognitive penalty\" of task-switching?",
+      "options": [
+        "A headache",
+        "Paying money to a therapist",
+        "Draining mental energy and increasing errors",
+        "Forgetting how to do simple tasks"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It drains mental energy, significantly increases the likelihood of making errors...\""
+    },
+    {
+      "id": "q_read_b2_the_illusion_of_multitasking_3",
+      "question": "What do productivity experts recommend instead of multitasking?",
+      "options": [
+        "Working longer hours",
+        "Single-tasking or \"deep work\"",
+        "Drinking more coffee",
+        "Taking more holidays"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"productivity experts advocate for 'deep work' or single-tasking.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "badge of honor",
+      "meaning": "Ehrenabzeichen"
+    },
+    {
+      "word": "simultaneously",
+      "meaning": "gleichzeitig"
+    },
+    {
+      "word": "incurs",
+      "meaning": "zieht nach sich / verursacht"
+    },
+    {
+      "word": "fatigue",
+      "meaning": "Ermüdung"
+    }
+  ],
+  "id": "read_b2_the_illusion_of_multitasking"
+}

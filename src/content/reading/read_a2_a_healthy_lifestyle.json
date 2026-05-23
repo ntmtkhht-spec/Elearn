@@ -1,0 +1,75 @@
+{
+  "title": "A Healthy Lifestyle",
+  "content": "Many people want to live a healthy lifestyle. This means doing several things to keep your body and mind in good condition. First, it is important to eat a balanced diet. You should eat plenty of vegetables, fruits, and whole grains, and avoid too much fast food and sugar. Second, regular exercise is crucial. You don't need to go to the gym every day; even walking or cycling for 30 minutes can make a difference. Finally, getting enough sleep is often forgotten. Most adults need between 7 and 8 hours of sleep each night to function properly.",
+  "level": "A2",
+  "category": "Health",
+  "questions": [
+    {
+      "id": "q_read_a2_a_healthy_lifestyle_0",
+      "question": "What does a balanced diet include?",
+      "options": [
+        "Fast food and sugar",
+        "Vegetables, fruits, and whole grains",
+        "Only meat",
+        "Only water"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"You should eat plenty of vegetables, fruits, and whole grains...\""
+    },
+    {
+      "id": "q_read_a2_a_healthy_lifestyle_1",
+      "question": "How much exercise is suggested as a minimum?",
+      "options": [
+        "Going to the gym every day",
+        "Running for an hour",
+        "Walking or cycling for 30 minutes",
+        "Lifting weights"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"even walking or cycling for 30 minutes can make a difference.\""
+    },
+    {
+      "id": "q_read_a2_a_healthy_lifestyle_2",
+      "question": "What is often forgotten for a healthy lifestyle?",
+      "options": [
+        "Eating",
+        "Exercising",
+        "Getting enough sleep",
+        "Drinking water"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"getting enough sleep is often forgotten.\""
+    },
+    {
+      "id": "q_read_a2_a_healthy_lifestyle_3",
+      "question": "How much sleep do most adults need?",
+      "options": [
+        "5 to 6 hours",
+        "7 to 8 hours",
+        "9 to 10 hours",
+        "More than 10 hours"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Most adults need between 7 and 8 hours of sleep each night...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "balanced diet",
+      "meaning": "ausgewogene Ernährung"
+    },
+    {
+      "word": "whole grains",
+      "meaning": "Vollkornprodukte"
+    },
+    {
+      "word": "crucial",
+      "meaning": "entscheidend / sehr wichtig"
+    },
+    {
+      "word": "function properly",
+      "meaning": "richtig funktionieren"
+    }
+  ],
+  "id": "read_a2_a_healthy_lifestyle"
+}

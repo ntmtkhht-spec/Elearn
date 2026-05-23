@@ -1,0 +1,75 @@
+{
+  "title": "Moving to a New Apartment",
+  "content": "Anna is moving to a new apartment next week. She is very busy packing her things into cardboard boxes. Her new apartment is on the third floor of a modern building. It is smaller than her old place, but it is closer to the city center and her office. She will save a lot of time traveling to work. She is throwing away old clothes and things she doesn't need anymore. Her friends are coming on Saturday to help her move the heavy furniture, like her bed and sofa.",
+  "level": "A2",
+  "category": "Home",
+  "questions": [
+    {
+      "id": "q_read_a2_moving_to_a_new_apartment_0",
+      "question": "When is Anna moving?",
+      "options": [
+        "Today",
+        "Tomorrow",
+        "Next week",
+        "Next month"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Anna is moving to a new apartment next week.\""
+    },
+    {
+      "id": "q_read_a2_moving_to_a_new_apartment_1",
+      "question": "What is an advantage of her new apartment?",
+      "options": [
+        "It is much bigger",
+        "It has a garden",
+        "It is cheaper",
+        "It is closer to her office"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"it is closer to the city center and her office.\""
+    },
+    {
+      "id": "q_read_a2_moving_to_a_new_apartment_2",
+      "question": "What is she doing with things she doesn't need?",
+      "options": [
+        "Selling them",
+        "Throwing them away",
+        "Giving them to friends",
+        "Keeping them in boxes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"She is throwing away old clothes and things she doesn't need anymore.\""
+    },
+    {
+      "id": "q_read_a2_moving_to_a_new_apartment_3",
+      "question": "Who is helping her move the heavy furniture?",
+      "options": [
+        "Her family",
+        "Her colleagues",
+        "Professional movers",
+        "Her friends"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"Her friends are coming on Saturday to help her...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "packing",
+      "meaning": "einpacken"
+    },
+    {
+      "word": "cardboard boxes",
+      "meaning": "Pappkartons"
+    },
+    {
+      "word": "throwing away",
+      "meaning": "wegwerfen"
+    },
+    {
+      "word": "furniture",
+      "meaning": "Möbel"
+    }
+  ],
+  "id": "read_a2_moving_to_a_new_apartment"
+}

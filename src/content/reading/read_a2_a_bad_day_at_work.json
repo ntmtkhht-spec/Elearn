@@ -1,0 +1,75 @@
+{
+  "title": "A Bad Day at Work",
+  "content": "Yesterday was a terrible day for David. First, his alarm clock didn't ring, so he woke up late. He had to run to the bus stop, but he missed the bus. When he finally arrived at the office, he was 45 minutes late. His boss was not happy. Then, David's computer crashed and he lost an important report. He had to write it all over again. During his lunch break, he spilled coffee on his new white shirt. He was so relieved when it was 5 o'clock and he could finally go home.",
+  "level": "A2",
+  "category": "Work",
+  "questions": [
+    {
+      "id": "q_read_a2_a_bad_day_at_work_0",
+      "question": "Why did David wake up late?",
+      "options": [
+        "He was tired",
+        "His alarm clock didn't ring",
+        "He forgot to set the alarm",
+        "He was sick"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"his alarm clock didn't ring, so he woke up late.\""
+    },
+    {
+      "id": "q_read_a2_a_bad_day_at_work_1",
+      "question": "How late was David for work?",
+      "options": [
+        "15 minutes",
+        "30 minutes",
+        "45 minutes",
+        "1 hour"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"he was 45 minutes late.\""
+    },
+    {
+      "id": "q_read_a2_a_bad_day_at_work_2",
+      "question": "What happened to his computer?",
+      "options": [
+        "It was stolen",
+        "It crashed",
+        "It was too slow",
+        "It caught fire"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"David's computer crashed...\""
+    },
+    {
+      "id": "q_read_a2_a_bad_day_at_work_3",
+      "question": "What happened during his lunch break?",
+      "options": [
+        "He lost his wallet",
+        "He met a friend",
+        "He ate too much",
+        "He spilled coffee on his shirt"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"he spilled coffee on his new white shirt.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "terrible",
+      "meaning": "schrecklich"
+    },
+    {
+      "word": "crashed",
+      "meaning": "abgestürzt (Computer)"
+    },
+    {
+      "word": "spilled",
+      "meaning": "verschüttet"
+    },
+    {
+      "word": "relieved",
+      "meaning": "erleichtert"
+    }
+  ],
+  "id": "read_a2_a_bad_day_at_work"
+}

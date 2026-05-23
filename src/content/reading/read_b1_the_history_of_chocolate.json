@@ -1,0 +1,75 @@
+{
+  "title": "The History of Chocolate",
+  "content": "Chocolate is loved worldwide, but its history goes back thousands of years to ancient Mesoamerica. The Maya and Aztecs were the first to cultivate the cacao tree. However, they didn't eat chocolate as a sweet bar; they consumed it as a bitter, spicy drink. They believed cacao was a gift from the gods and even used cacao beans as a form of currency. When Spanish explorers brought cacao to Europe in the 16th century, sugar and honey were added to make the drink sweeter. For a long time, chocolate remained a luxury item for the wealthy. It wasn't until the Industrial Revolution in the 19th century that new machines made it possible to produce solid chocolate bars cheaply, making it accessible to the general public.",
+  "level": "B1",
+  "category": "History",
+  "questions": [
+    {
+      "id": "q_read_b1_the_history_of_chocolate_0",
+      "question": "How did the Maya and Aztecs consume chocolate?",
+      "options": [
+        "As a sweet candy bar",
+        "As a bitter, spicy drink",
+        "Mixed with milk",
+        "Baked in a cake"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"they consumed it as a bitter, spicy drink.\""
+    },
+    {
+      "id": "q_read_b1_the_history_of_chocolate_1",
+      "question": "What unusual use did cacao beans have in ancient times?",
+      "options": [
+        "They were used as jewelry",
+        "They were used as currency (money)",
+        "They were used to build houses",
+        "They were used as medicine only"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"even used cacao beans as a form of currency.\""
+    },
+    {
+      "id": "q_read_b1_the_history_of_chocolate_2",
+      "question": "What did Europeans add to chocolate in the 16th century?",
+      "options": [
+        "Spices and chili",
+        "Water and salt",
+        "Sugar and honey",
+        "Coffee and vanilla"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"sugar and honey were added to make the drink sweeter.\""
+    },
+    {
+      "id": "q_read_b1_the_history_of_chocolate_3",
+      "question": "What made chocolate accessible to the general public?",
+      "options": [
+        "The discovery of new cacao trees",
+        "The Industrial Revolution and new machines",
+        "A decrease in taxes",
+        "A new recipe by a famous chef"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the Industrial Revolution... new machines made it possible to produce solid chocolate bars cheaply, making it accessible to the general public.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "cultivate",
+      "meaning": "anbauen / kultivieren"
+    },
+    {
+      "word": "bitter",
+      "meaning": "bitter"
+    },
+    {
+      "word": "currency",
+      "meaning": "Währung / Zahlungsmittel"
+    },
+    {
+      "word": "accessible",
+      "meaning": "zugänglich"
+    }
+  ],
+  "id": "read_b1_the_history_of_chocolate"
+}

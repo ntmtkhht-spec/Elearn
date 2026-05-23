@@ -1,0 +1,75 @@
+{
+  "title": "The Art of Minimalist Living",
+  "content": "Minimalism is a lifestyle choice that involves voluntarily reducing one's possessions. Instead of constantly accumulating more stuff, minimalists focus on keeping only the things that serve a purpose or bring them joy. This movement grew as a reaction to modern consumerism. Proponents of minimalism argue that owning fewer things leads to less stress, as there is less to clean, organize, and worry about. It also helps people save money and reduce their environmental footprint. Minimalist living is not just about physical objects; it can also apply to digital spaces, like clearing out a messy email inbox, or managing one's time by saying \"no\" to unimportant commitments. Ultimately, the goal is to create space for what truly matters: relationships, experiences, and personal growth.",
+  "level": "B1",
+  "category": "Daily Life",
+  "questions": [
+    {
+      "id": "q_read_b1_the_art_of_minimalist_living_0",
+      "question": "What is the main idea of minimalism?",
+      "options": [
+        "Buying expensive things",
+        "Reducing possessions to only what is useful or brings joy",
+        "Living in a tiny house",
+        "Never spending money"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"minimalists focus on keeping only the things that serve a purpose or bring them joy.\""
+    },
+    {
+      "id": "q_read_b1_the_art_of_minimalist_living_1",
+      "question": "According to the text, why does owning fewer things reduce stress?",
+      "options": [
+        "Because you don't have to lock your doors",
+        "Because there is less to clean and organize",
+        "Because people stop visiting you",
+        "Because you can sleep more"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"owning fewer things leads to less stress, as there is less to clean, organize, and worry about.\""
+    },
+    {
+      "id": "q_read_b1_the_art_of_minimalist_living_2",
+      "question": "How can minimalism apply to digital spaces?",
+      "options": [
+        "Buying a smaller laptop",
+        "Clearing out a messy email inbox",
+        "Deleting all social media",
+        "Never using the internet"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"it can also apply to digital spaces, like clearing out a messy email inbox...\""
+    },
+    {
+      "id": "q_read_b1_the_art_of_minimalist_living_3",
+      "question": "What is the ultimate goal of minimalism?",
+      "options": [
+        "To become famous",
+        "To impress friends",
+        "To create space for relationships and experiences",
+        "To win a competition"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the goal is to create space for what truly matters: relationships, experiences, and personal growth.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "possessions",
+      "meaning": "Besitztümer"
+    },
+    {
+      "word": "accumulating",
+      "meaning": "ansammeln"
+    },
+    {
+      "word": "consumerism",
+      "meaning": "Konsumdenken"
+    },
+    {
+      "word": "footprint",
+      "meaning": "Fußabdruck (hier: ökologischer Fußabdruck)"
+    }
+  ],
+  "id": "read_b1_the_art_of_minimalist_living"
+}

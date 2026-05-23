@@ -1,0 +1,130 @@
+{
+  "name": "Economy & Finance",
+  "description": "Money, banking and economic systems",
+  "level": "B2",
+  "category": "Business",
+  "icon": "📈",
+  "cards": [
+    {
+      "word": "Investment",
+      "translation": "Investition",
+      "pronunciation": "/ɪnˈvɛstmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Buying a house is a good long-term investment.",
+      "exampleTranslation": "Ein Haus zu kaufen ist eine gute langfristige Investition.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_0",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Currency",
+      "translation": "Währung",
+      "pronunciation": "/ˈkɜːrənsi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The euro is the currency used in many European countries.",
+      "exampleTranslation": "Der Euro ist die Währung, die in vielen europäischen Ländern verwendet wird.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_1",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Inflation",
+      "translation": "Inflation",
+      "pronunciation": "/ɪnˈfleɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "High inflation reduces purchasing power.",
+      "exampleTranslation": "Hohe Inflation verringert die Kaufkraft.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_2",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Profit",
+      "translation": "Gewinn",
+      "pronunciation": "/ˈprɒfɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The company made a huge profit this year.",
+      "exampleTranslation": "Das Unternehmen hat dieses Jahr einen riesigen Gewinn gemacht.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_3",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Debt",
+      "translation": "Schulden",
+      "pronunciation": "/dɛt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He is trying to pay off his debt.",
+      "exampleTranslation": "Er versucht, seine Schulden abzubezahlen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_4",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Budget",
+      "translation": "Budget",
+      "pronunciation": "/ˈbʌdʒɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We have to stick to the budget.",
+      "exampleTranslation": "Wir müssen uns an das Budget halten.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_5",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Taxes",
+      "translation": "Steuern",
+      "pronunciation": "/tæksɪz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Citizens must pay their taxes on time.",
+      "exampleTranslation": "Bürger müssen ihre Steuern pünktlich zahlen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_6",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Revenue",
+      "translation": "Einnahmen / Umsatz",
+      "pronunciation": "/ˈrɛvənjuː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Advertising revenue has dropped recently.",
+      "exampleTranslation": "Die Werbeeinnahmen sind kürzlich gesunken.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_7",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Stock Market",
+      "translation": "Aktienmarkt",
+      "pronunciation": "/stɒk ˈmɑːrkɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She invests heavily in the stock market.",
+      "exampleTranslation": "Sie investiert stark in den Aktienmarkt.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_8",
+      "deckId": "vocab_b2_economy_finance"
+    },
+    {
+      "word": "Loan",
+      "translation": "Kredit / Darlehen",
+      "pronunciation": "/loʊn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He took out a loan to start his business.",
+      "exampleTranslation": "Er nahm einen Kredit auf, um sein Geschäft zu gründen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_economy_finance_9",
+      "deckId": "vocab_b2_economy_finance"
+    }
+  ],
+  "id": "vocab_b2_economy_finance"
+}

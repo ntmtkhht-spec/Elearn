@@ -1,0 +1,75 @@
+{
+  "title": "The New Smartphone",
+  "content": "Emma bought a new smartphone last week. Her old phone was very slow and the battery only lasted for a few hours. The new phone has a large, bright screen and takes amazing photos. It also has a lot of storage space for her apps and music. It took her a few days to get used to the new operating system, but now she finds it very easy to use. The only problem is that it was quite expensive. However, Emma uses it every day for work and communication, so she thinks it was a good investment.",
+  "level": "A2",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_a2_the_new_smartphone_0",
+      "question": "What was wrong with Emma's old phone?",
+      "options": [
+        "It was broken",
+        "It was slow and had bad battery life",
+        "It was too small",
+        "It couldn't take photos"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Her old phone was very slow and the battery only lasted for a few hours.\""
+    },
+    {
+      "id": "q_read_a2_the_new_smartphone_1",
+      "question": "What is a feature of the new phone?",
+      "options": [
+        "It is cheap",
+        "It takes amazing photos",
+        "It is small",
+        "It has a long battery life"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The new phone has a large, bright screen and takes amazing photos.\""
+    },
+    {
+      "id": "q_read_a2_the_new_smartphone_2",
+      "question": "What was difficult for Emma at first?",
+      "options": [
+        "Paying for it",
+        "Taking photos",
+        "Getting used to the operating system",
+        "Installing apps"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It took her a few days to get used to the new operating system...\""
+    },
+    {
+      "id": "q_read_a2_the_new_smartphone_3",
+      "question": "Does Emma think it was a good idea to buy it?",
+      "options": [
+        "No, it was too expensive",
+        "Yes, because she uses it every day",
+        "No, she prefers her old phone",
+        "The text doesn't say"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"she thinks it was a good investment.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "battery",
+      "meaning": "Akku / Batterie"
+    },
+    {
+      "word": "storage space",
+      "meaning": "Speicherplatz"
+    },
+    {
+      "word": "get used to",
+      "meaning": "sich gewöhnen an"
+    },
+    {
+      "word": "investment",
+      "meaning": "Investition / Anlage"
+    }
+  ],
+  "id": "read_a2_the_new_smartphone"
+}

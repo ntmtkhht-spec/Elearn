@@ -1,0 +1,75 @@
+{
+  "title": "The Gentrification Debate",
+  "content": "Gentrification is a complex and highly controversial urban phenomenon. It typically occurs when wealthier individuals move into a historically lower-income, often working-class neighborhood. Initially, this influx of capital can seem beneficial. It usually brings investment in local infrastructure, a decrease in crime rates, and the opening of new amenities such as trendy cafes, boutique shops, and renovated parks.\n\nHowever, the dark side of gentrification is displacement. As the neighborhood becomes more desirable, property values and rents skyrocket. The original, lower-income residents—who often contributed to the cultural vibrancy that made the area attractive in the first place—are gradually priced out of their homes. Small, family-run businesses are replaced by corporate chains that can afford the higher leases.\n\nUrban planners and policymakers are deeply divided on how to manage this process. Some advocate for strict rent control laws and the mandatory inclusion of affordable housing in new developments to protect existing communities. Others argue that interfering with the free market stunts urban renewal and economic growth. Finding a balance that revitalizes neighborhoods without erasing their original inhabitants remains a formidable challenge.",
+  "level": "B2",
+  "category": "Society",
+  "questions": [
+    {
+      "id": "q_read_b2_the_gentrification_debate_0",
+      "question": "How is gentrification initially triggered?",
+      "options": [
+        "When a factory closes down",
+        "When wealthier individuals move into a lower-income neighborhood",
+        "When the government builds new schools",
+        "When crime rates increase"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"It typically occurs when wealthier individuals move into a historically lower-income... neighborhood.\""
+    },
+    {
+      "id": "q_read_b2_the_gentrification_debate_1",
+      "question": "What is seen as a positive effect of gentrification?",
+      "options": [
+        "Displacement of residents",
+        "Higher rents",
+        "Investment in infrastructure and lower crime rates",
+        "Closing of small businesses"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It usually brings investment in local infrastructure, a decrease in crime rates...\""
+    },
+    {
+      "id": "q_read_b2_the_gentrification_debate_2",
+      "question": "What is meant by \"displacement\" in the context of the text?",
+      "options": [
+        "People getting lost",
+        "Original residents being forced to leave because they cannot afford the high rents",
+        "Tearing down old buildings",
+        "Moving furniture around"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"As the neighborhood becomes more desirable, property values and rents skyrocket. The original, lower-income residents... are gradually priced out of their homes.\""
+    },
+    {
+      "id": "q_read_b2_the_gentrification_debate_3",
+      "question": "What is one proposed solution to protect existing communities?",
+      "options": [
+        "Banning all new cafes",
+        "Strict rent control laws and affordable housing",
+        "Letting the free market decide",
+        "Paying original residents to move away"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Some advocate for strict rent control laws and the mandatory inclusion of affordable housing...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "influx",
+      "meaning": "Zustrom"
+    },
+    {
+      "word": "amenities",
+      "meaning": "Annehmlichkeiten / Einrichtungen"
+    },
+    {
+      "word": "displacement",
+      "meaning": "Verdrängung"
+    },
+    {
+      "word": "priced out",
+      "meaning": "durch hohe Preise vertrieben"
+    }
+  ],
+  "id": "read_b2_the_gentrification_debate"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "My English Class",
+  "content": "I study English every Tuesday and Thursday evening. My class starts at 6 p.m. and ends at 8 p.m. There are fifteen students in my class. Our teacher is Mrs. Smith. She is very nice and helpful. In class, we read texts, write sentences, and speak English with our partners. We also listen to audio recordings. I like learning English. Sometimes the grammar is difficult, but I try my best.",
+  "level": "A1",
+  "category": "Education",
+  "questions": [
+    {
+      "id": "q_read_a1_my_english_class_0",
+      "question": "When is the English class?",
+      "options": [
+        "Monday and Wednesday",
+        "Tuesday and Thursday",
+        "Friday and Saturday",
+        "Every day"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I study English every Tuesday and Thursday evening.\""
+    },
+    {
+      "id": "q_read_a1_my_english_class_1",
+      "question": "How long is the class?",
+      "options": [
+        "One hour",
+        "Two hours",
+        "Three hours",
+        "Four hours"
+      ],
+      "correctIndex": 1,
+      "explanation": "It starts at 6 p.m. and ends at 8 p.m., which is two hours."
+    },
+    {
+      "id": "q_read_a1_my_english_class_2",
+      "question": "How many students are in the class?",
+      "options": [
+        "Ten",
+        "Twelve",
+        "Fifteen",
+        "Twenty"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"There are fifteen students in my class.\""
+    },
+    {
+      "id": "q_read_a1_my_english_class_3",
+      "question": "What does the student find difficult?",
+      "options": [
+        "Speaking",
+        "Reading",
+        "Writing",
+        "Grammar"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"Sometimes the grammar is difficult...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "evening",
+      "meaning": "Abend"
+    },
+    {
+      "word": "helpful",
+      "meaning": "hilfsbereit"
+    },
+    {
+      "word": "difficult",
+      "meaning": "schwierig"
+    }
+  ],
+  "id": "read_a1_my_english_class"
+}

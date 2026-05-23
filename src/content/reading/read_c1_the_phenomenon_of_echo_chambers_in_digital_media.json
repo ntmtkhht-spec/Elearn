@@ -1,0 +1,79 @@
+{
+  "title": "The Phenomenon of Echo Chambers in Digital Media",
+  "content": "The architecture of contemporary social media platforms is meticulously engineered to maximize user engagement. To achieve this, algorithms are deployed to curate content that aligns with a user's preexisting beliefs, political affiliations, and browsing history. While this creates a highly personalized and pleasant user experience, it simultaneously fosters the creation of \"echo chambers\" or \"filter bubbles.\"\n\nWithin an echo chamber, individuals are insulated from dissenting opinions and contradictory evidence. This constant reinforcement of homogeneous viewpoints inevitably leads to ideological polarization. Complex, multifaceted issues are reduced to binary, \"us versus them\" narratives. The epistemic closure inherent in these digital environments makes it exceedingly difficult for users to objective evaluate the veracity of information, rendering them highly susceptible to confirmation bias and targeted misinformation campaigns.\n\nThe societal implications are profound. Democratic discourse relies on the citizenry's ability to debate differing perspectives based on a shared set of objective facts. When segments of the population inhabit entirely disparate informational realities, constructive dialogue breaks down, posing a substantial threat to the foundational mechanisms of democratic governance.",
+  "level": "C1",
+  "category": "Society",
+  "questions": [
+    {
+      "id": "q_read_c1_the_phenomenon_of_echo_chambers_in_digital_media_0",
+      "question": "Why do social media algorithms curate content that aligns with users' preexisting beliefs?",
+      "options": [
+        "To educate the users",
+        "To maximize user engagement",
+        "To save bandwidth",
+        "To promote political neutrality"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The architecture of contemporary social media platforms is meticulously engineered to maximize user engagement. To achieve this, algorithms are deployed to curate content...\""
+    },
+    {
+      "id": "q_read_c1_the_phenomenon_of_echo_chambers_in_digital_media_1",
+      "question": "What happens to individuals within an echo chamber?",
+      "options": [
+        "They are exposed to a wide variety of opinions",
+        "They are insulated from dissenting opinions",
+        "They become more tolerant",
+        "They delete their social media accounts"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Within an echo chamber, individuals are insulated from dissenting opinions and contradictory evidence.\""
+    },
+    {
+      "id": "q_read_c1_the_phenomenon_of_echo_chambers_in_digital_media_2",
+      "question": "How does the \"epistemic closure\" of digital environments affect users?",
+      "options": [
+        "It makes them highly susceptible to confirmation bias and misinformation",
+        "It makes them excellent critical thinkers",
+        "It encourages them to read traditional newspapers",
+        "It makes them politically apathetic"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text says: \"The epistemic closure... makes it exceedingly difficult for users to objective evaluate the veracity of information, rendering them highly susceptible to confirmation bias and targeted misinformation...\""
+    },
+    {
+      "id": "q_read_c1_the_phenomenon_of_echo_chambers_in_digital_media_3",
+      "question": "Why are echo chambers considered a threat to democratic governance?",
+      "options": [
+        "Because they are too expensive to maintain",
+        "Because they prevent people from voting online",
+        "Because they destroy the shared set of objective facts needed for constructive dialogue",
+        "Because they encourage politicians to use social media"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Democratic discourse relies on the citizenry's ability to debate differing perspectives based on a shared set of objective facts. When segments of the population inhabit entirely disparate informational realities, constructive dialogue breaks down...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "curate",
+      "meaning": "kuratieren (Inhalte auswählen und zusammenstellen)"
+    },
+    {
+      "word": "insulated",
+      "meaning": "isoliert / abgeschirmt"
+    },
+    {
+      "word": "epistemic closure",
+      "meaning": "epistemische Schließung (Abschottung von neuem Wissen)"
+    },
+    {
+      "word": "veracity",
+      "meaning": "Wahrhaftigkeit / Richtigkeit"
+    },
+    {
+      "word": "disparate",
+      "meaning": "grundverschieden / ungleich"
+    }
+  ],
+  "id": "read_c1_the_phenomenon_of_echo_chambers_in_digital_media"
+}

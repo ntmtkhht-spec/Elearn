@@ -1,0 +1,75 @@
+{
+  "title": "The Lost Wallet",
+  "content": "While walking through the park, Robert saw a brown leather wallet on the path. He picked it up and opened it. Inside, there was 50 dollars in cash, some credit cards, and a driving license. Robert checked the driving license to see the owner's name. It belonged to a man named John Smith. There was also a business card with a phone number. Robert called the number and told John that he had found his wallet. John was very happy and relieved. They met at a café near the park, and John bought Robert a coffee to say thank you.",
+  "level": "A2",
+  "category": "Daily Life",
+  "questions": [
+    {
+      "id": "q_read_a2_the_lost_wallet_0",
+      "question": "Where did Robert find the wallet?",
+      "options": [
+        "In a café",
+        "On the street",
+        "In the park",
+        "On a bus"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"While walking through the park, Robert saw a brown leather wallet...\""
+    },
+    {
+      "id": "q_read_a2_the_lost_wallet_1",
+      "question": "What did Robert use to find the owner's name?",
+      "options": [
+        "The credit cards",
+        "The driving license",
+        "A letter",
+        "The cash"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Robert checked the driving license to see the owner's name.\""
+    },
+    {
+      "id": "q_read_a2_the_lost_wallet_2",
+      "question": "How did Robert contact John?",
+      "options": [
+        "He sent an email",
+        "He went to his house",
+        "He called a phone number on a business card",
+        "He gave it to the police"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"There was also a business card with a phone number. Robert called the number...\""
+    },
+    {
+      "id": "q_read_a2_the_lost_wallet_3",
+      "question": "How did John say thank you?",
+      "options": [
+        "He gave Robert 50 dollars",
+        "He bought Robert a coffee",
+        "He gave him a gift",
+        "He cooked him dinner"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"John bought Robert a coffee to say thank you.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "wallet",
+      "meaning": "Brieftasche / Geldbeutel"
+    },
+    {
+      "word": "leather",
+      "meaning": "Leder"
+    },
+    {
+      "word": "driving license",
+      "meaning": "Führerschein"
+    },
+    {
+      "word": "relieved",
+      "meaning": "erleichtert"
+    }
+  ],
+  "id": "read_a2_the_lost_wallet"
+}

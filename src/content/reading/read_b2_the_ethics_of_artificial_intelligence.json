@@ -1,0 +1,75 @@
+{
+  "title": "The Ethics of Artificial Intelligence",
+  "content": "As Artificial Intelligence (AI) systems become increasingly integrated into daily life, profound ethical questions have emerged. AI is no longer confined to science fiction; algorithms currently approve bank loans, screen job applicants, and even assist in medical diagnoses. While these systems offer unprecedented efficiency, they also pose significant risks regarding fairness and bias.\n\nMachine learning models are trained on vast datasets of human behavior. If these historical datasets contain societal biases—such as racial or gender prejudice—the AI will inadvertently learn and perpetuate those prejudices. For instance, an AI recruitment tool trained on data from a male-dominated industry might automatically downgrade the resumes of female candidates.\n\nAnother major ethical concern is accountability. When an autonomous vehicle is involved in a fatal collision, or when an AI makes a disastrous medical recommendation, determining who is legally and morally responsible—the programmer, the user, or the machine itself—is a complex legal gray area. Consequently, there is a growing consensus among tech leaders and ethicists that robust regulatory frameworks and transparent AI development processes are urgently required.",
+  "level": "B2",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_b2_the_ethics_of_artificial_intelligence_0",
+      "question": "How can an AI system become biased?",
+      "options": [
+        "If it is programmed with a virus",
+        "If it learns from historical datasets that contain human prejudices",
+        "If the computer gets too hot",
+        "If it is used by biased people"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"If these historical datasets contain societal biases... the AI will inadvertently learn and perpetuate those prejudices.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_artificial_intelligence_1",
+      "question": "What example is given to illustrate AI bias?",
+      "options": [
+        "A self-driving car causing a crash",
+        "A medical AI giving the wrong medicine",
+        "A recruitment tool downgrading female candidates",
+        "A bank loan algorithm crashing"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"an AI recruitment tool trained on data from a male-dominated industry might automatically downgrade the resumes of female candidates.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_artificial_intelligence_2",
+      "question": "What problem arises when an autonomous AI system makes a disastrous mistake?",
+      "options": [
+        "It is impossible to fix the code",
+        "It is very difficult to determine who is legally responsible",
+        "The AI deletes itself",
+        "Insurance companies refuse to pay"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"determining who is legally and morally responsible... is a complex legal gray area.\""
+    },
+    {
+      "id": "q_read_b2_the_ethics_of_artificial_intelligence_3",
+      "question": "What do tech leaders and ethicists agree is needed?",
+      "options": [
+        "A ban on all AI research",
+        "More historical datasets",
+        "Robust regulatory frameworks and transparent processes",
+        "Faster computers"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"robust regulatory frameworks and transparent AI development processes are urgently required.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "bias",
+      "meaning": "Voreingenommenheit / Befangenheit"
+    },
+    {
+      "word": "perpetuate",
+      "meaning": "aufrechterhalten / verewigen"
+    },
+    {
+      "word": "accountability",
+      "meaning": "Verantwortlichkeit / Haftung"
+    },
+    {
+      "word": "consensus",
+      "meaning": "Übereinstimmung / Konsens"
+    }
+  ],
+  "id": "read_b2_the_ethics_of_artificial_intelligence"
+}

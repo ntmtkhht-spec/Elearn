@@ -1,0 +1,75 @@
+{
+  "title": "The Evolution of the English Language",
+  "content": "English is often described as a \"living\" language, one that is constantly evolving in response to cultural shifts, technological advancements, and globalization. Unlike languages managed by strict academies (such as French), English has no official regulatory body. It grows organically, borrowing freely from other languages and inventing new terms as needed.\n\nThe internet and social media have drastically accelerated this linguistic evolution. We have witnessed the birth of entirely new vocabularies related to digital technology, such as \"blog,\" \"hashtag,\" and \"selfie.\" Moreover, digital communication has altered the grammar and syntax of informal writing. Acronyms (like LOL or BRB) and emojis are now standard features of text messaging, conveying tone and emotion quickly and efficiently.\n\nWhile linguistic purists often lament these changes, viewing them as the degradation of proper English, linguists generally view them as natural adaptations. They argue that language is merely a tool for communication; as the needs of the users change, the tool must adapt. A language that stops changing is, by definition, a dead language.",
+  "level": "B2",
+  "category": "Culture",
+  "questions": [
+    {
+      "id": "q_read_b2_the_evolution_of_the_english_language_0",
+      "question": "How is English different from French according to the text?",
+      "options": [
+        "English has older words",
+        "English is harder to learn",
+        "English has no official regulatory body",
+        "English is spoken faster"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Unlike languages managed by strict academies (such as French), English has no official regulatory body.\""
+    },
+    {
+      "id": "q_read_b2_the_evolution_of_the_english_language_1",
+      "question": "What has drastically accelerated the evolution of English recently?",
+      "options": [
+        "Schools and universities",
+        "The internet and social media",
+        "Government laws",
+        "Printed newspapers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The internet and social media have drastically accelerated this linguistic evolution.\""
+    },
+    {
+      "id": "q_read_b2_the_evolution_of_the_english_language_2",
+      "question": "Why are emojis and acronyms used in text messaging?",
+      "options": [
+        "Because people are lazy",
+        "To hide secret messages",
+        "To convey tone and emotion quickly and efficiently",
+        "Because phones don't have full keyboards"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Acronyms... and emojis are now standard features of text messaging, conveying tone and emotion quickly and efficiently.\""
+    },
+    {
+      "id": "q_read_b2_the_evolution_of_the_english_language_3",
+      "question": "How do linguists view the changes in the English language?",
+      "options": [
+        "As the degradation of proper English",
+        "As a terrible tragedy",
+        "As natural adaptations to the users' needs",
+        "As a temporary trend"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"linguists generally view them as natural adaptations. They argue that language is merely a tool for communication...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "evolving",
+      "meaning": "sich entwickelnd"
+    },
+    {
+      "word": "syntax",
+      "meaning": "Satzbau"
+    },
+    {
+      "word": "purists",
+      "meaning": "Puristen (Leute, die auf absolute Reinheit pochen)"
+    },
+    {
+      "word": "degradation",
+      "meaning": "Verschlechterung / Verfall"
+    }
+  ],
+  "id": "read_b2_the_evolution_of_the_english_language"
+}

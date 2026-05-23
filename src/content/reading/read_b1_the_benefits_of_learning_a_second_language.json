@@ -1,0 +1,71 @@
+{
+  "title": "The Benefits of Learning a Second Language",
+  "content": "Learning a second language is becoming increasingly important in our globalized world. It is not just about being able to order food on holiday; the benefits go much deeper. Firstly, speaking another language improves your brain function. Studies show that bilingual people often have better memory and concentration. They are also better at multitasking. Secondly, a second language opens up many career opportunities. Many international companies prefer to hire employees who can communicate with clients in different countries. Furthermore, learning a language gives you a deeper understanding of other cultures and ways of life. It allows you to connect with people on a more personal level when you travel. While it can be challenging and takes time and practice, the rewards are definitely worth the effort.",
+  "level": "B1",
+  "category": "Education",
+  "questions": [
+    {
+      "id": "q_read_b1_the_benefits_of_learning_a_second_language_0",
+      "question": "According to the text, what is one cognitive benefit of learning a second language?",
+      "options": [
+        "It makes you physically stronger",
+        "It improves your memory and concentration",
+        "It helps you sleep better",
+        "It makes you read faster"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Studies show that bilingual people often have better memory and concentration.\""
+    },
+    {
+      "id": "q_read_b1_the_benefits_of_learning_a_second_language_1",
+      "question": "Why do international companies prefer bilingual employees?",
+      "options": [
+        "Because they work longer hours",
+        "Because they expect lower salaries",
+        "Because they can communicate with clients in different countries",
+        "Because they are better at using computers"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Many international companies prefer to hire employees who can communicate with clients in different countries.\""
+    },
+    {
+      "id": "q_read_b1_the_benefits_of_learning_a_second_language_2",
+      "question": "How does language learning affect your travel experiences?",
+      "options": [
+        "It makes traveling cheaper",
+        "It allows you to connect with people on a personal level",
+        "It helps you find better hotels",
+        "It prevents you from getting lost"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"It allows you to connect with people on a more personal level when you travel.\""
+    },
+    {
+      "id": "q_read_b1_the_benefits_of_learning_a_second_language_3",
+      "question": "What does the author conclude about the process of learning a language?",
+      "options": [
+        "It is easy and fast",
+        "It is a waste of time",
+        "It is challenging but worth the effort",
+        "It is only for young people"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"While it can be challenging... the rewards are definitely worth the effort.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "bilingual",
+      "meaning": "zweisprachig"
+    },
+    {
+      "word": "multitasking",
+      "meaning": "Multitasking (mehrere Dinge gleichzeitig tun)"
+    },
+    {
+      "word": "challenging",
+      "meaning": "herausfordernd"
+    }
+  ],
+  "id": "read_b1_the_benefits_of_learning_a_second_language"
+}

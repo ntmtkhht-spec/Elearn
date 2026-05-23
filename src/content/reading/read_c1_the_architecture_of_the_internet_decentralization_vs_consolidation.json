@@ -1,0 +1,79 @@
+{
+  "title": "The Architecture of the Internet: Decentralization vs. Consolidation",
+  "content": "The genesis of the Internet was rooted in a fundamentally decentralized ethos. Designed as a distributed network of interconnected nodes, its original architecture ensured that no single entity possessed total control; if one node failed, data could be seamlessly rerouted. This peer-to-peer structure was championed as a democratizing force, a digital utopia where information could flow freely without corporate gatekeepers.\n\nHowever, the trajectory of the modern Internet has sharply deviated from this foundational vision, moving inexorably toward massive consolidation. Today, the digital ecosystem is overwhelmingly dominated by a handful of monolithic tech conglomerates. Companies like Amazon (through AWS), Google, and Meta have created \"walled gardens\"—closed ecosystems designed to retain user attention and monopolize data extraction. They not only dominate consumer-facing applications but also control the underlying physical infrastructure, such as transoceanic fiber-optic cables and vast server farms.\n\nThis extreme centralization introduces systemic vulnerabilities. A technical outage at a single major cloud provider can instantly cripple millions of unrelated businesses globally. More ominously, the concentration of algorithmic power enables unprecedented surveillance and the unilateral moderation of public discourse, prompting urgent calls from privacy advocates and antitrust regulators for a \"Web3\" renaissance focused on blockchain-based decentralization.",
+  "level": "C1",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_c1_the_architecture_of_the_internet_decentralization_vs_consolidation_0",
+      "question": "What was the original vision for the architecture of the Internet?",
+      "options": [
+        "A system controlled by a single government",
+        "A fundamentally decentralized, distributed network",
+        "A network designed strictly for military use",
+        "A system where users had to pay for every byte of data"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The genesis of the Internet was rooted in a fundamentally decentralized ethos. Designed as a distributed network...\""
+    },
+    {
+      "id": "q_read_c1_the_architecture_of_the_internet_decentralization_vs_consolidation_1",
+      "question": "What are \"walled gardens\" in the context of the text?",
+      "options": [
+        "Physical parks built by tech companies",
+        "Open-source software platforms",
+        "Closed digital ecosystems designed to retain attention and monopolize data",
+        "Secure websites for banking only"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"created 'walled gardens'—closed ecosystems designed to retain user attention and monopolize data extraction.\""
+    },
+    {
+      "id": "q_read_c1_the_architecture_of_the_internet_decentralization_vs_consolidation_2",
+      "question": "What is a technical risk of extreme centralization mentioned in the text?",
+      "options": [
+        "Internet speeds become too fast",
+        "A single outage can cripple millions of businesses globally",
+        "Computers get viruses more easily",
+        "Hackers can steal physical servers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"A technical outage at a single major cloud provider can instantly cripple millions of unrelated businesses globally.\""
+    },
+    {
+      "id": "q_read_c1_the_architecture_of_the_internet_decentralization_vs_consolidation_3",
+      "question": "What solution are privacy advocates and regulators proposing to counter consolidation?",
+      "options": [
+        "Shutting down the internet entirely",
+        "A \"Web3\" renaissance focused on blockchain-based decentralization",
+        "Banning social media",
+        "Giving the UN control of all servers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"prompting urgent calls from privacy advocates and antitrust regulators for a 'Web3' renaissance focused on blockchain-based decentralization.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "ethos",
+      "meaning": "Ethos / Grundhaltung"
+    },
+    {
+      "word": "inexorably",
+      "meaning": "unaufhaltsam"
+    },
+    {
+      "word": "conglomerates",
+      "meaning": "Konglomerate / Großkonzerne"
+    },
+    {
+      "word": "monopolize",
+      "meaning": "monopolisieren / beherrschen"
+    },
+    {
+      "word": "unilateral",
+      "meaning": "einseitig"
+    }
+  ],
+  "id": "read_c1_the_architecture_of_the_internet_decentralization_vs_consolidation"
+}

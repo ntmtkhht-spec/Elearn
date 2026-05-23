@@ -1,0 +1,79 @@
+{
+  "title": "The Paradox of Choice in Consumer Culture",
+  "content": "Modern consumer capitalism is predicated on the assumption that maximizing freedom of choice inherently maximizes human welfare. Consequently, supermarkets boast dozens of varieties of toothpaste, and streaming platforms offer thousands of viewing options. However, psychological research, most notably by Barry Schwartz, suggests that this abundance can actually induce a state of paralysis and dissatisfaction, a phenomenon termed the \"Paradox of Choice.\"\n\nWhen confronted with an overwhelming array of options, the cognitive burden of evaluating the subtle differences between them increases exponentially. This \"decision fatigue\" can lead consumers to either defer the decision entirely or to experience heightened anxiety post-purchase, plagued by the lingering doubt that an unchosen alternative might have been superior. This phenomenon is exacerbated by the modern tendency towards \"maximizing\"—seeking the absolute best option—rather than \"satisficing\"—settling for an option that meets one's criteria.\n\nWhile a complete lack of choice is undoubtedly detrimental to autonomy, an overabundance can be equally paralyzing. The antidote, according to behavioral economists, lies in voluntarily constraining our choices, developing habitual purchasing patterns, and learning to accept \"good enough\" rather than obsessing over the elusive \"perfect\" choice.",
+  "level": "C1",
+  "category": "Psychology",
+  "questions": [
+    {
+      "id": "q_read_c1_the_paradox_of_choice_in_consumer_culture_0",
+      "question": "What is the foundational assumption of modern consumer capitalism mentioned in the text?",
+      "options": [
+        "That less choice leads to higher profits",
+        "That maximizing freedom of choice maximizes human welfare",
+        "That advertising is unnecessary",
+        "That consumers always know what they want"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Modern consumer capitalism is predicated on the assumption that maximizing freedom of choice inherently maximizes human welfare.\""
+    },
+    {
+      "id": "q_read_c1_the_paradox_of_choice_in_consumer_culture_1",
+      "question": "According to Barry Schwartz, what does an abundance of choice often induce?",
+      "options": [
+        "Extreme happiness",
+        "Paralysis and dissatisfaction",
+        "Economic growth",
+        "Better quality products"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"suggests that this abundance can actually induce a state of paralysis and dissatisfaction, a phenomenon termed the 'Paradox of Choice.'\""
+    },
+    {
+      "id": "q_read_c1_the_paradox_of_choice_in_consumer_culture_2",
+      "question": "What is the difference between \"maximizing\" and \"satisficing\"?",
+      "options": [
+        "Maximizing is buying everything; satisficing is buying nothing",
+        "Maximizing is seeking the absolute best option; satisficing is settling for an option that meets criteria",
+        "Maximizing is shopping fast; satisficing is shopping slowly",
+        "There is no difference"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the modern tendency towards 'maximizing'—seeking the absolute best option—rather than 'satisficing'—settling for an option that meets one's criteria.\""
+    },
+    {
+      "id": "q_read_c1_the_paradox_of_choice_in_consumer_culture_3",
+      "question": "What do behavioral economists suggest as an antidote to decision fatigue?",
+      "options": [
+        "Spending more time researching products",
+        "Voluntarily constraining choices and accepting \"good enough\"",
+        "Letting someone else make all decisions",
+        "Buying the most expensive option"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The antidote... lies in voluntarily constraining our choices... and learning to accept 'good enough'...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "predicated on",
+      "meaning": "basierend auf"
+    },
+    {
+      "word": "paralysis",
+      "meaning": "Lähmung (hier: Unfähigkeit, eine Entscheidung zu treffen)"
+    },
+    {
+      "word": "defer",
+      "meaning": "aufschieben"
+    },
+    {
+      "word": "exacerbated",
+      "meaning": "verschlimmert / verschärft"
+    },
+    {
+      "word": "elusive",
+      "meaning": "schwer fassbar"
+    }
+  ],
+  "id": "read_c1_the_paradox_of_choice_in_consumer_culture"
+}

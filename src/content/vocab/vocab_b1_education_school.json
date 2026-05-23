@@ -1,0 +1,130 @@
+{
+  "name": "Education & School",
+  "description": "Words related to learning and studying",
+  "level": "B1",
+  "category": "Academic",
+  "icon": "🎒",
+  "cards": [
+    {
+      "word": "Subject",
+      "translation": "Schulfach / Thema",
+      "pronunciation": "/ˈsʌbdʒɪkt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Math is my favorite subject.",
+      "exampleTranslation": "Mathe ist mein Lieblingsfach.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_0",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Assignment",
+      "translation": "Aufgabe / Hausarbeit",
+      "pronunciation": "/əˈsaɪnmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The assignment is due on Friday.",
+      "exampleTranslation": "Die Aufgabe muss am Freitag abgegeben werden.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_1",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Graduation",
+      "translation": "Schulabschluss",
+      "pronunciation": "/ˌɡrædʒuˈeɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We attended her high school graduation.",
+      "exampleTranslation": "Wir waren bei ihrem Schulabschluss.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_2",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Semester",
+      "translation": "Semester",
+      "pronunciation": "/sɪˈmɛstər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "This semester is very challenging.",
+      "exampleTranslation": "Dieses Semester ist sehr herausfordernd.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_3",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Lecture",
+      "translation": "Vorlesung",
+      "pronunciation": "/ˈlɛktʃər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The professor gave a lecture on history.",
+      "exampleTranslation": "Der Professor hielt eine Vorlesung über Geschichte.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_4",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Examine",
+      "translation": "Prüfen / Untersuchen",
+      "pronunciation": "/ɪɡˈzæmɪn/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "The students will be examined tomorrow.",
+      "exampleTranslation": "Die Studenten werden morgen geprüft.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_5",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Knowledge",
+      "translation": "Wissen",
+      "pronunciation": "/ˈnɒlɪdʒ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Reading increases your knowledge.",
+      "exampleTranslation": "Lesen vergrößert dein Wissen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_6",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Improve",
+      "translation": "Verbessern",
+      "pronunciation": "/ɪmˈpruːv/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "I want to improve my English skills.",
+      "exampleTranslation": "Ich möchte meine Englischkenntnisse verbessern.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_7",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Research",
+      "translation": "Forschung / recherchieren",
+      "pronunciation": "/rɪˈsɜːrtʃ/",
+      "partOfSpeech": "noun/verb",
+      "exampleSentence": "She is doing research for her thesis.",
+      "exampleTranslation": "Sie recherchiert für ihre Abschlussarbeit.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_8",
+      "deckId": "vocab_b1_education_school"
+    },
+    {
+      "word": "Scholarship",
+      "translation": "Stipendium",
+      "pronunciation": "/ˈskɒlərʃɪp/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He won a scholarship to study abroad.",
+      "exampleTranslation": "Er hat ein Stipendium für ein Auslandsstudium gewonnen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_education_school_9",
+      "deckId": "vocab_b1_education_school"
+    }
+  ],
+  "id": "vocab_b1_education_school"
+}

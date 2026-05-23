@@ -1,0 +1,79 @@
+{
+  "title": "Universal Basic Income: A Viable Socioeconomic Model?",
+  "content": "The concept of Universal Basic Income (UBI)—an unconditional, periodic cash payment delivered to all citizens on an individual basis, without means test or work requirement—has transitioned from a utopian fringe theory to the forefront of mainstream economic discourse. This resurgence in popularity is primarily driven by anxieties surrounding the imminent automation of millions of jobs via artificial intelligence and advanced robotics.\n\nAdvocates posit that UBI would eradicate extreme poverty, dismantle the stigma and bureaucratic inefficiency associated with traditional welfare systems, and provide individuals with the financial security to pursue education, entrepreneurial ventures, or caregiving roles. It essentially decoupling survival from traditional wage labor.\n\nDetractors, however, raise formidable concerns regarding the macroeconomic feasibility of such a scheme. Funding a comprehensive UBI would likely necessitate exorbitant taxation levels, potentially stifling economic growth and disincentivizing workforce participation. Furthermore, critics argue that untargeted payments to the affluent are an inefficient use of public funds, and that UBI fails to address underlying structural issues such as the soaring costs of housing and healthcare. Pilot programs in various countries have yielded mixed results, leaving the debate far from settled.",
+  "level": "C1",
+  "category": "Economics",
+  "questions": [
+    {
+      "id": "q_read_c1_universal_basic_income_a_viable_socioeconomic_model__0",
+      "question": "What defines a Universal Basic Income (UBI)?",
+      "options": [
+        "A conditional payment for unemployed people only",
+        "An unconditional cash payment given to all citizens regardless of income or employment",
+        "A loan given by the government for education",
+        "A tax reduction for large corporations"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"an unconditional, periodic cash payment delivered to all citizens on an individual basis, without means test or work requirement...\""
+    },
+    {
+      "id": "q_read_c1_universal_basic_income_a_viable_socioeconomic_model__1",
+      "question": "What is the primary driver behind the recent popularity of UBI?",
+      "options": [
+        "A sudden increase in government wealth",
+        "Anxieties about job automation via AI and robotics",
+        "The failure of the stock market",
+        "A desire to abolish all taxes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"This resurgence in popularity is primarily driven by anxieties surrounding the imminent automation of millions of jobs...\""
+    },
+    {
+      "id": "q_read_c1_universal_basic_income_a_viable_socioeconomic_model__2",
+      "question": "What is a major argument made by advocates of UBI?",
+      "options": [
+        "It would increase bureaucratic inefficiency",
+        "It would force people to work longer hours",
+        "It would dismantle the stigma of welfare and provide financial security",
+        "It would replace the need for healthcare"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Advocates posit that UBI would... dismantle the stigma and bureaucratic inefficiency associated with traditional welfare systems, and provide individuals with... financial security...\""
+    },
+    {
+      "id": "q_read_c1_universal_basic_income_a_viable_socioeconomic_model__3",
+      "question": "What economic concern do detractors raise about UBI?",
+      "options": [
+        "It would lead to excessive savings",
+        "It would require exorbitant taxation that could stifle economic growth",
+        "It would cause deflation",
+        "It would make housing too cheap"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Funding a comprehensive UBI would likely necessitate exorbitant taxation levels, potentially stifling economic growth...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "unconditional",
+      "meaning": "bedingungslos"
+    },
+    {
+      "word": "means test",
+      "meaning": "Bedürftigkeitsprüfung"
+    },
+    {
+      "word": "eradicate",
+      "meaning": "ausmerzen / beseitigen"
+    },
+    {
+      "word": "detractors",
+      "meaning": "Kritiker / Gegner"
+    },
+    {
+      "word": "exorbitant",
+      "meaning": "enorm / maßlos"
+    }
+  ],
+  "id": "read_c1_universal_basic_income_a_viable_socioeconomic_model_"
+}

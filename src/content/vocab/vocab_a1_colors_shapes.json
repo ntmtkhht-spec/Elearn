@@ -1,0 +1,130 @@
+{
+  "name": "Colors & Shapes",
+  "description": "Basic colors and geometric shapes",
+  "level": "A1",
+  "category": "Basics",
+  "icon": "🎨",
+  "cards": [
+    {
+      "word": "Red",
+      "translation": "Rot",
+      "pronunciation": "/rɛd/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The apple is red.",
+      "exampleTranslation": "Der Apfel ist rot.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_0",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Blue",
+      "translation": "Blau",
+      "pronunciation": "/bluː/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The sky is blue.",
+      "exampleTranslation": "Der Himmel ist blau.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_1",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Green",
+      "translation": "Grün",
+      "pronunciation": "/ɡriːn/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The grass is green.",
+      "exampleTranslation": "Das Gras ist grün.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_2",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Yellow",
+      "translation": "Gelb",
+      "pronunciation": "/ˈjɛloʊ/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The sun is yellow.",
+      "exampleTranslation": "Die Sonne ist gelb.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_3",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Circle",
+      "translation": "Kreis",
+      "pronunciation": "/ˈsɜrkəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Draw a circle.",
+      "exampleTranslation": "Zeichne einen Kreis.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_4",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Square",
+      "translation": "Quadrat",
+      "pronunciation": "/skwɛər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The box is a square.",
+      "exampleTranslation": "Die Box ist ein Quadrat.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_5",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Triangle",
+      "translation": "Dreieck",
+      "pronunciation": "/ˈtraɪæŋɡəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "A pyramid has triangle sides.",
+      "exampleTranslation": "Eine Pyramide hat dreieckige Seiten.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_6",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Black",
+      "translation": "Schwarz",
+      "pronunciation": "/blæk/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The cat is black.",
+      "exampleTranslation": "Die Katze ist schwarz.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_7",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "White",
+      "translation": "Weiß",
+      "pronunciation": "/waɪt/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Snow is white.",
+      "exampleTranslation": "Schnee ist weiß.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_8",
+      "deckId": "vocab_a1_colors_shapes"
+    },
+    {
+      "word": "Orange",
+      "translation": "Orange",
+      "pronunciation": "/ˈɔrɪndʒ/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "I have an orange shirt.",
+      "exampleTranslation": "Ich habe ein oranges Hemd.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_colors_shapes_9",
+      "deckId": "vocab_a1_colors_shapes"
+    }
+  ],
+  "id": "vocab_a1_colors_shapes"
+}

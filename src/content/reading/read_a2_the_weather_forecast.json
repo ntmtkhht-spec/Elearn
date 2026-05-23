@@ -1,0 +1,75 @@
+{
+  "title": "The Weather Forecast",
+  "content": "Before planning her weekend, Maria always checks the weather forecast. She wants to go hiking in the mountains this Saturday. The forecast says that Saturday morning will be cloudy but dry. In the afternoon, the sun will come out and it will be quite warm, around 20 degrees Celsius. However, on Sunday, the weather will change completely. Strong winds and heavy rain are expected. Because of this, Maria decides to do her hike on Saturday and stay indoors on Sunday to watch movies and relax.",
+  "level": "A2",
+  "category": "Weather",
+  "questions": [
+    {
+      "id": "q_read_a2_the_weather_forecast_0",
+      "question": "Why does Maria check the weather forecast?",
+      "options": [
+        "She is a pilot",
+        "She wants to go hiking",
+        "She wants to go to the beach",
+        "She is a farmer"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"She wants to go hiking in the mountains this Saturday.\""
+    },
+    {
+      "id": "q_read_a2_the_weather_forecast_1",
+      "question": "What will the weather be like on Saturday afternoon?",
+      "options": [
+        "Rainy and cold",
+        "Snowy",
+        "Sunny and warm",
+        "Cloudy and windy"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"In the afternoon, the sun will come out and it will be quite warm...\""
+    },
+    {
+      "id": "q_read_a2_the_weather_forecast_2",
+      "question": "What is expected on Sunday?",
+      "options": [
+        "Snow",
+        "Strong winds and heavy rain",
+        "A thunderstorm",
+        "Hot weather"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Strong winds and heavy rain are expected.\""
+    },
+    {
+      "id": "q_read_a2_the_weather_forecast_3",
+      "question": "What will Maria do on Sunday?",
+      "options": [
+        "Go hiking anyway",
+        "Visit a museum",
+        "Go shopping",
+        "Stay indoors and watch movies"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"stay indoors on Sunday to watch movies and relax.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "forecast",
+      "meaning": "Vorhersage"
+    },
+    {
+      "word": "hiking",
+      "meaning": "Wandern"
+    },
+    {
+      "word": "expected",
+      "meaning": "erwartet"
+    },
+    {
+      "word": "indoors",
+      "meaning": "drinnen (im Haus)"
+    }
+  ],
+  "id": "read_a2_the_weather_forecast"
+}

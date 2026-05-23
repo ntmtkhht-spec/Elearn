@@ -1,0 +1,75 @@
+{
+  "title": "The Importance of Sleep",
+  "content": "In our fast-paced society, sleep is often the first thing we sacrifice when we are busy. However, scientists emphasize that getting adequate sleep is just as important for our health as eating well and exercising. While we sleep, our bodies and brains are highly active. Sleep is the time when the body repairs tissues, synthesizes hormones, and consolidates memories from the day. Chronic sleep deprivation is linked to a variety of serious health issues, including obesity, heart disease, and a weakened immune system. It also severely affects our cognitive functions, making it harder to concentrate, make decisions, and regulate our emotions. To improve sleep quality, experts recommend maintaining a consistent sleep schedule and avoiding electronic devices for at least an hour before bedtime.",
+  "level": "B1",
+  "category": "Health",
+  "questions": [
+    {
+      "id": "q_read_b1_the_importance_of_sleep_0",
+      "question": "What do people often sacrifice when they are busy?",
+      "options": [
+        "Food",
+        "Exercise",
+        "Sleep",
+        "Work"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"sleep is often the first thing we sacrifice when we are busy.\""
+    },
+    {
+      "id": "q_read_b1_the_importance_of_sleep_1",
+      "question": "What does the brain do while we sleep?",
+      "options": [
+        "It shuts down completely",
+        "It consolidates memories",
+        "It forgets everything",
+        "It produces food"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Sleep is the time when the body... consolidates memories from the day.\""
+    },
+    {
+      "id": "q_read_b1_the_importance_of_sleep_2",
+      "question": "Which health issue is NOT mentioned as a result of sleep deprivation?",
+      "options": [
+        "Heart disease",
+        "Obesity",
+        "Asthma",
+        "A weakened immune system"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text mentions obesity, heart disease, and a weakened immune system. It does not mention Asthma."
+    },
+    {
+      "id": "q_read_b1_the_importance_of_sleep_3",
+      "question": "What is a recommended way to improve sleep quality?",
+      "options": [
+        "Watching TV in bed",
+        "Avoiding electronic devices before bedtime",
+        "Drinking coffee late at night",
+        "Sleeping at different times every day"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"experts recommend... avoiding electronic devices for at least an hour before bedtime.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "sacrifice",
+      "meaning": "opfern"
+    },
+    {
+      "word": "consolidates",
+      "meaning": "festigt / konsolidiert"
+    },
+    {
+      "word": "deprivation",
+      "meaning": "Mangel / Entzug"
+    },
+    {
+      "word": "cognitive",
+      "meaning": "kognitiv (das Denken betreffend)"
+    }
+  ],
+  "id": "read_b1_the_importance_of_sleep"
+}

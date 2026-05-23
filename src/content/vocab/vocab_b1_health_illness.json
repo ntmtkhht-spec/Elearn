@@ -1,0 +1,130 @@
+{
+  "name": "Health & Illness",
+  "description": "Talking about health, fitness, and medical issues",
+  "level": "B1",
+  "category": "Health",
+  "icon": "🏥",
+  "cards": [
+    {
+      "word": "Medicine",
+      "translation": "Medizin / Medikament",
+      "pronunciation": "/ˈmɛdɪsɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "You should take your medicine after meals.",
+      "exampleTranslation": "Du solltest dein Medikament nach dem Essen einnehmen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_0",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Symptom",
+      "translation": "Symptom",
+      "pronunciation": "/ˈsɪmptəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "A fever is a common symptom of the flu.",
+      "exampleTranslation": "Fieber ist ein häufiges Symptom der Grippe.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_1",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Appointment",
+      "translation": "Termin",
+      "pronunciation": "/əˈpɔɪntmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I have an appointment with the dentist.",
+      "exampleTranslation": "Ich habe einen Termin beim Zahnarzt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_2",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Pain",
+      "translation": "Schmerz",
+      "pronunciation": "/peɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Are you in pain?",
+      "exampleTranslation": "Hast du Schmerzen?",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_3",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Prescription",
+      "translation": "Rezept (vom Arzt)",
+      "pronunciation": "/prɪˈskrɪpʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The doctor wrote me a prescription.",
+      "exampleTranslation": "Der Arzt hat mir ein Rezept ausgestellt.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_4",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Recover",
+      "translation": "Sich erholen",
+      "pronunciation": "/rɪˈkʌvər/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "It will take a few days to recover from the surgery.",
+      "exampleTranslation": "Es wird ein paar Tage dauern, sich von der Operation zu erholen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_5",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Disease",
+      "translation": "Krankheit",
+      "pronunciation": "/dɪˈziːz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Heart disease is a major problem.",
+      "exampleTranslation": "Herzkrankheit ist ein großes Problem.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_6",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Treatment",
+      "translation": "Behandlung",
+      "pronunciation": "/ˈtriːtmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The treatment involves physical therapy.",
+      "exampleTranslation": "Die Behandlung umfasst Physiotherapie.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_7",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Allergy",
+      "translation": "Allergie",
+      "pronunciation": "/ˈælərdʒi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She has a peanut allergy.",
+      "exampleTranslation": "Sie hat eine Erdnussallergie.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_8",
+      "deckId": "vocab_b1_health_illness"
+    },
+    {
+      "word": "Pharmacy",
+      "translation": "Apotheke",
+      "pronunciation": "/ˈfɑːrməsi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "You can buy this at the local pharmacy.",
+      "exampleTranslation": "Du kannst das in der örtlichen Apotheke kaufen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_health_illness_9",
+      "deckId": "vocab_b1_health_illness"
+    }
+  ],
+  "id": "vocab_b1_health_illness"
+}

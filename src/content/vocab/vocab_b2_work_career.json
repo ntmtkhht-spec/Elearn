@@ -1,0 +1,130 @@
+{
+  "name": "Work & Career",
+  "description": "Advanced business and career vocabulary",
+  "level": "B2",
+  "category": "Business",
+  "icon": "🏢",
+  "cards": [
+    {
+      "word": "Promotion",
+      "translation": "Beförderung",
+      "pronunciation": "/prəˈmoʊʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She received a promotion last month.",
+      "exampleTranslation": "Sie hat letzten Monat eine Beförderung erhalten.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_0",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Colleague",
+      "translation": "Kollege / Kollegin",
+      "pronunciation": "/ˈkɒliːɡ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I get along well with my colleagues.",
+      "exampleTranslation": "Ich verstehe mich gut mit meinen Kollegen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_1",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Negotiate",
+      "translation": "Verhandeln",
+      "pronunciation": "/nɪˈɡoʊʃieɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "We need to negotiate a better deal.",
+      "exampleTranslation": "Wir müssen ein besseres Geschäft aushandeln.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_2",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Resign",
+      "translation": "Kündigen / Zurücktreten",
+      "pronunciation": "/rɪˈzaɪn/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "He decided to resign from his position.",
+      "exampleTranslation": "Er entschied sich, von seiner Position zurückzutreten.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_3",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Salary",
+      "translation": "Gehalt",
+      "pronunciation": "/ˈsæləri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "They offered him a higher salary.",
+      "exampleTranslation": "Sie boten ihm ein höheres Gehalt an.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_4",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Deadline",
+      "translation": "Frist",
+      "pronunciation": "/ˈdɛdlaɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We must meet the Friday deadline.",
+      "exampleTranslation": "Wir müssen die Frist am Freitag einhalten.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_5",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Application",
+      "translation": "Bewerbung / Antrag",
+      "pronunciation": "/ˌæplɪˈkeɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Please submit your application online.",
+      "exampleTranslation": "Bitte reichen Sie Ihre Bewerbung online ein.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_6",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Experience",
+      "translation": "Erfahrung",
+      "pronunciation": "/ɪkˈspɪəriəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Do you have any relevant experience?",
+      "exampleTranslation": "Haben Sie relevante Erfahrung?",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_7",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Management",
+      "translation": "Leitung / Management",
+      "pronunciation": "/ˈmænɪdʒmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The management decided to close the branch.",
+      "exampleTranslation": "Das Management beschloss, die Filiale zu schließen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_8",
+      "deckId": "vocab_b2_work_career"
+    },
+    {
+      "word": "Candidate",
+      "translation": "Kandidat/in",
+      "pronunciation": "/ˈkændɪdət/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She is the perfect candidate for the job.",
+      "exampleTranslation": "Sie ist die perfekte Kandidatin für den Job.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_work_career_9",
+      "deckId": "vocab_b2_work_career"
+    }
+  ],
+  "id": "vocab_b2_work_career"
+}

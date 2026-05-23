@@ -1,0 +1,79 @@
+{
+  "title": "The Thermodynamics of Information",
+  "content": "The unification of physics and information theory constitutes one of the most profound intellectual achievements of modern science. The linkage traces back to the 19th-century thought experiment known as \"Maxwell's Demon.\" James Clerk Maxwell hypothesized a microscopic, intelligent entity that could observe the velocity of individual gas molecules in a divided box, selectively opening a door to let fast (hot) molecules into one side and slow (cold) molecules into the other. By doing so, the demon would decrease the entropy of the system without doing work, ostensibly violating the inviolable Second Law of Thermodynamics.\n\nFor nearly a century, the demon haunted physics. The exorcism was finally performed by Rolf Landauer and Charles Bennett in the mid-20th century. Landauer demonstrated that acquiring information does not necessarily consume energy, but erasing information is fundamentally dissipative. Bennett showed that the demon's memory is finite; to continue sorting molecules indefinitely, it must eventually erase its memory to make room for new observations. This erasure generates heat, increasing the entropy of the universe and thereby saving the Second Law.\n\n\"Landauer's principle\" established a rigid, physical lower bound on the energy required for computation. It reveals the profound truth that information is not an abstract, ethereal concept, but a physical entity governed by thermodynamic constraints. This principle is not merely theoretical; it dictates the ultimate limits of microchip efficiency and forms the foundational bedrock of quantum computing theory.",
+  "level": "C2",
+  "category": "Physics",
+  "questions": [
+    {
+      "id": "q_read_c2_the_thermodynamics_of_information_0",
+      "question": "What did \"Maxwell's Demon\" seemingly violate?",
+      "options": [
+        "The theory of relativity",
+        "The laws of gravity",
+        "The Second Law of Thermodynamics",
+        "The speed of light"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the demon would decrease the entropy of the system without doing work, ostensibly violating the inviolable Second Law of Thermodynamics.\""
+    },
+    {
+      "id": "q_read_c2_the_thermodynamics_of_information_1",
+      "question": "How did Rolf Landauer and Charles Bennett solve the paradox of the demon?",
+      "options": [
+        "They proved the demon was a ghost",
+        "They showed that the demon must erase its memory, which generates heat and increases entropy",
+        "They proved that hot and cold molecules don't exist",
+        "They showed that the demon uses electricity"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"it must eventually erase its memory... This erasure generates heat, increasing the entropy of the universe and thereby saving the Second Law.\""
+    },
+    {
+      "id": "q_read_c2_the_thermodynamics_of_information_2",
+      "question": "According to Landauer's principle, what specific action is fundamentally dissipative (requires energy/generates heat)?",
+      "options": [
+        "Acquiring information",
+        "Erasing information",
+        "Copying information",
+        "Ignoring information"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Landauer demonstrated that acquiring information does not necessarily consume energy, but erasing information is fundamentally dissipative.\""
+    },
+    {
+      "id": "q_read_c2_the_thermodynamics_of_information_3",
+      "question": "What is the broader philosophical and physical conclusion drawn from Landauer's principle?",
+      "options": [
+        "Computers will soon replace humans",
+        "Information is an abstract concept outside the laws of physics",
+        "Information is a physical entity governed by thermodynamic constraints",
+        "We can build a perpetual motion machine"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It reveals the profound truth that information is not an abstract, ethereal concept, but a physical entity governed by thermodynamic constraints.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "thermodynamics",
+      "meaning": "Thermodynamik (Wärmelehre)"
+    },
+    {
+      "word": "entropy",
+      "meaning": "Entropie (Maß für Unordnung)"
+    },
+    {
+      "word": "ostensibly",
+      "meaning": "angeblich / scheinbar"
+    },
+    {
+      "word": "exorcism",
+      "meaning": "Exorzismus (Austreibung)"
+    },
+    {
+      "word": "dissipative",
+      "meaning": "verlustbehaftet (Energie in Wärme umwandelnd)"
+    }
+  ],
+  "id": "read_c2_the_thermodynamics_of_information"
+}

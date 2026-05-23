@@ -1,0 +1,79 @@
+{
+  "title": "The Neoliberal Restructuring of the Public Sector",
+  "content": "Since the late 1970s, the dominant paradigm in global economic governance has been neoliberalism. This ideology posits that human well-being is best advanced by liberating individual entrepreneurial freedoms within an institutional framework characterized by strong private property rights, free markets, and free trade. Consequently, a core tenet of the neoliberal project has been the systematic restructuring, privatization, and marketization of the public sector.\n\nProponents argue that state-run enterprises and bureaucracies are inherently inefficient, bloated, and unresponsive to consumer needs due to the absence of competitive market pressures. By transferring public assets—such as transportation networks, energy grids, and even elements of healthcare and education—to the private sector, neoliberal architects sought to inject efficiency, incentivize innovation, and reduce fiscal deficits. This paradigm gave rise to New Public Management (NPM), which attempted to run remaining government departments like private corporations, prioritizing quantifiable performance metrics and cost-benefit analyses.\n\nCritics, however, contend that the wholesale privatization of public goods has had deleterious societal consequences. They argue that marketizing essential services prioritizes shareholder maximization over the public interest, leading to the erosion of service quality, the disenfranchisement of labor unions, and the exacerbation of socioeconomic inequalities. Furthermore, the 2008 financial crisis exposed the fragility of deeply deregulated markets, prompting a profound reevaluation of the neoliberal consensus and a resurgent interest in robust state intervention.",
+  "level": "C2",
+  "category": "Politics",
+  "questions": [
+    {
+      "id": "q_read_c2_the_neoliberal_restructuring_of_the_public_sector_0",
+      "question": "What is a core tenet of the neoliberal project regarding the public sector?",
+      "options": [
+        "Nationalizing all private businesses",
+        "The systematic restructuring, privatization, and marketization of the public sector",
+        "Increasing the size of government bureaucracies",
+        "Providing free healthcare for everyone"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"a core tenet of the neoliberal project has been the systematic restructuring, privatization, and marketization of the public sector.\""
+    },
+    {
+      "id": "q_read_c2_the_neoliberal_restructuring_of_the_public_sector_1",
+      "question": "Why do proponents of neoliberalism criticize state-run enterprises?",
+      "options": [
+        "Because they make too much profit",
+        "Because they are inherently inefficient, bloated, and unresponsive due to a lack of competition",
+        "Because they pay their workers too little",
+        "Because they invest too much in technology"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Proponents argue that state-run enterprises and bureaucracies are inherently inefficient, bloated, and unresponsive to consumer needs due to the absence of competitive market pressures.\""
+    },
+    {
+      "id": "q_read_c2_the_neoliberal_restructuring_of_the_public_sector_2",
+      "question": "What was the goal of \"New Public Management\" (NPM)?",
+      "options": [
+        "To replace politicians with scientists",
+        "To run remaining government departments like private corporations",
+        "To abolish taxes",
+        "To create a universal basic income"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"New Public Management (NPM), which attempted to run remaining government departments like private corporations...\""
+    },
+    {
+      "id": "q_read_c2_the_neoliberal_restructuring_of_the_public_sector_3",
+      "question": "What do critics argue is the result of marketizing essential services?",
+      "options": [
+        "It creates a utopian society",
+        "It prioritizes shareholder maximization over the public interest, eroding service quality",
+        "It makes politicians too powerful",
+        "It stops economic growth completely"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They argue that marketizing essential services prioritizes shareholder maximization over the public interest, leading to the erosion of service quality...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "tenet",
+      "meaning": "Grundsatz / Lehrsatz"
+    },
+    {
+      "word": "marketization",
+      "meaning": "Marktorientierung / Kommerzialisierung"
+    },
+    {
+      "word": "bloated",
+      "meaning": "aufgebläht"
+    },
+    {
+      "word": "deleterious",
+      "meaning": "schädlich"
+    },
+    {
+      "word": "disenfranchisement",
+      "meaning": "Entmachtung / Entzug von Rechten"
+    }
+  ],
+  "id": "read_c2_the_neoliberal_restructuring_of_the_public_sector"
+}

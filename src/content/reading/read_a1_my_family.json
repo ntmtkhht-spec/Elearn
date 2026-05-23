@@ -1,0 +1,71 @@
+{
+  "title": "My Family",
+  "content": "I have a small family. There are four people in my family: my father, my mother, my sister, and me. My father is a teacher. He teaches math at a school. My mother is a doctor. She works in a hospital. My sister is a student. She is 15 years old. She likes music and sports. We live in a house with a garden. On weekends, we often go to the park together.",
+  "level": "A1",
+  "category": "Family",
+  "questions": [
+    {
+      "id": "q_read_a1_my_family_0",
+      "question": "How many people are in the family?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"There are four people in my family.\""
+    },
+    {
+      "id": "q_read_a1_my_family_1",
+      "question": "What is the father's job?",
+      "options": [
+        "Doctor",
+        "Student",
+        "Teacher",
+        "Farmer"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"My father is a teacher.\""
+    },
+    {
+      "id": "q_read_a1_my_family_2",
+      "question": "Where does the mother work?",
+      "options": [
+        "In a school",
+        "In a hospital",
+        "In an office",
+        "In a shop"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"She works in a hospital.\""
+    },
+    {
+      "id": "q_read_a1_my_family_3",
+      "question": "What does the sister like?",
+      "options": [
+        "Math and science",
+        "Music and sports",
+        "Reading and writing",
+        "Movies and games"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"She likes music and sports.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "teaches",
+      "meaning": "unterrichtet"
+    },
+    {
+      "word": "hospital",
+      "meaning": "Krankenhaus"
+    },
+    {
+      "word": "weekends",
+      "meaning": "Wochenenden"
+    }
+  ],
+  "id": "read_a1_my_family"
+}

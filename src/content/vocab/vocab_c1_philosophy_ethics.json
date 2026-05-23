@@ -1,0 +1,130 @@
+{
+  "name": "Philosophy & Ethics",
+  "description": "Abstract concepts, morality and reasoning",
+  "level": "C1",
+  "category": "Academic",
+  "icon": "💭",
+  "cards": [
+    {
+      "word": "Ethics",
+      "translation": "Ethik / Moral",
+      "pronunciation": "/ˈɛθɪks/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Medical ethics dictates how doctors should behave.",
+      "exampleTranslation": "Medizinische Ethik schreibt vor, wie Ärzte sich verhalten sollten.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_0",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Epistemology",
+      "translation": "Erkenntnistheorie",
+      "pronunciation": "/ɪˌpɪstɪˈmɒlədʒi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Epistemology studies the nature and scope of knowledge.",
+      "exampleTranslation": "Erkenntnistheorie untersucht die Natur und den Umfang von Wissen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_1",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Existentialism",
+      "translation": "Existenzialismus",
+      "pronunciation": "/ˌɛɡzɪˈstɛnʃəlɪzəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Sartre was a key figure in existentialism.",
+      "exampleTranslation": "Sartre war eine Schlüsselfigur im Existenzialismus.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_2",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Morality",
+      "translation": "Moral",
+      "pronunciation": "/məˈræləti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "They debated the morality of the war.",
+      "exampleTranslation": "Sie debattierten über die Moral des Krieges.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_3",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Utilitarianism",
+      "translation": "Utilitarismus",
+      "pronunciation": "/juːˌtɪlɪˈtɛəriənɪzəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Utilitarianism advocates the greatest good for the greatest number.",
+      "exampleTranslation": "Der Utilitarismus befürwortet das größte Wohl für die größte Zahl.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_4",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Paradox",
+      "translation": "Paradoxon",
+      "pronunciation": "/ˈpærədɒks/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "It is a paradox that the more we learn, the less we know.",
+      "exampleTranslation": "Es ist ein Paradoxon, dass je mehr wir lernen, desto weniger wir wissen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_5",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Nihilism",
+      "translation": "Nihilismus",
+      "pronunciation": "/ˈnaɪɪlɪzəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Nihilism is the belief that life is meaningless.",
+      "exampleTranslation": "Nihilismus ist der Glaube, dass das Leben sinnlos ist.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_6",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Subjective",
+      "translation": "Subjektiv",
+      "pronunciation": "/səbˈdʒɛktɪv/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Art appreciation is highly subjective.",
+      "exampleTranslation": "Kunstverständnis ist sehr subjektiv.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_7",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Objective",
+      "translation": "Objektiv",
+      "pronunciation": "/əbˈdʒɛktɪv/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "A judge must remain objective at all times.",
+      "exampleTranslation": "Ein Richter muss stets objektiv bleiben.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_8",
+      "deckId": "vocab_c1_philosophy_ethics"
+    },
+    {
+      "word": "Dilemma",
+      "translation": "Dilemma",
+      "pronunciation": "/dɪˈlɛmə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He faced a difficult moral dilemma.",
+      "exampleTranslation": "Er stand vor einem schwierigen moralischen Dilemma.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_philosophy_ethics_9",
+      "deckId": "vocab_c1_philosophy_ethics"
+    }
+  ],
+  "id": "vocab_c1_philosophy_ethics"
+}

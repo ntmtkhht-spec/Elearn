@@ -1,0 +1,130 @@
+{
+  "name": "Politics & Society",
+  "description": "Words to discuss government and social issues",
+  "level": "B2",
+  "category": "Culture",
+  "icon": "🏛️",
+  "cards": [
+    {
+      "word": "Election",
+      "translation": "Wahl",
+      "pronunciation": "/ɪˈlɛkʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The presidential election is next year.",
+      "exampleTranslation": "Die Präsidentschaftswahl ist nächstes Jahr.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_0",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Government",
+      "translation": "Regierung",
+      "pronunciation": "/ˈɡʌvərnmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The government passed a new law.",
+      "exampleTranslation": "Die Regierung hat ein neues Gesetz verabschiedet.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_1",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Citizen",
+      "translation": "Bürger/in",
+      "pronunciation": "/ˈsɪtɪzən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Every citizen has the right to vote.",
+      "exampleTranslation": "Jeder Bürger hat das Recht zu wählen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_2",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Democracy",
+      "translation": "Demokratie",
+      "pronunciation": "/dɪˈmɒkrəsi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Freedom of speech is vital in a democracy.",
+      "exampleTranslation": "Meinungsfreiheit ist in einer Demokratie unerlässlich.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_3",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Campaign",
+      "translation": "Kampagne",
+      "pronunciation": "/kæmˈpeɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The political campaign was very aggressive.",
+      "exampleTranslation": "Die politische Kampagne war sehr aggressiv.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_4",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Policy",
+      "translation": "Richtlinie / Politik",
+      "pronunciation": "/ˈpɒləsi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The company has a strict no-smoking policy.",
+      "exampleTranslation": "Das Unternehmen hat eine strenge Nichtraucherrichtlinie.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_5",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Majority",
+      "translation": "Mehrheit",
+      "pronunciation": "/məˈdʒɒrɪti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The majority of people agreed with the decision.",
+      "exampleTranslation": "Die Mehrheit der Leute stimmte der Entscheidung zu.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_6",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Debate",
+      "translation": "Debatte",
+      "pronunciation": "/dɪˈbeɪt/",
+      "partOfSpeech": "noun/verb",
+      "exampleSentence": "There was a heated debate in parliament.",
+      "exampleTranslation": "Es gab eine hitzige Debatte im Parlament.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_7",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Rights",
+      "translation": "Rechte",
+      "pronunciation": "/raɪts/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "They are fighting for equal rights.",
+      "exampleTranslation": "Sie kämpfen für gleiche Rechte.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_8",
+      "deckId": "vocab_b2_politics_society"
+    },
+    {
+      "word": "Poverty",
+      "translation": "Armut",
+      "pronunciation": "/ˈpɒvərti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The charity aims to reduce global poverty.",
+      "exampleTranslation": "Die Wohltätigkeitsorganisation zielt darauf ab, die globale Armut zu verringern.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_politics_society_9",
+      "deckId": "vocab_b2_politics_society"
+    }
+  ],
+  "id": "vocab_b2_politics_society"
+}

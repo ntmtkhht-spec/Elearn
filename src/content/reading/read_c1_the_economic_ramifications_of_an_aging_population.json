@@ -1,0 +1,79 @@
+{
+  "title": "The Economic Ramifications of an Aging Population",
+  "content": "The demographic architecture of developed nations is undergoing a profound and unprecedented transformation. Characterized by plunging fertility rates and consistently increasing life expectancies, societies are rapidly aging. This \"graying\" of the population presents severe macroeconomic challenges that threaten to undermine the sustainability of contemporary welfare states.\n\nThe most immediate ramification is the shifting dependency ratio—the proportion of retirees to active, working-age individuals. As the labor force shrinks, economic productivity is imperiled. A smaller tax base must shoulder the exponentially increasing financial burden of funding robust pension schemes and age-related healthcare services. This fiscal strain often compels governments to confront politically toxic choices: raising the retirement age, increasing taxation, or reducing the generosity of social entitlements.\n\nFurthermore, an aging demographic alters aggregate consumer behavior. Older populations typically exhibit higher saving rates and different consumption patterns, pivoting away from durable goods and towards healthcare and localized services, which can induce deflationary pressures. To mitigate these structural headwinds, economists advocate for policies that incentivize delayed retirement, promote automation to offset labor shortages, and reform immigration policies to inject younger workers into the economy.",
+  "level": "C1",
+  "category": "Economics",
+  "questions": [
+    {
+      "id": "q_read_c1_the_economic_ramifications_of_an_aging_population_0",
+      "question": "What two factors are causing the demographic architecture of developed nations to transform?",
+      "options": [
+        "High immigration and low taxes",
+        "Plunging fertility rates and increasing life expectancies",
+        "Economic recessions and war",
+        "Better healthcare and more schools"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Characterized by plunging fertility rates and consistently increasing life expectancies, societies are rapidly aging.\""
+    },
+    {
+      "id": "q_read_c1_the_economic_ramifications_of_an_aging_population_1",
+      "question": "What is the \"dependency ratio\"?",
+      "options": [
+        "The amount of money a country owes",
+        "The proportion of retirees to active, working-age individuals",
+        "The ratio of imports to exports",
+        "The amount of welfare given per person"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the shifting dependency ratio—the proportion of retirees to active, working-age individuals.\""
+    },
+    {
+      "id": "q_read_c1_the_economic_ramifications_of_an_aging_population_2",
+      "question": "What politically toxic choices might governments face due to this demographic shift?",
+      "options": [
+        "Declaring war on younger nations",
+        "Banning immigration entirely",
+        "Raising the retirement age, increasing taxes, or reducing social entitlements",
+        "Forcing people to have more children"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"This fiscal strain often compels governments to confront politically toxic choices: raising the retirement age, increasing taxation, or reducing the generosity of social entitlements.\""
+    },
+    {
+      "id": "q_read_c1_the_economic_ramifications_of_an_aging_population_3",
+      "question": "How do older populations typically alter consumption patterns?",
+      "options": [
+        "They buy more luxury cars",
+        "They spend all their money on technology",
+        "They pivot away from durable goods towards healthcare and services",
+        "They consume exactly the same as young people"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"pivoting away from durable goods and towards healthcare and localized services...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "ramifications",
+      "meaning": "Auswirkungen / Konsequenzen"
+    },
+    {
+      "word": "plunging",
+      "meaning": "stürzend / stark fallend"
+    },
+    {
+      "word": "imperiled",
+      "meaning": "gefährdet"
+    },
+    {
+      "word": "entitlements",
+      "meaning": "Ansprüche (z.B. auf Sozialleistungen)"
+    },
+    {
+      "word": "headwinds",
+      "meaning": "Gegenwind (hier: strukturelle Hindernisse)"
+    }
+  ],
+  "id": "read_c1_the_economic_ramifications_of_an_aging_population"
+}

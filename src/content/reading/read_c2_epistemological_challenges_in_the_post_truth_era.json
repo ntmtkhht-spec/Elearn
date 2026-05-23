@@ -1,0 +1,79 @@
+{
+  "title": "Epistemological Challenges in the Post-Truth Era",
+  "content": "The contemporary sociopolitical landscape is frequently designated as the \"post-truth\" era, a nomenclature reflecting a profound epistemological crisis wherein objective facts are increasingly subordinated to emotional appeals and tribalistic dogma. This degradation of the shared factual consensus is not merely a consequence of the proliferation of deliberate disinformation, but rather indicative of a deeper philosophical malaise regarding the nature of truth itself.\n\nPostmodernist critiques of the late 20th century, which legitimately deconstructed grand narratives and highlighted the intrinsic subjectivity of historical accounts, have been weaponized by bad-faith actors. The nuanced academic assertion that \"truth is culturally mediated\" has been grotesquely distorted into the cynical, relativistic proposition that \"objective truth does not exist; therefore, all narratives are equally valid.\" This epistemic relativism provides fertile ground for demagoguery, as politicians can dismiss empirical evidence as mere partisan \"spin\" or \"fake news,\" insulating their supporters within impenetrable ideological silos.\n\nThe remediation of this crisis necessitates more than just enhanced algorithmic fact-checking. It requires a societal recommitment to intellectual humility and the cultivation of rigorous media literacy. Citizens must be equipped not only to identify logical fallacies and cognitive biases, but to embrace the discomfort of cognitive dissonance—the friction experienced when deeply held convictions collide with undeniable empirical reality.",
+  "level": "C2",
+  "category": "Philosophy",
+  "questions": [
+    {
+      "id": "q_read_c2_epistemological_challenges_in_the_post_truth_era_0",
+      "question": "What characterizes the \"post-truth\" era according to the text?",
+      "options": [
+        "A period where truth is completely unknown",
+        "An epistemological crisis where objective facts are subordinated to emotional appeals",
+        "An era where science has solved all philosophical problems",
+        "A time when people only speak the truth"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"a profound epistemological crisis wherein objective facts are increasingly subordinated to emotional appeals and tribalistic dogma.\""
+    },
+    {
+      "id": "q_read_c2_epistemological_challenges_in_the_post_truth_era_1",
+      "question": "How have postmodernist critiques been distorted by bad-faith actors?",
+      "options": [
+        "They have been used to prove that science is flawless",
+        "The assertion that truth is culturally mediated has been twisted to mean objective truth doesn't exist",
+        "They have been used to ban philosophy from universities",
+        "They have been used to create fake news websites"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The nuanced academic assertion that 'truth is culturally mediated' has been grotesquely distorted into the cynical, relativistic proposition that 'objective truth does not exist...'\""
+    },
+    {
+      "id": "q_read_c2_epistemological_challenges_in_the_post_truth_era_2",
+      "question": "What does epistemic relativism allow politicians to do?",
+      "options": [
+        "Unite the country",
+        "Pass better laws",
+        "Dismiss empirical evidence as fake news and insulate their supporters",
+        "Admit when they are wrong"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"This epistemic relativism provides fertile ground for demagoguery, as politicians can dismiss empirical evidence as mere partisan 'spin' or 'fake news'...\""
+    },
+    {
+      "id": "q_read_c2_epistemological_challenges_in_the_post_truth_era_3",
+      "question": "What does the text identify as \"cognitive dissonance\"?",
+      "options": [
+        "A disease of the brain",
+        "The inability to read",
+        "The friction experienced when deeply held convictions collide with empirical reality",
+        "The process of writing a philosophical essay"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"cognitive dissonance—the friction experienced when deeply held convictions collide with undeniable empirical reality.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "epistemological",
+      "meaning": "erkenntnistheoretisch"
+    },
+    {
+      "word": "subordinated",
+      "meaning": "untergeordnet"
+    },
+    {
+      "word": "proliferation",
+      "meaning": "Ausbreitung / Wucherung"
+    },
+    {
+      "word": "relativistic",
+      "meaning": "relativistisch"
+    },
+    {
+      "word": "demagoguery",
+      "meaning": "Demagogie (Volksverführung)"
+    }
+  ],
+  "id": "read_c2_epistemological_challenges_in_the_post_truth_era"
+}

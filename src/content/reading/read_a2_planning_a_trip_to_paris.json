@@ -1,0 +1,75 @@
+{
+  "title": "Planning a Trip to Paris",
+  "content": "Next month, Lisa and Mark are traveling to Paris. They are very excited because it is their first time in France. They booked a small hotel near the Eiffel Tower. They plan to stay for five days. Mark bought a guidebook to learn about the best places to visit. They want to see the Louvre Museum and take a boat ride on the Seine river. Lisa is learning some basic French phrases, like \"hello\" and \"thank you\", to communicate with local people. They are also looking forward to eating croissants and French cheese.",
+  "level": "A2",
+  "category": "Travel",
+  "questions": [
+    {
+      "id": "q_read_a2_planning_a_trip_to_paris_0",
+      "question": "Where is their hotel located?",
+      "options": [
+        "Near the Louvre",
+        "Near the Eiffel Tower",
+        "Outside the city",
+        "Near the airport"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They booked a small hotel near the Eiffel Tower.\""
+    },
+    {
+      "id": "q_read_a2_planning_a_trip_to_paris_1",
+      "question": "How long are they staying in Paris?",
+      "options": [
+        "Three days",
+        "Five days",
+        "One week",
+        "Two weeks"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They plan to stay for five days.\""
+    },
+    {
+      "id": "q_read_a2_planning_a_trip_to_paris_2",
+      "question": "Why did Mark buy a guidebook?",
+      "options": [
+        "To learn French",
+        "To find a hotel",
+        "To learn about places to visit",
+        "To read on the plane"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Mark bought a guidebook to learn about the best places to visit.\""
+    },
+    {
+      "id": "q_read_a2_planning_a_trip_to_paris_3",
+      "question": "What is Lisa doing to prepare for the trip?",
+      "options": [
+        "Buying clothes",
+        "Learning French phrases",
+        "Cooking French food",
+        "Watching movies"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Lisa is learning some basic French phrases...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "excited",
+      "meaning": "aufgeregt / begeistert"
+    },
+    {
+      "word": "guidebook",
+      "meaning": "Reiseführer (Buch)"
+    },
+    {
+      "word": "communicate",
+      "meaning": "kommunizieren / verständigen"
+    },
+    {
+      "word": "looking forward to",
+      "meaning": "sich freuen auf"
+    }
+  ],
+  "id": "read_a2_planning_a_trip_to_paris"
+}

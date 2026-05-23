@@ -1,0 +1,71 @@
+{
+  "title": "A Visit to the City",
+  "content": "Tomorrow, I am going to the city. I am taking the train at 9 a.m. First, I will visit the museum. I want to see the old paintings. After the museum, I will go to a big restaurant for lunch. I want to eat pizza. In the afternoon, I will go shopping. I need to buy a new jacket and some shoes. Finally, I will meet my friend for coffee. We will talk and relax.",
+  "level": "A1",
+  "category": "Travel",
+  "questions": [
+    {
+      "id": "q_read_a1_a_visit_to_the_city_0",
+      "question": "How is the person travelling to the city?",
+      "options": [
+        "By car",
+        "By bus",
+        "By train",
+        "By plane"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I am taking the train...\""
+    },
+    {
+      "id": "q_read_a1_a_visit_to_the_city_1",
+      "question": "What will they do first?",
+      "options": [
+        "Go shopping",
+        "Meet a friend",
+        "Eat pizza",
+        "Visit the museum"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"First, I will visit the museum.\""
+    },
+    {
+      "id": "q_read_a1_a_visit_to_the_city_2",
+      "question": "What do they want to buy?",
+      "options": [
+        "A hat and gloves",
+        "A jacket and shoes",
+        "A bag and a shirt",
+        "Food and drinks"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I need to buy a new jacket and some shoes.\""
+    },
+    {
+      "id": "q_read_a1_a_visit_to_the_city_3",
+      "question": "What will they do with their friend?",
+      "options": [
+        "Watch a movie",
+        "Drink coffee and talk",
+        "Go for a walk",
+        "Play a game"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I will meet my friend for coffee. We will talk and relax.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "paintings",
+      "meaning": "Gemälde"
+    },
+    {
+      "word": "jacket",
+      "meaning": "Jacke"
+    },
+    {
+      "word": "relax",
+      "meaning": "entspannen"
+    }
+  ],
+  "id": "read_a1_a_visit_to_the_city"
+}

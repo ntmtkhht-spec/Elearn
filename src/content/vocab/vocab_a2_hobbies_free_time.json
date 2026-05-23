@@ -1,0 +1,130 @@
+{
+  "name": "Hobbies & Free Time",
+  "description": "Words to talk about your interests",
+  "level": "A2",
+  "category": "Daily",
+  "icon": "⚽",
+  "cards": [
+    {
+      "word": "Reading",
+      "translation": "Lesen",
+      "pronunciation": "/ˈriːdɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Reading is my favorite hobby.",
+      "exampleTranslation": "Lesen ist mein Lieblingshobby.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_0",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Swimming",
+      "translation": "Schwimmen",
+      "pronunciation": "/ˈswɪmɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We go swimming every Sunday.",
+      "exampleTranslation": "Wir gehen jeden Sonntag schwimmen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_1",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Drawing",
+      "translation": "Zeichnen",
+      "pronunciation": "/ˈdrɔːɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She is very good at drawing.",
+      "exampleTranslation": "Sie ist sehr gut im Zeichnen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_2",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Cooking",
+      "translation": "Kochen",
+      "pronunciation": "/ˈkʊkɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I enjoy cooking for my friends.",
+      "exampleTranslation": "Ich koche gerne für meine Freunde.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_3",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Traveling",
+      "translation": "Reisen",
+      "pronunciation": "/ˈtrævəlɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Traveling helps you learn about the world.",
+      "exampleTranslation": "Reisen hilft dir, etwas über die Welt zu lernen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_4",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Photography",
+      "translation": "Fotografie",
+      "pronunciation": "/fəˈtɒɡrəfi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He took up photography last year.",
+      "exampleTranslation": "Er hat letztes Jahr mit Fotografie angefangen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_5",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Gaming",
+      "translation": "Zocken / Spielen",
+      "pronunciation": "/ˈɡeɪmɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Gaming is popular among teenagers.",
+      "exampleTranslation": "Zocken ist bei Teenagern beliebt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_6",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Listening to music",
+      "translation": "Musik hören",
+      "pronunciation": "/ˈlɪsənɪŋ tʊ ˈmjuːzɪk/",
+      "partOfSpeech": "phrase",
+      "exampleSentence": "I am listening to music right now.",
+      "exampleTranslation": "Ich höre gerade Musik.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_7",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Dancing",
+      "translation": "Tanzen",
+      "pronunciation": "/ˈdænsɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "They go dancing on weekends.",
+      "exampleTranslation": "Sie gehen am Wochenende tanzen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_8",
+      "deckId": "vocab_a2_hobbies_free_time"
+    },
+    {
+      "word": "Gardening",
+      "translation": "Gartenarbeit",
+      "pronunciation": "/ˈɡɑːrdənɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Gardening is very relaxing.",
+      "exampleTranslation": "Gartenarbeit ist sehr entspannend.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_a2_hobbies_free_time_9",
+      "deckId": "vocab_a2_hobbies_free_time"
+    }
+  ],
+  "id": "vocab_a2_hobbies_free_time"
+}

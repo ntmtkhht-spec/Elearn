@@ -1,0 +1,79 @@
+{
+  "title": "The Geopolitics of the Arctic",
+  "content": "Historically viewed as a peripheral and inhospitable frontier, the Arctic region is rapidly transforming into a focal point of intense geopolitical maneuvering. The catalyst for this paradigm shift is global climate change; as the polar ice caps recede at an alarming rate, previously inaccessible maritime routes, such as the Northwest Passage and the Northern Sea Route, are becoming navigable. These routes promise to drastically reduce transit times between Asian and European markets, fundamentally altering global shipping logistics.\n\nSimultaneously, the melting ice is exposing vast, untapped reservoirs of natural resources, including lucrative deposits of oil, natural gas, and rare earth minerals. Consequently, the littoral states of the Arctic Ocean—primarily Russia, Canada, the United States, Norway, and Denmark (via Greenland)—are asserting overlapping territorial claims, often bolstering their assertions through increased militarization and icebreaker deployments.\n\nWhile the Arctic Council, an intergovernmental forum, has historically succeeded in promoting peaceful cooperation regarding environmental protection and indigenous rights, it deliberately excludes military security from its mandate. As economic incentives intensify, the absence of a comprehensive, legally binding treaty governing the extraction of resources and the militarization of the Arctic raises the specter of future international conflict in the high north.",
+  "level": "C1",
+  "category": "Politics",
+  "questions": [
+    {
+      "id": "q_read_c1_the_geopolitics_of_the_arctic_0",
+      "question": "What is the primary catalyst for the geopolitical changes in the Arctic?",
+      "options": [
+        "The discovery of ancient civilizations",
+        "Global climate change melting the ice caps",
+        "A sudden increase in the polar bear population",
+        "The collapse of the Russian economy"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The catalyst for this paradigm shift is global climate change; as the polar ice caps recede...\""
+    },
+    {
+      "id": "q_read_c1_the_geopolitics_of_the_arctic_1",
+      "question": "Why are the Northwest Passage and the Northern Sea Route significant?",
+      "options": [
+        "They are great locations for luxury tourism",
+        "They drastically reduce transit times between Asian and European markets",
+        "They are the only places to find fresh water",
+        "They are strictly controlled by the UN"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"These routes promise to drastically reduce transit times between Asian and European markets...\""
+    },
+    {
+      "id": "q_read_c1_the_geopolitics_of_the_arctic_2",
+      "question": "How are the littoral states reacting to the exposure of natural resources?",
+      "options": [
+        "By abandoning their claims to the territory",
+        "By asserting overlapping territorial claims and increasing militarization",
+        "By giving the resources to developing nations",
+        "By building giant walls of ice"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"asserting overlapping territorial claims, often bolstering their assertions through increased militarization...\""
+    },
+    {
+      "id": "q_read_c1_the_geopolitics_of_the_arctic_3",
+      "question": "What is a significant limitation of the Arctic Council mentioned in the text?",
+      "options": [
+        "It does not speak English",
+        "It excludes military security from its mandate",
+        "It has no members from the Arctic region",
+        "It only meets once every ten years"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"it deliberately excludes military security from its mandate.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "peripheral",
+      "meaning": "am Rand liegend / unwichtig"
+    },
+    {
+      "word": "navigable",
+      "meaning": "schiffbar"
+    },
+    {
+      "word": "littoral states",
+      "meaning": "Anrainerstaaten / Küstenstaaten"
+    },
+    {
+      "word": "bolstering",
+      "meaning": "stärkend / untermauernd"
+    },
+    {
+      "word": "specter",
+      "meaning": "Gespenst / Schreckgespenst"
+    }
+  ],
+  "id": "read_c1_the_geopolitics_of_the_arctic"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "The Semantic Web and Ontology Engineering",
+  "content": "The current iteration of the World Wide Web is primarily a web of documents, designed for human consumption. While search engines have become exceedingly sophisticated utilizing natural language processing and PageRank algorithms, they fundamentally retrieve documents based on keyword matching and popularity, rather than possessing a true, contextual understanding of the data. The \"Semantic Web,\" a vision spearheaded by World Wide Web inventor Tim Berners-Lee, aims to rectify this limitation by transforming the internet into a web of linked data, readable and comprehensible by machines.\n\nAt the heart of the Semantic Web lies ontology engineering. In computer science, an ontology is a formal, explicit specification of a shared conceptualization. It defines the entities within a specific domain, the properties of those entities, and the intricate relationships between them, typically encoded in frameworks like RDF (Resource Description Framework) and OWL (Web Ontology Language). \n\nBy annotating web content with ontological metadata, a machine can discern that the string \"Apple\" refers to the technology corporation rather than the fruit, based on its relational context (e.g., linked to \"Steve Jobs\" and \"California\"). The realization of the Semantic Web promises to revolutionize data integration, enabling intelligent software agents to autonomously navigate, aggregate, and infer new knowledge from disparate, decentralized databases across the globe, thereby exponentially amplifying human cognitive capabilities.",
+  "level": "C2",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_c2_the_semantic_web_and_ontology_engineering_0",
+      "question": "What is a fundamental limitation of the current World Wide Web according to the text?",
+      "options": [
+        "It is too slow",
+        "It is a web of documents designed for humans, not truly understood by machines",
+        "It costs too much money to use",
+        "It is controlled by one company"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The current iteration of the World Wide Web is primarily a web of documents, designed for human consumption... rather than possessing a true, contextual understanding of the data.\""
+    },
+    {
+      "id": "q_read_c2_the_semantic_web_and_ontology_engineering_1",
+      "question": "What is the goal of the \"Semantic Web\"?",
+      "options": [
+        "To create a new internet browser",
+        "To ban search engines",
+        "To transform the internet into a web of linked data, readable and comprehensible by machines",
+        "To make websites look more beautiful"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"aims to rectify this limitation by transforming the internet into a web of linked data, readable and comprehensible by machines.\""
+    },
+    {
+      "id": "q_read_c2_the_semantic_web_and_ontology_engineering_2",
+      "question": "What does an ontology do in computer science?",
+      "options": [
+        "It repairs broken computers",
+        "It writes code automatically",
+        "It provides a formal specification defining entities, properties, and relationships in a domain",
+        "It designs website graphics"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"an ontology is a formal, explicit specification of a shared conceptualization. It defines the entities... the properties... and the intricate relationships between them...\""
+    },
+    {
+      "id": "q_read_c2_the_semantic_web_and_ontology_engineering_3",
+      "question": "How would ontological metadata help a machine understand the word \"Apple\"?",
+      "options": [
+        "By showing it a picture",
+        "By analyzing its spelling",
+        "By looking at its relational context (e.g., links to \"Steve Jobs\")",
+        "By asking a human user"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"a machine can discern that the string 'Apple' refers to the technology corporation rather than the fruit, based on its relational context (e.g., linked to 'Steve Jobs')...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "iteration",
+      "meaning": "Wiederholung / Version"
+    },
+    {
+      "word": "spearheaded",
+      "meaning": "angeführt"
+    },
+    {
+      "word": "ontology",
+      "meaning": "Ontologie (Lehre des Seins / hier: formale Begriffsstruktur)"
+    },
+    {
+      "word": "disparate",
+      "meaning": "ungleichartig / verschieden"
+    },
+    {
+      "word": "infer",
+      "meaning": "schlussfolgern / ableiten"
+    }
+  ],
+  "id": "read_c2_the_semantic_web_and_ontology_engineering"
+}

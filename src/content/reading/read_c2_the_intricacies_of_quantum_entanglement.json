@@ -1,0 +1,79 @@
+{
+  "title": "The Intricacies of Quantum Entanglement",
+  "content": "At the frontier of modern physics lies quantum mechanics, a domain governed by probabilistic wave functions and counterintuitive phenomena that defy classical Newtonian logic. Chief among these enigmas is quantum entanglement, famously derided by Albert Einstein as \"spooky action at a distance.\" Entanglement occurs when two or more subatomic particles—such as photons or electrons—become inextricably linked, such that the quantum state of one particle cannot be described independently of the state of the others, regardless of the spatial distance separating them.\n\nIf the spin of an entangled electron is measured on Earth and determined to be \"up,\" the spin of its entangled partner, even if located in the Andromeda galaxy, instantaneously collapses into the \"down\" state. This instantaneous correlation appears to violate the cosmic speed limit dictated by the theory of special relativity, which asserts that no information can travel faster than the speed of light.\n\nWhile physicists have proven that entanglement cannot be leveraged for faster-than-light communication—thus preserving the integrity of relativity—it fundamentally upends our conception of physical locality. The philosophical implications are staggering, suggesting an underlying interconnectedness of the cosmos at a fundamental level. Practically, mastering entanglement is the cornerstone of burgeoning technologies like quantum cryptography, which promises theoretically unhackable communication, and quantum computing, which threatens to render contemporary encryption algorithms obsolete.",
+  "level": "C2",
+  "category": "Physics",
+  "questions": [
+    {
+      "id": "q_read_c2_the_intricacies_of_quantum_entanglement_0",
+      "question": "How did Albert Einstein famously describe quantum entanglement?",
+      "options": [
+        "A beautiful mathematical theory",
+        "Spooky action at a distance",
+        "The greatest discovery of the century",
+        "A complete waste of time"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"quantum entanglement, famously derided by Albert Einstein as 'spooky action at a distance.'\""
+    },
+    {
+      "id": "q_read_c2_the_intricacies_of_quantum_entanglement_1",
+      "question": "What happens to entangled particles regardless of the distance between them?",
+      "options": [
+        "They eventually lose their charge",
+        "They merge into a single particle",
+        "The quantum state of one instantly affects the other",
+        "They repel each other magnetically"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"If the spin of an entangled electron is measured... the spin of its entangled partner... instantaneously collapses...\""
+    },
+    {
+      "id": "q_read_c2_the_intricacies_of_quantum_entanglement_2",
+      "question": "Why doesn't entanglement violate the theory of special relativity?",
+      "options": [
+        "Because light doesn't exist in quantum mechanics",
+        "Because it only works over short distances",
+        "Because it cannot be leveraged for faster-than-light communication",
+        "Because Einstein was wrong"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"physicists have proven that entanglement cannot be leveraged for faster-than-light communication—thus preserving the integrity of relativity...\""
+    },
+    {
+      "id": "q_read_c2_the_intricacies_of_quantum_entanglement_3",
+      "question": "What is a practical application of mastering quantum entanglement?",
+      "options": [
+        "Building faster airplanes",
+        "Creating unhackable quantum cryptography and quantum computing",
+        "Curing diseases",
+        "Generating infinite energy"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"mastering entanglement is the cornerstone of burgeoning technologies like quantum cryptography... and quantum computing...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "intricacies",
+      "meaning": "Komplexitäten / Feinheiten"
+    },
+    {
+      "word": "enigmas",
+      "meaning": "Rätsel / Mysterien"
+    },
+    {
+      "word": "inextricably",
+      "meaning": "untrennbar"
+    },
+    {
+      "word": "upends",
+      "meaning": "stellt auf den Kopf / wirft um"
+    },
+    {
+      "word": "obsolete",
+      "meaning": "veraltet / überholt"
+    }
+  ],
+  "id": "read_c2_the_intricacies_of_quantum_entanglement"
+}

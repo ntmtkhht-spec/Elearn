@@ -1,0 +1,130 @@
+{
+  "name": "Psychology & Mind",
+  "description": "Mental health, behavior and cognitive concepts",
+  "level": "C1",
+  "category": "Science",
+  "icon": "🧠",
+  "cards": [
+    {
+      "word": "Cognitive",
+      "translation": "Kognitiv",
+      "pronunciation": "/ˈkɒɡnɪtɪv/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Cognitive behavioral therapy is very effective.",
+      "exampleTranslation": "Kognitive Verhaltenstherapie ist sehr effektiv.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_0",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Subconscious",
+      "translation": "Unterbewusstsein",
+      "pronunciation": "/sʌbˈkɒnʃəs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Fears often stem from the subconscious.",
+      "exampleTranslation": "Ängste stammen oft aus dem Unterbewusstsein.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_1",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Empathy",
+      "translation": "Empathie / Mitgefühl",
+      "pronunciation": "/ˈɛmpəθi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Empathy allows us to understand others' feelings.",
+      "exampleTranslation": "Empathie ermöglicht es uns, die Gefühle anderer zu verstehen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_2",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Narcissism",
+      "translation": "Narzissmus",
+      "pronunciation": "/ˈnɑːrsɪsɪzəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "His extreme narcissism alienated his friends.",
+      "exampleTranslation": "Sein extremer Narzissmus entfremdete seine Freunde.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_3",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Resilience",
+      "translation": "Resilienz / Widerstandsfähigkeit",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Children show remarkable resilience after trauma.",
+      "exampleTranslation": "Kinder zeigen nach einem Trauma eine bemerkenswerte Resilienz.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_4",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Introvert",
+      "translation": "Introvertierte/r",
+      "pronunciation": "/ˈɪntrəvɜːrt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "As an introvert, she prefers small gatherings.",
+      "exampleTranslation": "Als Introvertierte bevorzugt sie kleine Zusammenkünfte.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_5",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Extrovert",
+      "translation": "Extrovertierte/r",
+      "pronunciation": "/ˈɛkstrəvɜːrt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He is an extrovert who loves being the center of attention.",
+      "exampleTranslation": "Er ist ein Extrovertierter, der es liebt, im Mittelpunkt zu stehen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_6",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Delusion",
+      "translation": "Wahnvorstellung",
+      "pronunciation": "/dɪˈluːʒən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He suffers from delusions of grandeur.",
+      "exampleTranslation": "Er leidet unter Größenwahn.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_7",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Conditioning",
+      "translation": "Konditionierung",
+      "pronunciation": "/kənˈdɪʃənɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Pavlov is famous for his work on classical conditioning.",
+      "exampleTranslation": "Pawlow ist berühmt für seine Arbeit zur klassischen Konditionierung.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_8",
+      "deckId": "vocab_c1_psychology_mind"
+    },
+    {
+      "word": "Stimulus",
+      "translation": "Reiz / Stimulus",
+      "pronunciation": "/ˈstɪmjʊləs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The animal responded to the auditory stimulus.",
+      "exampleTranslation": "Das Tier reagierte auf den akustischen Reiz.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_psychology_mind_9",
+      "deckId": "vocab_c1_psychology_mind"
+    }
+  ],
+  "id": "vocab_c1_psychology_mind"
+}

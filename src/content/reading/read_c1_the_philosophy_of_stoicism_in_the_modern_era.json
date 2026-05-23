@@ -1,0 +1,79 @@
+{
+  "title": "The Philosophy of Stoicism in the Modern Era",
+  "content": "Originating in ancient Athens, Stoicism has experienced a remarkable renaissance in the 21st century, finding traction not among reclusive monks, but among Silicon Valley executives, elite athletes, and individuals navigating the anxieties of modern life. At its core, Stoicism is a highly pragmatic philosophy designed to cultivate resilience and emotional equanimity in an unpredictable world.\n\nThe foundational tenet of Stoic thought is the \"dichotomy of control,\" eloquently articulated by the philosopher Epictetus. It posits that human suffering arises from conflating that which we can control (our own judgments, impulses, and actions) with that which we cannot (external events, the opinions of others, our health, and our ultimate mortality). By rigorously directing our cognitive energy solely toward the former, we liberate ourselves from the tyranny of external circumstances.\n\nCritics occasionally mischaracterize Stoicism as the suppression of emotion or a passive resignation to fate. In reality, Stoics do not seek to eliminate emotions, but rather to domesticate them, preventing irrational passions from dictating their behavior. By anticipating adversity (a practice known as *premeditatio malorum*), the modern Stoic mentally inoculates themselves against inevitable setbacks, transforming obstacles into opportunities for practicing virtue.",
+  "level": "C1",
+  "category": "Philosophy",
+  "questions": [
+    {
+      "id": "q_read_c1_the_philosophy_of_stoicism_in_the_modern_era_0",
+      "question": "Who are adopting Stoicism in the modern era according to the text?",
+      "options": [
+        "Only philosophy professors",
+        "Reclusive monks",
+        "Silicon Valley executives, athletes, and modern individuals",
+        "Politicians"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"finding traction not among reclusive monks, but among Silicon Valley executives, elite athletes, and individuals navigating the anxieties of modern life.\""
+    },
+    {
+      "id": "q_read_c1_the_philosophy_of_stoicism_in_the_modern_era_1",
+      "question": "What is the \"dichotomy of control\"?",
+      "options": [
+        "The division between rich and poor",
+        "The difference between things we can control and things we cannot",
+        "The separation of mind and body",
+        "The conflict between government and citizens"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"It posits that human suffering arises from conflating that which we can control... with that which we cannot...\""
+    },
+    {
+      "id": "q_read_c1_the_philosophy_of_stoicism_in_the_modern_era_2",
+      "question": "How is Stoicism often mischaracterized by its critics?",
+      "options": [
+        "As an obsession with wealth",
+        "As a religion rather than a philosophy",
+        "As the suppression of emotion or passive resignation to fate",
+        "As an overly optimistic worldview"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Critics occasionally mischaracterize Stoicism as the suppression of emotion or a passive resignation to fate.\""
+    },
+    {
+      "id": "q_read_c1_the_philosophy_of_stoicism_in_the_modern_era_3",
+      "question": "What is the purpose of the practice called *premeditatio malorum*?",
+      "options": [
+        "To memorize ancient Greek texts",
+        "To anticipate adversity and mentally inoculate oneself against setbacks",
+        "To physically train the body",
+        "To convince others to become Stoics"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"By anticipating adversity (a practice known as premeditatio malorum), the modern Stoic mentally inoculates themselves against inevitable setbacks...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "equanimity",
+      "meaning": "Gleichmut / Gelassenheit"
+    },
+    {
+      "word": "dichotomy",
+      "meaning": "Dichotomie (Zweiteilung)"
+    },
+    {
+      "word": "conflating",
+      "meaning": "vermengend / gleichsetzend"
+    },
+    {
+      "word": "resignation",
+      "meaning": "Resignation / Ergebung"
+    },
+    {
+      "word": "inoculates",
+      "meaning": "impft / wappnet"
+    }
+  ],
+  "id": "read_c1_the_philosophy_of_stoicism_in_the_modern_era"
+}

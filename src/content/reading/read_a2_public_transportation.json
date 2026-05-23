@@ -1,0 +1,75 @@
+{
+  "title": "Public Transportation",
+  "content": "In many big cities, public transportation is the best way to get around. Taking the bus, tram, or subway has several benefits. First, it is usually cheaper than driving a car, especially when you consider the cost of parking and petrol. Second, it is better for the environment because it reduces air pollution and traffic jams. Many people use the time on the train to read a book, listen to a podcast, or relax. However, public transport can sometimes be crowded during rush hour, and delays can happen.",
+  "level": "A2",
+  "category": "Transport",
+  "questions": [
+    {
+      "id": "q_read_a2_public_transportation_0",
+      "question": "According to the text, why is public transport cheaper?",
+      "options": [
+        "Tickets are free",
+        "You save money on parking and petrol",
+        "Cars are expensive to buy",
+        "Trains use less electricity"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"it is usually cheaper than driving a car, especially when you consider the cost of parking and petrol.\""
+    },
+    {
+      "id": "q_read_a2_public_transportation_1",
+      "question": "Why is it better for the environment?",
+      "options": [
+        "It uses renewable energy",
+        "It reduces air pollution and traffic jams",
+        "It produces no noise",
+        "It protects animals"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"it reduces air pollution and traffic jams.\""
+    },
+    {
+      "id": "q_read_a2_public_transportation_2",
+      "question": "What do people often do on the train?",
+      "options": [
+        "Eat their breakfast",
+        "Talk loudly on the phone",
+        "Read or listen to a podcast",
+        "Do exercise"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Many people use the time on the train to read a book, listen to a podcast...\""
+    },
+    {
+      "id": "q_read_a2_public_transportation_3",
+      "question": "What is a negative aspect mentioned in the text?",
+      "options": [
+        "It is dangerous",
+        "It can be crowded and delayed",
+        "The seats are uncomfortable",
+        "It stops too early at night"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"public transport can sometimes be crowded during rush hour, and delays can happen.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "public transportation",
+      "meaning": "öffentliche Verkehrsmittel"
+    },
+    {
+      "word": "petrol",
+      "meaning": "Benzin"
+    },
+    {
+      "word": "pollution",
+      "meaning": "Verschmutzung"
+    },
+    {
+      "word": "rush hour",
+      "meaning": "Hauptverkehrszeit / Stoßzeit"
+    }
+  ],
+  "id": "read_a2_public_transportation"
+}

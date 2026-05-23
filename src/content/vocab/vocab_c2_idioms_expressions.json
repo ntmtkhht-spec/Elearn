@@ -1,0 +1,130 @@
+{
+  "name": "Idioms & Expressions",
+  "description": "Native-level idiomatic phrases",
+  "level": "C2",
+  "category": "Idioms",
+  "icon": "🗣️",
+  "cards": [
+    {
+      "word": "Bite the bullet",
+      "translation": "In den sauren Apfel beißen",
+      "pronunciation": "/baɪt ðə ˈbʊlɪt/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "I hate going to the dentist, but I just have to bite the bullet.",
+      "exampleTranslation": "Ich hasse es, zum Zahnarzt zu gehen, aber ich muss wohl in den sauren Apfel beißen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_0",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Under the weather",
+      "translation": "Sich nicht wohl fühlen / angeschlagen sein",
+      "pronunciation": "/ˈʌndər ðə ˈwɛðər/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "I am feeling a bit under the weather today.",
+      "exampleTranslation": "Ich fühle mich heute etwas angeschlagen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_1",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Cost an arm and a leg",
+      "translation": "Ein Vermögen kosten",
+      "pronunciation": "/kɒst ən ɑːrm ænd ə lɛɡ/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "This designer bag cost an arm and a leg.",
+      "exampleTranslation": "Diese Designertasche hat ein Vermögen gekostet.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_2",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Break the ice",
+      "translation": "Das Eis brechen",
+      "pronunciation": "/breɪk ði aɪs/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "A joke is a good way to break the ice at a meeting.",
+      "exampleTranslation": "Ein Witz ist ein guter Weg, um bei einem Meeting das Eis zu brechen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_3",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Spill the beans",
+      "translation": "Ein Geheimnis verraten",
+      "pronunciation": "/spɪl ðə biːnz/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "Come on, spill the beans! What did he say?",
+      "exampleTranslation": "Komm schon, spuck's aus! Was hat er gesagt?",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_4",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Piece of cake",
+      "translation": "Ein Kinderspiel",
+      "pronunciation": "/piːs əv keɪk/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "The exam was a piece of cake.",
+      "exampleTranslation": "Die Prüfung war ein Kinderspiel.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_5",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Hit the nail on the head",
+      "translation": "Den Nagel auf den Kopf treffen",
+      "pronunciation": "/hɪt ðə neɪl ɒn ðə hɛd/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "You really hit the nail on the head with that comment.",
+      "exampleTranslation": "Du hast mit diesem Kommentar wirklich den Nagel auf den Kopf getroffen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_6",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Once in a blue moon",
+      "translation": "Alle Jubeljahre (sehr selten)",
+      "pronunciation": "/wʌns ɪn ə bluː muːn/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "He cleans his room once in a blue moon.",
+      "exampleTranslation": "Er räumt sein Zimmer nur alle Jubeljahre mal auf.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_7",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "By the skin of one's teeth",
+      "translation": "Mit knapper Not / Ach und Krach",
+      "pronunciation": "/baɪ ðə skɪn əv wʌnz tiːθ/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "He passed the exam by the skin of his teeth.",
+      "exampleTranslation": "Er hat die Prüfung mit Ach und Krach bestanden.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_8",
+      "deckId": "vocab_c2_idioms_expressions"
+    },
+    {
+      "word": "Elephant in the room",
+      "translation": "Das offensichtliche Problem, das niemand anspricht",
+      "pronunciation": "/ˈɛləfənt ɪn ðə ruːm/",
+      "partOfSpeech": "idiom",
+      "exampleSentence": "We need to address the elephant in the room: our budget deficit.",
+      "exampleTranslation": "Wir müssen das offensichtliche Problem ansprechen: unser Haushaltsdefizit.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_idioms_expressions_9",
+      "deckId": "vocab_c2_idioms_expressions"
+    }
+  ],
+  "id": "vocab_c2_idioms_expressions"
+}

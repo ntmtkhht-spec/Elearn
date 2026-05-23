@@ -1,0 +1,75 @@
+{
+  "title": "Learning to Play the Guitar",
+  "content": "Simon always wanted to learn a musical instrument. Last month, he bought an acoustic guitar online. When it arrived, he was very excited. He decided to teach himself using internet videos instead of paying for a teacher. At first, it was very difficult. His fingers hurt, and the chords sounded terrible. But he practiced for 30 minutes every day. After a few weeks, his fingers got stronger and he learned how to play three simple songs. He knows he still has a lot to learn, but he is proud of his progress.",
+  "level": "A2",
+  "category": "Hobbies",
+  "questions": [
+    {
+      "id": "q_read_a2_learning_to_play_the_guitar_0",
+      "question": "Where did Simon get his guitar?",
+      "options": [
+        "From a music shop",
+        "From a friend",
+        "He bought it online",
+        "It was a gift"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"he bought an acoustic guitar online.\""
+    },
+    {
+      "id": "q_read_a2_learning_to_play_the_guitar_1",
+      "question": "How is Simon learning to play?",
+      "options": [
+        "With a private teacher",
+        "At a music school",
+        "From a book",
+        "Using internet videos"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"He decided to teach himself using internet videos...\""
+    },
+    {
+      "id": "q_read_a2_learning_to_play_the_guitar_2",
+      "question": "What problem did he have at the beginning?",
+      "options": [
+        "The guitar was broken",
+        "His fingers hurt",
+        "He didn't have time",
+        "The videos were boring"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"His fingers hurt, and the chords sounded terrible.\""
+    },
+    {
+      "id": "q_read_a2_learning_to_play_the_guitar_3",
+      "question": "How often does Simon practice?",
+      "options": [
+        "Once a week",
+        "Every weekend",
+        "For 30 minutes every day",
+        "For two hours every day"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"But he practiced for 30 minutes every day.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "acoustic",
+      "meaning": "akustisch (ohne Strom)"
+    },
+    {
+      "word": "instead of",
+      "meaning": "anstatt"
+    },
+    {
+      "word": "chords",
+      "meaning": "Akkorde (in der Musik)"
+    },
+    {
+      "word": "progress",
+      "meaning": "Fortschritt"
+    }
+  ],
+  "id": "read_a2_learning_to_play_the_guitar"
+}

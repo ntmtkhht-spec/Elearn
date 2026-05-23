@@ -1,0 +1,75 @@
+{
+  "title": "The Gig Economy: Freedom or Insecurity?",
+  "content": "The traditional 9-to-5 job is gradually being challenged by the rise of the \"gig economy.\" Characterized by short-term contracts and freelance work, the gig economy operates largely through digital platforms like Uber, Upwork, and Deliveroo. For many workers, this system offers unparalleled flexibility. They can choose their own hours, decide which projects to accept, and balance multiple income streams. This autonomy is particularly attractive to students, parents, and those seeking supplementary income.\n\nHowever, this flexibility often comes at a steep price: a lack of security. Gig workers are generally classified as independent contractors rather than employees. Consequently, they do not receive standard employment benefits such as paid sick leave, health insurance, or pension contributions. If they fall ill or the platform's algorithm suddenly stops assigning them work, they have no safety net. Labor unions and policymakers are currently debating how to regulate this sector to ensure that the desire for flexibility does not result in the exploitation of vulnerable workers.",
+  "level": "B2",
+  "category": "Business",
+  "questions": [
+    {
+      "id": "q_read_b2_the_gig_economy_freedom_or_insecurity__0",
+      "question": "What characterizes the \"gig economy\"?",
+      "options": [
+        "Lifelong employment in one company",
+        "Short-term contracts and freelance work via digital platforms",
+        "Working exclusively in factories",
+        "Government-funded jobs"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Characterized by short-term contracts and freelance work, the gig economy operates largely through digital platforms...\""
+    },
+    {
+      "id": "q_read_b2_the_gig_economy_freedom_or_insecurity__1",
+      "question": "What is a major advantage of gig work mentioned in the text?",
+      "options": [
+        "High pensions",
+        "Free health insurance",
+        "Unparalleled flexibility and autonomy",
+        "Guaranteed daily income"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"this system offers unparalleled flexibility. They can choose their own hours...\""
+    },
+    {
+      "id": "q_read_b2_the_gig_economy_freedom_or_insecurity__2",
+      "question": "Why do gig workers lack a safety net?",
+      "options": [
+        "They spend their money too quickly",
+        "They are classified as independent contractors and lack employment benefits",
+        "They do not pay taxes",
+        "The digital platforms regularly go bankrupt"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Gig workers are generally classified as independent contractors rather than employees. Consequently, they do not receive standard employment benefits...\""
+    },
+    {
+      "id": "q_read_b2_the_gig_economy_freedom_or_insecurity__3",
+      "question": "What are policymakers trying to figure out regarding the gig economy?",
+      "options": [
+        "How to ban it completely",
+        "How to force everyone into 9-to-5 jobs",
+        "How to regulate it to prevent exploitation while keeping flexibility",
+        "How to lower the wages of gig workers"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"debating how to regulate this sector to ensure that the desire for flexibility does not result in the exploitation of vulnerable workers.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "unparalleled",
+      "meaning": "beispiellos / unvergleichlich"
+    },
+    {
+      "word": "supplementary",
+      "meaning": "zusätzlich / ergänzend"
+    },
+    {
+      "word": "contractors",
+      "meaning": "Auftragnehmer"
+    },
+    {
+      "word": "exploitation",
+      "meaning": "Ausbeutung"
+    }
+  ],
+  "id": "read_b2_the_gig_economy_freedom_or_insecurity_"
+}

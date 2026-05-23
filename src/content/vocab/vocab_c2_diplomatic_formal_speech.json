@@ -1,0 +1,130 @@
+{
+  "name": "Diplomatic & Formal Speech",
+  "description": "Polite, evasive, and formal communication",
+  "level": "C2",
+  "category": "Business",
+  "icon": "🤝",
+  "cards": [
+    {
+      "word": "Consensus",
+      "translation": "Konsens / Übereinstimmung",
+      "pronunciation": "/kənˈsɛnsəs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "It is difficult to reach a consensus among so many parties.",
+      "exampleTranslation": "Es ist schwierig, unter so vielen Parteien einen Konsens zu erzielen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_0",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Unprecedented",
+      "translation": "Beispiellos",
+      "pronunciation": "/ʌnˈprɛsɪdɛntɪd/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The pandemic created an unprecedented global crisis.",
+      "exampleTranslation": "Die Pandemie schuf eine beispiellose globale Krise.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_1",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Equivocal",
+      "translation": "Zweideutig / Ausweichend",
+      "pronunciation": "/ɪˈkwɪvəkəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The minister gave an equivocal response to the journalist's question.",
+      "exampleTranslation": "Der Minister gab eine ausweichende Antwort auf die Frage des Journalisten.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_2",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Conciliate",
+      "translation": "Beschwichtigen / Versöhnen",
+      "pronunciation": "/kənˈsɪlieɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "The mediator tried to conciliate the opposing factions.",
+      "exampleTranslation": "Der Vermittler versuchte, die verfeindeten Fraktionen zu versöhnen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_3",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Ratify",
+      "translation": "Ratifizieren / Bestätigen",
+      "pronunciation": "/ˈrætɪfaɪ/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "The parliament must ratify the new trade agreement.",
+      "exampleTranslation": "Das Parlament muss das neue Handelsabkommen ratifizieren.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_4",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Ultimatum",
+      "translation": "Ultimatum",
+      "pronunciation": "/ˌʌltɪˈmeɪtəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The ambassador delivered a final ultimatum.",
+      "exampleTranslation": "Der Botschafter überbrachte ein letztes Ultimatum.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_5",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Bilateral",
+      "translation": "Bilateral / Zweiseitig",
+      "pronunciation": "/baɪˈlætərəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The two countries signed a bilateral trade agreement.",
+      "exampleTranslation": "Die beiden Länder unterzeichneten ein bilaterales Handelsabkommen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_6",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Sanctimonious",
+      "translation": "Scheinheilig",
+      "pronunciation": "/ˌsæŋktɪˈmoʊniəs/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "I am tired of his sanctimonious lectures on morality.",
+      "exampleTranslation": "Ich bin seine scheinheiligen Vorträge über Moral leid.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_7",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Acquiesce",
+      "translation": "Einwilligen / Hinnehmen",
+      "pronunciation": "/ˌækwiˈɛs/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "He finally decided to acquiesce to their demands.",
+      "exampleTranslation": "Er entschied sich schließlich, in ihre Forderungen einzuwilligen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_8",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    },
+    {
+      "word": "Veto",
+      "translation": "Veto / Einspruch",
+      "pronunciation": "/ˈviːtoʊ/",
+      "partOfSpeech": "noun/verb",
+      "exampleSentence": "The president holds the power to veto the bill.",
+      "exampleTranslation": "Der Präsident hat die Macht, gegen das Gesetz ein Veto einzulegen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_diplomatic_formal_speech_9",
+      "deckId": "vocab_c2_diplomatic_formal_speech"
+    }
+  ],
+  "id": "vocab_c2_diplomatic_formal_speech"
+}

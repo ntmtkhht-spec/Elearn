@@ -1,0 +1,75 @@
+{
+  "title": "Electric Cars: The Future of Transport?",
+  "content": "Electric Vehicles (EVs) are rapidly becoming a common sight on our roads. Governments around the world are encouraging their adoption to reduce greenhouse gas emissions and combat climate change. Unlike traditional petrol cars, EVs produce zero tailpipe emissions and are much quieter. Over the past decade, battery technology has improved significantly, allowing electric cars to travel much further on a single charge than before. However, the transition to electric transport faces hurdles. A major challenge is the lack of charging infrastructure, particularly in rural areas. Additionally, while the cars themselves are emission-free, the electricity used to charge them often comes from fossil fuels. Finally, the mining of materials like lithium and cobalt for the batteries raises environmental and ethical concerns.",
+  "level": "B1",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_b1_electric_cars_the_future_of_transport__0",
+      "question": "Why are governments encouraging the use of electric cars?",
+      "options": [
+        "Because they are faster",
+        "To reduce greenhouse gas emissions",
+        "To create more traffic",
+        "Because they look better"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"encouraging their adoption to reduce greenhouse gas emissions and combat climate change.\""
+    },
+    {
+      "id": "q_read_b1_electric_cars_the_future_of_transport__1",
+      "question": "What has allowed electric cars to travel further on a single charge?",
+      "options": [
+        "Better tires",
+        "Lighter materials",
+        "Improved battery technology",
+        "Smoother roads"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"battery technology has improved significantly, allowing electric cars to travel much further...\""
+    },
+    {
+      "id": "q_read_b1_electric_cars_the_future_of_transport__2",
+      "question": "What is a major challenge for EV adoption mentioned in the text?",
+      "options": [
+        "They are too noisy",
+        "Lack of charging infrastructure",
+        "They are too small",
+        "People don't like the designs"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"A major challenge is the lack of charging infrastructure...\""
+    },
+    {
+      "id": "q_read_b1_electric_cars_the_future_of_transport__3",
+      "question": "What ethical concern is related to electric cars?",
+      "options": [
+        "Driving too fast",
+        "The mining of lithium and cobalt",
+        "Taking jobs from mechanics",
+        "Using too much water to wash them"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the mining of materials like lithium and cobalt for the batteries raises environmental and ethical concerns.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "adoption",
+      "meaning": "Übernahme / Einführung"
+    },
+    {
+      "word": "greenhouse gas emissions",
+      "meaning": "Treibhausgasemissionen"
+    },
+    {
+      "word": "hurdles",
+      "meaning": "Hürden / Hindernisse"
+    },
+    {
+      "word": "mining",
+      "meaning": "Abbau / Bergbau"
+    }
+  ],
+  "id": "read_b1_electric_cars_the_future_of_transport_"
+}

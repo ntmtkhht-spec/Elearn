@@ -1,0 +1,130 @@
+{
+  "name": "Nuanced Emotions",
+  "description": "Words for highly specific emotional states",
+  "level": "C2",
+  "category": "Culture",
+  "icon": "❤️",
+  "cards": [
+    {
+      "word": "Ennui",
+      "translation": "Leere / Weltschmerz",
+      "pronunciation": "/ɒnˈwiː/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "A deep sense of ennui settled over him during the long, idle summer.",
+      "exampleTranslation": "Ein tiefes Gefühl der Leere überkam ihn während des langen, untätigen Sommers.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_0",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Schadenfreude",
+      "translation": "Schadenfreude",
+      "pronunciation": "/ˈʃɑːdənˌfrɔɪdə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She felt a twinge of schadenfreude when her rival failed.",
+      "exampleTranslation": "Sie spürte einen Anflug von Schadenfreude, als ihr Rivale scheiterte.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_1",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Melancholy",
+      "translation": "Melancholie",
+      "pronunciation": "/ˈmɛlənkɒli/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The old photographs filled her with a sweet melancholy.",
+      "exampleTranslation": "Die alten Fotos erfüllten sie mit einer süßen Melancholie.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_2",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Euphoria",
+      "translation": "Euphorie",
+      "pronunciation": "/juːˈfɔːriə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The team was in a state of euphoria after winning the championship.",
+      "exampleTranslation": "Das Team war nach dem Gewinn der Meisterschaft in einem Zustand der Euphorie.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_3",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Trepidation",
+      "translation": "Beklemmung / Angst",
+      "pronunciation": "/ˌtrɛpɪˈdeɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He approached the haunted house with great trepidation.",
+      "exampleTranslation": "Er näherte sich dem Spukhaus mit großer Beklemmung.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_4",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Nostalgia",
+      "translation": "Nostalgie / Sehnsucht",
+      "pronunciation": "/nɒˈstældʒə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Hearing that song always fills me with nostalgia.",
+      "exampleTranslation": "Dieses Lied zu hören, erfüllt mich immer mit Nostalgie.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_5",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Apathy",
+      "translation": "Apathie / Teilnahmslosigkeit",
+      "pronunciation": "/ˈæpəθi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Voter apathy is a growing problem in modern democracies.",
+      "exampleTranslation": "Die Apathie der Wähler ist ein wachsendes Problem in modernen Demokratien.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_6",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Exuberance",
+      "translation": "Überschwang",
+      "pronunciation": "/ɪɡˈzjuːbərəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "His youthful exuberance is contagious.",
+      "exampleTranslation": "Sein jugendlicher Überschwang ist ansteckend.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_7",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Resentment",
+      "translation": "Groll / Verbitterung",
+      "pronunciation": "/rɪˈzɛntmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She harbored deep resentment towards her former boss.",
+      "exampleTranslation": "Sie hegte tiefen Groll gegen ihren ehemaligen Chef.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_8",
+      "deckId": "vocab_c2_nuanced_emotions"
+    },
+    {
+      "word": "Epiphany",
+      "translation": "Erleuchtung / Plötzliche Erkenntnis",
+      "pronunciation": "/ɪˈpɪfəni/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He had an epiphany that changed the course of his life.",
+      "exampleTranslation": "Er hatte eine plötzliche Erkenntnis, die den Lauf seines Lebens veränderte.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_nuanced_emotions_9",
+      "deckId": "vocab_c2_nuanced_emotions"
+    }
+  ],
+  "id": "vocab_c2_nuanced_emotions"
+}

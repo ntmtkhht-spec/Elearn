@@ -1,0 +1,75 @@
+{
+  "title": "The Circular Economy",
+  "content": "Our current economic system is predominantly linear: we take raw materials from the earth, make products from them, and eventually throw them away as waste. This \"take-make-dispose\" model relies on large quantities of easily accessible resources and energy, and it is becoming increasingly clear that this approach is unsustainable on a finite planet. \n\nIn contrast, the \"circular economy\" is an alternative framework designed to design out waste and pollution, keep products and materials in use for as long as possible, and regenerate natural systems. In a circular system, a broken smartphone isn't thrown into a landfill; instead, it is designed so that it can be easily disassembled. Its valuable components, such as gold and lithium, are extracted and reused to build new devices.\n\nTransitioning to a circular economy requires a massive shift in how businesses operate and how consumers behave. It encourages companies to adopt \"product-as-a-service\" models, where they retain ownership of the product (like a washing machine) and the consumer pays for its use. This incentivizes the manufacturer to build durable, easily repairable goods, drastically reducing environmental impact.",
+  "level": "B2",
+  "category": "Environment",
+  "questions": [
+    {
+      "id": "q_read_b2_the_circular_economy_0",
+      "question": "How is the current economic system described in the text?",
+      "options": [
+        "Circular and sustainable",
+        "Linear: take-make-dispose",
+        "Based entirely on services",
+        "Focused on recycling"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Our current economic system is predominantly linear... This 'take-make-dispose' model...\""
+    },
+    {
+      "id": "q_read_b2_the_circular_economy_1",
+      "question": "What happens to a broken smartphone in a circular economy?",
+      "options": [
+        "It is thrown into a landfill",
+        "It is sent to space",
+        "It is easily disassembled and its parts are reused",
+        "It is buried in the ground"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"it is designed so that it can be easily disassembled. Its valuable components... are extracted and reused...\""
+    },
+    {
+      "id": "q_read_b2_the_circular_economy_2",
+      "question": "What is a \"product-as-a-service\" model?",
+      "options": [
+        "You buy a product and hire someone to use it",
+        "The company retains ownership of the product and the consumer pays to use it",
+        "You buy services instead of physical goods",
+        "The government provides products for free"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"they retain ownership of the product... and the consumer pays for its use.\""
+    },
+    {
+      "id": "q_read_b2_the_circular_economy_3",
+      "question": "How does the \"product-as-a-service\" model affect manufacturers?",
+      "options": [
+        "It makes them build cheap products",
+        "It incentivizes them to build durable, easily repairable goods",
+        "It forces them to close down",
+        "It makes them produce more waste"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"This incentivizes the manufacturer to build durable, easily repairable goods...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "linear",
+      "meaning": "linear (geradlinig, ohne Wiederholung)"
+    },
+    {
+      "word": "finite",
+      "meaning": "endlich / begrenzt"
+    },
+    {
+      "word": "disassembled",
+      "meaning": "zerlegt / auseinandergebaut"
+    },
+    {
+      "word": "incentivizes",
+      "meaning": "schafft Anreize"
+    }
+  ],
+  "id": "read_b2_the_circular_economy"
+}

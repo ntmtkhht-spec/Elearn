@@ -1,0 +1,130 @@
+{
+  "name": "Environment & Nature",
+  "description": "Words about our planet and climate",
+  "level": "B1",
+  "category": "Nature",
+  "icon": "🌍",
+  "cards": [
+    {
+      "word": "Environment",
+      "translation": "Umwelt",
+      "pronunciation": "/ɪnˈvaɪrənmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We must protect the environment.",
+      "exampleTranslation": "Wir müssen die Umwelt schützen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_0",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Pollution",
+      "translation": "Verschmutzung",
+      "pronunciation": "/pəˈluːʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Air pollution is a big issue in cities.",
+      "exampleTranslation": "Luftverschmutzung ist ein großes Problem in Städten.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_1",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Recycle",
+      "translation": "Recyceln / Wiederverwerten",
+      "pronunciation": "/riːˈsaɪkəl/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Please recycle your plastic bottles.",
+      "exampleTranslation": "Bitte recyceln Sie Ihre Plastikflaschen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_2",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Climate",
+      "translation": "Klima",
+      "pronunciation": "/ˈklaɪmət/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The climate is getting warmer.",
+      "exampleTranslation": "Das Klima wird wärmer.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_3",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Energy",
+      "translation": "Energie",
+      "pronunciation": "/ˈɛnərdʒi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We should use renewable energy sources.",
+      "exampleTranslation": "Wir sollten erneuerbare Energiequellen nutzen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_4",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Wildlife",
+      "translation": "Tierwelt / Natur",
+      "pronunciation": "/ˈwaɪldlaɪf/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The park is famous for its wildlife.",
+      "exampleTranslation": "Der Park ist bekannt für seine Tierwelt.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_5",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Protect",
+      "translation": "Schützen",
+      "pronunciation": "/prəˈtɛkt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "It is important to protect endangered species.",
+      "exampleTranslation": "Es ist wichtig, bedrohte Tierarten zu schützen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_6",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Global Warming",
+      "translation": "Globale Erwärmung",
+      "pronunciation": "/ˈɡloʊbəl ˈwɔːrmɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Global warming causes sea levels to rise.",
+      "exampleTranslation": "Die globale Erwärmung lässt den Meeresspiegel steigen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_7",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Forest",
+      "translation": "Wald",
+      "pronunciation": "/ˈfɒrɪst/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We went for a walk in the forest.",
+      "exampleTranslation": "Wir sind im Wald spazieren gegangen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_8",
+      "deckId": "vocab_b1_environment_nature"
+    },
+    {
+      "word": "Earthquake",
+      "translation": "Erdbeben",
+      "pronunciation": "/ˈɜːrθkweɪk/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The earthquake destroyed many buildings.",
+      "exampleTranslation": "Das Erdbeben zerstörte viele Gebäude.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_environment_nature_9",
+      "deckId": "vocab_b1_environment_nature"
+    }
+  ],
+  "id": "vocab_b1_environment_nature"
+}

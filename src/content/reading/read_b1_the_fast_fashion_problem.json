@@ -1,0 +1,75 @@
+{
+  "title": "The Fast Fashion Problem",
+  "content": "Fast fashion refers to the rapid production of cheap clothing that follows the latest trends. Brands release new collections every few weeks, encouraging consumers to constantly buy new clothes and throw away older ones. While this allows people to look fashionable on a budget, it has devastating consequences. The fashion industry is one of the largest polluters in the world. Enormous amounts of water are required to grow cotton, and toxic chemicals are used to dye fabrics, often polluting rivers in developing countries. Moreover, fast fashion frequently relies on cheap labor, with garment workers enduring poor conditions and low wages. As a reaction, a \"slow fashion\" movement is growing, which promotes buying second-hand clothes, choosing sustainable materials, and buying fewer items of higher quality.",
+  "level": "B1",
+  "category": "Environment",
+  "questions": [
+    {
+      "id": "q_read_b1_the_fast_fashion_problem_0",
+      "question": "What is \"fast fashion\"?",
+      "options": [
+        "Clothes for runners",
+        "Rapid production of cheap, trendy clothing",
+        "Expensive designer clothes",
+        "Clothes made from plastic"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Fast fashion refers to the rapid production of cheap clothing that follows the latest trends.\""
+    },
+    {
+      "id": "q_read_b1_the_fast_fashion_problem_1",
+      "question": "How does fast fashion affect rivers?",
+      "options": [
+        "It cleans them",
+        "It uses them for transport",
+        "Toxic chemicals used to dye fabrics pollute them",
+        "It builds dams on them"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"toxic chemicals are used to dye fabrics, often polluting rivers...\""
+    },
+    {
+      "id": "q_read_b1_the_fast_fashion_problem_2",
+      "question": "What is a social issue connected to fast fashion?",
+      "options": [
+        "Too many shops",
+        "Poor working conditions and low wages",
+        "People looking the same",
+        "Lack of creative designers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"fast fashion frequently relies on cheap labor, with garment workers enduring poor conditions and low wages.\""
+    },
+    {
+      "id": "q_read_b1_the_fast_fashion_problem_3",
+      "question": "What does the \"slow fashion\" movement promote?",
+      "options": [
+        "Buying more clothes",
+        "Throwing clothes away quickly",
+        "Buying fewer, higher quality items",
+        "Only wearing black and white"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"promotes buying second-hand clothes, choosing sustainable materials, and buying fewer items of higher quality.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "devastating",
+      "meaning": "verheerend"
+    },
+    {
+      "word": "polluters",
+      "meaning": "Umweltverschmutzer"
+    },
+    {
+      "word": "dye",
+      "meaning": "färben"
+    },
+    {
+      "word": "garment",
+      "meaning": "Kleidungsstück"
+    }
+  ],
+  "id": "read_b1_the_fast_fashion_problem"
+}

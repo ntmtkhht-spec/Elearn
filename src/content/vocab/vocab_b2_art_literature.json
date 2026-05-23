@@ -1,0 +1,130 @@
+{
+  "name": "Art & Literature",
+  "description": "Talking about creative works",
+  "level": "B2",
+  "category": "Culture",
+  "icon": "🎭",
+  "cards": [
+    {
+      "word": "Exhibition",
+      "translation": "Ausstellung",
+      "pronunciation": "/ˌɛksɪˈbɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We visited the new art exhibition.",
+      "exampleTranslation": "Wir besuchten die neue Kunstausstellung.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_0",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Masterpiece",
+      "translation": "Meisterwerk",
+      "pronunciation": "/ˈmæstərpiːs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "This painting is considered his masterpiece.",
+      "exampleTranslation": "Dieses Gemälde gilt als sein Meisterwerk.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_1",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Novel",
+      "translation": "Roman",
+      "pronunciation": "/ˈnɒvəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She published her first novel last year.",
+      "exampleTranslation": "Sie hat letztes Jahr ihren ersten Roman veröffentlicht.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_2",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Author",
+      "translation": "Autor/in",
+      "pronunciation": "/ˈɔːθər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Who is your favorite author?",
+      "exampleTranslation": "Wer ist dein Lieblingsautor?",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_3",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Chapter",
+      "translation": "Kapitel",
+      "pronunciation": "/ˈtʃæptər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I read three chapters before bed.",
+      "exampleTranslation": "Ich habe vor dem Schlafengehen drei Kapitel gelesen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_4",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Poetry",
+      "translation": "Poesie / Dichtkunst",
+      "pronunciation": "/ˈpoʊɪtri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He enjoys reading classical poetry.",
+      "exampleTranslation": "Er liest gerne klassische Poesie.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_5",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Gallery",
+      "translation": "Galerie",
+      "pronunciation": "/ˈɡæləri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The gallery showcases modern art.",
+      "exampleTranslation": "Die Galerie stellt moderne Kunst aus.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_6",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Sculpture",
+      "translation": "Skulptur",
+      "pronunciation": "/ˈskʌlptʃər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The museum has a beautiful marble sculpture.",
+      "exampleTranslation": "Das Museum hat eine wunderschöne Marmorskulptur.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_7",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Fictional",
+      "translation": "Fiktiv",
+      "pronunciation": "/ˈfɪkʃənəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The story takes place in a fictional city.",
+      "exampleTranslation": "Die Geschichte spielt in einer fiktiven Stadt.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_8",
+      "deckId": "vocab_b2_art_literature"
+    },
+    {
+      "word": "Publish",
+      "translation": "Veröffentlichen",
+      "pronunciation": "/ˈpʌblɪʃ/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "The book will be published next month.",
+      "exampleTranslation": "Das Buch wird nächsten Monat veröffentlicht.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_art_literature_9",
+      "deckId": "vocab_b2_art_literature"
+    }
+  ],
+  "id": "vocab_b2_art_literature"
+}

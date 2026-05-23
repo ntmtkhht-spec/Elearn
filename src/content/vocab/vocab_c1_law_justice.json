@@ -1,0 +1,130 @@
+{
+  "name": "Law & Justice",
+  "description": "Legal terms and judicial proceedings",
+  "level": "C1",
+  "category": "Academic",
+  "icon": "⚖️",
+  "cards": [
+    {
+      "word": "Defendant",
+      "translation": "Angeklagte/r",
+      "pronunciation": "/dɪˈfɛndənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The defendant pleaded not guilty.",
+      "exampleTranslation": "Der Angeklagte plädierte auf nicht schuldig.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_0",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Prosecutor",
+      "translation": "Staatsanwalt / Staatsanwältin",
+      "pronunciation": "/ˈprɒsɪkjuːtər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The prosecutor presented compelling evidence.",
+      "exampleTranslation": "Der Staatsanwalt legte überzeugende Beweise vor.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_1",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Verdict",
+      "translation": "Urteil",
+      "pronunciation": "/ˈvɜːrdɪkt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The jury reached a unanimous verdict.",
+      "exampleTranslation": "Die Jury kam zu einem einstimmigen Urteil.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_2",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Testimony",
+      "translation": "Zeugenaussage",
+      "pronunciation": "/ˈtɛstɪmoʊni/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Her testimony contradicted the police report.",
+      "exampleTranslation": "Ihre Zeugenaussage widersprach dem Polizeibericht.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_3",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Sue",
+      "translation": "Verklagen",
+      "pronunciation": "/suː/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "He decided to sue the company for negligence.",
+      "exampleTranslation": "Er entschied sich, das Unternehmen wegen Fahrlässigkeit zu verklagen.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_4",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Acquit",
+      "translation": "Freisprechen",
+      "pronunciation": "/əˈkwɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "The jury chose to acquit him of all charges.",
+      "exampleTranslation": "Die Jury entschied sich, ihn von allen Anklagepunkten freizusprechen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_5",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Affidavit",
+      "translation": "Eidesstattliche Erklärung",
+      "pronunciation": "/ˌæfɪˈdeɪvɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She submitted a sworn affidavit to the court.",
+      "exampleTranslation": "Sie reichte dem Gericht eine eidesstattliche Erklärung ein.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_6",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Appeal",
+      "translation": "Berufung einlegen",
+      "pronunciation": "/əˈpiːl/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "They plan to appeal the judge's decision.",
+      "exampleTranslation": "Sie planen, gegen die Entscheidung des Richters Berufung einzulegen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_7",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Bail",
+      "translation": "Kaution",
+      "pronunciation": "/beɪl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He was released on bail pending trial.",
+      "exampleTranslation": "Er wurde gegen Kaution bis zum Prozess auf freien Fuß gesetzt.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_8",
+      "deckId": "vocab_c1_law_justice"
+    },
+    {
+      "word": "Subpoena",
+      "translation": "Vorladung",
+      "pronunciation": "/səˈpiːnə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She received a subpoena to appear as a witness.",
+      "exampleTranslation": "Sie erhielt eine Vorladung, um als Zeugin zu erscheinen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_law_justice_9",
+      "deckId": "vocab_c1_law_justice"
+    }
+  ],
+  "id": "vocab_c1_law_justice"
+}

@@ -1,0 +1,75 @@
+{
+  "title": "The Psychology of Advertising",
+  "content": "Advertising is omnipresent in modern society, but its true power lies not in merely informing consumers about a product, but in manipulating their psychological vulnerabilities. Marketers utilize sophisticated techniques to bypass rational decision-making and appeal directly to our emotions and subconscious desires.\n\nOne common strategy is the \"scarcity principle.\" By creating a sense of urgency—using phrases like \"limited time offer\" or \"only two items left in stock\"—advertisers trigger our fear of missing out (FOMO). This anxiety often compels consumers to make impulsive purchases they otherwise wouldn't. Another powerful tool is \"social proof.\" Commercials frequently depict attractive, happy people enjoying a product, subtly suggesting that purchasing the item will lead to social acceptance and personal happiness.\n\nFurthermore, color psychology plays a crucial role; for instance, red is often used in fast-food logos because it supposedly stimulates appetite and urgency, while blue is utilized by banks to convey trust and security. Understanding these psychological triggers is essential for consumers who wish to make mindful purchasing decisions rather than being passively manipulated.",
+  "level": "B2",
+  "category": "Psychology",
+  "questions": [
+    {
+      "id": "q_read_b2_the_psychology_of_advertising_0",
+      "question": "According to the text, what is the primary goal of modern advertising techniques?",
+      "options": [
+        "To provide accurate product information",
+        "To appeal to consumers' emotions and subconscious desires",
+        "To educate the public about economics",
+        "To support television networks"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"utilize sophisticated techniques to bypass rational decision-making and appeal directly to our emotions and subconscious desires.\""
+    },
+    {
+      "id": "q_read_b2_the_psychology_of_advertising_1",
+      "question": "How does the \"scarcity principle\" affect consumers?",
+      "options": [
+        "It makes them carefully research the product",
+        "It makes them angry at the brand",
+        "It triggers a fear of missing out, leading to impulsive purchases",
+        "It convinces them that the product is of high quality"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"advertisers trigger our fear of missing out (FOMO). This anxiety often compels consumers to make impulsive purchases...\""
+    },
+    {
+      "id": "q_read_b2_the_psychology_of_advertising_2",
+      "question": "What is the purpose of \"social proof\" in commercials?",
+      "options": [
+        "To prove the product is legally safe",
+        "To show how a product is manufactured",
+        "To suggest that buying the product brings social acceptance and happiness",
+        "To demonstrate the product's durability"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Commercials frequently depict attractive, happy people... suggesting that purchasing the item will lead to social acceptance and personal happiness.\""
+    },
+    {
+      "id": "q_read_b2_the_psychology_of_advertising_3",
+      "question": "Why might a bank use the color blue in its logo?",
+      "options": [
+        "To stimulate appetite",
+        "To convey trust and security",
+        "To show they are environmentally friendly",
+        "To trigger the scarcity principle"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"blue is utilized by banks to convey trust and security.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "omnipresent",
+      "meaning": "allgegenwärtig"
+    },
+    {
+      "word": "vulnerabilities",
+      "meaning": "Verwundbarkeiten / Schwachstellen"
+    },
+    {
+      "word": "scarcity",
+      "meaning": "Knappheit"
+    },
+    {
+      "word": "impulsive",
+      "meaning": "impulsiv / unüberlegt"
+    }
+  ],
+  "id": "read_b2_the_psychology_of_advertising"
+}

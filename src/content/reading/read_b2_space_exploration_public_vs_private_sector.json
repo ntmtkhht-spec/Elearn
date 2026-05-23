@@ -1,0 +1,75 @@
+{
+  "title": "Space Exploration: Public vs. Private Sector",
+  "content": "For decades, space exploration was the exclusive domain of heavily funded national agencies like NASA and Roscosmos. The staggering costs and immense technical challenges meant that only superpowers could afford to send humans into orbit. However, the 21st century has witnessed a paradigm shift with the rapid ascent of private aerospace companies such as SpaceX, Blue Origin, and Virgin Galactic.\n\nThis commercialization of space has sparked a vigorous debate. Proponents argue that private enterprise introduces much-needed competition, driving down costs and accelerating innovation. Reusable rocket technology, pioneered by the private sector, has drastically reduced the price of launching payloads into space. \n\nConversely, critics express concern over the privatization of the cosmos. They argue that space should remain a \"global commons\" rather than a playground for billionaires. There are valid fears regarding the lack of international regulation governing space debris, the potential exploitation of extraterrestrial resources like asteroid mining, and the possibility of a new, unregulated space race. Balancing commercial innovation with international cooperation and ethical oversight remains a critical challenge for the future of space exploration.",
+  "level": "B2",
+  "category": "Science",
+  "questions": [
+    {
+      "id": "q_read_b2_space_exploration_public_vs_private_sector_0",
+      "question": "Why was space exploration originally limited to national agencies?",
+      "options": [
+        "Because private companies weren't interested",
+        "Because of the staggering costs and immense technical challenges",
+        "Because there were no laws allowing private flights",
+        "Because aliens only wanted to talk to governments"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The staggering costs and immense technical challenges meant that only superpowers could afford to send humans into orbit.\""
+    },
+    {
+      "id": "q_read_b2_space_exploration_public_vs_private_sector_1",
+      "question": "What major innovation by the private sector is highlighted in the text?",
+      "options": [
+        "Teleportation devices",
+        "Laser weapons",
+        "Reusable rocket technology",
+        "Faster-than-light travel"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Reusable rocket technology, pioneered by the private sector, has drastically reduced the price...\""
+    },
+    {
+      "id": "q_read_b2_space_exploration_public_vs_private_sector_2",
+      "question": "What is a major concern of critics regarding private space companies?",
+      "options": [
+        "They might build bad rockets",
+        "Space will become a playground for billionaires rather than a global commons",
+        "They will steal government secrets",
+        "They will force people to move to Mars"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They argue that space should remain a 'global commons' rather than a playground for billionaires.\""
+    },
+    {
+      "id": "q_read_b2_space_exploration_public_vs_private_sector_3",
+      "question": "Which specific environmental issue in space is mentioned?",
+      "options": [
+        "Space debris",
+        "Ozone layer depletion",
+        "Light pollution",
+        "Solar radiation"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text mentions: \"the lack of international regulation governing space debris...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "exclusive domain",
+      "meaning": "ausschließlicher Bereich"
+    },
+    {
+      "word": "staggering",
+      "meaning": "atemberaubend / immens"
+    },
+    {
+      "word": "payloads",
+      "meaning": "Nutzlasten"
+    },
+    {
+      "word": "space debris",
+      "meaning": "Weltraummüll"
+    }
+  ],
+  "id": "read_b2_space_exploration_public_vs_private_sector"
+}

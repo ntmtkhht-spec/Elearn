@@ -1,0 +1,75 @@
+{
+  "title": "A New Restaurant in Town",
+  "content": "A new Italian restaurant opened in our town last week. It is called \"Bella Italia\". Yesterday evening, my friends and I decided to try it. The restaurant was very busy, but the waiters were friendly and fast. The menu had many options: pizza, pasta, salads, and seafood. I ordered a vegetarian pizza and my friend ordered spaghetti. The food was delicious and the portions were large. We also shared a tiramisu for dessert. The prices were reasonable, not too expensive. We had a great time and we will definitely go back.",
+  "level": "A2",
+  "category": "Food",
+  "questions": [
+    {
+      "id": "q_read_a2_a_new_restaurant_in_town_0",
+      "question": "What type of food does the new restaurant serve?",
+      "options": [
+        "Chinese",
+        "Mexican",
+        "Italian",
+        "Indian"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"A new Italian restaurant opened...\""
+    },
+    {
+      "id": "q_read_a2_a_new_restaurant_in_town_1",
+      "question": "What did the narrator order?",
+      "options": [
+        "Spaghetti",
+        "A vegetarian pizza",
+        "A salad",
+        "Seafood"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I ordered a vegetarian pizza...\""
+    },
+    {
+      "id": "q_read_a2_a_new_restaurant_in_town_2",
+      "question": "How was the food?",
+      "options": [
+        "Spicy and small portions",
+        "Delicious and large portions",
+        "Cold and expensive",
+        "Terrible"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The food was delicious and the portions were large.\""
+    },
+    {
+      "id": "q_read_a2_a_new_restaurant_in_town_3",
+      "question": "What did they think about the prices?",
+      "options": [
+        "They were very cheap",
+        "They were reasonable",
+        "They were too expensive",
+        "The text doesn't say"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The prices were reasonable, not too expensive.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "busy",
+      "meaning": "beschäftigt / viel los"
+    },
+    {
+      "word": "options",
+      "meaning": "Möglichkeiten / Auswahl"
+    },
+    {
+      "word": "portions",
+      "meaning": "Portionen"
+    },
+    {
+      "word": "reasonable",
+      "meaning": "angemessen / vernünftig"
+    }
+  ],
+  "id": "read_a2_a_new_restaurant_in_town"
+}

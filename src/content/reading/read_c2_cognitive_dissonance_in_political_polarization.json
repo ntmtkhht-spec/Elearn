@@ -1,0 +1,79 @@
+{
+  "title": "Cognitive Dissonance in Political Polarization",
+  "content": "The theory of cognitive dissonance, pioneered by Leon Festinger in the 1950s, remains one of the most robust explanatory frameworks in social psychology. It describes the state of psychological distress that arises when an individual holds two or more contradictory beliefs, ideas, or values, or when their behavior conflicts with their deeply held convictions. To alleviate this psychological friction, individuals engage in dissonance reduction, often unconsciously employing sophisticated mechanisms of self-deception.\n\nIn the arena of contemporary hyper-partisan politics, cognitive dissonance acts as a powerful catalyst for ideological entrenchment. When a partisan voter is confronted with irrefutable, empirical evidence demonstrating the malfeasance or incompetence of their preferred political leader, the resulting dissonance is acute. Rather than conceding the error—which would require a painful restructuring of their political identity—the voter frequently engages in \"motivated reasoning.\"\n\nThey may discredit the source of the information as biased, construct elaborate rationalizations to justify the politician's behavior, or succumb to what is termed the \"backfire effect,\" wherein the presentation of contradictory evidence perversely strengthens their original conviction. Consequently, the naive assumption of the Enlightenment—that injecting more facts into the public sphere will inevitably yield a more rational electorate—is fundamentally challenged by the obstinate reality of human cognitive architecture.",
+  "level": "C2",
+  "category": "Psychology",
+  "questions": [
+    {
+      "id": "q_read_c2_cognitive_dissonance_in_political_polarization_0",
+      "question": "What is cognitive dissonance?",
+      "options": [
+        "A physical pain in the brain",
+        "The psychological distress of holding contradictory beliefs or values",
+        "The inability to remember political facts",
+        "A form of political debate"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the state of psychological distress that arises when an individual holds two or more contradictory beliefs, ideas, or values...\""
+    },
+    {
+      "id": "q_read_c2_cognitive_dissonance_in_political_polarization_1",
+      "question": "How do individuals typically alleviate the friction of cognitive dissonance?",
+      "options": [
+        "By admitting they are wrong",
+        "By seeking therapy",
+        "By employing unconscious mechanisms of self-deception and dissonance reduction",
+        "By ignoring politics entirely"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"To alleviate this psychological friction, individuals engage in dissonance reduction, often unconsciously employing sophisticated mechanisms of self-deception.\""
+    },
+    {
+      "id": "q_read_c2_cognitive_dissonance_in_political_polarization_2",
+      "question": "What is the \"backfire effect\"?",
+      "options": [
+        "When a politician loses an election",
+        "When an argument gets physical",
+        "When presenting contradictory evidence perversely strengthens the original conviction",
+        "When a gun malfunctions"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the 'backfire effect,' wherein the presentation of contradictory evidence perversely strengthens their original conviction.\""
+    },
+    {
+      "id": "q_read_c2_cognitive_dissonance_in_political_polarization_3",
+      "question": "What Enlightenment assumption is challenged by cognitive dissonance?",
+      "options": [
+        "That humans are inherently evil",
+        "That politicians are always honest",
+        "That injecting more facts into the public sphere creates a more rational electorate",
+        "That democracy is the best system of government"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the naive assumption of the Enlightenment—that injecting more facts into the public sphere will inevitably yield a more rational electorate—is fundamentally challenged...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "dissonance",
+      "meaning": "Dissonanz (Unstimmigkeit)"
+    },
+    {
+      "word": "alleviate",
+      "meaning": "lindern / abschwächen"
+    },
+    {
+      "word": "malfeasance",
+      "meaning": "Fehlverhalten / Amtsmissbrauch"
+    },
+    {
+      "word": "rationalizations",
+      "meaning": "Rechtfertigungen / Ausreden"
+    },
+    {
+      "word": "obstinate",
+      "meaning": "hartnäckig / starrsinnig"
+    }
+  ],
+  "id": "read_c2_cognitive_dissonance_in_political_polarization"
+}

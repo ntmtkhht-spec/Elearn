@@ -1,0 +1,75 @@
+{
+  "title": "The Rise of E-Sports",
+  "content": "A few decades ago, playing video games was simply a hobby for teenagers. Today, competitive gaming, known as e-sports, has become a global phenomenon. Professional gamers practice for up to 10 hours a day and can earn millions of dollars in prize money and sponsorships. Major e-sports tournaments fill enormous stadiums with enthusiastic fans, and millions more watch the matches live on streaming platforms like Twitch. Some universities even offer scholarships for talented players. Critics argue that e-sports shouldn't be considered \"real\" sports because they don't involve physical exertion. However, supporters point out that competitive gaming requires intense concentration, fast reflexes, and complex teamwork.",
+  "level": "B1",
+  "category": "Technology",
+  "questions": [
+    {
+      "id": "q_read_b1_the_rise_of_e_sports_0",
+      "question": "How much do professional gamers practice?",
+      "options": [
+        "A few hours a week",
+        "Up to 10 hours a day",
+        "Only on weekends",
+        "Never"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Professional gamers practice for up to 10 hours a day...\""
+    },
+    {
+      "id": "q_read_b1_the_rise_of_e_sports_1",
+      "question": "Where do fans watch major e-sports tournaments?",
+      "options": [
+        "Only on television",
+        "In stadiums and on streaming platforms",
+        "At local internet cafes",
+        "Only on their phones"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"tournaments fill enormous stadiums... and millions more watch the matches live on streaming platforms\""
+    },
+    {
+      "id": "q_read_b1_the_rise_of_e_sports_2",
+      "question": "Why do some critics say e-sports are not \"real\" sports?",
+      "options": [
+        "Because they are boring",
+        "Because they don't involve physical exertion",
+        "Because they don't make enough money",
+        "Because there are no teams"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Critics argue that e-sports shouldn't be considered \"real\" sports because they don't involve physical exertion.\""
+    },
+    {
+      "id": "q_read_b1_the_rise_of_e_sports_3",
+      "question": "What skills do supporters say are needed for e-sports?",
+      "options": [
+        "Physical strength and running speed",
+        "Good luck",
+        "Concentration, reflexes, and teamwork",
+        "The ability to stay awake for days"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"competitive gaming requires intense concentration, fast reflexes, and complex teamwork.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "competitive",
+      "meaning": "wettbewerbsorientiert"
+    },
+    {
+      "word": "phenomenon",
+      "meaning": "Phänomen / Erscheinung"
+    },
+    {
+      "word": "exertion",
+      "meaning": "Anstrengung"
+    },
+    {
+      "word": "reflexes",
+      "meaning": "Reflexe"
+    }
+  ],
+  "id": "read_b1_the_rise_of_e_sports"
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Obscure Literary Words",
+  "description": "Rare and beautiful literary vocabulary",
+  "level": "C2",
+  "category": "Academic",
+  "icon": "📖",
+  "cards": [
+    {
+      "word": "Ephemeral",
+      "translation": "Vergänglich",
+      "pronunciation": "/ɪˈfɛmərəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The beauty of a sunset is ephemeral.",
+      "exampleTranslation": "Die Schönheit eines Sonnenuntergangs ist vergänglich.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_0",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Mellifluous",
+      "translation": "Honigsüß / Wohlklingend",
+      "pronunciation": "/mɛˈlɪfluəs/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "She spoke with a soft, mellifluous voice.",
+      "exampleTranslation": "Sie sprach mit einer sanften, wohlklingenden Stimme.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_1",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Ineffable",
+      "translation": "Unaussprechlich",
+      "pronunciation": "/ɪnˈɛfəbəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "He felt an ineffable joy when his child was born.",
+      "exampleTranslation": "Er fühlte eine unaussprechliche Freude, als sein Kind geboren wurde.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_2",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Sycophant",
+      "translation": "Kriecher / Schmeichler",
+      "pronunciation": "/ˈsɪkəfænt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The king was surrounded by sycophants who praised his every move.",
+      "exampleTranslation": "Der König war von Speichelleckern umgeben, die jede seiner Bewegungen priesen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_3",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Serendipity",
+      "translation": "Zufällige (glückliche) Entdeckung",
+      "pronunciation": "/ˌsɛrənˈdɪpɪti/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Finding the rare book in a dusty shop was pure serendipity.",
+      "exampleTranslation": "Das seltene Buch in einem staubigen Laden zu finden, war reiner Zufall.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_4",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Labyrinthine",
+      "translation": "Labyrinthartig",
+      "pronunciation": "/ˌlæbəˈrɪnθɪn/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The old castle had a labyrinthine network of corridors.",
+      "exampleTranslation": "Das alte Schloss hatte ein labyrinthartiges Netzwerk von Korridoren.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_5",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Obfuscate",
+      "translation": "Verschleiern / Verwirren",
+      "pronunciation": "/ˈɒbfʌskeɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Politicians often obfuscate the truth to avoid answering questions directly.",
+      "exampleTranslation": "Politiker verschleiern oft die Wahrheit, um direkte Antworten zu vermeiden.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_6",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Cacophony",
+      "translation": "Kakofonie / Missklang",
+      "pronunciation": "/kəˈkɒfəni/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The construction site produced a terrible cacophony of noise.",
+      "exampleTranslation": "Die Baustelle erzeugte eine schreckliche Kakofonie von Lärm.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_7",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Eloquence",
+      "translation": "Beredsamkeit",
+      "pronunciation": "/ˈɛləkwəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He spoke with such eloquence that everyone was mesmerized.",
+      "exampleTranslation": "Er sprach mit solch einer Beredsamkeit, dass alle fasziniert waren.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_8",
+      "deckId": "vocab_c2_obscure_literary_words"
+    },
+    {
+      "word": "Penumbra",
+      "translation": "Halbschatten",
+      "pronunciation": "/pɪˈnʌmbrə/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He stood in the penumbra of the doorway, hiding from the light.",
+      "exampleTranslation": "Er stand im Halbschatten der Türöffnung und versteckte sich vor dem Licht.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_obscure_literary_words_9",
+      "deckId": "vocab_c2_obscure_literary_words"
+    }
+  ],
+  "id": "vocab_c2_obscure_literary_words"
+}

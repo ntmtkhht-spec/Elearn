@@ -1,0 +1,130 @@
+{
+  "name": "Weather & Seasons",
+  "description": "Talking about climate and weather conditions",
+  "level": "A2",
+  "category": "Nature",
+  "icon": "⛅",
+  "cards": [
+    {
+      "word": "Sunny",
+      "translation": "Sonnig",
+      "pronunciation": "/ˈsʌni/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "It is a sunny day.",
+      "exampleTranslation": "Es ist ein sonniger Tag.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_0",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Rain",
+      "translation": "Regen",
+      "pronunciation": "/reɪn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We need rain for the plants.",
+      "exampleTranslation": "Wir brauchen Regen für die Pflanzen.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_1",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Cloudy",
+      "translation": "Bewölkt",
+      "pronunciation": "/ˈklaʊdi/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The sky is cloudy today.",
+      "exampleTranslation": "Der Himmel ist heute bewölkt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_2",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Windy",
+      "translation": "Windig",
+      "pronunciation": "/ˈwɪndi/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "It is too windy to go sailing.",
+      "exampleTranslation": "Es ist zu windig, um segeln zu gehen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_3",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Snow",
+      "translation": "Schnee",
+      "pronunciation": "/snoʊ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Kids love playing in the snow.",
+      "exampleTranslation": "Kinder spielen gerne im Schnee.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_4",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Storm",
+      "translation": "Sturm",
+      "pronunciation": "/stɔrm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "A big storm is coming.",
+      "exampleTranslation": "Ein großer Sturm zieht auf.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_5",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Spring",
+      "translation": "Frühling",
+      "pronunciation": "/sprɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Flowers bloom in spring.",
+      "exampleTranslation": "Blumen blühen im Frühling.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_6",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Summer",
+      "translation": "Sommer",
+      "pronunciation": "/ˈsʌmər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We go to the beach in summer.",
+      "exampleTranslation": "Wir gehen im Sommer an den Strand.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_7",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Autumn",
+      "translation": "Herbst",
+      "pronunciation": "/ˈɔːtəm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Leaves fall in autumn.",
+      "exampleTranslation": "Blätter fallen im Herbst.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_8",
+      "deckId": "vocab_a2_weather_seasons"
+    },
+    {
+      "word": "Winter",
+      "translation": "Winter",
+      "pronunciation": "/ˈwɪntər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Winter is the coldest season.",
+      "exampleTranslation": "Der Winter ist die kälteste Jahreszeit.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_weather_seasons_9",
+      "deckId": "vocab_a2_weather_seasons"
+    }
+  ],
+  "id": "vocab_a2_weather_seasons"
+}

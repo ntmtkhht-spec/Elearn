@@ -1,0 +1,130 @@
+{
+  "name": "Advanced Academic Vocabulary",
+  "description": "High-level vocabulary for academic writing",
+  "level": "C1",
+  "category": "Academic",
+  "icon": "🎓",
+  "cards": [
+    {
+      "word": "Ubiquitous",
+      "translation": "Allgegenwärtig",
+      "pronunciation": "/juːˈbɪkwɪtəs/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Smartphones have become ubiquitous in modern society.",
+      "exampleTranslation": "Smartphones sind in der modernen Gesellschaft allgegenwärtig geworden.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_0",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Pragmatic",
+      "translation": "Pragmatisch",
+      "pronunciation": "/præɡˈmætɪk/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "We need to take a pragmatic approach to the problem.",
+      "exampleTranslation": "Wir müssen einen pragmatischen Ansatz für das Problem wählen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_1",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Ambiguous",
+      "translation": "Zweideutig / Unklar",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The wording of the contract is highly ambiguous.",
+      "exampleTranslation": "Der Wortlaut des Vertrags ist höchst zweideutig.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_2",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Corroborate",
+      "translation": "Bestätigen / Untermauern",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Recent studies corroborate these findings.",
+      "exampleTranslation": "Jüngste Studien untermauern diese Ergebnisse.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_3",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Anomalous",
+      "translation": "Anomal / Abweichend",
+      "pronunciation": "/əˈnɒmələs/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The anomalous data was excluded from the analysis.",
+      "exampleTranslation": "Die abweichenden Daten wurden von der Analyse ausgeschlossen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_4",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Salient",
+      "translation": "Hervorstechend / Wichtig",
+      "pronunciation": "/ˈseɪliənt/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "He summarized the most salient points of the lecture.",
+      "exampleTranslation": "Er fasste die wichtigsten Punkte der Vorlesung zusammen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_5",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Empirical",
+      "translation": "Empirisch / Erfahrungsgemäß",
+      "pronunciation": "/ɪmˈpɪrɪkəl/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "The theory must be supported by empirical evidence.",
+      "exampleTranslation": "Die Theorie muss durch empirische Beweise gestützt werden.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_6",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Mitigate",
+      "translation": "Mildern / Abschwächen",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "They implemented measures to mitigate the risks.",
+      "exampleTranslation": "Sie haben Maßnahmen ergriffen, um die Risiken abzuschwächen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_7",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Paradigm",
+      "translation": "Paradigma / Muster",
+      "pronunciation": "/ˈpærədaɪm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "This discovery represents a paradigm shift in science.",
+      "exampleTranslation": "Diese Entdeckung stellt einen Paradigmenwechsel in der Wissenschaft dar.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_8",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    },
+    {
+      "word": "Lucid",
+      "translation": "Klar / Einleuchtend",
+      "pronunciation": "/ˈluːsɪd/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "She gave a very lucid explanation of the concept.",
+      "exampleTranslation": "Sie gab eine sehr einleuchtende Erklärung des Konzepts.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c1_advanced_academic_vocabulary_9",
+      "deckId": "vocab_c1_advanced_academic_vocabulary"
+    }
+  ],
+  "id": "vocab_c1_advanced_academic_vocabulary"
+}

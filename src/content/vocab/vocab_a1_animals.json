@@ -1,0 +1,130 @@
+{
+  "name": "Animals",
+  "description": "Common pets and wild animals",
+  "level": "A1",
+  "category": "Nature",
+  "icon": "🐶",
+  "cards": [
+    {
+      "word": "Dog",
+      "translation": "Hund",
+      "pronunciation": "/dɔɡ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The dog is barking.",
+      "exampleTranslation": "Der Hund bellt.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_0",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Cat",
+      "translation": "Katze",
+      "pronunciation": "/kæt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The cat is sleeping.",
+      "exampleTranslation": "Die Katze schläft.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_1",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Bird",
+      "translation": "Vogel",
+      "pronunciation": "/bɜrd/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "A bird is flying.",
+      "exampleTranslation": "Ein Vogel fliegt.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_2",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Fish",
+      "translation": "Fisch",
+      "pronunciation": "/fɪʃ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The fish swims in the water.",
+      "exampleTranslation": "Der Fisch schwimmt im Wasser.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_3",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Horse",
+      "translation": "Pferd",
+      "pronunciation": "/hɔrs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I like to ride a horse.",
+      "exampleTranslation": "Ich reite gerne auf einem Pferd.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_4",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Cow",
+      "translation": "Kuh",
+      "pronunciation": "/kaʊ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The cow gives milk.",
+      "exampleTranslation": "Die Kuh gibt Milch.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_5",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Pig",
+      "translation": "Schwein",
+      "pronunciation": "/pɪɡ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The pig is pink.",
+      "exampleTranslation": "Das Schwein ist rosa.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_6",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Mouse",
+      "translation": "Maus",
+      "pronunciation": "/maʊs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The mouse is very small.",
+      "exampleTranslation": "Die Maus ist sehr klein.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_7",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Elephant",
+      "translation": "Elefant",
+      "pronunciation": "/ˈɛləfənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The elephant is a large animal.",
+      "exampleTranslation": "Der Elefant ist ein großes Tier.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_animals_8",
+      "deckId": "vocab_a1_animals"
+    },
+    {
+      "word": "Lion",
+      "translation": "Löwe",
+      "pronunciation": "/ˈlaɪən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The lion is the king of the jungle.",
+      "exampleTranslation": "Der Löwe ist der König des Dschungels.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_animals_9",
+      "deckId": "vocab_a1_animals"
+    }
+  ],
+  "id": "vocab_a1_animals"
+}

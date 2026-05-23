@@ -1,0 +1,79 @@
+{
+  "title": "The Renaissance of Psychedelic Psychiatry",
+  "content": "Following decades of stringent prohibition initiated by the \"War on Drugs\" in the 1970s, psychiatric research into psychedelic compounds is experiencing a legitimate and rigorous renaissance. Substances such as psilocybin (the active ingredient in \"magic\" mushrooms) and MDMA, long marginalized as dangerous recreational drugs, are now at the epicenter of groundbreaking clinical trials aimed at treating refractory mental health disorders.\n\nConventional psychiatric medications, such as SSRIs, often merely blunt the symptoms of depression and PTSD, require daily administration, and carry significant side-effect profiles. In contrast, psychedelic-assisted psychotherapy adopts a radically different paradigm. Administered in highly controlled, clinical settings alongside intensive psychological support, a single or few doses of a psychedelic can induce profound neuroplasticity and mystical-type experiences. These experiences frequently allow patients to confront and reprocess deeply entrenched trauma, leading to sustained remission of symptoms long after the pharmacological effects have dissipated.\n\nWhile preliminary results from institutions like Johns Hopkins and Imperial College London are highly promising, researchers caution against viewing psychedelics as a panacea. The risk of adverse psychological reactions necessitates rigorous screening and trained facilitators, underscoring that the therapeutic value lies not merely in the molecule, but in the meticulously crafted therapeutic container.",
+  "level": "C1",
+  "category": "Science",
+  "questions": [
+    {
+      "id": "q_read_c1_the_renaissance_of_psychedelic_psychiatry_0",
+      "question": "Why was research into psychedelic compounds stopped in the 1970s?",
+      "options": [
+        "Because scientists found them boring",
+        "Because of stringent prohibition initiated by the \"War on Drugs\"",
+        "Because they were too expensive to synthesize",
+        "Because they had no effect on the brain"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Following decades of stringent prohibition initiated by the 'War on Drugs' in the 1970s...\""
+    },
+    {
+      "id": "q_read_c1_the_renaissance_of_psychedelic_psychiatry_1",
+      "question": "How do conventional psychiatric medications (like SSRIs) differ from psychedelic therapy?",
+      "options": [
+        "SSRIs cure the disease permanently, psychedelics do not",
+        "SSRIs require daily administration and often just blunt symptoms, whereas psychedelics are given in a few doses",
+        "SSRIs are administered only in hospitals, psychedelics are taken at home",
+        "There is no difference"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Conventional psychiatric medications... often merely blunt the symptoms... require daily administration... In contrast... a single or few doses of a psychedelic...\""
+    },
+    {
+      "id": "q_read_c1_the_renaissance_of_psychedelic_psychiatry_2",
+      "question": "What mechanism helps patients achieve sustained remission in psychedelic-assisted therapy?",
+      "options": [
+        "Forgetting their entire past",
+        "Inducing neuroplasticity and allowing patients to confront and reprocess trauma",
+        "Sleeping for several days",
+        "Changing their DNA"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"can induce profound neuroplasticity... allow patients to confront and reprocess deeply entrenched trauma, leading to sustained remission...\""
+    },
+    {
+      "id": "q_read_c1_the_renaissance_of_psychedelic_psychiatry_3",
+      "question": "Why do researchers say the therapeutic value is \"not merely in the molecule\"?",
+      "options": [
+        "Because the drugs don't actually work",
+        "Because the psychological support and clinical setting (the therapeutic container) are essential",
+        "Because the molecule is just a placebo",
+        "Because the molecule only works for physical pain"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"underscoring that the therapeutic value lies not merely in the molecule, but in the meticulously crafted therapeutic container.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "prohibition",
+      "meaning": "Verbot"
+    },
+    {
+      "word": "refractory",
+      "meaning": "therapieresistent / hartnäckig"
+    },
+    {
+      "word": "blunt",
+      "meaning": "abmildern / abstumpfen"
+    },
+    {
+      "word": "panacea",
+      "meaning": "Allheilmittel"
+    },
+    {
+      "word": "meticulously",
+      "meaning": "akribisch / sorgfältig"
+    }
+  ],
+  "id": "read_c1_the_renaissance_of_psychedelic_psychiatry"
+}

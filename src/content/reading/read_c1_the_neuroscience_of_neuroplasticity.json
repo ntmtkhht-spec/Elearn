@@ -1,0 +1,79 @@
+{
+  "title": "The Neuroscience of Neuroplasticity",
+  "content": "For much of the 20th century, the prevailing scientific dogma asserted that the adult human brain was a static, immutable organ. It was widely believed that neurogenesis—the creation of new neurons—ceased shortly after birth, and that neural pathways, once established, were permanently fixed. This paradigm, however, has been comprehensively overthrown by the discovery of neuroplasticity.\n\nNeuroplasticity refers to the brain's remarkable capability to reorganize itself structurally and functionally in response to learning, experience, and even injury. When we acquire a new skill, such as playing an instrument or speaking a foreign language, the brain forges new synaptic connections and strengthens existing ones, a process summarized by the neuroscientific axiom: \"neurons that fire together, wire together.\"\n\nThis malleability has profound implications for rehabilitation following neurological trauma, such as strokes. Through targeted therapeutic interventions, healthy areas of the brain can occasionally assume the functions previously managed by damaged regions. While neuroplasticity is most vigorous during the critical periods of childhood development, research confirms that the adult brain retains a significant degree of plasticity, proving that intellectual decline is not an inevitable consequence of aging, provided the brain remains adequately stimulated.",
+  "level": "C1",
+  "category": "Science",
+  "questions": [
+    {
+      "id": "q_read_c1_the_neuroscience_of_neuroplasticity_0",
+      "question": "What was the prevailing scientific dogma regarding the adult brain in the 20th century?",
+      "options": [
+        "That it could grow infinitely larger",
+        "That it was a static, immutable organ",
+        "That it could regenerate completely after any injury",
+        "That it was identical in all mammals"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the prevailing scientific dogma asserted that the adult human brain was a static, immutable organ.\""
+    },
+    {
+      "id": "q_read_c1_the_neuroscience_of_neuroplasticity_1",
+      "question": "What does the axiom \"neurons that fire together, wire together\" describe?",
+      "options": [
+        "The electrical danger of the brain",
+        "The process of forging and strengthening synaptic connections during learning",
+        "The way the brain shuts down during sleep",
+        "The failure of the brain to learn new things"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"the brain forges new synaptic connections and strengthens existing ones, a process summarized by the neuroscientific axiom: 'neurons that fire together, wire together.'\""
+    },
+    {
+      "id": "q_read_c1_the_neuroscience_of_neuroplasticity_2",
+      "question": "How does neuroplasticity aid stroke victims?",
+      "options": [
+        "It allows the brain to grow a second hemisphere",
+        "Healthy areas of the brain can assume the functions of damaged regions",
+        "It reverses the stroke completely within minutes",
+        "It prevents future strokes automatically"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"Through targeted therapeutic interventions, healthy areas of the brain can occasionally assume the functions previously managed by damaged regions.\""
+    },
+    {
+      "id": "q_read_c1_the_neuroscience_of_neuroplasticity_3",
+      "question": "What does the text conclude about intellectual decline and aging?",
+      "options": [
+        "It is an inevitable consequence of getting older",
+        "It happens to everyone regardless of lifestyle",
+        "It is not inevitable if the brain remains adequately stimulated",
+        "It only happens to people who don't play instruments"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"proving that intellectual decline is not an inevitable consequence of aging, provided the brain remains adequately stimulated.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "prevailing dogma",
+      "meaning": "vorherrschendes Lehrmeinung/Dogma"
+    },
+    {
+      "word": "immutable",
+      "meaning": "unveränderlich"
+    },
+    {
+      "word": "neuroplasticity",
+      "meaning": "Neuroplastizität (Veränderbarkeit des Gehirns)"
+    },
+    {
+      "word": "synaptic connections",
+      "meaning": "synaptische Verbindungen"
+    },
+    {
+      "word": "malleability",
+      "meaning": "Formbarkeit / Anpassungsfähigkeit"
+    }
+  ],
+  "id": "read_c1_the_neuroscience_of_neuroplasticity"
+}

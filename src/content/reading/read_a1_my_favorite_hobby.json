@@ -1,0 +1,75 @@
+{
+  "title": "My Favorite Hobby",
+  "content": "My favorite hobby is photography. I love taking pictures. I have a digital camera and I always carry it with me. I take pictures of nature, animals, and people. On Sundays, I often go to the forest or the beach to find beautiful scenes. When I get home, I look at the photos on my computer. I edit them to make them look better. I share my best photos with my friends on the internet.",
+  "level": "A1",
+  "category": "Hobbies",
+  "questions": [
+    {
+      "id": "q_read_a1_my_favorite_hobby_0",
+      "question": "What is the person's hobby?",
+      "options": [
+        "Painting",
+        "Photography",
+        "Reading",
+        "Cooking"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"My favorite hobby is photography.\""
+    },
+    {
+      "id": "q_read_a1_my_favorite_hobby_1",
+      "question": "What do they carry with them?",
+      "options": [
+        "A book",
+        "A phone",
+        "A digital camera",
+        "A bag"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I have a digital camera and I always carry it with me.\""
+    },
+    {
+      "id": "q_read_a1_my_favorite_hobby_2",
+      "question": "Where do they go on Sundays?",
+      "options": [
+        "To the city center",
+        "To the forest or beach",
+        "To the museum",
+        "To the park"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"On Sundays, I often go to the forest or the beach...\""
+    },
+    {
+      "id": "q_read_a1_my_favorite_hobby_3",
+      "question": "What do they do on the computer?",
+      "options": [
+        "Play games",
+        "Watch videos",
+        "Look at and edit photos",
+        "Write emails"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I look at the photos on my computer. I edit them...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "photography",
+      "meaning": "Fotografie"
+    },
+    {
+      "word": "carry",
+      "meaning": "tragen / mitnehmen"
+    },
+    {
+      "word": "scenes",
+      "meaning": "Szenen / Motive"
+    },
+    {
+      "word": "edit",
+      "meaning": "bearbeiten"
+    }
+  ],
+  "id": "read_a1_my_favorite_hobby"
+}

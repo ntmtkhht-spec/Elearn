@@ -1,0 +1,130 @@
+{
+  "name": "Specialized Scientific Terminology",
+  "description": "Advanced technical and scientific vocabulary",
+  "level": "C2",
+  "category": "Science",
+  "icon": "🔬",
+  "cards": [
+    {
+      "word": "Homeostasis",
+      "translation": "Homöostase / Gleichgewicht",
+      "pronunciation": "/ˌhoʊmiəˈsteɪsɪs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The body maintains homeostasis by sweating to cool down.",
+      "exampleTranslation": "Der Körper erhält die Homöostase aufrecht, indem er schwitzt, um abzukühlen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_0",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Entropy",
+      "translation": "Entropie / Unordnung",
+      "pronunciation": "/ˈɛntrəpi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "According to the second law of thermodynamics, entropy always increases.",
+      "exampleTranslation": "Gemäß dem zweiten Hauptsatz der Thermodynamik nimmt die Entropie immer zu.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_1",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Catalyst",
+      "translation": "Katalysator",
+      "pronunciation": "/ˈkætəlɪst/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Enzymes act as a catalyst for biochemical reactions.",
+      "exampleTranslation": "Enzyme wirken als Katalysator für biochemische Reaktionen.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_2",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Symbiosis",
+      "translation": "Symbiose",
+      "pronunciation": "/ˌsɪmbiˈoʊsɪs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The clownfish and the sea anemone live in perfect symbiosis.",
+      "exampleTranslation": "Der Clownfisch und die Seeanemone leben in perfekter Symbiose.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_3",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Quantum",
+      "translation": "Quant / Quanten-",
+      "pronunciation": "/ˈkwɒntəm/",
+      "partOfSpeech": "noun/adjective",
+      "exampleSentence": "Quantum mechanics describes the behavior of subatomic particles.",
+      "exampleTranslation": "Die Quantenmechanik beschreibt das Verhalten subatomarer Teilchen.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_4",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Pathogen",
+      "translation": "Krankheitserreger",
+      "pronunciation": "/ˈpæθədʒən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The immune system fights off invading pathogens.",
+      "exampleTranslation": "Das Immunsystem bekämpft eindringende Krankheitserreger.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_5",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Kinetic",
+      "translation": "Kinetisch / Bewegungs-",
+      "pronunciation": "/kɪˈnɛtɪk/",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Kinetic energy is the energy of motion.",
+      "exampleTranslation": "Kinetische Energie ist die Energie der Bewegung.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_6",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Taxonomy",
+      "translation": "Taxonomie / Systematik",
+      "pronunciation": "/tækˈsɒnəmi/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Plant taxonomy classifies flora based on genetic similarities.",
+      "exampleTranslation": "Die Pflanzentaxonomie klassifiziert die Flora basierend auf genetischen Ähnlichkeiten.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_7",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Isotope",
+      "translation": "Isotop",
+      "pronunciation": "/ˈaɪsətoʊp/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Carbon-14 is a radioactive isotope used for dating fossils.",
+      "exampleTranslation": "Kohlenstoff-14 ist ein radioaktives Isotop, das zur Datierung von Fossilien verwendet wird.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_8",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    },
+    {
+      "word": "Genome",
+      "translation": "Genom / Erbgut",
+      "pronunciation": "/ˈdʒiːnoʊm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The human genome was fully mapped in 2003.",
+      "exampleTranslation": "Das menschliche Genom wurde 2003 vollständig kartiert.",
+      "difficulty": 5,
+      "notes": null,
+      "id": "card_vocab_c2_specialized_scientific_terminology_9",
+      "deckId": "vocab_c2_specialized_scientific_terminology"
+    }
+  ],
+  "id": "vocab_c2_specialized_scientific_terminology"
+}

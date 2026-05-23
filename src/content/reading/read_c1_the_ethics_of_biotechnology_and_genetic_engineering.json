@@ -1,0 +1,79 @@
+{
+  "title": "The Ethics of Biotechnology and Genetic Engineering",
+  "content": "The advent of CRISPR-Cas9 and other advanced genomic editing tools has ushered humanity into a new era of biotechnology, fraught with profound ethical implications. While the potential to eradicate debilitating genetic disorders—such as cystic fibrosis or Huntington's disease—is an undeniable triumph of modern science, the very same technology opens the Pandora's box of \"designer babies.\" \n\nThe prospect of editing human embryos to enhance physical or cognitive traits raises alarming concerns about a new form of eugenics, potentially exacerbating existing socioeconomic inequalities by creating a genetic divide between those who can afford such enhancements and those who cannot. Furthermore, alterations to the human germline are heritable, meaning that unintended off-target mutations could be passed down to future generations, irrevocably altering the human gene pool without the consent of those affected.\n\nRegulatory bodies worldwide are currently grappling with the challenge of drafting comprehensive legislation that stifles neither scientific innovation nor therapeutic application, while simultaneously erecting robust safeguards against unethical experimentation. The prevailing consensus within the scientific community advocates for a strict moratorium on germline editing for enhancement purposes, although enforcement in a globally fragmented regulatory landscape remains a formidable obstacle.",
+  "level": "C1",
+  "category": "Science",
+  "questions": [
+    {
+      "id": "q_read_c1_the_ethics_of_biotechnology_and_genetic_engineering_0",
+      "question": "What is described as the \"Pandora's box\" opened by modern genomic editing tools?",
+      "options": [
+        "The spread of new viral diseases",
+        "The ability to cure Huntington's disease",
+        "The prospect of editing embryos to create \"designer babies\"",
+        "The high cost of medical treatments"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"the very same technology opens the Pandora's box of 'designer babies.'\""
+    },
+    {
+      "id": "q_read_c1_the_ethics_of_biotechnology_and_genetic_engineering_1",
+      "question": "How might genetic enhancement exacerbate socioeconomic inequalities?",
+      "options": [
+        "By making poor people genetically weaker",
+        "By creating a divide where only the wealthy can afford genetic enhancements",
+        "By replacing all human workers with enhanced individuals",
+        "By making healthcare completely free"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"potentially exacerbating existing socioeconomic inequalities by creating a genetic divide between those who can afford such enhancements and those who cannot.\""
+    },
+    {
+      "id": "q_read_c1_the_ethics_of_biotechnology_and_genetic_engineering_2",
+      "question": "Why are alterations to the human germline particularly controversial?",
+      "options": [
+        "Because they are heritable and can pass unintended mutations to future generations",
+        "Because they only last for a few years",
+        "Because they are painful procedures",
+        "Because they are illegal everywhere"
+      ],
+      "correctIndex": 0,
+      "explanation": "The text says: \"alterations to the human germline are heritable, meaning that unintended off-target mutations could be passed down to future generations...\""
+    },
+    {
+      "id": "q_read_c1_the_ethics_of_biotechnology_and_genetic_engineering_3",
+      "question": "What does the scientific community generally advocate regarding germline editing?",
+      "options": [
+        "A complete ban on all genetic research",
+        "Allowing anyone to edit their genes",
+        "A strict moratorium on germline editing for enhancement purposes",
+        "Government funding for designer babies"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"The prevailing consensus within the scientific community advocates for a strict moratorium on germline editing for enhancement purposes...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "advent",
+      "meaning": "Aufkommen / Beginn"
+    },
+    {
+      "word": "fraught with",
+      "meaning": "behaftet mit / voll von"
+    },
+    {
+      "word": "eugenics",
+      "meaning": "Eugenik (Erbgesundheitslehre)"
+    },
+    {
+      "word": "germline",
+      "meaning": "Keimbahn"
+    },
+    {
+      "word": "moratorium",
+      "meaning": "Moratorium (Aufschub / vorübergehender Stopp)"
+    }
+  ],
+  "id": "read_c1_the_ethics_of_biotechnology_and_genetic_engineering"
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Numbers & Time",
+  "description": "Counting and telling the time",
+  "level": "A1",
+  "category": "Basics",
+  "icon": "⌚",
+  "cards": [
+    {
+      "word": "One",
+      "translation": "Eins",
+      "pronunciation": "/wʌn/",
+      "partOfSpeech": "number",
+      "exampleSentence": "I have one dog.",
+      "exampleTranslation": "Ich habe einen Hund.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_0",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Two",
+      "translation": "Zwei",
+      "pronunciation": "/tuː/",
+      "partOfSpeech": "number",
+      "exampleSentence": "She has two cats.",
+      "exampleTranslation": "Sie hat zwei Katzen.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_1",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Three",
+      "translation": "Drei",
+      "pronunciation": "/θriː/",
+      "partOfSpeech": "number",
+      "exampleSentence": "There are three apples left.",
+      "exampleTranslation": "Es sind noch drei Äpfel übrig.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_2",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Time",
+      "translation": "Zeit / Uhrzeit",
+      "pronunciation": "/taɪm/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "What time is it?",
+      "exampleTranslation": "Wie spät ist es?",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_3",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Hour",
+      "translation": "Stunde",
+      "pronunciation": "/aʊər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The movie is one hour long.",
+      "exampleTranslation": "Der Film dauert eine Stunde.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_4",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Minute",
+      "translation": "Minute",
+      "pronunciation": "/ˈmɪnɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Give me five minutes.",
+      "exampleTranslation": "Gib mir fünf Minuten.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_5",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Morning",
+      "translation": "Morgen",
+      "pronunciation": "/ˈmɔrnɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Good morning!",
+      "exampleTranslation": "Guten Morgen!",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_6",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Afternoon",
+      "translation": "Nachmittag",
+      "pronunciation": "/ˌæftərˈnuːn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Let us meet in the afternoon.",
+      "exampleTranslation": "Lass uns am Nachmittag treffen.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_7",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Evening",
+      "translation": "Abend",
+      "pronunciation": "/ˈiːvnɪŋ/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I watch TV in the evening.",
+      "exampleTranslation": "Ich schaue abends fern.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_8",
+      "deckId": "vocab_a1_numbers_time"
+    },
+    {
+      "word": "Night",
+      "translation": "Nacht",
+      "pronunciation": "/naɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Good night.",
+      "exampleTranslation": "Gute Nacht.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_numbers_time_9",
+      "deckId": "vocab_a1_numbers_time"
+    }
+  ],
+  "id": "vocab_a1_numbers_time"
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Family Members",
+  "description": "Words to describe your family tree",
+  "level": "A1",
+  "category": "Daily",
+  "icon": "👨‍👩‍👧‍👦",
+  "cards": [
+    {
+      "word": "Mother",
+      "translation": "Mutter",
+      "pronunciation": "/ˈmʌðər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My mother is very kind.",
+      "exampleTranslation": "Meine Mutter ist sehr nett.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_0",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Father",
+      "translation": "Vater",
+      "pronunciation": "/ˈfɑːðər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "His father works in a bank.",
+      "exampleTranslation": "Sein Vater arbeitet in einer Bank.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_1",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Brother",
+      "translation": "Bruder",
+      "pronunciation": "/ˈbrʌðər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I have one brother.",
+      "exampleTranslation": "Ich habe einen Bruder.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_2",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Sister",
+      "translation": "Schwester",
+      "pronunciation": "/ˈsɪstər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Her sister is older.",
+      "exampleTranslation": "Ihre Schwester ist älter.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_3",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Grandmother",
+      "translation": "Großmutter",
+      "pronunciation": "/ˈɡrændˌmʌðər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "We visit my grandmother on Sundays.",
+      "exampleTranslation": "Wir besuchen meine Großmutter sonntags.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_4",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Grandfather",
+      "translation": "Großvater",
+      "pronunciation": "/ˈɡrændˌfɑːðər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My grandfather likes gardening.",
+      "exampleTranslation": "Mein Großvater mag Gartenarbeit.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_5",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Uncle",
+      "translation": "Onkel",
+      "pronunciation": "/ˈʌŋkəl/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My uncle lives in London.",
+      "exampleTranslation": "Mein Onkel lebt in London.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_6",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Aunt",
+      "translation": "Tante",
+      "pronunciation": "/ænt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My aunt makes great cakes.",
+      "exampleTranslation": "Meine Tante macht tolle Kuchen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_7",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Cousin",
+      "translation": "Cousin / Cousine",
+      "pronunciation": "/ˈkʌzən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My cousin is playing outside.",
+      "exampleTranslation": "Mein Cousin spielt draußen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_8",
+      "deckId": "vocab_a1_family_members"
+    },
+    {
+      "word": "Parents",
+      "translation": "Eltern",
+      "pronunciation": "/ˈpɛərənts/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My parents are on holiday.",
+      "exampleTranslation": "Meine Eltern sind im Urlaub.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_family_members_9",
+      "deckId": "vocab_a1_family_members"
+    }
+  ],
+  "id": "vocab_a1_family_members"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "My Pet Dog",
+  "content": "I have a pet dog. His name is Max. He is a golden retriever. Max is three years old. He has brown fur and big brown eyes. Max is very friendly and playful. He loves to catch balls. Every afternoon, I take Max to the park. He runs fast and plays with other dogs. When we go home, Max is tired. He sleeps on his bed in the living room. Max is my best friend.",
+  "level": "A1",
+  "category": "Animals",
+  "questions": [
+    {
+      "id": "q_read_a1_my_pet_dog_0",
+      "question": "What kind of animal is Max?",
+      "options": [
+        "A cat",
+        "A bird",
+        "A fish",
+        "A dog"
+      ],
+      "correctIndex": 3,
+      "explanation": "The text says: \"I have a pet dog. His name is Max.\""
+    },
+    {
+      "id": "q_read_a1_my_pet_dog_1",
+      "question": "How old is Max?",
+      "options": [
+        "One year old",
+        "Two years old",
+        "Three years old",
+        "Four years old"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"Max is three years old.\""
+    },
+    {
+      "id": "q_read_a1_my_pet_dog_2",
+      "question": "What does Max love to do?",
+      "options": [
+        "Sleep all day",
+        "Catch balls",
+        "Eat shoes",
+        "Watch TV"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"He loves to catch balls.\""
+    },
+    {
+      "id": "q_read_a1_my_pet_dog_3",
+      "question": "Where does Max sleep?",
+      "options": [
+        "In the bedroom",
+        "In the kitchen",
+        "In the living room",
+        "In the garden"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"He sleeps on his bed in the living room.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "fur",
+      "meaning": "Fell"
+    },
+    {
+      "word": "playful",
+      "meaning": "verspielt"
+    },
+    {
+      "word": "tired",
+      "meaning": "müde"
+    }
+  ],
+  "id": "read_a1_my_pet_dog"
+}

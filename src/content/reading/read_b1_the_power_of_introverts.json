@@ -1,0 +1,75 @@
+{
+  "title": "The Power of Introverts",
+  "content": "In Western society, extroverted qualities—being outgoing, talkative, and highly sociable—are often celebrated as the ideal. However, recent psychological studies have highlighted the unique strengths of introverts. Introverts are not necessarily shy; rather, they recharge their energy by spending time alone, whereas extroverts gain energy from social interaction. In the workplace, introverts can be highly effective leaders. They tend to listen more carefully to their team members and are less likely to take unnecessary risks. They excel in tasks requiring deep concentration and independent thought. Author Susan Cain argues that schools and workplaces are often designed only for extroverts, with open-plan offices and group projects. Recognizing and valuing the quiet power of introverts can lead to more balanced and successful teams.",
+  "level": "B1",
+  "category": "Psychology",
+  "questions": [
+    {
+      "id": "q_read_b1_the_power_of_introverts_0",
+      "question": "According to the text, how do introverts recharge their energy?",
+      "options": [
+        "By talking to strangers",
+        "By going to parties",
+        "By spending time alone",
+        "By exercising"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"they recharge their energy by spending time alone...\""
+    },
+    {
+      "id": "q_read_b1_the_power_of_introverts_1",
+      "question": "How do introverted leaders behave with their teams?",
+      "options": [
+        "They ignore them",
+        "They listen carefully to team members",
+        "They talk all the time",
+        "They take many risks"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They tend to listen more carefully to their team members...\""
+    },
+    {
+      "id": "q_read_b1_the_power_of_introverts_2",
+      "question": "What type of tasks do introverts excel in?",
+      "options": [
+        "Public speaking",
+        "Tasks requiring deep concentration",
+        "Networking events",
+        "Sales pitches"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"They excel in tasks requiring deep concentration and independent thought.\""
+    },
+    {
+      "id": "q_read_b1_the_power_of_introverts_3",
+      "question": "What problem does Susan Cain identify in modern workplaces?",
+      "options": [
+        "They are too quiet",
+        "They are designed mainly for extroverts",
+        "They don't have enough computers",
+        "They have too many rules"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"schools and workplaces are often designed only for extroverts, with open-plan offices...\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "extroverted",
+      "meaning": "extrovertiert (nach außen gerichtet)"
+    },
+    {
+      "word": "recharge",
+      "meaning": "wieder aufladen"
+    },
+    {
+      "word": "excel",
+      "meaning": "sich hervortun / exzellieren"
+    },
+    {
+      "word": "open-plan offices",
+      "meaning": "Großraumbüros"
+    }
+  ],
+  "id": "read_b1_the_power_of_introverts"
+}

@@ -1,0 +1,130 @@
+{
+  "name": "Professions & Jobs",
+  "description": "Common occupations and work terms",
+  "level": "A2",
+  "category": "Business",
+  "icon": "👨‍⚕️",
+  "cards": [
+    {
+      "word": "Teacher",
+      "translation": "Lehrer/in",
+      "pronunciation": "/ˈtiːtʃər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The teacher explained the lesson.",
+      "exampleTranslation": "Der Lehrer hat die Lektion erklärt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_0",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Doctor",
+      "translation": "Arzt/Ärztin",
+      "pronunciation": "/ˈdɒktər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The doctor examined the patient.",
+      "exampleTranslation": "Der Arzt hat den Patienten untersucht.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_1",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Nurse",
+      "translation": "Krankenpfleger/in",
+      "pronunciation": "/nɜːrs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The nurse helped the doctor.",
+      "exampleTranslation": "Die Krankenschwester half dem Arzt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_2",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Police Officer",
+      "translation": "Polizist/in",
+      "pronunciation": "/pəˈliːs ˈɒfɪsər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The police officer directed the traffic.",
+      "exampleTranslation": "Der Polizist regelte den Verkehr.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_3",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Chef",
+      "translation": "Koch/Köchin",
+      "pronunciation": "/ʃɛf/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The chef cooked a delicious meal.",
+      "exampleTranslation": "Der Koch hat ein leckeres Essen gekocht.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_4",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Engineer",
+      "translation": "Ingenieur/in",
+      "pronunciation": "/ˌɛndʒɪˈnɪər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She works as an engineer.",
+      "exampleTranslation": "Sie arbeitet als Ingenieurin.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_5",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Artist",
+      "translation": "Künstler/in",
+      "pronunciation": "/ˈɑːrtɪst/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The artist painted a portrait.",
+      "exampleTranslation": "Der Künstler hat ein Porträt gemalt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_6",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Farmer",
+      "translation": "Bauer/Bäuerin",
+      "pronunciation": "/ˈfɑːrmər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The farmer works in the field.",
+      "exampleTranslation": "Der Bauer arbeitet auf dem Feld.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_7",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Pilot",
+      "translation": "Pilot/in",
+      "pronunciation": "/ˈpaɪlət/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The pilot flies the airplane.",
+      "exampleTranslation": "Der Pilot fliegt das Flugzeug.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_8",
+      "deckId": "vocab_a2_professions_jobs"
+    },
+    {
+      "word": "Job",
+      "translation": "Beruf / Arbeit",
+      "pronunciation": "/dʒɒb/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He is looking for a new job.",
+      "exampleTranslation": "Er sucht nach einer neuen Arbeit.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a2_professions_jobs_9",
+      "deckId": "vocab_a2_professions_jobs"
+    }
+  ],
+  "id": "vocab_a2_professions_jobs"
+}

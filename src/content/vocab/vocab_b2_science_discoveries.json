@@ -1,0 +1,130 @@
+{
+  "name": "Science & Discoveries",
+  "description": "Scientific terms and progress",
+  "level": "B2",
+  "category": "Science",
+  "icon": "🔬",
+  "cards": [
+    {
+      "word": "Experiment",
+      "translation": "Experiment",
+      "pronunciation": "/ɪkˈspɛrɪmənt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The scientists conducted an experiment.",
+      "exampleTranslation": "Die Wissenschaftler führten ein Experiment durch.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_0",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Discovery",
+      "translation": "Entdeckung",
+      "pronunciation": "/dɪˈskʌvəri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The discovery of penicillin changed medicine.",
+      "exampleTranslation": "Die Entdeckung des Penicillins veränderte die Medizin.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_1",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Analyze",
+      "translation": "Analysieren",
+      "pronunciation": "/ˈænəlaɪz/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "We need to analyze the data carefully.",
+      "exampleTranslation": "Wir müssen die Daten sorgfältig analysieren.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_2",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Hypothesis",
+      "translation": "Hypothese",
+      "pronunciation": "/haɪˈpɒθɪsɪs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The results proved his hypothesis wrong.",
+      "exampleTranslation": "Die Ergebnisse bewiesen, dass seine Hypothese falsch war.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_3",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Theory",
+      "translation": "Theorie",
+      "pronunciation": "/ˈθɪəri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Einstein formulated the theory of relativity.",
+      "exampleTranslation": "Einstein formulierte die Relativitätstheorie.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_4",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Laboratory",
+      "translation": "Labor",
+      "pronunciation": "/ləˈbɒrətəri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Access to the laboratory is restricted.",
+      "exampleTranslation": "Der Zugang zum Labor ist beschränkt.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_5",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Evidence",
+      "translation": "Beweis / Beleg",
+      "pronunciation": "/ˈɛvɪdəns/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "There is no scientific evidence for this.",
+      "exampleTranslation": "Es gibt keinen wissenschaftlichen Beweis dafür.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_6",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Observation",
+      "translation": "Beobachtung",
+      "pronunciation": "/ˌɒbzərˈveɪʃən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "These observations confirm our previous findings.",
+      "exampleTranslation": "Diese Beobachtungen bestätigen unsere vorherigen Ergebnisse.",
+      "difficulty": 4,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_7",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Invent",
+      "translation": "Erfinden",
+      "pronunciation": "/ɪnˈvɛnt/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Who invented the telephone?",
+      "exampleTranslation": "Wer hat das Telefon erfunden?",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_8",
+      "deckId": "vocab_b2_science_discoveries"
+    },
+    {
+      "word": "Conclusion",
+      "translation": "Schlussfolgerung",
+      "pronunciation": "/kənˈkluːʒən/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "What conclusion did you reach?",
+      "exampleTranslation": "Zu welcher Schlussfolgerung bist du gekommen?",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b2_science_discoveries_9",
+      "deckId": "vocab_b2_science_discoveries"
+    }
+  ],
+  "id": "vocab_b2_science_discoveries"
+}

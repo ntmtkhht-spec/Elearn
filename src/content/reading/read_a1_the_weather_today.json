@@ -1,0 +1,71 @@
+{
+  "title": "The Weather Today",
+  "content": "It is a sunny day in London. The sky is blue and there are no clouds. It is hot today, about 25 degrees. Many people are in the park. They are walking, running, and playing games. Some people are sitting on the grass and reading. I am wearing a t-shirt, shorts, and sunglasses. I have a bottle of water because I am thirsty. I love sunny weather.",
+  "level": "A1",
+  "category": "Weather",
+  "questions": [
+    {
+      "id": "q_read_a1_the_weather_today_0",
+      "question": "What is the weather like?",
+      "options": [
+        "Raining",
+        "Snowing",
+        "Sunny",
+        "Cloudy"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It is a sunny day in London.\""
+    },
+    {
+      "id": "q_read_a1_the_weather_today_1",
+      "question": "What temperature is it?",
+      "options": [
+        "15 degrees",
+        "20 degrees",
+        "25 degrees",
+        "30 degrees"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"It is hot today, about 25 degrees.\""
+    },
+    {
+      "id": "q_read_a1_the_weather_today_2",
+      "question": "What are people doing in the park?",
+      "options": [
+        "Sleeping",
+        "Swimming",
+        "Walking and playing games",
+        "Working"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"They are walking, running, and playing games.\""
+    },
+    {
+      "id": "q_read_a1_the_weather_today_3",
+      "question": "Why does the person have water?",
+      "options": [
+        "Because it is cheap",
+        "Because they are thirsty",
+        "Because they are hungry",
+        "Because they want to wash"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"I have a bottle of water because I am thirsty.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "clouds",
+      "meaning": "Wolken"
+    },
+    {
+      "word": "sunglasses",
+      "meaning": "Sonnenbrille"
+    },
+    {
+      "word": "thirsty",
+      "meaning": "durstig"
+    }
+  ],
+  "id": "read_a1_the_weather_today"
+}

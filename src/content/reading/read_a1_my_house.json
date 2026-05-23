@@ -1,0 +1,71 @@
+{
+  "title": "My House",
+  "content": "I live in a beautiful house. It is not very big, but it is comfortable. There are two bedrooms, a living room, a kitchen, and a bathroom. In the living room, there is a sofa, a TV, and a big window. I like to read books on the sofa. In the kitchen, there is a table with four chairs. We eat our meals there. The bathroom is small and has a shower. I love my house.",
+  "level": "A1",
+  "category": "Home",
+  "questions": [
+    {
+      "id": "q_read_a1_my_house_0",
+      "question": "How many bedrooms are there?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"There are two bedrooms.\""
+    },
+    {
+      "id": "q_read_a1_my_house_1",
+      "question": "What does the person do on the sofa?",
+      "options": [
+        "Watch TV",
+        "Sleep",
+        "Read books",
+        "Eat meals"
+      ],
+      "correctIndex": 2,
+      "explanation": "The text says: \"I like to read books on the sofa.\""
+    },
+    {
+      "id": "q_read_a1_my_house_2",
+      "question": "Where do they eat their meals?",
+      "options": [
+        "In the living room",
+        "In the kitchen",
+        "In the bedroom",
+        "In the garden"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"In the kitchen... We eat our meals there.\""
+    },
+    {
+      "id": "q_read_a1_my_house_3",
+      "question": "What is in the bathroom?",
+      "options": [
+        "A bath",
+        "A shower",
+        "A big window",
+        "A TV"
+      ],
+      "correctIndex": 1,
+      "explanation": "The text says: \"The bathroom is small and has a shower.\""
+    }
+  ],
+  "vocabularyHints": [
+    {
+      "word": "comfortable",
+      "meaning": "bequem / gemütlich"
+    },
+    {
+      "word": "meals",
+      "meaning": "Mahlzeiten"
+    },
+    {
+      "word": "shower",
+      "meaning": "Dusche"
+    }
+  ],
+  "id": "read_a1_my_house"
+}

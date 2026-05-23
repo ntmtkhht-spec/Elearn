@@ -1,0 +1,130 @@
+{
+  "name": "Technology & Gadgets",
+  "description": "Digital life and modern devices",
+  "level": "B1",
+  "category": "Technology",
+  "icon": "📱",
+  "cards": [
+    {
+      "word": "Device",
+      "translation": "Gerät",
+      "pronunciation": "/dɪˈvaɪs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "You can connect multiple devices to the Wi-Fi.",
+      "exampleTranslation": "Du kannst mehrere Geräte mit dem WLAN verbinden.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_0",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Download",
+      "translation": "Herunterladen",
+      "pronunciation": "/ˈdaʊnloʊd/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "You need to download the app first.",
+      "exampleTranslation": "Du musst zuerst die App herunterladen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_1",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Screen",
+      "translation": "Bildschirm",
+      "pronunciation": "/skriːn/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My phone screen is broken.",
+      "exampleTranslation": "Mein Handy-Bildschirm ist kaputt.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_2",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Battery",
+      "translation": "Batterie / Akku",
+      "pronunciation": "/ˈbætəri/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The battery is running low.",
+      "exampleTranslation": "Der Akku wird schwach.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_3",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Software",
+      "translation": "Software",
+      "pronunciation": "/ˈsɒftwɛər/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Please update your software.",
+      "exampleTranslation": "Bitte aktualisieren Sie Ihre Software.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_4",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Keyboard",
+      "translation": "Tastatur",
+      "pronunciation": "/ˈkiːbɔːrd/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I bought a new wireless keyboard.",
+      "exampleTranslation": "Ich habe eine neue kabellose Tastatur gekauft.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_5",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Password",
+      "translation": "Passwort",
+      "pronunciation": "/ˈpæswɜːrd/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Do not forget your password.",
+      "exampleTranslation": "Vergiss dein Passwort nicht.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_6",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Browse",
+      "translation": "Durchsuchen / Surfen",
+      "pronunciation": "/braʊz/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "I was browsing the internet.",
+      "exampleTranslation": "Ich habe im Internet gesurft.",
+      "difficulty": 3,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_7",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Network",
+      "translation": "Netzwerk",
+      "pronunciation": "/ˈnɛtwɜːrk/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "The school network is down.",
+      "exampleTranslation": "Das Schulnetzwerk ist ausgefallen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_8",
+      "deckId": "vocab_b1_technology_gadgets"
+    },
+    {
+      "word": "Upload",
+      "translation": "Hochladen",
+      "pronunciation": "/ˈʌploʊd/",
+      "partOfSpeech": "verb",
+      "exampleSentence": "You need to upload the file here.",
+      "exampleTranslation": "Du musst die Datei hier hochladen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_b1_technology_gadgets_9",
+      "deckId": "vocab_b1_technology_gadgets"
+    }
+  ],
+  "id": "vocab_b1_technology_gadgets"
+}

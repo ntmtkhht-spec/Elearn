@@ -1,0 +1,130 @@
+{
+  "name": "Clothing",
+  "description": "Basic clothes and accessories",
+  "level": "A1",
+  "category": "Daily",
+  "icon": "👕",
+  "cards": [
+    {
+      "word": "Shirt",
+      "translation": "Hemd / T-Shirt",
+      "pronunciation": "/ʃɜrt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "He wears a white shirt.",
+      "exampleTranslation": "Er trägt ein weißes Hemd.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_0",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Pants",
+      "translation": "Hose",
+      "pronunciation": "/pænts/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My pants are blue.",
+      "exampleTranslation": "Meine Hose ist blau.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_1",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Dress",
+      "translation": "Kleid",
+      "pronunciation": "/drɛs/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She bought a new dress.",
+      "exampleTranslation": "Sie hat ein neues Kleid gekauft.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_2",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Shoes",
+      "translation": "Schuhe",
+      "pronunciation": "/ʃuːz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Take off your shoes.",
+      "exampleTranslation": "Zieh deine Schuhe aus.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_3",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Hat",
+      "translation": "Hut / Mütze",
+      "pronunciation": "/hæt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Put on your hat.",
+      "exampleTranslation": "Zieh deine Mütze auf.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_4",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Socks",
+      "translation": "Socken",
+      "pronunciation": "/sɒks/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I need warm socks.",
+      "exampleTranslation": "Ich brauche warme Socken.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_5",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Jacket",
+      "translation": "Jacke",
+      "pronunciation": "/ˈdʒækɪt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "It is cold, take a jacket.",
+      "exampleTranslation": "Es ist kalt, nimm eine Jacke.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_6",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Skirt",
+      "translation": "Rock",
+      "pronunciation": "/skɜrt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "She wears a long skirt.",
+      "exampleTranslation": "Sie trägt einen langen Rock.",
+      "difficulty": 1,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_7",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Coat",
+      "translation": "Mantel",
+      "pronunciation": "/koʊt/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "My winter coat is very warm.",
+      "exampleTranslation": "Mein Wintermantel ist sehr warm.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_8",
+      "deckId": "vocab_a1_clothing"
+    },
+    {
+      "word": "Glasses",
+      "translation": "Brille",
+      "pronunciation": "/ˈɡlæsɪz/",
+      "partOfSpeech": "noun",
+      "exampleSentence": "I wear glasses to read.",
+      "exampleTranslation": "Ich trage eine Brille zum Lesen.",
+      "difficulty": 2,
+      "notes": null,
+      "id": "card_vocab_a1_clothing_9",
+      "deckId": "vocab_a1_clothing"
+    }
+  ],
+  "id": "vocab_a1_clothing"
+}
