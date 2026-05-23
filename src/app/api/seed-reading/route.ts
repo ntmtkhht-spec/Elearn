@@ -4,6 +4,8 @@ import { readingA1A2 } from '@/lib/data/reading-a1-a2'
 import { readingB1B2 } from '@/lib/data/reading-b1-b2'
 import { readingC1C2 } from '@/lib/data/reading-c1-c2'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST() {
   try {
     const allReadings = [...readingA1A2, ...readingB1B2, ...readingC1C2]

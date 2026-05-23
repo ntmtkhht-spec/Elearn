@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { chatCompletion, parseJSONResponse } from '@/lib/ai'
 
+export const dynamic = 'force-dynamic'
+
 const SAMPLE_EXERCISES = [
   {
     id: 'r1',

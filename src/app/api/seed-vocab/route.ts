@@ -4,6 +4,8 @@ import { EXTRA_DECKS_A1_A2 } from '@/lib/data/vocab-a1-a2'
 import { EXTRA_DECKS_B1_B2 } from '@/lib/data/vocab-b1-b2'
 import { EXTRA_DECKS_C1_C2 } from '@/lib/data/vocab-c1-c2'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     const allDecks = [
