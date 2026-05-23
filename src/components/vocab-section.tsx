@@ -512,7 +512,20 @@ export default function VocabSection() {
                   </div>
                   <p className="text-muted-foreground italic text-lg">{currentCard.pronunciation}</p>
                   <Badge variant="outline">{currentCard.partOfSpeech}</Badge>
-                  <p className="text-sm text-muted-foreground mt-4">Click to reveal the answer</p>
+                  <div className="pt-4 max-w-sm mx-auto">
+                    <div className="flex items-start justify-center gap-2">
+                      <p className="text-sm text-muted-foreground leading-relaxed">&ldquo;{currentCard.exampleSentence}&rdquo;</p>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-6 w-6 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-900/30 shrink-0 -mt-0.5"
+                        onClick={(e) => { e.stopPropagation(); speakWord(currentCard.exampleSentence) }}
+                      >
+                        <Volume2 className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                      </Button>
+                    </div>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-6 opacity-70">Click to reveal the answer</p>
                 </div>
               ) : (
                 // BACK
