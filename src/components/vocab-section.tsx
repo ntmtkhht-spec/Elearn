@@ -522,7 +522,17 @@ export default function VocabSection() {
                   </h3>
                   <div className="border-t border-border pt-4 w-full">
                     <p className="text-sm text-muted-foreground mb-2">Example:</p>
-                    <p className="text-base leading-relaxed">&ldquo;{currentCard.exampleSentence}&rdquo;</p>
+                    <div className="flex items-start justify-center gap-2">
+                      <p className="text-base leading-relaxed">&ldquo;{currentCard.exampleSentence}&rdquo;</p>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-6 w-6 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-900/30 shrink-0 mt-0.5"
+                        onClick={(e) => { e.stopPropagation(); speakWord(currentCard.exampleSentence) }}
+                      >
+                        <Volume2 className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                      </Button>
+                    </div>
                     {currentCard.exampleTranslation && (
                       <p className="text-sm text-muted-foreground mt-2 italic">
                         {currentCard.exampleTranslation}

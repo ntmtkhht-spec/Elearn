@@ -230,9 +230,19 @@ export default function DashboardSection() {
                   <p className="text-sm text-emerald-700 dark:text-emerald-400 font-medium">
                     {todayWord.translation}
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    &ldquo;{todayWord.exampleSentence}&rdquo;
-                  </p>
+                  <div className="flex items-start gap-2 mt-1">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      &ldquo;{todayWord.exampleSentence}&rdquo;
+                    </p>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-5 w-5 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-900/30 shrink-0"
+                      onClick={() => speakWord(todayWord.exampleSentence)}
+                    >
+                      <Volume2 className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
+                    </Button>
+                  </div>
                 </>
               )}
             </CardContent>
