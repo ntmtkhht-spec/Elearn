@@ -103,17 +103,10 @@ export default function ReadingSection() {
   } = useAppStore()
 
   const [viewMode, setViewMode] = useState<ReadViewMode>('list')
-  const [showAllLevels, setShowAllLevels] = useState(false)
-
   const displayLevel = userLevel || 'B2'
-  const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
-  const levelIndex = LEVEL_ORDER.indexOf(displayLevel)
-  const visibleLevels = showAllLevels
-    ? LEVEL_ORDER
-    : LEVEL_ORDER.slice(Math.max(0, levelIndex - 1), levelIndex + 1)
+  const visibleLevels = [displayLevel]
 
   const filteredExercises = readingExercises.filter(ex => visibleLevels.includes(ex.level))
-  const otherExercises = readingExercises.filter(ex => !visibleLevels.includes(ex.level))
   const [loading, setLoading] = useState(readingExercises.length === 0)
   const [generating, setGenerating] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
@@ -324,16 +317,7 @@ export default function ReadingSection() {
             <div className="flex items-center justify-between">
               <p className="text-sm text-muted-foreground">
                 Showing exercises for <Badge className={LEVEL_COLORS[displayLevel] || LEVEL_COLORS['B2']} variant="secondary">{displayLevel}</Badge> level
-                {levelIndex > 0 && <span className="ml-1">& below</span>}
               </p>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-xs text-muted-foreground"
-                onClick={() => setShowAllLevels(!showAllLevels)}
-              >
-                {showAllLevels ? 'Show my level only' : `Show all levels (${readingExercises.length} exercises)`}
-              </Button>
             </div>
 
             <div className="space-y-3">
@@ -386,22 +370,6 @@ export default function ReadingSection() {
               ))}
             </div>
 
-            {/* Other level exercises (collapsed) */}
-            {!showAllLevels && otherExercises.length > 0 && (
-              <Card className="border-dashed">
-                <CardContent className="p-4">
-                  <Button
-                    variant="ghost"
-                    className="w-full text-sm text-muted-foreground hover:text-foreground"
-                    onClick={() => setShowAllLevels(true)}
-                  >
-                    <FileText className="h-4 w-4 mr-2" />
-                    {otherExercises.length} more exercise{otherExercises.length !== 1 ? 's' : ''} at other levels
-                    <ChevronRight className="h-4 w-4 ml-1" />
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
           </div>
         )}
       </div>
