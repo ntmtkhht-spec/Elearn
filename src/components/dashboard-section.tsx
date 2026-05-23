@@ -38,116 +38,7 @@ const LEVEL_NAMES: Record<string, string> = {
   C2: 'Proficient',
 }
 
-// Daily Challenge definitions
-interface DailyChallenge {
-  type: string
-  title: string
-  description: string
-  prompt: string
-}
 
-const CHALLENGE_WORDS = ['resilient', 'eloquent', 'meticulous', 'ambiguous', 'tenacious', 'profound', 'versatile', 'pragmatic', 'innovative', 'perseverance']
-const CHALLENGE_IDIOMS = [
-  { partial: 'Every cloud has a ___', answer: 'silver lining', hint: 'something positive in a negative situation' },
-  { partial: 'Break the ___', answer: 'ice', hint: 'start a conversation in an awkward situation' },
-  { partial: 'Hit the nail on the ___', answer: 'head', hint: 'describe exactly what is causing a problem' },
-  { partial: 'A penny for your ___', answer: 'thoughts', hint: 'ask what someone is thinking' },
-  { partial: 'Bite the ___', answer: 'bullet', hint: 'endure a painful situation' },
-  { partial: 'The ball is in your ___', answer: 'court', hint: 'it\'s your decision now' },
-  { partial: 'Burn the midnight ___', answer: 'oil', hint: 'work late into the night' },
-  { partial: 'Let the cat out of the ___', answer: 'bag', hint: 'reveal a secret' },
-  { partial: 'Piece of ___', answer: 'cake', hint: 'something very easy' },
-  { partial: 'Spill the ___', answer: 'beans', hint: 'reveal secret information' },
-]
-const CHALLENGE_TOPICS = [
-  'the impact of technology on daily life',
-  'your favorite travel destination and why',
-  'the importance of learning a second language',
-  'how hobbies shape our personality',
-  'the role of art in modern society',
-  'a skill you would like to learn and why',
-  'the benefits of reading books regularly',
-  'how to maintain a healthy work-life balance',
-]
-const CHALLENGE_GERMAN = [
-  'Ich lerne jeden Tag etwas Neues.',
-  'Die Musik ist die Sprache der Seele.',
-  'Reisen bildet den Geist und öffnet das Herz.',
-  'Übung macht den Meister.',
-  'Wissen ist Macht, aber Weisheit ist wichtiger.',
-  'Jede Reise beginnt mit dem ersten Schritt.',
-  'Das Leben ist zu kurz für schlechten Kaffee.',
-  'Wer nicht wagt, der nicht gewinnt.',
-]
-const SYNONYM_WORDS = ['happy', 'important', 'beautiful', 'difficult', 'interesting', 'brave', 'calm', 'clever', 'generous', 'humble']
-
-function getDayOfYear(): number {
-  const now = new Date()
-  const start = new Date(now.getFullYear(), 0, 0)
-  const diff = now.getTime() - start.getTime()
-  const oneDay = 1000 * 60 * 60 * 24
-  return Math.floor(diff / oneDay)
-}
-
-function seededIndex(seed: number, length: number): number {
-  // Simple deterministic hash from day-of-year
-  const hash = ((seed * 2654435761) >>> 0) % length
-  return hash
-}
-
-function getDailyChallenge(): DailyChallenge {
-  const day = getDayOfYear()
-  const challengeTypeIndex = day % 5
-
-  switch (challengeTypeIndex) {
-    case 0: {
-      const word = CHALLENGE_WORDS[seededIndex(day, CHALLENGE_WORDS.length)]
-      return {
-        type: 'sentences',
-        title: 'Sentence Builder',
-        description: 'Write 3 sentences using a given word',
-        prompt: `Write 3 different sentences using the word "${word}". Make each sentence at least 8 words long and show different contexts where the word can be used. After writing, ask me if I want feedback on my sentences.`,
-      }
-    }
-    case 1: {
-      const sentence = CHALLENGE_GERMAN[seededIndex(day, CHALLENGE_GERMAN.length)]
-      return {
-        type: 'translate',
-        title: 'Translation Challenge',
-        description: 'Translate a German sentence to English',
-        prompt: `Translate the following German sentence to English: "${sentence}" \n\nPlease wait for my translation, then give me feedback on accuracy, grammar, and suggest improvements. The original German: "${sentence}"`,
-      }
-    }
-    case 2: {
-      const idiom = CHALLENGE_IDIOMS[seededIndex(day, CHALLENGE_IDIOMS.length)]
-      return {
-        type: 'idiom',
-        title: 'Idiom Completer',
-        description: 'Complete a common English idiom',
-        prompt: `Complete this English idiom: "${idiom.partial}". Hint: it means ${idiom.hint}. Please wait for my answer, then tell me if I got it right and explain the idiom's origin and usage.`,
-      }
-    }
-    case 3: {
-      const topic = CHALLENGE_TOPICS[seededIndex(day, CHALLENGE_TOPICS.length)]
-      return {
-        type: 'paragraph',
-        title: 'Free Writing',
-        description: 'Write a short paragraph about a topic',
-        prompt: `Write a short paragraph (5-8 sentences) about ${topic}. After I write my paragraph, please review it for grammar, vocabulary usage, and style. Suggest advanced vocabulary alternatives where appropriate.`,
-      }
-    }
-    case 4:
-    default: {
-      const word = SYNONYM_WORDS[seededIndex(day, SYNONYM_WORDS.length)]
-      return {
-        type: 'synonyms',
-        title: 'Synonym Hunter',
-        description: 'Find 3 synonyms for a given word',
-        prompt: `Find 3 synonyms for the word "${word}". After I provide my synonyms, tell me if they're correct and share additional synonyms I might not know. Explain the subtle differences in meaning between each synonym.`,
-      }
-    }
-  }
-}
 
 export default function DashboardSection() {
   const { 
@@ -155,7 +46,6 @@ export default function DashboardSection() {
     dashboardStats, setDashboardStats, dashboardTodayWord, setDashboardTodayWord 
   } = useAppStore()
   const displayLevel = userLevel || 'B2'
-  const dailyChallenge = useMemo(() => getDailyChallenge(), [])
   
   const stats = dashboardStats
   const todayWord = dashboardTodayWord
@@ -373,57 +263,6 @@ export default function DashboardSection() {
         </motion.div>
       </div>
 
-      {/* Daily Challenge */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.7 }}
-      >
-        <Card className="border-amber-300 dark:border-amber-700/60 bg-gradient-to-br from-amber-50/80 to-orange-50/80 dark:from-amber-950/20 dark:to-orange-950/20">
-          <CardHeader className="pb-2">
-            <div className="flex items-center justify-between">
-              <CardTitle className="text-lg flex items-center gap-2">
-                <div className="p-1.5 rounded-lg bg-amber-100 dark:bg-amber-900/40">
-                  <Flame className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-                </div>
-                Daily Challenge
-              </CardTitle>
-              <Badge className="bg-amber-500 hover:bg-amber-600 text-white text-xs">
-                <Zap className="h-3 w-3 mr-1" />
-                {dailyChallenge.title}
-              </Badge>
-            </div>
-            <CardDescription className="text-amber-700/70 dark:text-amber-400/60">
-              A new challenge every day — keep your streak alive!
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="rounded-xl bg-white/60 dark:bg-black/20 p-4 border border-amber-200/50 dark:border-amber-800/30">
-              <p className="text-sm font-medium text-amber-900 dark:text-amber-100 leading-relaxed">
-                {dailyChallenge.description}
-              </p>
-              <p className="text-xs text-amber-600/70 dark:text-amber-400/50 mt-1">
-                Complete this challenge with your AI Coach to earn progress!
-              </p>
-            </div>
-            <Button
-              onClick={() => {
-                addCoachMessage({
-                  id: crypto.randomUUID(),
-                  role: 'user',
-                  content: `🎯 Daily Challenge: ${dailyChallenge.prompt}`,
-                  timestamp: new Date(),
-                })
-                setCoachOpen(true)
-              }}
-              className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md hover:shadow-lg transition-all"
-            >
-              <Flame className="h-4 w-4 mr-2" />
-              Start Challenge
-            </Button>
-          </CardContent>
-        </Card>
-      </motion.div>
 
       {/* Quick Actions */}
       <motion.div
